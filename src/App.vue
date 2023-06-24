@@ -1,10 +1,31 @@
-<script setup>
-import { RouterView } from 'vue-router'
-</script>
-
 <template>
+    <NavBar />
+
     <RouterView />
 </template>
+
+<script>
+import { mapActions } from 'pinia'
+import { useThemeStore } from '@/stores/theme'
+
+import { RouterView } from 'vue-router'
+import NavBar from '@/components/NavBar.vue'
+
+export default {
+    components: {
+        RouterView,
+        NavBar,
+    },
+    methods: {
+        ...mapActions(useThemeStore, {
+            initializeTheme: 'initialize',
+        }),
+    },
+    created() {
+        this.initializeTheme()
+    },
+}
+</script>
 
 <style scoped>
 header {
