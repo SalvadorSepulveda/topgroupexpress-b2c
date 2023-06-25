@@ -1,6 +1,7 @@
 <template>
     <header
         class="navbar absolute top-0 left-0 z-50 w-full border-stroke bg-white duration-300 dark:border-stroke-dark dark:bg-black"
+        :class="navbarClasses"
     >
         <div class="container relative max-w-[1400px]">
             <div class="flex items-center justify-between">
@@ -83,6 +84,9 @@
 </template>
 
 <script>
+import { mapState } from 'pinia'
+import { useScrollStore } from '@/stores'
+
 import MainLogo from './MainLogo.vue'
 import ColorModeSwitcher from './ColorModeSwitcher.vue'
 
@@ -115,5 +119,16 @@ export default {
             },
         ],
     }),
+    computed: {
+        ...mapState(useScrollStore, {
+            scrollY: 'position',
+        }),
+        navbarClasses() {
+            if (this.scrollY >= 100) {
+                return 'sticky-navbar'
+            }
+            return undefined
+        },
+    },
 }
 </script>

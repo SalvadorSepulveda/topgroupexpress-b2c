@@ -4472,14 +4472,6 @@ GLightbox({
     /* ========  mobile menu end ========= */
 
     window.onscroll = function () {
-        // ===  Sticky Navbar
-        const header = document.querySelector('.navbar')
-        if (window.pageYOffset >= 100) {
-            header.classList.add('sticky-navbar')
-        } else {
-            header.classList.remove('sticky-navbar')
-        }
-
         // ===  show or hide the back-top-top button
         const backToTop = document.querySelector('.back-to-top')
         if (
