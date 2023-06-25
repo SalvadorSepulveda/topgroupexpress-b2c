@@ -42,9 +42,9 @@ module.exports = {
         extend: {
             backgroundImage: {
                 'gradient-1':
-                    'linear-gradient(55.15deg, #8EA5FE -7.09%, #BEB3FD 51.72%, #90D1FF 101.48%)',
+                    'linear-gradient(55.15deg, #EA621F -7.09%, #F39A20 51.72%, #FABD2F 101.48%)',
                 'gradient-2':
-                    'linear-gradient(120.12deg, #FF8FE8 0%, #FFC960 100%)',
+                    'linear-gradient(120.12deg, #EA621F 0%, #F39A20 100%)',
                 'gradient-3':
                     'linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%)',
                 texture: "url('src/assets/images/graphics/texture.svg')",

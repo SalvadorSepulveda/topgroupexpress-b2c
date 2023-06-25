@@ -1,6 +1,28 @@
 <template>
     <main>
-        <TGEHeroSection anchor="home" />
+        <TGEHeroSection
+            anchor="home"
+            videoURL="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
+        >
+            <template v-slot:title>
+                Central de
+                <TGEFancyText>reservas de hoteles</TGEFancyText>
+                para <TGEFancyText>grupos</TGEFancyText>.
+            </template>
+
+            <template v-slot:description>
+                Servicio exclusivo para profesionales
+            </template>
+
+            <template v-slot:picture>
+                <img
+                    src="@/assets/images/hero/hero-light.png"
+                    alt="hero image"
+                    class="mx-auto max-w-full"
+                />
+            </template>
+        </TGEHeroSection>
+
         <TGEFeaturesSection anchor="features" />
         <TGEAboutSection anchor="about" />
         <TGEWorkProcessSection anchor="work-process" />
@@ -97,7 +119,6 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import '@/assets/css/animate.css'
 
-import GLightbox from 'glightbox'
 import Swiper, { Navigation } from 'swiper'
 import WOW from 'wowjs'
 
@@ -129,14 +150,6 @@ const testimonial = new Swiper('.mySwiper', {
     },
 })
 
-//========= glightbox
-GLightbox({
-    href: 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM',
-    type: 'video',
-    source: 'youtube', //vimeo, youtube or local
-    width: 900,
-    autoplayVideos: true,
-})
 ;(function () {
     'use strict'
 
@@ -177,6 +190,8 @@ GLightbox({
 })()
 
 import TGEHeroSection from '@/components/TGEHeroSection.vue'
+import TGEFancyText from '@/components/TGEFancyText.vue'
+
 import TGEFeaturesSection from '@/components/TGEFeaturesSection.vue'
 import TGEAboutSection from '@/components/TGEAboutSection.vue'
 import TGEWorkProcessSection from '@/components/TGEWorkProcessSection.vue'
@@ -193,6 +208,7 @@ export default {
     name: 'HomeView',
     components: {
         TGEHeroSection,
+        TGEFancyText,
         TGEFeaturesSection,
         TGEAboutSection,
         TGEWorkProcessSection,
