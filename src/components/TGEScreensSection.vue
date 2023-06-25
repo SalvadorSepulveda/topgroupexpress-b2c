@@ -5,23 +5,11 @@
         :zIndex="20"
         relative
     >
-        <div class="container">
-            <div
-                class="wow fadeInUp mx-auto mb-10 max-w-[690px] text-center"
-                data-wow-delay=".2s"
-            >
-                <h2
-                    class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight"
-                >
-                    App Screenshots
-                </h2>
-                <p class="text-base text-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                    aliquam ante in maximus.
-                </p>
-            </div>
-        </div>
+        <TGESectionTitle title="App Screenshots">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+            ante in maximus.
+        </TGESectionTitle>
 
         <div class="container">
             <div
@@ -208,11 +196,13 @@
 
 <script>
 import TGESection from './TGESection.vue'
+import TGESectionTitle from './TGESectionTitle.vue'
 
 export default {
     name: 'TGEScreensSection',
     components: {
         TGESection,
+        TGESectionTitle,
     },
     props: {
         anchor: {

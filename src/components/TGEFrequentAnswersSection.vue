@@ -8,23 +8,13 @@
         darkBackgroundColor="#15182B"
         relative
     >
-        <div class="container">
-            <div
-                class="wow fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
-                data-wow-delay=".2s"
-            >
-                <h2
-                    class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight"
-                >
-                    Frequently Asked Questions
-                </h2>
-                <p class="text-base text-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                    aliquam ante in maximus.
-                </p>
-            </div>
+        <TGESectionTitle title="Frequently Asked Questions">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+            ante in maximus.
+        </TGESectionTitle>
 
+        <div class="container">
             <div
                 class="faqs wow fadeInUp mx-auto w-full max-w-[785px] rounded-lg bg-white px-6 py-[6px] shadow-card dark:bg-black dark:shadow-card-dark"
                 data-wow-delay=".3s"
@@ -169,11 +159,13 @@
 
 <script>
 import TGESection from './TGESection.vue'
+import TGESectionTitle from './TGESectionTitle.vue'
 
 export default {
     name: 'TGEFrequentAnswersSection',
     components: {
         TGESection,
+        TGESectionTitle,
     },
     props: {
         anchor: {

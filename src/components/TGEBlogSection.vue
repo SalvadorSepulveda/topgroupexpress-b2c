@@ -5,23 +5,11 @@
         :paddingBotton="60"
         relative
     >
-        <div class="container">
-            <div
-                class="wow fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
-                data-wow-delay=".2s"
-            >
-                <h2
-                    class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight"
-                >
-                    Latest News & Blogs
-                </h2>
-                <p class="text-base text-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                    aliquam ante in maximus.
-                </p>
-            </div>
-        </div>
+        <TGESectionTitle title="Latest News & Blogs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+            ante in maximus.
+        </TGESectionTitle>
 
         <div class="container overflow-hidden lg:max-w-[1250px]">
             <div
@@ -342,11 +330,13 @@
 
 <script>
 import TGESection from './TGESection.vue'
+import TGESectionTitle from './TGESectionTitle.vue'
 
 export default {
     name: 'TGEBlogSection',
     components: {
         TGESection,
+        TGESectionTitle,
     },
     props: {
         anchor: {

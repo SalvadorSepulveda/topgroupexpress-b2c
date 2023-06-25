@@ -6,23 +6,11 @@
         :zIndex="10"
         relative
     >
-        <div class="container">
-            <div
-                class="wow fadeInUp mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
-                data-wow-delay=".2s"
-            >
-                <h2
-                    class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight"
-                >
-                    What Client's Say
-                </h2>
-                <p class="text-base text-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                    convallis tortor eros. Donec vitae tortor lacus. Phasellus
-                    aliquam ante in maximus.
-                </p>
-            </div>
-        </div>
+        <TGESectionTitle title="What Client's Say">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+            ante in maximus.
+        </TGESectionTitle>
 
         <div class="container overflow-hidden lg:max-w-[1160px]">
             <div class="-mx-6 flex flex-wrap">
@@ -778,11 +766,13 @@
 
 <script>
 import TGESection from './TGESection.vue'
+import TGESectionTitle from './TGESectionTitle.vue'
 
 export default {
     name: 'TGETestimonialsSection',
     components: {
         TGESection,
+        TGESectionTitle,
     },
     props: {
         anchor: {
