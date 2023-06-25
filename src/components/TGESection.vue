@@ -7,7 +7,11 @@
         <slot></slot>
     </section>
 </template>
+
 <script>
+import { mapState } from 'pinia'
+import { useThemeStore } from '@/stores'
+
 export default {
     props: {
         anchor: {
@@ -26,12 +30,21 @@ export default {
             type: Number,
             default: undefined,
         },
+        backgroundColor: {
+            type: String,
+            default: undefined,
+        },
+        darkBackgroundColor: {
+            type: String,
+            default: undefined,
+        },
         relative: {
             type: Boolean,
             default: false,
         },
     },
     computed: {
+        ...mapState(useThemeStore, ['theme']),
         classes() {
             let result = []
             if (this.relative) {
@@ -45,6 +58,10 @@ export default {
             return {
                 'padding-top': `${this.paddingTop}px`,
                 'padding-bottom': `${this.paddingBottom}px`,
+                'background-color':
+                    this.theme === 'dark'
+                        ? this.darkBackgroundColor
+                        : this.backgroundColor,
                 'z-index': this.zIndex,
             }
         },
