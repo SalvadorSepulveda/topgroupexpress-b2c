@@ -52,11 +52,19 @@
                                 :key="item.label"
                             >
                                 <a
+                                    v-if="item.route.startsWith('#')"
                                     :href="item.route"
                                     class="menu-scroll inline-flex items-center text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary lg:py-7"
                                 >
                                     {{ item.label }}
                                 </a>
+                                <router-link
+                                    v-else
+                                    :to="item.route"
+                                    class="menu-scroll inline-flex items-center text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary lg:py-7"
+                                >
+                                    {{ item.label }}
+                                </router-link>
                             </li>
                         </ul>
                     </nav>
@@ -102,20 +110,24 @@ export default {
                 route: '#features',
             },
             {
-                label: 'Hoteliers',
-                route: '#support',
+                label: 'Agencias',
+                route: '/agencies',
             },
             {
-                label: 'Agencies',
-                route: '#support',
+                label: 'Hoteleros',
+                route: '/hoteliers',
             },
             {
-                label: 'Downloads',
-                route: '#support',
+                label: 'Descargas',
+                route: '/downloads',
             },
             {
                 label: 'Blog',
-                route: '#support',
+                route: '/blog',
+            },
+            {
+                label: 'Contacto',
+                route: '#contact',
             },
         ],
     }),
