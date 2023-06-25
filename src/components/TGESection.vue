@@ -18,6 +18,10 @@ export default {
             type: Number,
             required: true,
         },
+        paddingBottom: {
+            type: Number,
+            default: undefined,
+        },
         zIndex: {
             type: Number,
             default: undefined,
@@ -39,7 +43,8 @@ export default {
         },
         styles() {
             return {
-                'padding-top': `${this.paddingTop}px!important`,
+                'padding-top': `${this.paddingTop}px`,
+                'padding-bottom': `${this.paddingBottom}px`,
                 'z-index': this.zIndex,
             }
         },
