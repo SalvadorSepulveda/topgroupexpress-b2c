@@ -2,19 +2,28 @@
     <NavBar />
 
     <RouterView />
+
+    <BackToTopButton v-if="scrollY > 50" />
 </template>
 
 <script>
-import { mapActions } from 'pinia'
+import { mapActions, mapState } from 'pinia'
 import { useScrollStore, useThemeStore } from '@/stores'
 
 import { RouterView } from 'vue-router'
 import NavBar from '@/components/NavBar.vue'
+import BackToTopButton from '@/components/BackToTopButton.vue'
 
 export default {
     components: {
         RouterView,
         NavBar,
+        BackToTopButton,
+    },
+    computed: {
+        ...mapState(useScrollStore, {
+            scrollY: 'position',
+        }),
     },
     methods: {
         ...mapActions(useThemeStore, {

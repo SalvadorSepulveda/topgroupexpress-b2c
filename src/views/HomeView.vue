@@ -4471,19 +4471,6 @@ GLightbox({
 
     /* ========  mobile menu end ========= */
 
-    window.onscroll = function () {
-        // ===  show or hide the back-top-top button
-        const backToTop = document.querySelector('.back-to-top')
-        if (
-            document.body.scrollTop > 50 ||
-            document.documentElement.scrollTop > 50
-        ) {
-            backToTop.style.display = 'flex'
-        } else {
-            backToTop.style.display = 'none'
-        }
-    }
-
     /* ========  scroll to top  start ========= */
     function scrollTo(element, to = 0, duration = 500) {
         const start = element.scrollTop
@@ -4520,7 +4507,4 @@ GLightbox({
     */
     /* ========  scroll to top  end ========= */
 })()
-
-// Document Loaded
-document.addEventListener('DOMContentLoaded', () => {})
 </script>
