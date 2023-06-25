@@ -2,8 +2,6 @@
     <TGESection
         :anchor="anchor"
         :paddingTop="165"
-        relative
-        boxed
     >
         <div class="container lg:max-w-[1305px] lg:px-10">
             <div class="-mx-4 flex flex-wrap items-center">
