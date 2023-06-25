@@ -2,6 +2,7 @@
     <section
         :id="anchor"
         :class="classes"
+        :style="styles"
     >
         <slot></slot>
     </section>
@@ -37,9 +38,14 @@ export default {
                 result.push('z-10')
             }
 
-            result.push(`pt-[${this.paddingTop}px]`)
+            result.push()
 
             return result
+        },
+        styles() {
+            return {
+                'padding-top': `${this.paddingTop}px!important`,
+            }
         },
     },
 }
