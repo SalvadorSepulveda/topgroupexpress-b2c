@@ -10,109 +10,7 @@
         <TGETestimonialsSection anchor="testimonials" />
         <TGEFrequentAnswersSection anchor="faq" />
         <TGEBlogSection anchor="blog" />
-
-        <!-- ======= Clients Start ======= -->
-        <section
-            class="relative z-10 bg-[#F8FAFB] pt-[70px] pb-[50px] dark:bg-[#15182B]"
-        >
-            <div
-                class="wow fadeInUp container overflow-hidden lg:max-w-[1200px]"
-                data-wow-delay=".2s"
-            >
-                <div class="-mx-4 flex flex-wrap items-center justify-center">
-                    <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                        <div class="mb-5 text-center">
-                            <a
-                                href="javascript:void(0)"
-                                class="block"
-                            >
-                                <img
-                                    src="@/assets/images/clients/client-01.svg"
-                                    alt="client"
-                                    class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                        <div class="mb-5 text-center">
-                            <a
-                                href="javascript:void(0)"
-                                class="block"
-                            >
-                                <img
-                                    src="@/assets/images/clients/client-02.svg"
-                                    alt="client"
-                                    class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                        <div class="mb-5 text-center">
-                            <a
-                                href="javascript:void(0)"
-                                class="block"
-                            >
-                                <img
-                                    src="@/assets/images/clients/client-03.svg"
-                                    alt="client"
-                                    class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                        <div class="mb-5 text-center">
-                            <a
-                                href="javascript:void(0)"
-                                class="block"
-                            >
-                                <img
-                                    src="@/assets/images/clients/client-04.svg"
-                                    alt="client"
-                                    class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                        <div class="mb-5 text-center">
-                            <a
-                                href="javascript:void(0)"
-                                class="block"
-                            >
-                                <img
-                                    src="@/assets/images/clients/client-05.svg"
-                                    alt="client"
-                                    class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                />
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                        <div class="mb-5 text-center">
-                            <a
-                                href="javascript:void(0)"
-                                class="block"
-                            >
-                                <img
-                                    src="@/assets/images/clients/client-06.svg"
-                                    alt="client"
-                                    class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ======= Clients End ======= -->
+        <TGEClientsSection anchor="clients" />
 
         <!-- ======= Contact Start ======= -->
         <section
@@ -818,6 +716,7 @@ import TGEDownloadsSection from '@/components/TGEDownloadsSection.vue'
 import TGETestimonialsSection from '@/components/TGETestimonialsSection.vue'
 import TGEFrequentAnswersSection from '@/components/TGEFrequentAnswersSection.vue'
 import TGEBlogSection from '@/components/TGEBlogSection.vue'
+import TGEClientsSection from '@/components/TGEClientsSection.vue'
 
 export default {
     name: 'HomeView',
@@ -832,6 +731,7 @@ export default {
         TGETestimonialsSection,
         TGEFrequentAnswersSection,
         TGEBlogSection,
+        TGEClientsSection,
     },
 }
 </script>
