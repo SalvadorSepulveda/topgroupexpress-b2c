@@ -23,7 +23,46 @@
             </template>
         </TGEHeroSection>
 
-        <TGEFeaturesSection anchor="features" />
+        <TGEFeaturesSection
+            anchor="features"
+            title="¿Qué ofrecemos?"
+            description="Motor de reserva de grupos con disponibilidad real y procesos completamente automatizados."
+            :features="[
+                {
+                    title: 'Apps Móviles y Web',
+                    description:
+                        'Reserve grupos desde su PC, teléfono o tablet',
+                    icon: 'apps',
+                },
+                {
+                    title: 'Precios Competitivos',
+                    description:
+                        'Cotizaciones negociadas directamente con el hotel',
+                    icon: 'layers',
+                },
+                {
+                    title: 'Dashboard Único',
+                    description: 'Todos tus grupos en el mismo lugar',
+                    icon: 'layout',
+                },
+                {
+                    title: 'Agilidad',
+                    description: 'Cotizaciones en menos de 12 horas',
+                    icon: 'speed',
+                },
+                {
+                    title: 'Reservas a Medida',
+                    description: 'Control preciso de sus grupos',
+                    icon: 'sliders',
+                },
+                {
+                    title: 'Actualizaciones',
+                    description: 'Notificaciones y alertas en tiempo real',
+                    icon: 'reload',
+                },
+            ]"
+        />
+
         <TGEAboutSection anchor="about" />
         <TGEWorkProcessSection anchor="work-process" />
         <TGEPricingSection anchor="pricing" />

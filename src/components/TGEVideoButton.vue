@@ -6,6 +6,7 @@
     >
         <span
             class="mr-[22px] flex h-[60px] w-[60px] items-center justify-center rounded-full border-2 border-current"
+            @click="showVideo"
         >
             <svg
                 width="14"

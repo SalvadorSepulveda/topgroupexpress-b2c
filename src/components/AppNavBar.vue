@@ -98,8 +98,8 @@ export default {
     data: () => ({
         items: [
             {
-                label: 'Features',
-                route: '#support',
+                label: '¿Qué Ofrecemos?',
+                route: '#features',
             },
             {
                 label: 'Hoteliers',

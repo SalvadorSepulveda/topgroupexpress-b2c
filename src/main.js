@@ -11,4 +11,8 @@ const app = createApp(App)
 app.use(pinia)
 app.use(router)
 
+// Setup Icons
+import setupIcons from './components/icons'
+setupIcons(app)
+
 app.mount('#app')
