@@ -50,12 +50,12 @@
                                 v-for="item in items"
                                 :key="item.label"
                             >
-                                <router-link
-                                    :to="item.route"
+                                <a
+                                    :href="item.route"
                                     class="menu-scroll inline-flex items-center text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary lg:py-7"
                                 >
                                     {{ item.label }}
-                                </router-link>
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -95,23 +95,23 @@ export default {
         items: [
             {
                 label: 'Features',
-                route: '/',
+                route: '#support',
             },
             {
                 label: 'Hoteliers',
-                route: '/',
+                route: '#support',
             },
             {
                 label: 'Agencies',
-                route: '/',
+                route: '#support',
             },
             {
                 label: 'Downloads',
-                route: '/',
+                route: '#support',
             },
             {
                 label: 'Blog',
-                route: '/',
+                route: '#support',
             },
         ],
     }),

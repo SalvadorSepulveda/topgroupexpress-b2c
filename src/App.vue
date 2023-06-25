@@ -6,7 +6,7 @@
 
 <script>
 import { mapActions } from 'pinia'
-import { useThemeStore } from '@/stores/theme'
+import { useScrollStore, useThemeStore } from '@/stores'
 
 import { RouterView } from 'vue-router'
 import NavBar from '@/components/NavBar.vue'
@@ -20,9 +20,13 @@ export default {
         ...mapActions(useThemeStore, {
             initializeTheme: 'initialize',
         }),
+        ...mapActions(useScrollStore, {
+            initializeScroll: 'initialize',
+        }),
     },
     created() {
         this.initializeTheme()
+        this.initializeScroll()
     },
 }
 </script>

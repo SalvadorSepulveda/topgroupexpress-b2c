@@ -1,7 +1,4 @@
 <template>
-    <!-- ======= Header Start ======= -->
-    <!-- ======= Header End ======= -->
-
     <!-- ======= Main Start ======= -->
     <main>
         <!-- ======= Hero Start ======= -->
