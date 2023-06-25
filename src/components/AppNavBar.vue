@@ -51,15 +51,7 @@
                                 v-for="item in items"
                                 :key="item.label"
                             >
-                                <a
-                                    v-if="item.route.startsWith('#')"
-                                    :href="item.route"
-                                    class="menu-scroll inline-flex items-center text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary lg:py-7"
-                                >
-                                    {{ item.label }}
-                                </a>
                                 <router-link
-                                    v-else
                                     :to="item.route"
                                     class="menu-scroll inline-flex items-center text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary lg:py-7"
                                 >
@@ -107,7 +99,10 @@ export default {
         items: [
             {
                 label: '¿Qué Ofrecemos?',
-                route: '#features',
+                route: {
+                    name: 'home',
+                    hash: '#features',
+                },
             },
             {
                 label: 'Agencias',
@@ -127,7 +122,10 @@ export default {
             },
             {
                 label: 'Contacto',
-                route: '#contact',
+                route: {
+                    name: 'home',
+                    hash: '#contact',
+                },
             },
         ],
     }),

@@ -65,7 +65,6 @@
 
         <TGEAboutSection anchor="about" />
         <TGEWorkProcessSection anchor="work-process" />
-        <TGEPricingSection anchor="pricing" />
         <TGEScreensSection anchor="screens" />
         <TGEDownloadsSection anchor="downloads" />
         <TGETestimonialsSection anchor="testimonials" />
@@ -234,7 +233,6 @@ import TGEFancyText from '@/components/TGEFancyText.vue'
 import TGEFeaturesSection from '@/components/TGEFeaturesSection.vue'
 import TGEAboutSection from '@/components/TGEAboutSection.vue'
 import TGEWorkProcessSection from '@/components/TGEWorkProcessSection.vue'
-import TGEPricingSection from '@/components/TGEPricingSection.vue'
 import TGEScreensSection from '@/components/TGEScreensSection.vue'
 import TGEDownloadsSection from '@/components/TGEDownloadsSection.vue'
 import TGETestimonialsSection from '@/components/TGETestimonialsSection.vue'
@@ -251,7 +249,6 @@ export default {
         TGEFeaturesSection,
         TGEAboutSection,
         TGEWorkProcessSection,
-        TGEPricingSection,
         TGEScreensSection,
         TGEDownloadsSection,
         TGETestimonialsSection,
