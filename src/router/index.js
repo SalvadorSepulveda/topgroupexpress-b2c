@@ -34,6 +34,11 @@ const router = createRouter({
             name: 'blog-entry',
             component: () => import('../views/BlogEntryView.vue'),
         },
+        {
+            path: '/:pathMatch(.*)*',
+            name: 'page-not-found',
+            component: () => import('../views/PageNotFoundView.vue'),
+        },
     ],
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
