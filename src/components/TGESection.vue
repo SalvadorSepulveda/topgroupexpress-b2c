@@ -18,9 +18,9 @@ export default {
             type: Number,
             required: true,
         },
-        boxed: {
-            type: Boolean,
-            default: false,
+        zIndex: {
+            type: Number,
+            default: undefined,
         },
         relative: {
             type: Boolean,
@@ -33,11 +33,6 @@ export default {
             if (this.relative) {
                 result.push('relative')
             }
-
-            if (this.boxed) {
-                result.push('z-10')
-            }
-
             result.push()
 
             return result
@@ -45,6 +40,7 @@ export default {
         styles() {
             return {
                 'padding-top': `${this.paddingTop}px!important`,
+                'z-index': this.zIndex,
             }
         },
     },

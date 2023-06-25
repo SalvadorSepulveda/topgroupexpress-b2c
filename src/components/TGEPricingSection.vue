@@ -2,8 +2,8 @@
     <TGESection
         :anchor="anchor"
         :paddingTop="110"
+        :zIndex="10"
         relative
-        boxed
     >
         <div class="container">
             <div
