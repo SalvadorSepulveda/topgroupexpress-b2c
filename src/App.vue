@@ -1,9 +1,10 @@
 <template>
-    <NavBar />
+    <AppNavBar />
 
     <RouterView />
 
-    <BackToTopButton v-if="scrollY > 50" />
+    <AppBackToTopButton v-if="scrollY > 50" />
+    <AppFooter />
 </template>
 
 <script>
@@ -11,14 +12,16 @@ import { mapActions, mapState } from 'pinia'
 import { useScrollStore, useThemeStore } from '@/stores'
 
 import { RouterView } from 'vue-router'
-import NavBar from '@/components/NavBar.vue'
-import BackToTopButton from '@/components/BackToTopButton.vue'
+import AppNavBar from '@/components/AppNavBar.vue'
+import AppFooter from '@/components/AppFooter.vue'
+import AppBackToTopButton from '@/components/AppBackToTopButton.vue'
 
 export default {
     components: {
         RouterView,
-        NavBar,
-        BackToTopButton,
+        AppNavBar,
+        AppFooter,
+        AppBackToTopButton,
     },
     computed: {
         ...mapState(useScrollStore, {
