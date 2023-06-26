@@ -14,5 +14,8 @@ app.use(router)
 // Setup Icons
 import setupIcons from './components/icons'
 setupIcons(app)
+// Setup Flags
+import setupFlag from './components/flags'
+setupFlag(app)
 
 app.mount('#app')

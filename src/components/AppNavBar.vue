@@ -77,6 +77,8 @@
                     >
                         Agency Sign Up
                     </a>
+
+                  <SelectLanguage class="menu-wrapper relative hidden justify-between lg:flex"/>
                 </div>
             </div>
         </div>
@@ -89,11 +91,13 @@ import { useScrollStore } from '@/stores'
 
 import MainLogo from './MainLogo.vue'
 import ColorModeSwitcher from './ColorModeSwitcher.vue'
+import SelectLanguage from "./SelectLanguage.vue";
 
 export default {
     components: {
         MainLogo,
         ColorModeSwitcher,
+        SelectLanguage,
     },
     data: () => ({
         items: [
