@@ -1,5 +1,5 @@
 <template>
-  <component :is="flagComponent" />
+    <component :is="flagComponent"/>
 </template>
 
 <script>
@@ -9,33 +9,33 @@ import China from './cn.vue'
 import England from './gb.vue'
 
 export default {
-  name: 'TGEFlag',
-  components: {
-    Spain,
-    France,
-    China,
-    England,
-  },
-  props: {
-    name: {
-      type: String,
-      required: true,
+    name: 'TGEFlag',
+    components: {
+        Spain,
+        France,
+        China,
+        England,
     },
-  },
-  computed: {
-    flagComponent() {
-      switch (this.name) {
-        case 'es':
-          return Spain
-        case 'fr':
-          return France
-        case 'cn':
-          return China
-        case 'en':
-          return England
-      }
-      return undefined
+    props: {
+        name: {
+            type: String,
+            required: true,
+        },
     },
-  },
+    computed: {
+        flagComponent() {
+            switch (this.name) {
+                case 'es':
+                    return Spain
+                case 'fr':
+                    return France
+                case 'cn':
+                    return China
+                case 'en':
+                    return England
+            }
+            return undefined
+        },
+    },
 }
 </script>

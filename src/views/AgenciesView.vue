@@ -1,11 +1,11 @@
 <template>
     <main>
-        <TGEAboutSection anchor="about" />
-        <TGEWorkProcessSection anchor="work-process" />
-        <TGEScreensSection anchor="screens" />
-        <TGEDownloadsSection anchor="downloads" />
-        <TGETestimonialsSection anchor="testimonials" />
-        <TGEFrequentAnswersSection anchor="faq" />
+        <TGEAboutSection anchor="about"/>
+        <TGEWorkProcessSection anchor="work-process"/>
+        <TGEScreensSection anchor="screens"/>
+        <TGEDownloadsSection anchor="downloads"/>
+        <TGETestimonialsSection anchor="testimonials"/>
+        <TGEFrequentAnswersSection anchor="faq"/>
     </main>
 </template>
 

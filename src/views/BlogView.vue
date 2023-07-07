@@ -15,9 +15,9 @@
                         >
                             <div class="relative overflow-hidden rounded">
                                 <img
-                                    src="@/assets/images/blog/blog-01.jpg"
                                     alt="blog post"
                                     class="w-full object-cover object-center"
+                                    src="@/assets/images/blog/blog-01.jpg"
                                 />
                                 <div
                                     class="absolute top-0 left-0 flex h-full w-full items-end bg-gradient-3 px-[18px] py-4"
@@ -28,10 +28,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -47,9 +47,9 @@
                                                             id="clip0_52_46"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -63,10 +63,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -82,9 +82,9 @@
                                                             id="clip0_52_51"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -129,9 +129,9 @@
                         >
                             <div class="relative overflow-hidden rounded">
                                 <img
-                                    src="@/assets/images/blog/blog-02.jpg"
                                     alt="blog post"
                                     class="w-full object-cover object-center"
+                                    src="@/assets/images/blog/blog-02.jpg"
                                 />
                                 <div
                                     class="absolute top-0 left-0 flex h-full w-full items-end bg-gradient-3 px-[18px] py-4"
@@ -142,10 +142,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -161,9 +161,9 @@
                                                             id="clip0_52_46"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -177,10 +177,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -196,9 +196,9 @@
                                                             id="clip0_52_51"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -243,9 +243,9 @@
                         >
                             <div class="relative overflow-hidden rounded">
                                 <img
-                                    src="@/assets/images/blog/blog-03.jpg"
                                     alt="blog post"
                                     class="w-full object-cover object-center"
+                                    src="@/assets/images/blog/blog-03.jpg"
                                 />
                                 <div
                                     class="absolute top-0 left-0 flex h-full w-full items-end bg-gradient-3 px-[18px] py-4"
@@ -256,10 +256,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -275,9 +275,9 @@
                                                             id="clip0_52_46"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -291,10 +291,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -310,9 +310,9 @@
                                                             id="clip0_52_51"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -357,9 +357,9 @@
                         >
                             <div class="relative overflow-hidden rounded">
                                 <img
-                                    src="@/assets/images/blog/blog-03.jpg"
                                     alt="blog post"
                                     class="w-full object-cover object-center"
+                                    src="@/assets/images/blog/blog-03.jpg"
                                 />
                                 <div
                                     class="absolute top-0 left-0 flex h-full w-full items-end bg-gradient-3 px-[18px] py-4"
@@ -370,10 +370,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -389,9 +389,9 @@
                                                             id="clip0_52_46"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -405,10 +405,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -424,9 +424,9 @@
                                                             id="clip0_52_51"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -471,9 +471,9 @@
                         >
                             <div class="relative overflow-hidden rounded">
                                 <img
-                                    src="@/assets/images/blog/blog-01.jpg"
                                     alt="blog post"
                                     class="w-full object-cover object-center"
+                                    src="@/assets/images/blog/blog-01.jpg"
                                 />
                                 <div
                                     class="absolute top-0 left-0 flex h-full w-full items-end bg-gradient-3 px-[18px] py-4"
@@ -484,10 +484,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -503,9 +503,9 @@
                                                             id="clip0_52_46"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -519,10 +519,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -538,9 +538,9 @@
                                                             id="clip0_52_51"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -585,9 +585,9 @@
                         >
                             <div class="relative overflow-hidden rounded">
                                 <img
-                                    src="@/assets/images/blog/blog-02.jpg"
                                     alt="blog post"
                                     class="w-full object-cover object-center"
+                                    src="@/assets/images/blog/blog-02.jpg"
                                 />
                                 <div
                                     class="absolute top-0 left-0 flex h-full w-full items-end bg-gradient-3 px-[18px] py-4"
@@ -598,10 +598,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -617,9 +617,9 @@
                                                             id="clip0_52_46"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -633,10 +633,10 @@
                                         >
                                             <span class="mr-2">
                                                 <svg
-                                                    width="18"
+                                                    fill="none"
                                                     height="18"
                                                     viewBox="0 0 18 18"
-                                                    fill="none"
+                                                    width="18"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <g
@@ -652,9 +652,9 @@
                                                             id="clip0_52_51"
                                                         >
                                                             <rect
-                                                                width="18"
-                                                                height="18"
                                                                 fill="white"
+                                                                height="18"
+                                                                width="18"
                                                             />
                                                         </clipPath>
                                                     </defs>
@@ -696,14 +696,14 @@
                             data-wow-delay=".2s"
                         >
                             <a
-                                href="javascript:void(0)"
                                 class="flex h-10 w-10 items-center justify-center rounded bg-white text-base font-medium text-black drop-shadow-card hover:bg-primary hover:text-white dark:bg-dark dark:text-white dark:drop-shadow-card-dark dark:hover:bg-primary"
+                                href="javascript:void(0)"
                             >
                                 <svg
-                                    width="8"
+                                    fill="none"
                                     height="14"
                                     viewBox="0 0 8 14"
-                                    fill="none"
+                                    width="8"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
                                     <path
@@ -714,42 +714,42 @@
                             </a>
 
                             <a
-                                href="javascript:void(0)"
                                 class="flex h-10 w-10 items-center justify-center rounded bg-white text-base font-medium text-black drop-shadow-card hover:bg-primary hover:text-white dark:bg-dark dark:text-white dark:drop-shadow-card-dark dark:hover:bg-primary"
+                                href="javascript:void(0)"
                             >
                                 1
                             </a>
 
                             <a
-                                href="javascript:void(0)"
                                 class="flex h-10 w-10 items-center justify-center rounded bg-white text-base font-medium text-black drop-shadow-card hover:bg-primary hover:text-white dark:bg-dark dark:text-white dark:drop-shadow-card-dark dark:hover:bg-primary"
+                                href="javascript:void(0)"
                             >
                                 2
                             </a>
 
                             <a
-                                href="javascript:void(0)"
                                 class="flex h-10 w-10 items-center justify-center rounded bg-white text-base font-medium text-black drop-shadow-card hover:bg-primary hover:text-white dark:bg-dark dark:text-white dark:drop-shadow-card-dark dark:hover:bg-primary"
+                                href="javascript:void(0)"
                             >
                                 ...
                             </a>
 
                             <a
-                                href="javascript:void(0)"
                                 class="flex h-10 w-10 items-center justify-center rounded bg-white text-base font-medium text-black drop-shadow-card hover:bg-primary hover:text-white dark:bg-dark dark:text-white dark:drop-shadow-card-dark dark:hover:bg-primary"
+                                href="javascript:void(0)"
                             >
                                 12
                             </a>
 
                             <a
-                                href="javascript:void(0)"
                                 class="flex h-10 w-10 items-center justify-center rounded bg-white text-base font-medium text-black drop-shadow-card hover:bg-primary hover:text-white dark:bg-dark dark:text-white dark:drop-shadow-card-dark dark:hover:bg-primary"
+                                href="javascript:void(0)"
                             >
                                 <svg
-                                    width="8"
+                                    fill="none"
                                     height="14"
                                     viewBox="0 0 8 14"
-                                    fill="none"
+                                    width="8"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
                                     <path

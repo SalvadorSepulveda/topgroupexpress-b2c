@@ -1,13 +1,20 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icons-cn" viewBox="0 0 640 480">
-    <defs>
-      <path id="a" fill="#ff0" d="M-.6.8 0-1 .6.8-1-.3h2z"/>
-    </defs>
-    <path fill="#ee1c25" d="M0 0h640v480H0z"/>
-    <use xlink:href="#a" width="30" height="20" transform="matrix(71.9991 0 0 72 120 120)"/>
-    <use xlink:href="#a" width="30" height="20" transform="matrix(-12.33562 -20.5871 20.58684 -12.33577 240.3 48)"/>
-    <use xlink:href="#a" width="30" height="20" transform="matrix(-3.38573 -23.75998 23.75968 -3.38578 288 95.8)"/>
-    <use xlink:href="#a" width="30" height="20" transform="matrix(6.5991 -23.0749 23.0746 6.59919 288 168)"/>
-    <use xlink:href="#a" width="30" height="20" transform="matrix(14.9991 -18.73557 18.73533 14.99929 240 216)"/>
-  </svg>
+    <svg height="44" viewBox="0 0 400 400" width="44" xmlns="http://www.w3.org/2000/svg"
+         xmlns:v="https://vecta.io/nano">
+        <defs>
+            <clipPath id="A">
+                <path
+                    d="M150 300C67.157 300 0 232.843 0 150h0C0 67.157 67.157 0 150 0h0c82.843 0 150 67.157 150 150h0c0 82.843-67.157 150-150 150z"/>
+            </clipPath>
+        </defs>
+        <g clip-path="url(#A)" transform="matrix(1.333333 0 0 -1.333333 0 400)">
+            <path d="M0 300h450V0H0z" fill="#de2910"/>
+            <g fill="#ffde00">
+                <path
+                    d="M75 270l26.45-81.406-69.248 50.312h85.595L48.55 188.594zm62.138-7.717l18.732 21.521-2.505-28.421-14.679 24.465 26.256-11.165zm28.013-24.404l25.616 12.566-13.338-25.223-4.035 28.245 19.866-20.479zm.426-38.758l28.513 1.023-22.466-17.587 7.838 27.434 9.784-26.802zm-27.29-24.751l26.697-10.066-27.515-7.548 17.823 22.279-1.324-28.501z"/>
+            </g>
+        </g>
+    </svg>
 </template>
+<script setup>
+</script>

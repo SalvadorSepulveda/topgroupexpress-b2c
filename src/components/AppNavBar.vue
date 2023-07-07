@@ -1,16 +1,16 @@
 <template>
     <header
-        class="navbar absolute top-0 left-0 z-50 w-full border-stroke bg-white duration-300 dark:border-stroke-dark dark:bg-black"
         :class="navbarClasses"
+        class="navbar absolute top-0 left-0 z-50 w-full border-stroke bg-white duration-300 dark:border-stroke-dark dark:bg-black"
     >
         <div class="container relative max-w-[1400px]">
             <div class="flex items-center justify-between">
                 <div class="block py-4 lg:py-0">
-                    <MainLogo />
+                    <MainLogo/>
                 </div>
                 <button
-                    class="navbarOpen absolute right-4 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 flex-col items-center justify-center space-y-[6px] font-bold lg:hidden"
                     aria-label="navbarOpen"
+                    class="navbarOpen absolute right-4 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 flex-col items-center justify-center space-y-[6px] font-bold lg:hidden"
                     name="navbarOpen"
                 >
                     <span
@@ -28,9 +28,9 @@
                     class="menu-wrapper relative hidden justify-between lg:flex"
                 >
                     <button
+                        aria-label="navbarClose"
                         class="navbarClose fixed top-10 right-10 z-[9999] flex h-10 w-10 flex-col items-center justify-center font-bold lg:hidden"
                         name="navbarClose"
-                        aria-label="navbarClose"
                     >
                         <span
                             class="block h-[2px] w-7 rotate-45 bg-black dark:bg-white"
@@ -47,9 +47,9 @@
                             class="items-center space-y-3 lg:flex lg:space-x-8 lg:space-y-0 xl:space-x-10"
                         >
                             <li
-                                class="menu-item"
                                 v-for="item in items"
                                 :key="item.label"
+                                class="menu-item"
                             >
                                 <router-link
                                     :to="item.route"
@@ -63,22 +63,21 @@
                 </div>
 
                 <div class="mr-[60px] flex items-center justify-end lg:mr-0">
-                    <ColorModeSwitcher />
+                    <ColorModeSwitcher/>
                     <a
-                        href="https://hoteliers.topgroupexpress.com/"
                         class="hidden py-[10px] px-6 text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary sm:inline-block"
+                        href="https://hoteliers.topgroupexpress.com/"
                     >
                         Hoteliers
                     </a>
 
                     <a
-                        href="https://agencies.topgroupexpress.com/"
                         class="hidden rounded-md bg-primary py-[10px] px-[30px] text-base font-medium text-white hover:bg-opacity-90 sm:inline-block"
+                        href="https://agencies.topgroupexpress.com/"
                     >
                         Agency Sign Up
                     </a>
-
-                  <SelectLanguage class="menu-wrapper relative hidden justify-between lg:flex"/>
+                    <SelectLanguage class="menu-wrapper relative hidden justify-between lg:flex"/>
                 </div>
             </div>
         </div>
@@ -86,8 +85,8 @@
 </template>
 
 <script>
-import { mapState } from 'pinia'
-import { useScrollStore } from '@/stores'
+import {mapState} from 'pinia'
+import {useScrollStore} from '@/stores'
 
 import MainLogo from './MainLogo.vue'
 import ColorModeSwitcher from './ColorModeSwitcher.vue'

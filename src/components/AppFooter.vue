@@ -9,18 +9,18 @@
                             data-wow-delay=".2s"
                         >
                             <a
-                                href="index.html"
                                 class="mb-8 inline-block"
+                                href="index.html"
                             >
                                 <img
-                                    src="@/assets/images/logo/logo.svg"
                                     alt="logo"
                                     class="block max-w-full dark:hidden"
+                                    src="@/assets/images/logo/logo.svg"
                                 />
                                 <img
-                                    src="@/assets/images/logo/logo-white.svg"
                                     alt="logo"
                                     class="hidden max-w-full dark:block"
+                                    src="@/assets/images/logo/logo-white.svg"
                                 />
                             </a>
                             <p class="text-base text-body">
@@ -48,32 +48,32 @@
                                     <ul class="space-y-[10px]">
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Product
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Pricing
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Business
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Enterprise
                                             </a>
@@ -98,32 +98,32 @@
                                     <ul class="space-y-[10px]">
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Company
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Leadership
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Careers
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Diversity
                                             </a>
@@ -148,32 +148,32 @@
                                     <ul class="space-y-[10px]">
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Andy Guide
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Forum
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Support
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 App Directory
                                             </a>
@@ -198,32 +198,32 @@
                                     <ul class="space-y-[10px]">
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 10 Leadership Styles
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Executive Summary Tips
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Prevent Team Burnout
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="inline-block text-base text-body hover:text-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 What are OKRs?
                                             </a>
@@ -259,12 +259,12 @@
                                 v-for="link in social"
                                 :key="link.icon"
                                 :href="link.url"
-                                target="_blank"
+                                aria-label="social icon"
                                 class="text-white opacity-70 hover:opacity-100"
                                 name="social icon"
-                                aria-label="social icon"
+                                target="_blank"
                             >
-                                <TGEIcon :name="link.icon" />
+                                <TGEIcon :name="link.icon"/>
                             </a>
                         </div>
                     </div>
@@ -274,14 +274,14 @@
                             class="flex items-center justify-center space-x-4 sm:space-x-8 md:justify-end lg:justify-end"
                         >
                             <a
-                                href="javascript:void(0)"
                                 class="text-base text-white"
+                                href="javascript:void(0)"
                             >
                                 Privacy Policy
                             </a>
                             <a
-                                href="javascript:void(0)"
                                 class="text-base text-white"
+                                href="javascript:void(0)"
                             >
                                 Terms and conditions
                             </a>

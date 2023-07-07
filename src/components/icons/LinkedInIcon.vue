@@ -1,9 +1,9 @@
 <template>
     <svg
-        width="24"
+        fill="none"
         height="24"
         viewBox="0 0 24 24"
-        fill="none"
+        width="24"
         xmlns="http://www.w3.org/2000/svg"
     >
         <g clip-path="url(#clip0_53_169)">
@@ -15,9 +15,9 @@
         <defs>
             <clipPath id="clip0_53_169">
                 <rect
-                    width="24"
-                    height="24"
                     fill="white"
+                    height="24"
+                    width="24"
                 />
             </clipPath>
         </defs>

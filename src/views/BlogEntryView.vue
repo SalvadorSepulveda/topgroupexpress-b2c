@@ -9,9 +9,9 @@
                         data-wow-delay=".2s"
                     >
                         <img
-                            src="@/assets/images/blog/blog-detail.jpg"
                             alt="blog-details"
                             class="object-conter w-full object-cover"
+                            src="@/assets/images/blog/blog-detail.jpg"
                         />
                     </div>
 
@@ -32,9 +32,9 @@
                                     class="mr-3 h-10 w-full max-w-[40px] rounded-full"
                                 >
                                     <img
-                                        src="@/assets/images/blog/author-01.png"
                                         alt="author"
                                         class="h-full w-full rounded-full object-cover object-center"
+                                        src="@/assets/images/blog/author-01.png"
                                     />
                                 </div>
                                 <p class="text-base font-medium text-body">
@@ -48,10 +48,10 @@
                                 >
                                     <span class="mr-2">
                                         <svg
-                                            width="22"
+                                            fill="none"
                                             height="22"
                                             viewBox="0 0 22 22"
-                                            fill="none"
+                                            width="22"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
                                             <g clip-path="url(#clip0_59_156)">
@@ -63,9 +63,9 @@
                                             <defs>
                                                 <clipPath id="clip0_59_156">
                                                     <rect
-                                                        width="22"
-                                                        height="22"
                                                         fill="white"
+                                                        height="22"
+                                                        width="22"
                                                     />
                                                 </clipPath>
                                             </defs>
@@ -81,10 +81,10 @@
                                 >
                                     <span class="mr-2">
                                         <svg
-                                            width="22"
+                                            fill="none"
                                             height="22"
                                             viewBox="0 0 22 22"
-                                            fill="none"
+                                            width="22"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
                                             <g clip-path="url(#clip0_59_159)">
@@ -96,9 +96,9 @@
                                             <defs>
                                                 <clipPath id="clip0_59_159">
                                                     <rect
-                                                        width="22"
-                                                        height="22"
                                                         fill="white"
+                                                        height="22"
+                                                        width="22"
                                                     />
                                                 </clipPath>
                                             </defs>
@@ -114,10 +114,10 @@
                                 >
                                     <span class="mr-2">
                                         <svg
-                                            width="22"
+                                            fill="none"
                                             height="22"
                                             viewBox="0 0 22 22"
-                                            fill="none"
+                                            width="22"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
                                             <g clip-path="url(#clip0_59_162)">
@@ -129,9 +129,9 @@
                                             <defs>
                                                 <clipPath id="clip0_59_162">
                                                     <rect
-                                                        width="22"
-                                                        height="22"
                                                         fill="white"
+                                                        height="22"
+                                                        width="22"
                                                     />
                                                 </clipPath>
                                             </defs>
@@ -220,10 +220,10 @@
 
                                 <div class="absolute left-0 bottom-0 -z-10">
                                     <svg
-                                        width="65"
+                                        fill="none"
                                         height="68"
                                         viewBox="0 0 65 68"
-                                        fill="none"
+                                        width="65"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <path
@@ -234,13 +234,13 @@
                                         <defs>
                                             <linearGradient
                                                 id="paint0_linear_58_157"
-                                                x1="-61.5836"
-                                                y1="113"
-                                                x2="78.5765"
-                                                y2="15.4155"
                                                 gradientUnits="userSpaceOnUse"
+                                                x1="-61.5836"
+                                                x2="78.5765"
+                                                y1="113"
+                                                y2="15.4155"
                                             >
-                                                <stop stop-color="#8EA5FE" />
+                                                <stop stop-color="#8EA5FE"/>
                                                 <stop
                                                     offset="0.541667"
                                                     stop-color="#BEB3FD"
@@ -256,10 +256,10 @@
 
                                 <div class="absolute top-0 right-0 -z-10">
                                     <svg
-                                        width="73"
+                                        fill="none"
                                         height="74"
                                         viewBox="0 0 73 74"
-                                        fill="none"
+                                        width="73"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <circle
@@ -272,13 +272,13 @@
                                         <defs>
                                             <linearGradient
                                                 id="paint0_linear_57_160"
-                                                x1="0"
-                                                y1="-39"
-                                                x2="133.592"
-                                                y2="38.5086"
                                                 gradientUnits="userSpaceOnUse"
+                                                x1="0"
+                                                x2="133.592"
+                                                y1="-39"
+                                                y2="38.5086"
                                             >
-                                                <stop stop-color="#FF8FE8" />
+                                                <stop stop-color="#FF8FE8"/>
                                                 <stop
                                                     offset="1"
                                                     stop-color="#FFC960"
@@ -311,20 +311,20 @@
                                             class="flex flex-wrap items-center"
                                         >
                                             <a
-                                                href="javascript:void(0)"
                                                 class="mr-3 mb-3 inline-flex h-9 items-center justify-center rounded bg-[#F8FAFB] px-[18px] text-sm font-semibold text-body hover:bg-primary hover:text-white dark:bg-[#15182A] dark:text-white dark:hover:bg-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Design
                                             </a>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="mr-3 mb-3 inline-flex h-9 items-center justify-center rounded bg-[#F8FAFB] px-[18px] text-sm font-semibold text-body hover:bg-primary hover:text-white dark:bg-[#15182A] dark:text-white dark:hover:bg-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Development
                                             </a>
                                             <a
-                                                href="javascript:void(0)"
                                                 class="mr-3 mb-3 inline-flex h-9 items-center justify-center rounded bg-[#F8FAFB] px-[18px] text-sm font-semibold text-body hover:bg-primary hover:text-white dark:bg-[#15182A] dark:text-white dark:hover:bg-primary"
+                                                href="javascript:void(0)"
                                             >
                                                 Ui/UX
                                             </a>
@@ -346,16 +346,16 @@
                                             class="flex flex-wrap items-center space-x-3 sm:justify-end"
                                         >
                                             <a
-                                                href="javascript:void(0)"
-                                                name="social share"
                                                 aria-label="social share"
                                                 class="inline-flex h-9 w-9 items-center justify-center rounded bg-[#F8FAFB] text-sm font-semibold text-body hover:bg-primary hover:text-white dark:bg-[#15182A] dark:text-white dark:hover:bg-primary"
+                                                href="javascript:void(0)"
+                                                name="social share"
                                             >
                                                 <svg
-                                                    width="20"
+                                                    fill="none"
                                                     height="20"
                                                     viewBox="0 0 20 20"
-                                                    fill="none"
+                                                    width="20"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <path
@@ -365,16 +365,16 @@
                                                 </svg>
                                             </a>
                                             <a
-                                                href="javascript:void(0)"
-                                                name="social share"
                                                 aria-label="social share"
                                                 class="inline-flex h-9 w-9 items-center justify-center rounded bg-[#F8FAFB] text-sm font-semibold text-body hover:bg-primary hover:text-white dark:bg-[#15182A] dark:text-white dark:hover:bg-primary"
+                                                href="javascript:void(0)"
+                                                name="social share"
                                             >
                                                 <svg
-                                                    width="20"
+                                                    fill="none"
                                                     height="20"
                                                     viewBox="0 0 20 20"
-                                                    fill="none"
+                                                    width="20"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <path
@@ -384,16 +384,16 @@
                                                 </svg>
                                             </a>
                                             <a
-                                                href="javascript:void(0)"
-                                                name="social share"
                                                 aria-label="social share"
                                                 class="inline-flex h-9 w-9 items-center justify-center rounded bg-[#F8FAFB] text-sm font-semibold text-body hover:bg-primary hover:text-white dark:bg-[#15182A] dark:text-white dark:hover:bg-primary"
+                                                href="javascript:void(0)"
+                                                name="social share"
                                             >
                                                 <svg
-                                                    width="20"
+                                                    fill="none"
                                                     height="20"
                                                     viewBox="0 0 20 20"
-                                                    fill="none"
+                                                    width="20"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <path

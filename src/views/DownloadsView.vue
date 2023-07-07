@@ -1,7 +1,7 @@
 <template>
     <main>
-        <TGEDownloadsSection anchor="agencies" />
-        <TGEDownloadsSection anchor="hoteliers" />
+        <TGEDownloadsSection anchor="agencies"/>
+        <TGEDownloadsSection anchor="hoteliers"/>
     </main>
 </template>
 

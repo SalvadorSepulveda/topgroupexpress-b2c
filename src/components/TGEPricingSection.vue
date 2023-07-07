@@ -17,14 +17,14 @@
                 data-wow-delay=".25s"
             >
                 <label
-                    for="togglePlan"
                     class="inline-flex items-center"
+                    for="togglePlan"
                 >
                     <input
-                        type="checkbox"
-                        name="togglePlan"
                         id="togglePlan"
                         class="sr-only"
+                        name="togglePlan"
+                        type="checkbox"
                     />
                     <span
                         class="monthly text-sm font-medium text-black dark:text-white"
@@ -75,10 +75,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -90,9 +90,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -103,10 +103,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -118,9 +118,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -131,10 +131,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -146,9 +146,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -159,10 +159,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -174,9 +174,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -187,8 +187,8 @@
                         </div>
 
                         <a
-                            href="javascript:void(0)"
                             class="block w-full rounded-md bg-black py-[10px] px-8 text-center text-base font-medium text-white hover:bg-primary dark:bg-[#2A2E44] dark:hover:bg-primary"
+                            href="javascript:void(0)"
                         >
                             Choose Plan
                         </a>
@@ -228,10 +228,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -243,9 +243,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -256,10 +256,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -271,9 +271,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -284,10 +284,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -299,9 +299,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -312,10 +312,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -327,9 +327,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -340,8 +340,8 @@
                         </div>
 
                         <a
-                            href="javascript:void(0)"
                             class="block w-full rounded-md bg-primary py-[10px] px-8 text-center text-base font-medium text-white hover:bg-opacity-90"
+                            href="javascript:void(0)"
                         >
                             Choose Plan
                         </a>
@@ -376,10 +376,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -391,9 +391,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -404,10 +404,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -419,9 +419,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -432,10 +432,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -447,9 +447,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -460,10 +460,10 @@
                             <p class="flex text-base text-black dark:text-body">
                                 <span class="mr-[10px] mt-1">
                                     <svg
-                                        width="16"
+                                        fill="none"
                                         height="16"
                                         viewBox="0 0 16 16"
-                                        fill="none"
+                                        width="16"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <g clip-path="url(#clip0_44_7)">
@@ -475,9 +475,9 @@
                                         <defs>
                                             <clipPath id="clip0_44_7">
                                                 <rect
-                                                    width="16"
-                                                    height="16"
                                                     fill="white"
+                                                    height="16"
+                                                    width="16"
                                                 />
                                             </clipPath>
                                         </defs>
@@ -488,8 +488,8 @@
                         </div>
 
                         <a
-                            href="javascript:void(0)"
                             class="block w-full rounded-md bg-black py-[10px] px-8 text-center text-base font-medium text-white hover:bg-primary dark:bg-[#2A2E44] dark:hover:bg-primary"
+                            href="javascript:void(0)"
                         >
                             Choose Plan
                         </a>

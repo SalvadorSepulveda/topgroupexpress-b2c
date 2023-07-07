@@ -1,8 +1,8 @@
 <template>
     <TGESection
         :anchor="anchor"
-        :paddingTop="110"
         :paddingBotton="60"
+        :paddingTop="110"
         relative
     >
         <TGESectionTitle title="Latest News & Blogs">
@@ -24,9 +24,9 @@
                     >
                         <div class="relative overflow-hidden rounded">
                             <img
-                                src="@/assets/images/blog/blog-01.jpg"
                                 alt="blog post"
                                 class="w-full object-cover object-center"
+                                src="@/assets/images/blog/blog-01.jpg"
                             />
                             <div
                                 class="absolute top-0 left-0 flex h-full w-full items-end bg-gradient-3 px-[18px] py-4"
@@ -37,10 +37,10 @@
                                     >
                                         <span class="mr-2">
                                             <svg
-                                                width="18"
+                                                fill="none"
                                                 height="18"
                                                 viewBox="0 0 18 18"
-                                                fill="none"
+                                                width="18"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g
@@ -54,9 +54,9 @@
                                                 <defs>
                                                     <clipPath id="clip0_52_46">
                                                         <rect
-                                                            width="18"
-                                                            height="18"
                                                             fill="white"
+                                                            height="18"
+                                                            width="18"
                                                         />
                                                     </clipPath>
                                                 </defs>
@@ -70,10 +70,10 @@
                                     >
                                         <span class="mr-2">
                                             <svg
-                                                width="18"
+                                                fill="none"
                                                 height="18"
                                                 viewBox="0 0 18 18"
-                                                fill="none"
+                                                width="18"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g
@@ -87,9 +87,9 @@
                                                 <defs>
                                                     <clipPath id="clip0_52_51">
                                                         <rect
-                                                            width="18"
-                                                            height="18"
                                                             fill="white"
+                                                            height="18"
+                                                            width="18"
                                                         />
                                                     </clipPath>
                                                 </defs>
@@ -104,8 +104,8 @@
                         <div class="mt-[30px]">
                             <h3>
                                 <a
-                                    href="blog-details.html"
                                     class="mb-3 inline-block text-xl font-semibold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                                    href="blog-details.html"
                                 >
                                     Free advertising for your online business
                                 </a>
@@ -127,9 +127,9 @@
                     >
                         <div class="relative overflow-hidden rounded">
                             <img
-                                src="@/assets/images/blog/blog-02.jpg"
                                 alt="blog post"
                                 class="w-full object-cover object-center"
+                                src="@/assets/images/blog/blog-02.jpg"
                             />
                             <div
                                 class="absolute top-0 left-0 flex h-full w-full items-end bg-gradient-3 px-[18px] py-4"
@@ -140,10 +140,10 @@
                                     >
                                         <span class="mr-2">
                                             <svg
-                                                width="18"
+                                                fill="none"
                                                 height="18"
                                                 viewBox="0 0 18 18"
-                                                fill="none"
+                                                width="18"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g
@@ -157,9 +157,9 @@
                                                 <defs>
                                                     <clipPath id="clip0_52_46">
                                                         <rect
-                                                            width="18"
-                                                            height="18"
                                                             fill="white"
+                                                            height="18"
+                                                            width="18"
                                                         />
                                                     </clipPath>
                                                 </defs>
@@ -173,10 +173,10 @@
                                     >
                                         <span class="mr-2">
                                             <svg
-                                                width="18"
+                                                fill="none"
                                                 height="18"
                                                 viewBox="0 0 18 18"
-                                                fill="none"
+                                                width="18"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g
@@ -190,9 +190,9 @@
                                                 <defs>
                                                     <clipPath id="clip0_52_51">
                                                         <rect
-                                                            width="18"
-                                                            height="18"
                                                             fill="white"
+                                                            height="18"
+                                                            width="18"
                                                         />
                                                     </clipPath>
                                                 </defs>
@@ -207,8 +207,8 @@
                         <div class="mt-[30px]">
                             <h3>
                                 <a
-                                    href="blog-details.html"
                                     class="mb-3 inline-block text-xl font-semibold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                                    href="blog-details.html"
                                 >
                                     9 simple ways to improve your design skills
                                 </a>
@@ -230,9 +230,9 @@
                     >
                         <div class="relative overflow-hidden rounded">
                             <img
-                                src="@/assets/images/blog/blog-03.jpg"
                                 alt="blog post"
                                 class="w-full object-cover object-center"
+                                src="@/assets/images/blog/blog-03.jpg"
                             />
                             <div
                                 class="absolute top-0 left-0 flex h-full w-full items-end bg-gradient-3 px-[18px] py-4"
@@ -243,10 +243,10 @@
                                     >
                                         <span class="mr-2">
                                             <svg
-                                                width="18"
+                                                fill="none"
                                                 height="18"
                                                 viewBox="0 0 18 18"
-                                                fill="none"
+                                                width="18"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g
@@ -260,9 +260,9 @@
                                                 <defs>
                                                     <clipPath id="clip0_52_46">
                                                         <rect
-                                                            width="18"
-                                                            height="18"
                                                             fill="white"
+                                                            height="18"
+                                                            width="18"
                                                         />
                                                     </clipPath>
                                                 </defs>
@@ -276,10 +276,10 @@
                                     >
                                         <span class="mr-2">
                                             <svg
-                                                width="18"
+                                                fill="none"
                                                 height="18"
                                                 viewBox="0 0 18 18"
-                                                fill="none"
+                                                width="18"
                                                 xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <g
@@ -293,9 +293,9 @@
                                                 <defs>
                                                     <clipPath id="clip0_52_51">
                                                         <rect
-                                                            width="18"
-                                                            height="18"
                                                             fill="white"
+                                                            height="18"
+                                                            width="18"
                                                         />
                                                     </clipPath>
                                                 </defs>
@@ -310,8 +310,8 @@
                         <div class="mt-[30px]">
                             <h3>
                                 <a
-                                    href="blog-details.html"
                                     class="mb-3 inline-block text-xl font-semibold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                                    href="blog-details.html"
                                 >
                                     Tips to quickly improve your coding speed.
                                 </a>

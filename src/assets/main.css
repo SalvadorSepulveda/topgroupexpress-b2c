@@ -27,6 +27,7 @@
     .submenu-item a.active {
         @apply text-primary dark:text-white;
     }
+
     .submenu-item a.active span svg {
         @apply rotate-180 lg:rotate-0;
     }
@@ -51,6 +52,7 @@
         content: '+';
         @apply text-lg font-semibold text-black dark:text-white;
     }
+
     .faq.active .faq-btn::after {
         content: '-';
     }

@@ -1,7 +1,18 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-fr" viewBox="0 0 640 480">
-    <path fill="#fff" d="M0 0h640v480H0z"/>
-    <path fill="#002654" d="M0 0h213.3v480H0z"/>
-    <path fill="#ce1126" d="M426.7 0H640v480H426.7z"/>
-  </svg>
+    <svg height="44" viewBox="0 0 400 400" width="44" xmlns="http://www.w3.org/2000/svg"
+         xmlns:v="https://vecta.io/nano">
+        <defs>
+            <clipPath id="A">
+                <path
+                    d="M150 300C67.157 300 0 232.843 0 150h0C0 67.157 67.157 0 150 0h0c82.843 0 150 67.157 150 150h0c0 82.843-67.157 150-150 150z"/>
+            </clipPath>
+        </defs>
+        <g clip-path="url(#A)" transform="matrix(1.333333 0 0 -1.333333 0 400)">
+            <path d="M0 300h300V0H0z" fill="#ed2939"/>
+            <path d="M0 300h200V0H0z" fill="#fff"/>
+            <path d="M0 300h100V0H0z" fill="#002395"/>
+        </g>
+    </svg>
 </template>
+<script setup>
+</script>

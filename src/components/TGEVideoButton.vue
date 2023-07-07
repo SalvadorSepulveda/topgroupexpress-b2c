@@ -1,18 +1,18 @@
 <template>
     <a
-        @click="showVideo"
-        href="javascript:void(0)"
         class="glightbox mb-6 inline-flex items-center py-4 text-black hover:text-primary dark:text-white dark:hover:text-primary"
+        href="javascript:void(0)"
+        @click="showVideo"
     >
         <span
             class="mr-[22px] flex h-[60px] w-[60px] items-center justify-center rounded-full border-2 border-current"
             @click="showVideo"
         >
             <svg
-                width="14"
+                fill="none"
                 height="16"
                 viewBox="0 0 14 16"
-                fill="none"
+                width="14"
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <path
@@ -30,6 +30,7 @@
 
 <script>
 import GLightbox from 'glightbox'
+
 export default {
     name: 'TGEVideoButton',
     props: {

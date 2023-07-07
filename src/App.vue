@@ -1,17 +1,17 @@
 <template>
-    <AppNavBar />
+    <AppNavBar/>
 
-    <RouterView />
+    <RouterView/>
 
-    <AppBackToTopButton v-if="scrollY > 50" />
-    <AppFooter />
+    <AppBackToTopButton v-if="scrollY > 50"/>
+    <AppFooter/>
 </template>
 
 <script>
-import { mapActions, mapState } from 'pinia'
-import { useScrollStore, useThemeStore } from '@/stores'
+import {mapActions, mapState} from 'pinia'
+import {useScrollStore, useThemeStore} from '@/stores'
 
-import { RouterView } from 'vue-router'
+import {RouterView} from 'vue-router'
 import AppNavBar from '@/components/AppNavBar.vue'
 import AppFooter from '@/components/AppFooter.vue'
 import AppBackToTopButton from '@/components/AppBackToTopButton.vue'

@@ -1,0 +1,42 @@
+<template>
+  <span v-for="index in rate" :key="index">
+    <svg
+        fill="none"
+        height="20"
+        viewBox="0 0 20 20"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_49_480)">
+        <path
+            d="M10 15.2171L4.1225 18.5071L5.435 11.9004L0.489166 7.32712L7.17833 6.53378L10 0.417114L12.8217 6.53378L19.5108 7.32712L14.565 11.9004L15.8775 18.5071L10 15.2171Z"
+            fill="#EABF23"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_49_480">
+          <rect
+              fill="white"
+              height="20"
+              transform="translate(0 0.000488281)"
+              width="20"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  </span>
+</template>
+
+<script>
+export default {
+    props: {
+        rate: {
+            type: Number,
+            required: true,
+        },
+    },
+};
+</script>
+
+<style scoped>
+</style>

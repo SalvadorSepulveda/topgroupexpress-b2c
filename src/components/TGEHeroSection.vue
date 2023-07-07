@@ -13,19 +13,19 @@
                         <h1
                             class="mb-6 text-3xl font-bold leading-tight text-black dark:text-white sm:text-[40px] md:text-[50px] lg:text-[42px] xl:text-[50px]"
                         >
-                            <slot name="title" />
+                            <slot name="title"/>
                         </h1>
                         <p
                             class="mb-10 max-w-[475px] text-base leading-relaxed text-body"
                         >
-                            <slot name="description" />
+                            <slot name="description"/>
                         </p>
 
                         <div class="flex flex-wrap items-center">
                             <TGEVideoButton
                                 :url="videoURL"
-                                title="Ver demostración"
                                 description="Vea como funciona"
+                                title="Ver demostración"
                             />
                         </div>
                     </div>
@@ -36,7 +36,7 @@
                         class="wow fadeInUp relative z-10 mx-auto w-full max-w-[530px] pt-8 lg:mr-0"
                         data-wow-delay=".3s"
                     >
-                        <slot name="picture" />
+                        <slot name="picture"/>
                     </div>
                 </div>
             </div>

@@ -24,10 +24,10 @@
                                 class="mx-auto mb-8 flex h-[90px] w-[90px] items-center justify-center rounded-3xl bg-gray text-primary duration-300 group-hover:bg-primary group-hover:text-white dark:bg-[#2A2E44] dark:text-white dark:group-hover:bg-primary"
                             >
                                 <svg
-                                    width="40"
+                                    fill="none"
                                     height="40"
                                     viewBox="0 0 40 40"
-                                    fill="none"
+                                    width="40"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
                                     <g clip-path="url(#clip0_40_12)">
@@ -39,9 +39,9 @@
                                     <defs>
                                         <clipPath id="clip0_40_12">
                                             <rect
-                                                width="40"
-                                                height="40"
                                                 fill="white"
+                                                height="40"
+                                                width="40"
                                             />
                                         </clipPath>
                                     </defs>
@@ -68,10 +68,10 @@
                                 class="mx-auto mb-8 flex h-[90px] w-[90px] items-center justify-center rounded-3xl bg-gray text-primary duration-300 group-hover:bg-primary group-hover:text-white dark:bg-[#2A2E44] dark:text-white dark:group-hover:bg-primary"
                             >
                                 <svg
-                                    width="40"
+                                    fill="none"
                                     height="40"
                                     viewBox="0 0 40 40"
-                                    fill="none"
+                                    width="40"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
                                     <g clip-path="url(#clip0_40_15)">
@@ -83,9 +83,9 @@
                                     <defs>
                                         <clipPath id="clip0_40_15">
                                             <rect
-                                                width="40"
-                                                height="40"
                                                 fill="white"
+                                                height="40"
+                                                width="40"
                                             />
                                         </clipPath>
                                     </defs>
@@ -112,10 +112,10 @@
                                 class="mx-auto mb-8 flex h-[90px] w-[90px] items-center justify-center rounded-3xl bg-gray text-primary duration-300 group-hover:bg-primary group-hover:text-white dark:bg-[#2A2E44] dark:text-white dark:group-hover:bg-primary"
                             >
                                 <svg
-                                    width="40"
+                                    fill="none"
                                     height="40"
                                     viewBox="0 0 40 40"
-                                    fill="none"
+                                    width="40"
                                     xmlns="http://www.w3.org/2000/svg"
                                 >
                                     <g clip-path="url(#clip0_40_18)">
@@ -127,9 +127,9 @@
                                     <defs>
                                         <clipPath id="clip0_40_18">
                                             <rect
-                                                width="40"
-                                                height="40"
                                                 fill="white"
+                                                height="40"
+                                                width="40"
                                             />
                                         </clipPath>
                                     </defs>
@@ -153,57 +153,57 @@
         <!-- Graphics -->
         <div class="absolute -top-28 left-0 -z-10 hidden md:block">
             <svg
-                width="632"
+                fill="none"
                 height="1179"
                 viewBox="0 0 632 1179"
-                fill="none"
+                width="632"
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <g
-                    opacity="0.25"
                     filter="url(#filter0_f_38_24)"
+                    opacity="0.25"
                 >
                     <circle
                         cx="42.5"
                         cy="589.5"
-                        r="329.5"
                         fill="url(#paint0_linear_38_24)"
+                        r="329.5"
                     />
                 </g>
                 <defs>
                     <filter
                         id="filter0_f_38_24"
+                        color-interpolation-filters="sRGB"
+                        filterUnits="userSpaceOnUse"
+                        height="1179"
+                        width="1179"
                         x="-547"
                         y="0"
-                        width="1179"
-                        height="1179"
-                        filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
                     >
                         <feFlood
                             flood-opacity="0"
                             result="BackgroundImageFix"
                         />
                         <feBlend
-                            mode="normal"
                             in="SourceGraphic"
                             in2="BackgroundImageFix"
+                            mode="normal"
                             result="shape"
                         />
                         <feGaussianBlur
-                            stdDeviation="130"
                             result="effect1_foregroundBlur_38_24"
+                            stdDeviation="130"
                         />
                     </filter>
                     <linearGradient
                         id="paint0_linear_38_24"
-                        x1="-366.218"
-                        y1="919"
-                        x2="451.176"
-                        y2="349.901"
                         gradientUnits="userSpaceOnUse"
+                        x1="-366.218"
+                        x2="451.176"
+                        y1="919"
+                        y2="349.901"
                     >
-                        <stop stop-color="#8EA5FE" />
+                        <stop stop-color="#8EA5FE"/>
                         <stop
                             offset="0.541667"
                             stop-color="#BEB3FD"
@@ -219,57 +219,57 @@
 
         <div class="absolute right-0 top-20 -z-10">
             <svg
-                width="637"
+                fill="none"
                 height="1277"
                 viewBox="0 0 637 1277"
-                fill="none"
+                width="637"
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <g
-                    opacity="0.2"
                     filter="url(#filter0_f_38_23)"
+                    opacity="0.2"
                 >
                     <circle
                         cx="638.5"
                         cy="638.5"
-                        r="388.5"
                         fill="url(#paint0_linear_38_23)"
+                        r="388.5"
                     />
                 </g>
                 <defs>
                     <filter
                         id="filter0_f_38_23"
+                        color-interpolation-filters="sRGB"
+                        filterUnits="userSpaceOnUse"
+                        height="1277"
+                        width="1277"
                         x="0"
                         y="0"
-                        width="1277"
-                        height="1277"
-                        filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB"
                     >
                         <feFlood
                             flood-opacity="0"
                             result="BackgroundImageFix"
                         />
                         <feBlend
-                            mode="normal"
                             in="SourceGraphic"
                             in2="BackgroundImageFix"
+                            mode="normal"
                             result="shape"
                         />
                         <feGaussianBlur
-                            stdDeviation="125"
                             result="effect1_foregroundBlur_38_23"
+                            stdDeviation="125"
                         />
                     </filter>
                     <linearGradient
                         id="paint0_linear_38_23"
-                        x1="250"
-                        y1="250"
-                        x2="1168.59"
-                        y2="782.957"
                         gradientUnits="userSpaceOnUse"
+                        x1="250"
+                        x2="1168.59"
+                        y1="250"
+                        y2="782.957"
                     >
-                        <stop stop-color="#FF8FE8" />
+                        <stop stop-color="#FF8FE8"/>
                         <stop
                             offset="1"
                             stop-color="#FFC960"

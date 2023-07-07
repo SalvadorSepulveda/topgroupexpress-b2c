@@ -1,17 +1,17 @@
 <template>
     <router-link
-        to="/"
         class="block max-w-[145px] sm:max-w-[180px]"
+        to="/"
     >
         <img
-            src="@/assets/images/logo/logo.svg"
             alt="logo"
             class="block dark:hidden"
+            src="@/assets/images/logo/logo.svg"
         />
         <img
-            src="@/assets/images/logo/logo-white.svg"
             alt="logo"
             class="hidden dark:block"
+            src="@/assets/images/logo/logo-white.svg"
         />
     </router-link>
 </template>

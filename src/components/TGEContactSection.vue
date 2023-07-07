@@ -1,8 +1,8 @@
 <template>
     <TGESection
         :anchor="anchor"
-        :paddingTop="100"
         :paddingBottom="110"
+        :paddingTop="100"
     >
         <TGESectionTitle title="Let's Stay Connected">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
@@ -20,11 +20,11 @@
                         <div class="w-full px-[22px] md:w-1/2">
                             <div class="mb-8">
                                 <input
-                                    type="text"
-                                    name="name"
                                     id="name"
+                                    class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
+                                    name="name"
                                     placeholder="Enter your name"
-                                    class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
+                                    type="text"
                                 />
                             </div>
                         </div>
@@ -32,35 +32,35 @@
                         <div class="w-full px-[22px] md:w-1/2">
                             <div class="mb-8">
                                 <input
-                                    type="text"
-                                    name="company"
                                     id="company"
+                                    class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
+                                    name="company"
                                     placeholder="Comapy (optioanl)"
-                                    class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
-                                />
-                            </div>
-                        </div>
-
-                        <div class="w-full px-[22px] md:w-1/2">
-                            <div class="mb-8">
-                                <input
-                                    type="email"
-                                    name="email"
-                                    id="email"
-                                    placeholder="Enter Your email"
-                                    class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
-                                />
-                            </div>
-                        </div>
-
-                        <div class="w-full px-[22px] md:w-1/2">
-                            <div class="mb-8">
-                                <input
                                     type="text"
-                                    name="phone"
-                                    id="phone"
-                                    placeholder="Enter your Phone Number"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="w-full px-[22px] md:w-1/2">
+                            <div class="mb-8">
+                                <input
+                                    id="email"
                                     class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
+                                    name="email"
+                                    placeholder="Enter Your email"
+                                    type="email"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="w-full px-[22px] md:w-1/2">
+                            <div class="mb-8">
+                                <input
+                                    id="phone"
+                                    class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
+                                    name="phone"
+                                    placeholder="Enter your Phone Number"
+                                    type="text"
                                 />
                             </div>
                         </div>
@@ -68,11 +68,11 @@
                         <div class="w-full px-[22px]">
                             <div class="mb-8">
                                 <textarea
-                                    rows="6"
-                                    name="message"
                                     id="message"
-                                    placeholder="Tell us about yourself"
                                     class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary"
+                                    name="message"
+                                    placeholder="Tell us about yourself"
+                                    rows="6"
                                 ></textarea>
                             </div>
                         </div>
@@ -84,8 +84,8 @@
                                     terms and policy,
                                 </p>
                                 <button
-                                    type="submit"
                                     class="inline-block rounded-md bg-primary py-[14px] px-11 text-base font-medium text-white hover:bg-opacity-90"
+                                    type="submit"
                                 >
                                     Contact Us
                                 </button>

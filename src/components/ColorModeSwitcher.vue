@@ -1,15 +1,15 @@
 <template>
     <label
-        for="themeSwitcher"
-        class="inline-flex cursor-pointer items-center"
         aria-label="themeSwitcher"
+        class="inline-flex cursor-pointer items-center"
+        for="themeSwitcher"
         name="themeSwitcher"
     >
         <input
-            type="checkbox"
-            name="themeSwitcher"
             id="themeSwitcher"
             class="sr-only"
+            name="themeSwitcher"
+            type="checkbox"
             @click="toggle"
         />
         <span
@@ -17,10 +17,10 @@
             class="block"
         >
             <svg
-                width="21"
+                fill="none"
                 height="21"
                 viewBox="0 0 21 21"
-                fill="none"
+                width="21"
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <g clip-path="url(#clip0_420_119)">
@@ -32,9 +32,9 @@
                 <defs>
                     <clipPath id="clip0_420_119">
                         <rect
-                            width="20.1667"
-                            height="20.1667"
                             fill="white"
+                            height="20.1667"
+                            width="20.1667"
                         />
                     </clipPath>
                 </defs>
@@ -45,10 +45,10 @@
             class="block"
         >
             <svg
-                width="23"
+                fill="none"
                 height="22"
                 viewBox="0 0 23 22"
-                fill="none"
+                width="23"
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <g clip-path="url(#clip0_1_11114)">
@@ -60,10 +60,10 @@
                 <defs>
                     <clipPath id="clip0_1_11114">
                         <rect
-                            width="22"
-                            height="22"
                             fill="white"
+                            height="22"
                             transform="translate(0.565796)"
+                            width="22"
                         />
                     </clipPath>
                 </defs>
@@ -73,8 +73,8 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'pinia'
-import { useThemeStore } from '@/stores/theme'
+import {mapActions, mapState} from 'pinia'
+import {useThemeStore} from '@/stores/theme'
 
 export default {
     computed: {

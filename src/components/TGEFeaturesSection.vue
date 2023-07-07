@@ -17,9 +17,9 @@
                     <TGEFeaturesSectionItem
                         v-for="feature in features"
                         :key="feature.title"
-                        :title="feature.title"
                         :description="feature.description"
                         :icon="feature.icon"
+                        :title="feature.title"
                     />
                 </div>
             </div>

@@ -22,9 +22,9 @@
                         class="absolute top-0 left-0 right-0 z-50 mx-auto w-full md:w-1/3"
                     >
                         <img
-                            src="@/assets/images/screens/mobile-frame.png"
                             alt="mobile-frame"
                             class="mx-auto max-w-full"
+                            src="@/assets/images/screens/mobile-frame.png"
                         />
                     </div>
                     <div class="swiper-wrapper py-2">
@@ -33,9 +33,9 @@
                                 class="mx-auto w-full max-w-[252px] xs:max-w-[265px]"
                             >
                                 <img
+                                    alt="screenshot"
+                                    class="mx-auto w-full rounded-2xl"
                                     src="@/assets/images/screens/screen-1-light.png"
-                                    alt="screenshot"
-                                    class="mx-auto w-full rounded-2xl"
                                 />
                             </div>
                         </div>
@@ -44,9 +44,9 @@
                                 class="mx-auto w-full max-w-[252px] xs:max-w-[265px]"
                             >
                                 <img
+                                    alt="screenshot"
+                                    class="mx-auto w-full rounded-2xl"
                                     src="@/assets/images/screens/screen-2-light.png"
-                                    alt="screenshot"
-                                    class="mx-auto w-full rounded-2xl"
                                 />
                             </div>
                         </div>
@@ -55,9 +55,9 @@
                                 class="mx-auto w-full max-w-[252px] xs:max-w-[265px]"
                             >
                                 <img
+                                    alt="screenshot"
+                                    class="mx-auto w-full rounded-2xl"
                                     src="@/assets/images/screens/screen-3-light.png"
-                                    alt="screenshot"
-                                    class="mx-auto w-full rounded-2xl"
                                 />
                             </div>
                         </div>
@@ -66,9 +66,9 @@
                                 class="mx-auto w-full max-w-[252px] xs:max-w-[265px]"
                             >
                                 <img
+                                    alt="screenshot"
+                                    class="mx-auto w-full rounded-2xl"
                                     src="@/assets/images/screens/screen-2-light.png"
-                                    alt="screenshot"
-                                    class="mx-auto w-full rounded-2xl"
                                 />
                             </div>
                         </div>
@@ -77,9 +77,9 @@
                                 class="mx-auto w-full max-w-[252px] xs:max-w-[265px]"
                             >
                                 <img
+                                    alt="screenshot"
+                                    class="mx-auto w-full rounded-2xl"
                                     src="@/assets/images/screens/screen-1-light.png"
-                                    alt="screenshot"
-                                    class="mx-auto w-full rounded-2xl"
                                 />
                             </div>
                         </div>
@@ -88,9 +88,9 @@
                                 class="mx-auto w-full max-w-[252px] xs:max-w-[265px]"
                             >
                                 <img
-                                    src="@/assets/images/screens/screen-3-light.png"
                                     alt="screenshot"
                                     class="mx-auto w-full rounded-2xl"
+                                    src="@/assets/images/screens/screen-3-light.png"
                                 />
                             </div>
                         </div>
@@ -100,10 +100,10 @@
                     >
                         <button class="swiper-button-prev">
                             <svg
-                                width="20"
+                                fill="none"
                                 height="20"
                                 viewBox="0 0 20 20"
-                                fill="none"
+                                width="20"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <g clip-path="url(#clip0_46_342)">
@@ -115,10 +115,10 @@
                                 <defs>
                                     <clipPath id="clip0_46_342">
                                         <rect
-                                            width="20"
-                                            height="20"
                                             fill="white"
+                                            height="20"
                                             transform="translate(20 20) rotate(180)"
+                                            width="20"
                                         />
                                     </clipPath>
                                 </defs>
@@ -126,10 +126,10 @@
                         </button>
                         <button class="swiper-button-next">
                             <svg
-                                width="20"
+                                fill="none"
                                 height="20"
                                 viewBox="0 0 20 20"
-                                fill="none"
+                                width="20"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <g clip-path="url(#clip0_46_337)">
@@ -141,9 +141,9 @@
                                 <defs>
                                     <clipPath id="clip0_46_337">
                                         <rect
-                                            width="20"
-                                            height="20"
                                             fill="white"
+                                            height="20"
+                                            width="20"
                                         />
                                     </clipPath>
                                 </defs>

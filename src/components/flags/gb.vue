@@ -1,9 +1,27 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb" viewBox="0 0 640 480">
-    <path fill="#012169" d="M0 0h640v480H0z"/>
-    <path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z"/>
-    <path fill="#C8102E" d="m424 281 216 159v40L369 281h55zm-184 20 6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z"/>
-    <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z"/>
-    <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z"/>
-  </svg>
+    <svg height="44" viewBox="0 0 400 400" width="44" xmlns="http://www.w3.org/2000/svg"
+         xmlns:v="https://vecta.io/nano">
+        <defs>
+            <clipPath id="A">
+                <path
+                    d="M150 300C67.157 300 0 232.843 0 150h0C0 67.157 67.157 0 150 0h0c82.843 0 150 67.157 150 150h0c0 82.843-67.157 150-150 150z"/>
+            </clipPath>
+        </defs>
+        <g clip-path="url(#A)" transform="matrix(1.333333 0 0 -1.333333 0 400)">
+            <path d="M449.686.034h-599.685V300h599.685z" fill="#fff"/>
+            <path d="M119.856 120.111V.034h59.975v120.077h269.856v59.969H179.831V300h-59.975V180.08H-150v-59.969z"
+                  fill="#cf142b"/>
+            <g fill="#00247d">
+                <path
+                    d="M199.83 202.901V300h194.16zm0-105.768V.034h194.16zm-99.974 0V.034h-194.16zm0 105.768V300h-194.16z"/>
+            </g>
+            <g fill="#cf142b">
+                <path
+                    d="M449.686 300h-33.308L216.8 200.014h33.308L450 300M82.886 100.025H49.578L-150 .039h33.308L83.2 100.025m-66.665 99.911h33.308L-149.999 300-150 283.23z"/>
+                <path d="M283.045 100.064h-33.308L449.579 0l.001 16.77z"/>
+            </g>
+        </g>
+    </svg>
 </template>
+<script setup>
+</script>

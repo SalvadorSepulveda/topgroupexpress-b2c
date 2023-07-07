@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
@@ -45,9 +45,9 @@ const router = createRouter({
             return savedPosition
         }
         if (to.hash) {
-            return { el: to.hash }
+            return {el: to.hash}
         }
-        return { x: 0, y: 0 }
+        return {x: 0, y: 0}
     },
 })
 

@@ -8,9 +8,9 @@
                         data-wow-delay=".2s"
                     >
                         <img
-                            src="@/assets/images/404/404.svg"
                             alt="404"
                             class="mx-auto max-w-full"
+                            src="@/assets/images/404/404.svg"
                         />
                     </div>
 
@@ -31,8 +31,8 @@
                         </p>
 
                         <router-link
-                            to="/"
                             class="inline-flex justify-center rounded-md bg-primary py-3 px-8 text-base font-medium text-white hover:bg-opacity-90"
+                            to="/"
                         >
                             Ir al Inicio
                         </router-link>

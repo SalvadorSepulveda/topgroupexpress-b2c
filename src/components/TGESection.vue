@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import { mapState } from 'pinia'
-import { useThemeStore } from '@/stores'
+import {mapState} from 'pinia'
+import {useThemeStore} from '@/stores'
 
 export default {
     props: {

@@ -7,7 +7,9 @@
             <template v-slot:title>
                 Central de
                 <TGEFancyText>reservas de hoteles</TGEFancyText>
-                para <TGEFancyText>grupos</TGEFancyText>.
+                para
+                <TGEFancyText>grupos</TGEFancyText>
+                .
             </template>
 
             <template v-slot:description>
@@ -16,22 +18,19 @@
 
             <template v-slot:picture>
                 <img
-                    src="@/assets/images/hero/hero-light.png"
                     alt="hero image"
                     class="mx-auto max-w-full"
+                    src="@/assets/images/hero/hero-light.png"
                 />
             </template>
         </TGEHeroSection>
 
         <TGEFeaturesSection
-            anchor="features"
-            title="¿Qué ofrecemos?"
-            description="Motor de reserva de grupos con disponibilidad real y procesos completamente automatizados."
             :features="[
                 {
                     title: 'Apps Móviles y Web',
                     description:
-                        'Reserve grupos desde su PC, teléfono o tablet',
+                        'xReserve grupos desde su PC, teléfono o tablet',
                     icon: 'apps',
                 },
                 {
@@ -61,17 +60,20 @@
                     icon: 'reload',
                 },
             ]"
+            anchor="features"
+            description="Motor de reserva de grupos con disponibilidad real y procesos completamente automatizados."
+            title="¿Qué ofrecemos?"
         />
 
-        <TGEAboutSection anchor="about" />
-        <TGEWorkProcessSection anchor="work-process" />
-        <TGEScreensSection anchor="screens" />
-        <TGEDownloadsSection anchor="downloads" />
-        <TGETestimonialsSection anchor="testimonials" />
-        <TGEFrequentAnswersSection anchor="faq" />
-        <TGEBlogSection anchor="blog" />
-        <TGEClientsSection anchor="clients" />
-        <TGEContactSection anchor="contact" />
+        <TGEAboutSection anchor="about"/>
+        <TGEWorkProcessSection anchor="work-process"/>
+        <TGEScreensSection anchor="screens"/>
+        <TGEDownloadsSection anchor="downloads"/>
+        <TGETestimonialsSection anchor="testimonials"/>
+        <TGEFrequentAnswersSection anchor="faq"/>
+        <TGEBlogSection anchor="blog"/>
+        <TGEClientsSection anchor="clients"/>
+        <TGEContactSection anchor="contact"/>
     </main>
 </template>
 
@@ -157,8 +159,21 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import '@/assets/css/animate.css'
 
-import Swiper, { Navigation } from 'swiper'
+import Swiper, {Navigation} from 'swiper'
 import WOW from 'wowjs'
+import TGEHeroSection from '@/components/TGEHeroSection.vue'
+import TGEFancyText from '@/components/TGEFancyText.vue'
+
+import TGEFeaturesSection from '@/components/TGEFeaturesSection.vue'
+import TGEAboutSection from '@/components/TGEAboutSection.vue'
+import TGEWorkProcessSection from '@/components/TGEWorkProcessSection.vue'
+import TGEScreensSection from '@/components/TGEScreensSection.vue'
+import TGEDownloadsSection from '@/components/TGEDownloadsSection.vue'
+import TGETestimonialsSection from '@/components/TGETestimonialsSection.vue'
+import TGEFrequentAnswersSection from '@/components/TGEFrequentAnswersSection.vue'
+import TGEBlogSection from '@/components/TGEBlogSection.vue'
+import TGEClientsSection from '@/components/TGEClientsSection.vue'
+import TGEContactSection from '@/components/TGEContactSection.vue'
 
 window.wow = new WOW.WOW({
     live: false,
@@ -170,23 +185,23 @@ window.wow.init({
 
 // Testimonial
 const testimonial = new Swiper('.mySwiper', {
-    // configure Swiper to use modules
-    modules: [Navigation],
-    slidesPerView: 1,
-    spaceBetween: 30,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    loop: true,
-    breakpoints: {
-        // when window width is >= 640px
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 40,
+        // configure Swiper to use modules
+        modules: [Navigation],
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-    },
-})
+        loop: true,
+        breakpoints: {
+            // when window width is >= 640px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+        },
+    })
 
 ;(function () {
     'use strict'
@@ -226,20 +241,6 @@ const testimonial = new Swiper('.mySwiper', {
 
     /* ========  mobile menu end ========= */
 })()
-
-import TGEHeroSection from '@/components/TGEHeroSection.vue'
-import TGEFancyText from '@/components/TGEFancyText.vue'
-
-import TGEFeaturesSection from '@/components/TGEFeaturesSection.vue'
-import TGEAboutSection from '@/components/TGEAboutSection.vue'
-import TGEWorkProcessSection from '@/components/TGEWorkProcessSection.vue'
-import TGEScreensSection from '@/components/TGEScreensSection.vue'
-import TGEDownloadsSection from '@/components/TGEDownloadsSection.vue'
-import TGETestimonialsSection from '@/components/TGETestimonialsSection.vue'
-import TGEFrequentAnswersSection from '@/components/TGEFrequentAnswersSection.vue'
-import TGEBlogSection from '@/components/TGEBlogSection.vue'
-import TGEClientsSection from '@/components/TGEClientsSection.vue'
-import TGEContactSection from '@/components/TGEContactSection.vue'
 
 export default {
     name: 'HomeView',
