@@ -6,7 +6,7 @@
         <div class="container relative max-w-[1400px]">
             <div class="flex items-center justify-between">
                 <div class="block py-4 lg:py-0">
-                    <MainLogo/>
+                    <MainLogo />
                 </div>
                 <button
                     aria-label="navbarOpen"
@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="mr-[60px] flex items-center justify-end lg:mr-0">
-                    <ColorModeSwitcher/>
+                    <ColorModeSwitcher />
                     <a
                         class="hidden py-[10px] px-6 text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary sm:inline-block"
                         href="https://hoteliers.topgroupexpress.com/"
@@ -77,7 +77,9 @@
                     >
                         Agency Sign Up
                     </a>
-                    <SelectLanguage class="menu-wrapper relative hidden justify-between lg:flex"/>
+                    <SelectLanguage
+                        class="menu-wrapper relative hidden justify-between lg:flex"
+                    />
                 </div>
             </div>
         </div>
@@ -85,12 +87,12 @@
 </template>
 
 <script>
-import {mapState} from 'pinia'
-import {useScrollStore} from '@/stores'
+import { mapState } from 'pinia'
+import { useScrollStore } from '@/stores'
 
 import MainLogo from './MainLogo.vue'
 import ColorModeSwitcher from './ColorModeSwitcher.vue'
-import SelectLanguage from "./SelectLanguage.vue";
+import SelectLanguage from './SelectLanguage.vue'
 
 export default {
     components: {

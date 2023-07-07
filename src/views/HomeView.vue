@@ -65,33 +65,19 @@
             title="¿Qué ofrecemos?"
         />
 
-        <TGEAboutSection anchor="about"/>
-        <TGEWorkProcessSection anchor="work-process"/>
-        <TGEScreensSection anchor="screens"/>
-        <TGEDownloadsSection anchor="downloads"/>
-        <TGETestimonialsSection anchor="testimonials"/>
-        <TGEFrequentAnswersSection anchor="faq"/>
-        <TGEBlogSection anchor="blog"/>
-        <TGEClientsSection anchor="clients"/>
-        <TGEContactSection anchor="contact"/>
+        <TGEAboutSection anchor="about" />
+        <TGEWorkProcessSection anchor="work-process" />
+        <TGEScreensSection anchor="screens" />
+        <TGEDownloadsSection anchor="downloads" />
+        <TGETestimonialsSection anchor="testimonials" />
+        <TGEFrequentAnswersSection anchor="faq" />
+        <TGEBlogSection anchor="blog" />
+        <TGEClientsSection anchor="clients" />
+        <TGEContactSection anchor="contact" />
     </main>
 </template>
 
 <script>
-// StartSection - Home JS
-
-/*
-let togglePlan = document.querySelector('#togglePlan')
-
-document.querySelector('.monthly').addEventListener('click', () => {
-    togglePlan.checked = true
-})
-document.querySelector('.yearly').addEventListener('click', () => {
-    togglePlan.checked = false
-})
-*/
-
-// ==== for menu scroll
 const pageLink = document.querySelectorAll('.menu-scroll')
 
 pageLink.forEach((elem) => {
@@ -115,11 +101,14 @@ function onScroll(event) {
     for (let i = 0; i < sections.length; i++) {
         const currLink = sections[i]
         const val = currLink.getAttribute('href')
-        const refElement = document.querySelector(val)
+        const refElement = document.querySelector(
+            val.startsWith('/') ? val.substring(1) : val
+        )
         const scrollTopMinus = scrollPos + 73
         if (
-            refElement.offsetTop <= scrollTopMinus &&
-            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+            (refElement?.offsetTop || 0) <= scrollTopMinus &&
+            (refElement?.offsetTop || 0) + (refElement?.offsetHeight || 0) >
+                scrollTopMinus
         ) {
             document.querySelector('.menu-scroll').classList.remove('active')
             currLink.classList.add('active')
@@ -155,12 +144,8 @@ initAcc('.faqs', true)
 // EndSection - Home JS
 import '@/assets/main.css'
 import 'glightbox/dist/css/glightbox.min.css'
-import 'swiper/css'
-import 'swiper/css/pagination'
 import '@/assets/css/animate.css'
 
-import Swiper, {Navigation} from 'swiper'
-import WOW from 'wowjs'
 import TGEHeroSection from '@/components/TGEHeroSection.vue'
 import TGEFancyText from '@/components/TGEFancyText.vue'
 
@@ -174,73 +159,6 @@ import TGEFrequentAnswersSection from '@/components/TGEFrequentAnswersSection.vu
 import TGEBlogSection from '@/components/TGEBlogSection.vue'
 import TGEClientsSection from '@/components/TGEClientsSection.vue'
 import TGEContactSection from '@/components/TGEContactSection.vue'
-
-window.wow = new WOW.WOW({
-    live: false,
-})
-
-window.wow.init({
-    offset: 50,
-})
-
-// Testimonial
-const testimonial = new Swiper('.mySwiper', {
-        // configure Swiper to use modules
-        modules: [Navigation],
-        slidesPerView: 1,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        loop: true,
-        breakpoints: {
-            // when window width is >= 640px
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-            },
-        },
-    })
-
-;(function () {
-    'use strict'
-
-    /* ========  mobile menu  start ========= */
-
-    /*
-    const menuWrapper = document.querySelector('.menu-wrapper')
-    const body = document.querySelector('body')
-
-    document.querySelector('.navbarOpen').addEventListener('click', () => {
-        menuWrapper.classList.remove('hidden')
-        body.classList.add('overflow-hidden')
-    })
-    document.querySelector('.navbarClose').addEventListener('click', () => {
-        menuWrapper.classList.add('hidden')
-        body.classList.remove('overflow-hidden')
-    })
-    /*
-
-    // === close navbar-collapse when a  clicked
-    document.querySelectorAll('.navbar li:not(.submenu-item) a').forEach((e) =>
-        e.addEventListener('click', () => {
-            menuWrapper.classList.add('hidden')
-            body.classList.remove('overflow-hidden')
-        })
-    )
-
-    // === Sub-menu
-    const submenuItems = document.querySelectorAll('.submenu-item')
-    submenuItems.forEach((el) => {
-        el.querySelector('a').addEventListener('click', () => {
-            el.querySelector('a').classList.toggle('active')
-            el.querySelector('.submenu').classList.toggle('hidden')
-        })
-    })
-
-    /* ========  mobile menu end ========= */
-})()
 
 export default {
     name: 'HomeView',

@@ -98,7 +98,10 @@
                     <div
                         class="flex items-center justify-center space-x-4 pt-20"
                     >
-                        <button class="swiper-button-prev">
+                        <button
+                            class="swiper-button-prev"
+                            @click="previousSlide"
+                        >
                             <svg
                                 fill="none"
                                 height="20"
@@ -124,7 +127,10 @@
                                 </defs>
                             </svg>
                         </button>
-                        <button class="swiper-button-next">
+                        <button
+                            class="swiper-button-next"
+                            @click="nextSlide"
+                        >
                             <svg
                                 fill="none"
                                 height="20"
@@ -157,6 +163,10 @@
 </template>
 
 <script>
+import Swiper, { Navigation } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/pagination'
+
 import TGESection from './TGESection.vue'
 import TGESectionTitle from './TGESectionTitle.vue'
 
@@ -171,6 +181,29 @@ export default {
             type: String,
             required: true,
         },
+    },
+    data: () => ({
+        swiper: null,
+    }),
+    mounted() {
+        this.swiper = new Swiper('.mySwiper', {
+            modules: [Navigation],
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            },
+        })
+
+        console.log(this.swiper)
     },
 }
 </script>
