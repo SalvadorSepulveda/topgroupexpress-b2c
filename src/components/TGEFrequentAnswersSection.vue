@@ -8,7 +8,7 @@
         darkBackgroundColor="#15182B"
         relative
     >
-        <TGESectionTitle title="Frequently Asked Questions">
+        <TGESectionTitle title="Frequently PRUEBA Asked Questions">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
             convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
             ante in maximus.
@@ -21,7 +21,7 @@
             >
 
                 <TGEFrequentAnswersCard :title="'Prueba de titulo'">
-                    We provide digital experience services to startups
+                        We provide digital experience services to startups
                     and small businesses. We help our clients succeed by
                     creating brand identities, digital experiences.
                     Praesent vel nibh a tellus dictum gravida sed tempor

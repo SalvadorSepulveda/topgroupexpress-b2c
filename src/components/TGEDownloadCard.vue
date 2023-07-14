@@ -233,78 +233,14 @@
             </defs>
         </svg>
     </div>
-    <div class="absolute left-0 top-10 -z-10 hidden sm:block">
-        <svg
-            class="w-[400px] md:w-[700px]"
-            fill="none"
-            height="1405"
-            viewBox="0 0 706 1405"
-            width="706"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <g
-                filter="url(#filter0_f_47_21)"
-                opacity="0.25"
-            >
-                <circle
-                    cx="3.5"
-                    cy="702.5"
-                    fill="url(#paint0_linear_47_21)"
-                    r="442.5"
-                />
-            </g>
-            <defs>
-                <filter
-                    id="filter0_f_47_21"
-                    color-interpolation-filters="sRGB"
-                    filterUnits="userSpaceOnUse"
-                    height="1405"
-                    width="1405"
-                    x="-699"
-                    y="0"
-                >
-                    <feFlood
-                        flood-opacity="0"
-                        result="BackgroundImageFix"
-                    />
-                    <feBlend
-                        in="SourceGraphic"
-                        in2="BackgroundImageFix"
-                        mode="normal"
-                        result="shape"
-                    />
-                    <feGaussianBlur
-                        result="effect1_foregroundBlur_47_21"
-                        stdDeviation="130"
-                    />
-                </filter>
-                <linearGradient
-                    id="paint0_linear_47_21"
-                    gradientUnits="userSpaceOnUse"
-                    x1="-545.385"
-                    x2="552.329"
-                    y1="1145"
-                    y2="380.732"
-                >
-                    <stop stop-color="#8EA5FE"/>
-                    <stop
-                        offset="0.541667"
-                        stop-color="#BEB3FD"
-                    />
-                    <stop
-                        offset="1"
-                        stop-color="#90D1FF"
-                    />
-                </linearGradient>
-            </defs>
-        </svg>
-    </div>
 </template>
 
 <script>
 export default {
     data() {
-        return {};
+        return {
+            right: true,
+        };
     },
     props: {
         title: {

@@ -14,7 +14,7 @@
             />
             <TGEAboutCard
                 :actionCard="'list'"
-                :bigTitle="'Esto es una prueba de titulo grande'"
+                :bigTitle="'Esto es una prueba MADRID de titulo grande'"
                 :positionImg="'right'"
                 :smallTitle="'Esto es una prueba'"
                 :textCard="'Schedule your posts for times when your audience is most active. Choose from our best-time predictions, or create your own publishing schedule.'"
