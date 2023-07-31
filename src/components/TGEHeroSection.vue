@@ -47,7 +47,6 @@
 <script>
 import TGESection from './TGESection.vue'
 import TGEVideoButton from './TGEVideoButton.vue'
-
 export default {
     name: 'TGEHeroSection',
     components: {
