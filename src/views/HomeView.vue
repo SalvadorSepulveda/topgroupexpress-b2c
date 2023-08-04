@@ -5,15 +5,15 @@
             videoURL="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
         >
             <template v-slot:title>
-                Central de
-                <TGEFancyText>reservas de hoteles</TGEFancyText>
-                para
-                <TGEFancyText>grupos</TGEFancyText>
+                {{ $t('title1')}}
+                <TGEFancyText>{{ $t('title2')}}</TGEFancyText>
+                {{ $t('title3')}}
+                <TGEFancyText>{{ $t('title4')}}</TGEFancyText>
                 .
             </template>
 
             <template v-slot:description>
-                Servicio exclusivo para profesionales
+                {{ $t('subtitle') }}
             </template>
 
             <template v-slot:picture>
@@ -28,41 +28,39 @@
         <TGEFeaturesSection
             :features="[
                 {
-                    title: 'Apps Móviles y Web',
-                    description:
-                        'xReserve grupos desde su PC, teléfono o tablet',
+                    title: $t('featureApps'),
+                    description: $t('appsDescription'),
                     icon: 'apps',
                 },
                 {
-                    title: 'Precios Competitivos',
-                    description:
-                        'Cotizaciones negociadas directamente con el hotel',
+                    title: $t('featurePrices'),
+                    description: $t('pricesDescription'),
                     icon: 'layers',
                 },
                 {
-                    title: 'Dashboard Único',
-                    description: 'Todos tus grupos en el mismo lugar',
+                    title: $t('featureDashboard'),
+                    description: $t('dashboardDescription'),
                     icon: 'layout',
                 },
                 {
-                    title: 'Agilidad',
-                    description: 'Cotizaciones en menos de 12 horas',
+                    title: $t('featureAgility'),
+                    description: $t('agilityDescription'),
                     icon: 'speed',
                 },
                 {
-                    title: 'Reservas a Medida',
-                    description: 'Control preciso de sus grupos',
+                    title: $t('featureReservations'),
+                    description: $t('reservationsDescription'),
                     icon: 'sliders',
                 },
                 {
-                    title: 'Actualizaciones',
-                    description: 'Notificaciones y alertas en tiempo real',
+                    title: $t('featureUpdates'),
+                    description: $t('updatesDescription'),
                     icon: 'reload',
                 },
             ]"
             anchor="features"
-            description="Motor de reserva de grupos con disponibilidad real y procesos completamente automatizados."
-            title="¿Qué ofrecemos?"
+            :description="$t('featureDescription')"
+            :title="$t('featureTitle')"
         />
 
         <TGEAboutSection anchor="about" />

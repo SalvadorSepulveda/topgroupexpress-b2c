@@ -4,10 +4,8 @@
         :paddingTop="110"
         :zIndex="10"
     >
-        <TGESectionTitle title="How it Works?">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.
+        <TGESectionTitle :title="$t('titleWorkSection')">
+            {{ $t('descriptionWorkSection') }}
         </TGESectionTitle>
 
         <div class="container max-w-[1390px]">
@@ -50,11 +48,10 @@
                             <h3
                                 class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]"
                             >
-                                Install the App
+                                {{ $t('installTitle')}}
                             </h3>
                             <p class="text-base text-body">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. In convallis tortor.
+                                {{ $t('installDescription') }}
                             </p>
                         </div>
                     </div>
@@ -94,11 +91,10 @@
                             <h3
                                 class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]"
                             >
-                                Setup your profile
+                                {{ $t('registerTitle') }}
                             </h3>
                             <p class="text-base text-body">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. In convallis tortor.
+                                {{ $t('registerDescription') }}
                             </p>
                         </div>
                     </div>
@@ -138,11 +134,10 @@
                             <h3
                                 class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]"
                             >
-                                Enjoy the features!
+                                {{ $t('accessCodeTitle') }}
                             </h3>
                             <p class="text-base text-body">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. In convallis tortor.
+                                {{ $t('accessCodeDescription') }}
                             </p>
                         </div>
                     </div>

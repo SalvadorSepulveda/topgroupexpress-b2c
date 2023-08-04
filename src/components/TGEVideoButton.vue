@@ -45,7 +45,7 @@ export default {
         description: {
             type: String,
             required: true,
-        },
+        } ,
         source: {
             type: String,
             default: 'youtube',

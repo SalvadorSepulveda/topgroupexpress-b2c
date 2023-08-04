@@ -24,8 +24,8 @@
                         <div class="flex flex-wrap items-center">
                             <TGEVideoButton
                                 :url="videoURL"
-                                description="Vea como funciona"
-                                title="Ver demostración"
+                                :title="$t('titleVideo')"
+                                :description="$t('descriptionVideo')"
                             />
                         </div>
                     </div>

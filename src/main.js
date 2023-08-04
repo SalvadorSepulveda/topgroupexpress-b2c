@@ -1,22 +1,30 @@
-import './assets/main.css'
+import { createApp } from 'vue';
+import { pinia } from './stores';
+import App from './App.vue';
+import router from './router';
+import { createI18n } from 'vue-i18n';
+import setupIcons from './components/icons';
+import setupFlag from './components/flags';
 
-import {createApp} from 'vue'
-import {pinia} from './stores'
+async function createAppWithI18n() {
+    const i18n = createI18n({
+        legacy: false,
+        locale: 'es',
+        messages: {
+            en: (await import('./locales/en.js')).default,
+            es: (await import('./locales/es.js')).default,
+            fr: (await import('./locales/fr.js')).default,
+            cn: (await import('./locales/cn.js')).default,
+        },
+    });
 
-import App from './App.vue'
-import router from './router'
-// Setup Icons
-import setupIcons from './components/icons'
-// Setup Flags
-import setupFlag from './components/flags'
+    const app = createApp(App);
+    app.use(pinia);
+    app.use(router);
+    app.use(i18n);
+    setupIcons(app);
+    setupFlag(app);
+    app.mount('#app');
+}
 
-const app = createApp(App)
-
-app.use(pinia)
-app.use(router)
-
-setupIcons(app)
-
-setupFlag(app)
-
-app.mount('#app')
+createAppWithI18n();

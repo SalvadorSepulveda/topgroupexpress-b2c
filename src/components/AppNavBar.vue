@@ -55,7 +55,7 @@
                                     :to="item.route"
                                     class="menu-scroll inline-flex items-center text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary lg:py-7"
                                 >
-                                    {{ item.label }}
+                                    {{ $t (item.label) }}
                                 </router-link>
                             </li>
                         </ul>
@@ -68,14 +68,14 @@
                         class="hidden py-[10px] px-6 text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary sm:inline-block"
                         href="https://hoteliers.topgroupexpress.com/"
                     >
-                        Hoteliers
+                        {{ $t('hotelier') }}
                     </a>
 
                     <a
                         class="hidden rounded-md bg-primary py-[10px] px-[30px] text-base font-medium text-white hover:bg-opacity-90 sm:inline-block"
                         href="https://agencies.topgroupexpress.com/"
                     >
-                        Agency Sign Up
+                        <span>{{ $t('signUp') }}</span>
                     </a>
                     <SelectLanguage
                         class="menu-wrapper relative hidden justify-between lg:flex"
@@ -103,30 +103,30 @@ export default {
     data: () => ({
         items: [
             {
-                label: '¿Qué Ofrecemos?',
+                label: 'offer',
                 route: {
                     name: 'home',
                     hash: '#features',
                 },
             },
             {
-                label: 'Agencias',
+                label: 'agency',
                 route: '/agencies',
             },
             {
-                label: 'Hoteleros',
+                label: 'hotelier',
                 route: '/hoteliers',
             },
             {
-                label: 'Descargas',
+                label: 'downloads',
                 route: '/downloads',
             },
             {
-                label: 'Blog',
+                label: 'blog',
                 route: '/blog',
             },
             {
-                label: 'Contacto',
+                label: 'contact',
                 route: {
                     name: 'home',
                     hash: '#contact',

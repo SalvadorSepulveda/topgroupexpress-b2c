@@ -7,17 +7,25 @@
         <div class="container lg:max-w-[1120px]">
             <TGEAboutCard
                 :actionCard="'list'"
-                :bigTitle="'Track Your Audience Activities'"
+                :bigTitle="$t('bigTitleAgencies')"
                 :positionImg="'left'"
-                :smallTitle="'Track Audience Activities'"
-                :textCard="' Schedule your posts for times when your audience is most active. Choose from our best-time predictions, or create your own publishing schedule.'"
+                :smallTitle="$t('smallTitleAgencies')"
+                :textCard="$t('descriptionAgencies')"
+                :firstList="$t('oneListAgencies')"
+                :secondList="$t('twoListAgencies')"
+                :thirdList="$t('threeListAgencies')"
+                :fourthList="$t('fourListAgencies')"
             />
             <TGEAboutCard
                 :actionCard="'list'"
-                :bigTitle="'Esto es una prueba MADRID de titulo grande'"
+                :bigTitle="$t('bigTitleHoteliers')"
                 :positionImg="'right'"
-                :smallTitle="'Esto es una prueba'"
-                :textCard="'Schedule your posts for times when your audience is most active. Choose from our best-time predictions, or create your own publishing schedule.'"
+                :smallTitle="$t('smallTitleHoteliers')"
+                :textCard="$t('descriptionHoteliers')"
+                :firstList="$t('oneListHoteliers')"
+                :secondList="$t('twoListHoteliers')"
+                :thirdList="$t('threeListHoteliers')"
+                :fourthList="$t('fourListHoteliers')"
             />
         </div>
     </TGESection>

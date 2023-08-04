@@ -27,9 +27,9 @@
     </div>
 </template>
 
-
 <script>
 import TGEFlag from "@/components/flags/TGEFlag.vue";
+import { useI18n } from 'vue-i18n';
 
 export default {
     components: {TGEFlag},
@@ -55,6 +55,7 @@ export default {
             this.dropdownOpen = !this.dropdownOpen;
         },
         selectLanguage(language) {
+            this.$i18n.locale = language.flag;
             this.selectedLanguage = language;
             this.dropdownOpen = false;
         },

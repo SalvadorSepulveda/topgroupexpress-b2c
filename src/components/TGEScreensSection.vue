@@ -202,8 +202,6 @@ export default {
                 },
             },
         })
-
-        console.log(this.swiper)
     },
 }
 </script>

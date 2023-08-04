@@ -16,6 +16,7 @@
     "postcss-preset-env": "^8.5.1",
     "swiper": "^9.4.1",
     "vue": "^3.3.4",
+    "vue-i18n": "^9.3.0-beta.25",
     "vue-router": "^4.2.2",
     "wowjs": "^1.1.3"
   },
