@@ -8,8 +8,6 @@
 </template>
 
 <script>
-import WOW from 'wowjs'
-
 import { mapActions, mapState } from 'pinia'
 import { useScrollStore, useThemeStore } from '@/stores'
 
@@ -37,15 +35,6 @@ export default {
         ...mapActions(useScrollStore, {
             initializeScroll: 'initialize',
         }),
-        initializeWowJS() {
-            window.wow = new WOW.WOW({
-                live: false,
-            })
-
-            window.wow.init({
-                offset: 50,
-            })
-        },
     },
     mounted() {
         const menuWrapper = document.querySelector('.menu-wrapper')
@@ -63,7 +52,6 @@ export default {
     created() {
         this.initializeTheme()
         this.initializeScroll()
-        this.initializeWowJS()
     },
 }
 </script>
