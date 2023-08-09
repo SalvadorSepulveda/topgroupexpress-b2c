@@ -5,10 +5,8 @@
         :paddingTop="110"
         relative
     >
-        <TGESectionTitle title="Latest News & Blogs">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.
+        <TGESectionTitle :title="$t('titleBlog')">
+            {{ $t('descriptionBlog') }}
         </TGESectionTitle>
 
         <div class="container overflow-hidden lg:max-w-[1250px]">

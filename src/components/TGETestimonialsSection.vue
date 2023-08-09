@@ -6,10 +6,8 @@
         :zIndex="10"
         relative
     >
-        <TGESectionTitle title="What Client's Say">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.
+        <TGESectionTitle :title="$t('titleClients')">
+           {{ $t('descriptionClients') }}
         </TGESectionTitle>
 
         <div class="container overflow-hidden lg:max-w-[1160px]">

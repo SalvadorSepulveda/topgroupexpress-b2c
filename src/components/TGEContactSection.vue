@@ -4,10 +4,8 @@
         :paddingBottom="110"
         :paddingTop="100"
     >
-        <TGESectionTitle title="Let's Stay Connected">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.
+        <TGESectionTitle :title="$t('formTitle')">
+            {{ $t('formDescription') }}
         </TGESectionTitle>
 
         <div class="container">

@@ -8,10 +8,8 @@
         darkBackgroundColor="#15182B"
         relative
     >
-        <TGESectionTitle title="Frequently PRUEBA Asked Questions">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.
+        <TGESectionTitle :title="$t('frequentAnswerTitle')">
+            {{ $t('frequentAnswerDescription')}}
         </TGESectionTitle>
 
         <div class="container">
@@ -20,30 +18,51 @@
                 data-wow-delay=".3s"
             >
 
-                <TGEFrequentAnswersCard :title="'Prueba de titulo'">
-                        We provide digital experience services to startups
-                    and small businesses. We help our clients succeed by
-                    creating brand identities, digital experiences.
-                    Praesent vel nibh a tellus dictum gravida sed tempor
-                    nunc.
+                <TGEFrequentAnswersCard :title="$t('question1')">
+                    {{ $t('answer1') }}
                 </TGEFrequentAnswersCard>
 
-                <TGEFrequentAnswersCard :title="'Prueba de titulo'">
-                    We provide digital experience services to startups
-                    and small businesses. We help our clients succeed by
-                    creating brand identities, digital experiences.
-                    Praesent vel nibh a tellus dictum gravida sed tempor
-                    nunc.
+                <TGEFrequentAnswersCard :title="$t('question2')">
+                    {{ $t('answer2') }}
+                    <br><br>
+                    {{ $t('question2_1') }}
+                    <br><br>
+                    {{ $t('answer2_1') }}
+                    <br><br>
+                    {{ $t('question2_2') }}
+                    <br><br>
+                    {{ $t('answer2_2') }}
                 </TGEFrequentAnswersCard>
 
-                <TGEFrequentAnswersCard :title="'Prueba de titulo'">
-                    We provide digital experience services to startups
-                    and small businesses. We help our clients succeed by
-                    creating brand identities, digital experiences.
-                    Praesent vel nibh a tellus dictum gravida sed tempaasdasdasdasdasssssssssssssssssor
-                    nunc.
+                <TGEFrequentAnswersCard :title="$t('question3')">
+                    {{ $t('answer3')  }}
+                    <br><br>
+                    {{ $t('question3_1') }}
+                    <br><br>
+                    {{ $t('answer3_1') }}
+                    <br><br>
+                    {{ $t('question3_2') }}
+                    <br><br>
+                    {{ $t('answer3_2') }}
+                    <br><br>
+                    {{ $t('information1') }}
+                    <br>
+                    {{ $t('information2') }}
+                    <br>
+                    {{ $t('information3') }}
+                    <br><br>
+                    {{ $t('answer3_3') }}
                 </TGEFrequentAnswersCard>
 
+                <TGEFrequentAnswersCard :title="$t('question4')">
+                    {{ $t('answer4') }}
+                </TGEFrequentAnswersCard>
+
+                <TGEFrequentAnswersCard :title="$t('question5')">
+                    {{ $t('answer5') }}
+                    <a href="https://agencies.topgroupexpress.com/" class="text-primary">{{ $t('answer5TextLink')}}</a>
+                    {{ $t('answer5_1') }}
+                </TGEFrequentAnswersCard>
             </div>
         </div>
     </TGESection>

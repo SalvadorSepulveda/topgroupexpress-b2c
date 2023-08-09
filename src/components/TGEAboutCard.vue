@@ -24,96 +24,96 @@
                     class="wow fadeInUp lg:ml-auto lg:max-w-[510px]"
                     data-wow-delay=".3s"
                 >
-          <span
+            <span
               class="mb-4 block text-lg font-medium text-primary md:text-[22px]"
-          >
+            >
               {{ smallTitle }}
-          </span>
-                    <h2
-                        class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight"
+            </span>
+            <h2
+                class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight"
+            >
+                {{ bigTitle }}
+            </h2>
+            <p
+                class="mb-[30px] text-base leading-relaxed text-body"
+            >
+                {{ textCard }}
+            </p>
+            <div v-if="isActionCard">
+                <div class="mb-[30px] flex items-center">
+                    <div
+                        class="mr-[12px] flex h-[60px] max-w-[60px] w-full items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black dark:border-stroke-dark dark:bg-dark dark:text-white"
                     >
-                        {{ bigTitle }}
-                    </h2>
-                    <p
-                        class="mb-[30px] text-base leading-relaxed text-body"
-                    >
-                        {{ textCard }}
-                    </p>
-                    <div v-if="isActionCard">
-                        <div class="mb-[30px] flex items-center">
-                            <div
-                                class="mr-[12px] flex h-[60px] max-w-[60px] w-full items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black dark:border-stroke-dark dark:bg-dark dark:text-white"
-                            >
-                                01
-                            </div>
-                            <div>
-                                <h5
-                                    class="text-xl font-medium text-black dark:text-white"
-                                >
-                                    {{ firstList }}
-                                </h5>
-                            </div>
-                        </div>
-
-                        <div class="mb-[30px] flex items-center">
-                            <div
-                                class="mr-[12px] flex h-[60px] max-w-[60px] w-full items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black dark:border-stroke-dark dark:bg-dark dark:text-white"
-                            >
-                                02
-                            </div>
-                            <div>
-                                <h5
-                                    class="text-xl font-medium text-black dark:text-white"
-                                >
-                                    {{ secondList }}
-                                </h5>
-                            </div>
-                        </div>
-
-                        <div class="mb-[30px] flex items-center">
-                            <div
-                                class="mr-[12px] flex h-[60px] max-w-[60px] w-full items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black dark:border-stroke-dark dark:bg-dark dark:text-white"
-                            >
-                                03
-                            </div>
-                            <div>
-                                <h5
-                                    class="text-xl font-medium text-black dark:text-white"
-                                >
-                                    {{ thirdList }}
-                                </h5>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center">
-                            <div
-                                class="mr-[12px] flex h-[60px] max-w-[60px] w-full items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black dark:border-stroke-dark dark:bg-dark dark:text-white"
-                            >
-                                04
-                            </div>
-                            <div>
-                                <h5
-                                    class="text-xl font-medium text-black dark:text-white"
-                                >
-                                    {{ fourthList }}
-                                </h5>
-                        <!-- <p class="text-base text-body">
-                                Ut ultricies lacus non fermentum
-                                ultrices.
-                            </p>-->
-                            </div>
-                        </div>
-
+                        01
                     </div>
-                    <div v-else>
-                        <a
-                            class="inline-block rounded-md bg-primary py-[10px] px-8 text-base font-medium text-white hover:bg-opacity-90"
-                            href="javascript:void(0)"
+                    <div>
+                        <h5
+                            class="text-xl font-medium text-black dark:text-white"
                         >
-                            Know More
-                        </a>
+                            {{ firstList }}
+                        </h5>
                     </div>
                 </div>
+
+                <div class="mb-[30px] flex items-center">
+                    <div
+                        class="mr-[12px] flex h-[60px] max-w-[60px] w-full items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black dark:border-stroke-dark dark:bg-dark dark:text-white"
+                    >
+                        02
+                    </div>
+                    <div>
+                        <h5
+                            class="text-xl font-medium text-black dark:text-white"
+                        >
+                            {{ secondList }}
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="mb-[30px] flex items-center">
+                    <div
+                        class="mr-[12px] flex h-[60px] max-w-[60px] w-full items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black dark:border-stroke-dark dark:bg-dark dark:text-white"
+                    >
+                        03
+                    </div>
+                    <div>
+                        <h5
+                            class="text-xl font-medium text-black dark:text-white"
+                        >
+                            {{ thirdList }}
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <div
+                        class="mr-[12px] flex h-[60px] max-w-[60px] w-full items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black dark:border-stroke-dark dark:bg-dark dark:text-white"
+                    >
+                        04
+                    </div>
+                    <div>
+                        <h5
+                            class="text-xl font-medium text-black dark:text-white"
+                        >
+                            {{ fourthList }}
+                        </h5>
+                <!-- <p class="text-base text-body">
+                        Ut ultricies lacus non fermentum
+                        ultrices.
+                    </p>-->
+                    </div>
+                </div>
+
+            </div>
+            <div v-else>
+                <a
+                    class="inline-block rounded-md bg-primary py-[10px] px-8 text-base font-medium text-white hover:bg-opacity-90"
+                    href="javascript:void(0)"
+                >
+                    Know More
+                </a>
+            </div>
+            </div>   
             </div>
         </div>
     </div>

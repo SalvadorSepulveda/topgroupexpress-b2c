@@ -5,10 +5,8 @@
         :zIndex="20"
         relative
     >
-        <TGESectionTitle title="App Screenshots">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.
+        <TGESectionTitle :title="$t('titleScreens')">
+            {{ $t('descriptionScreens') }}
         </TGESectionTitle>
 
         <div class="container">

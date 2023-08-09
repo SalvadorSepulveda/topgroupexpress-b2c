@@ -66,7 +66,6 @@
         <TGEAboutSection anchor="about" />
         <TGEWorkProcessSection anchor="work-process" />
         <TGEScreensSection anchor="screens" />
-        <TGEDownloadsSection anchor="downloads" />
         <TGETestimonialsSection anchor="testimonials" />
         <TGEFrequentAnswersSection anchor="faq" />
         <TGEBlogSection anchor="blog" />
@@ -151,7 +150,6 @@ import TGEFeaturesSection from '@/components/TGEFeaturesSection.vue'
 import TGEAboutSection from '@/components/TGEAboutSection.vue'
 import TGEWorkProcessSection from '@/components/TGEWorkProcessSection.vue'
 import TGEScreensSection from '@/components/TGEScreensSection.vue'
-import TGEDownloadsSection from '@/components/TGEDownloadsSection.vue'
 import TGETestimonialsSection from '@/components/TGETestimonialsSection.vue'
 import TGEFrequentAnswersSection from '@/components/TGEFrequentAnswersSection.vue'
 import TGEBlogSection from '@/components/TGEBlogSection.vue'
@@ -167,7 +165,6 @@ export default {
         TGEAboutSection,
         TGEWorkProcessSection,
         TGEScreensSection,
-        TGEDownloadsSection,
         TGETestimonialsSection,
         TGEFrequentAnswersSection,
         TGEBlogSection,
