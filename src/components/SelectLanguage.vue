@@ -1,5 +1,5 @@
 <template>
-    <div class="relative ml-[30px] w-[100px] flex items-center dark:text-white cursor-pointer">
+    <div class="relative ml-[30px] flex items-center dark:text-white cursor-pointer">
         <div class="flex z-10" @click="toggleDropdown">
             <div class="mt-[4px]">
                 <TGEFlag

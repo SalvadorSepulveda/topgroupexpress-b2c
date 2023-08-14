@@ -68,17 +68,17 @@
                         class="hidden py-[10px] px-6 text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary sm:inline-block"
                         href="https://hoteliers.topgroupexpress.com/"
                     >
-                        {{ $t('hotelier') }}
+                        {{ $t('signUp') }}
                     </a>
 
                     <a
                         class="hidden rounded-md bg-primary py-[10px] px-[30px] text-base font-medium text-white hover:bg-opacity-90 sm:inline-block"
                         href="https://agencies.topgroupexpress.com/"
                     >
-                        <span>{{ $t('signUp') }}</span>
+                        <span>Login</span>
                     </a>
                     <SelectLanguage
-                        class="menu-wrapper relative hidden justify-between lg:flex"
+                        class="menu-wrapper relative justify-center lg:flex"
                     />
                 </div>
             </div>

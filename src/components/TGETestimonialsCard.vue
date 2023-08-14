@@ -1,9 +1,9 @@
 <template>
-    <div class="w-full px-6 lg:w-1/2">
-        <div class="wow fadeInUp mb-[50px] rounded-lg bg-white py-9 px-7 shadow-card dark:bg-dark dark:shadow-card-dark sm:px-9 lg:px-7 xl:px-9" data-wow-delay=".2s">
+    <div class="w-full px-6 lg:w-1/2 h-full">
+        <div class="fadeInUp my-[25px] rounded-lg bg-white py-9 px-7 shadow-card dark:bg-dark dark:shadow-card-dark sm:px-9 lg:px-7 xl:px-9 min-h-[16rem] flex flex-col justify-between" data-wow-delay=".2s">
             <div class="mb-5 border-b border-stroke dark:border-stroke-dark">
                 <p class="pb-9 text-base text-body">
-                    {{ text }}
+                    <i>"{{ text }}"</i>
                 </p>
             </div>
             <div class="items-center justify-between sm:flex lg:block xl:flex">

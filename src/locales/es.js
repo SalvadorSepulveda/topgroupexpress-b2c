@@ -25,13 +25,13 @@ export default {
     featurePrices: "Precios competitivos",
     pricesDescription: "Cotizaciones negociadas directamente con el hotel",
     featureDashboard: "Dashboard Único",
-    dashboardDescription: "Todos tus grupos en el mismo lugar",
+    dashboardDescription: "Todos los grupos en el mismo panel",
     featureAgility: "Agilidad",
     agilityDescription: "Cotizaciones en menos de 12 horas",
     featureReservations: "Reservas a Medida",
-    reservationsDescription: "Control preciso de sus grupos",
+    reservationsDescription: "Control preciso de sus reservas de grupos en hoteles",
     featureUpdates: "Actualizaciones",
-    updatesDescription: "Notificaciones y alertas en tiempo real",
+    updatesDescription: "Notificaciones y alertas en tiempo real a través de mails y intranet / APP",
 
 // Apps
     // Agencies
@@ -55,7 +55,7 @@ export default {
 
 // Work Section
     titleWorkSection: "¿Cómo se usa?",
-    descriptionWorkSection: "Nuestras aplicaciones son gratuitas y puedes usarlas completamente sin costo alguno. Nosotros recibimos una pequeña comisión al momento del pago. ¡Muy sencillo! Para registrarte:",
+    descriptionWorkSection: "Nuestras aplicaciones son gratuitas y puedes usarlas completamente sin costo alguno. Nosotros aplicamos un pequeño fee de intermediación en el precio cotizado, no notará el mismo. ¡Muy sencillo! Para registrarte:",
 
     // Steeps to install
     installTitle: " Instala la aplicación",

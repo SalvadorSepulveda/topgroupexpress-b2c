@@ -9,41 +9,52 @@
         <TGESectionTitle :title="$t('titleClients')">
            {{ $t('descriptionClients') }}
         </TGESectionTitle>
-
+        <div class="flex justify-center align-middle my-6">
+            <h3
+                class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]"
+            >
+                Hoteleros
+            </h3>
+        </div>
         <div class="container overflow-hidden lg:max-w-[1160px]">
-            <div class="-mx-6 flex flex-wrap">
-                <TGETestimonialsCard
-                    :title="'Cristiano Ronaldo'"
-                    :subtitle="'Mejor jugador de la historia'"
-                    :text="'Prueba de texto completo'"
-                    :rate="5"
+            <div class=" flex flex-wrap">
+                <template
+                    v-for="item in testimonialsHotels"
+                    :key="item"
                 >
-                    <img alt="author" class="h-full w-full object-cover object-center rounded-full" src="https://assets-es.imgfoot.com/media/cache/1200x1200/cristiano-ronaldo-al-nassr.jpg" />
-                </TGETestimonialsCard>
-                <TGETestimonialsCard
-                    :title="'Vinicius JR'"
-                    :subtitle="'Mejor delantero brasileño'"
-                    :text="'Prueba de texto completo'"
-                    :rate="5"
+                    <TGETestimonialsCard
+                        :title="item.title"
+                        :subtitle="item.subtitle"
+                        :text="item.text"
+                        :rate="5"
+                    >
+                        <img alt="author" class="h-full w-full object-cover object-center rounded-full" :src="item.src" />
+                    </TGETestimonialsCard>
+                </template>
+            </div>
+        </div>
+        <div class="flex justify-center align-middle my-6">
+            <h3
+                class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]"
+            >
+                Agencias
+            </h3>
+        </div>
+        <div class="container overflow-hidden lg:max-w-[1160px]">
+            <div class=" flex flex-wrap">
+                <template
+                    v-for="item in testimonialsAgencies"
+                    :key="item"
                 >
-                    <img alt="author" class="h-full w-full object-cover object-center rounded-full" src="https://b.fssta.com/uploads/application/soccer/headshots/53004.vresize.350.350.medium.20.png" />
-                </TGETestimonialsCard>
-                <TGETestimonialsCard
-                    :title="'Mbappe'"
-                    :subtitle="'Mejor delantero actual'"
-                    :text="'Prueba de texto completo'"
-                    :rate="5"
-                >
-                    <img alt="author" class="h-full w-full object-cover object-center rounded-full" src="https://estaticos-cdn.epe.es/clip/d8af798c-c929-4e54-a9d8-7e5afd2b996f_alta-libre-aspect-ratio_default_0.jpg" />
-                </TGETestimonialsCard>
-                <TGETestimonialsCard
-                    :title="'Bellingham'"
-                    :subtitle="'Mejor centrocampista joven'"
-                    :text="'Prueba de texto completo'"
-                    :rate="5"
-                >
-                    <img alt="author" class="h-full w-full object-cover object-center rounded-full" src="https://imagenes.20minutos.es/files/image_654_369/uploads/imagenes/2023/07/04/jude-bellingham.jpeg" />
-                </TGETestimonialsCard>
+                    <TGETestimonialsCard
+                        :title="item.title"
+                        :subtitle="item.subtitle"
+                        :text="item.text"
+                        :rate="5"
+                    >
+                        <img alt="author" class="h-full w-full object-cover object-center rounded-full" :src="item.src" />
+                    </TGETestimonialsCard>
+                </template>
             </div>
         </div>
     </TGESection>
@@ -61,6 +72,68 @@ export default {
         TGESectionTitle,
         TGETestimonialsCard
     },
+    data: () => ({
+        testimonialsHotels: [
+            {
+                title: 'Juan Rodríguez - Grupo Bluebay Hoteles',
+                subtitle: 'Dpto de Grupos',
+                text: 'Muy innovador, a seguir vendiendo!',
+                rate: 5,
+                src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/bluebay-hoteles.jpg',
+            },
+            {
+                title: 'Fernando Corzo - Grupo Abades',
+                subtitle: 'Director Comercial',
+                text: 'Necesario, útil, sorprendente, lo mejor hasta el momento para cotizar grupos.',
+                rate: 5,
+                src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/grupo-abades.jpg',
+            },
+            {
+                title: 'José Ramón Urzay - Hotel Alanda Marbella',
+                subtitle: 'Director Comercial',
+                text: 'Enhorabuena por vuestra nueva herramienta para los hoteleros, es muy profesional y muy fácil de manejar.',
+                rate: 5,
+                src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/ALANDA-HOTEL.jpg',
+            },
+            {
+                title: 'Juan Graciliano - Barceló Hoteles',
+                subtitle: 'Cluster zona sur',
+                text: 'En constante desarrollo, adapntándose a nuestras necesidades.',
+                rate: 5,
+                src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/barcelo-hoteles.jpg',
+            }
+        ],
+        testimonialsAgencies: [
+            {
+                title: 'Grupo Cybas',
+                subtitle: 'Cyberagencias',
+                text: 'Herramienta necesaria, único especialista en consolidación de reservas de hoteles para grupos',
+                rate: 5,
+                src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/ciberagencias.jpg',
+            },
+            {
+                title: 'Kayyuan',
+                subtitle: 'Turist department',
+                text: 'Útil, único, rápido, lo que esperamos de un proveedor brillante',
+                rate: 5,
+                src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/KAYTRIP.jpg',
+            },
+            {
+                title: 'Portimar',
+                subtitle: 'Spain Departmentl',
+                text: 'Llegamos más lejos, complementamos oferta, aportamos cotizaciones rápidas y en todos los destinos a nuestros clientes',
+                rate: 5,
+                src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/CHILLIsauce.jpg',
+            },
+            {
+                title: 'Chilli Sauce UK',
+                subtitle: 'Groups Department',
+                text: 'Aumentamos nuestras ventas en un 40% gracias a Top Group Express',
+                rate: 5,
+                src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/CHILLIsauce.jpg',
+            }
+        ]
+    }),
     props: {
         anchor: {
             type: String,
