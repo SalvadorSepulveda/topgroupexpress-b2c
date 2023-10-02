@@ -1,9 +1,8 @@
-default:
-  cache:
-    paths:
-      - node_modules/
-      - .cache/
-      - dist/
+cache:
+  paths:
+    - node_modules/
+    - .cache/
+    - dist/
 
 stages:
   - build
