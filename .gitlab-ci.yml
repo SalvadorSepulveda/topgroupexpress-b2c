@@ -24,6 +24,7 @@ nuxt-build:
     - nvm use --lts
   script:
     - npm install
+    - npm audit fix
     - npm run build
 
 cloudflare:
