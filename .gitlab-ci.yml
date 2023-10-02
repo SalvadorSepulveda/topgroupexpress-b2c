@@ -27,7 +27,7 @@ nuxt-build:
     - npm audit fix
     - npm run build
 
-cloudflare:
+cloudflare-staging:
   stage: deploy
   variables:
     CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
@@ -49,4 +49,28 @@ cloudflare:
       - dist
   only:
     - staging
+
+cloudflare-production:
+  stage: deploy
+  variables:
+    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN_PRODUCTION
+    CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID_PRODUCTION
+  before_script:
+    - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+    - export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+    - whoami
+    - chmod 755 /home/gitlab-runner/.nvm/nvm.sh
+    - ["$NVM_DIR/nvm.sh"]
+    - \. "$NVM_DIR/nvm.sh" # This loads nvm
+    - nvm install --lts
+    - nvm use --lts
+  script:
+    - npm install -g wrangler
+    # - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}  # TODO uncomment this when deploying to production
+    - wrangler pages deploy ./dist --project-name=website --branch=main  # TODO remove this when deploying to production
+  artifacts:
+    paths:
+      - dist
+  only:
+    - staging  # TODO remove this when deploying to production
     - main
