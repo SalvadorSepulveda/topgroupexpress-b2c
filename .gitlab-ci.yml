@@ -1,8 +1,6 @@
 cache:
   paths:
     - node_modules/
-    - .cache/
-    - dist/
 
 stages:
   - build
