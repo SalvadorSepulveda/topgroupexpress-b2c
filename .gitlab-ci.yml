@@ -1,5 +1,6 @@
 cache:
   paths:
+    - /home/gitlab-runner/.nvm/
     - node_modules/
     - .cache/
     - dist/
@@ -27,7 +28,7 @@ job-build:
     - nvm use --lts
   script:
     - npm install
-    - ./node_modules/.bin/gatsby build
+    - npm run build
 
 job-deploy:
   stage: deploy
