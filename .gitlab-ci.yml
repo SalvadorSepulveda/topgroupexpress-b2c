@@ -1,6 +1,7 @@
 cache:
   paths:
     - node_modules/
+    - dist/
 
 stages:
   - build
@@ -41,7 +42,7 @@ cloudflare:
     - nvm use --lts
   script:
     - npm install -g wrangler
-    - wrangler pages publish ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
+    - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
   artifacts:
     paths:
       - dist
