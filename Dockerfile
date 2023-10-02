@@ -20,7 +20,7 @@ COPY . .
 RUN npm run build
 
 
-FROM nginx:stable-alpine as deploy
+FROM nginx:stable-alpine AS deploy
 
 COPY --from=build /app/dist /usr/share/nginx/html
 
