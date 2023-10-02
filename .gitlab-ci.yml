@@ -13,8 +13,8 @@ job-build:
   # variables:
   #   CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
   #   CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main"
+  # rules:
+  #   - if: $CI_COMMIT_BRANCH == "main"
   # environment: "$CI_COMMIT_BRANCH"
   script:
     - npm install
@@ -34,8 +34,8 @@ job-deploy:
   artifacts:
     paths:
       - dist
-  only:
-    - main
+  # only:
+  #   - main
 
 # deploy:
 #   stage: deploy
