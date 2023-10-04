@@ -58,7 +58,7 @@ cloudflare-production:
   variables:
     CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID_PRODUCTION
     CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN_PRODUCTION
-  environment: "$CI_COMMIT_BRANCH"
+  environment: production
   extends:
     - .install-npm
   script:
