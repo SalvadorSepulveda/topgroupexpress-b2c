@@ -89,11 +89,11 @@ export default {
                 src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/grupo-abades.jpg',
             },
             {
-                title: 'José Ramón Urzay - Hotel Alanda Marbella',
-                subtitle: 'Director Comercial',
-                text: 'Enhorabuena por vuestra nueva herramienta para los hoteleros, es muy profesional y muy fácil de manejar.',
+                title: 'Jordi - Hotel Catalonia Verdi',
+                subtitle: 'Director',
+                text: 'Enganchadísimo, mientras más rápido cotizo, más vendo!',
                 rate: 5,
-                src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/ALANDA-HOTEL.jpg',
+                src: '// TODO - imagen al backend',
             },
             {
                 title: 'Juan Graciliano - Barceló Hoteles',
@@ -112,18 +112,11 @@ export default {
                 src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/ciberagencias.jpg',
             },
             {
-                title: 'Kayyuan',
+                title: 'Kayuan',
                 subtitle: 'Turist department',
                 text: 'Útil, único, rápido, lo que esperamos de un proveedor brillante',
                 rate: 5,
                 src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/KAYTRIP.jpg',
-            },
-            {
-                title: 'Portimar',
-                subtitle: 'Spain Departmentl',
-                text: 'Llegamos más lejos, complementamos oferta, aportamos cotizaciones rápidas y en todos los destinos a nuestros clientes',
-                rate: 5,
-                src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/CHILLIsauce.jpg',
             },
             {
                 title: 'Chilli Sauce UK',
@@ -131,7 +124,28 @@ export default {
                 text: 'Aumentamos nuestras ventas en un 40% gracias a Top Group Express',
                 rate: 5,
                 src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/CHILLIsauce.jpg',
-            }
+            },
+						{
+							title: 'El Corte Inglés León',
+							subtitle: 'María del Mar',
+							text: 'Esto es una maravilla...',
+							rate: 5,
+							src: '// TODO - imagen al backend',
+						},
+						{
+							title: 'Destinarium Viajes',
+							subtitle: 'Ángel',
+							text: 'Siempre con Top, a cualquier destino. Reservas garantizadas.',
+							rate: 5,
+							src: '// TODO - imagen al backend',
+						},
+						{
+							title: 'TBO',
+							subtitle: 'Catherine',
+							text: 'A new world of product with Top Group Express',
+							rate: 5,
+							src: '// TODO - imagen al backend',
+						},
         ]
     }),
     props: {

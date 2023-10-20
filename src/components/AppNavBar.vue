@@ -24,6 +24,8 @@
                     ></span>
                 </button>
 
+                <!-- TODO: Al hacer click en un enlace que se cierre el navbar, esta echo con tailwind. -->
+
                 <div
                     class="menu-wrapper relative hidden justify-between lg:flex"
                 >
