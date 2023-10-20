@@ -1,70 +1,72 @@
 cache:
   paths:
-    - /home/gitlab-runner/.nvm/
     - node_modules/
-    - .cache/
     - dist/
 
 stages:
   - build
   - deploy
 
-job-build:
-  stage: build
-  # variables:
-  #   CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
-  #   CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
-  # rules:
-  #   - if: $CI_COMMIT_BRANCH == "main"
-  # environment: "$CI_COMMIT_BRANCH"
+# .install-npm: &install-npm
+.install-npm:
   before_script:
     - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
     - export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
     - whoami
-    - chmod 755 /home/gitlab-runner/.nvm/nvm.sh 
-    - [ "$NVM_DIR/nvm.sh" ]
+    - chmod 755 /home/gitlab-runner/.nvm/nvm.sh
+    - ["$NVM_DIR/nvm.sh"]
     - \. "$NVM_DIR/nvm.sh" # This loads nvm
     - nvm install --lts
     - nvm use --lts
+  when: always
+
+nuxt-build:
+  stage: build
+  rules:
+    - if: $CI_COMMIT_BRANCH == "staging"
+    - if: $CI_COMMIT_BRANCH == "main"
+  environment: "$CI_COMMIT_BRANCH"
+  extends:
+    - .install-npm
   script:
+    # - *install-npm
     - npm install
+    - npm audit fix
     - npm run build
 
-job-deploy:
+cloudflare-staging:
   stage: deploy
   variables:
-    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
     CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
-  # rules:
-  #   - if: $CI_COMMIT_BRANCH == "main"
-  # environment: "$CI_COMMIT_BRANCH"
-  before_script:
-    - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-    - export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-    - whoami
-    - chmod 755 /home/gitlab-runner/.nvm/nvm.sh 
-    - [ "$NVM_DIR/nvm.sh" ]
-    - \. "$NVM_DIR/nvm.sh" # This loads nvm
-    - nvm install --lts
-    - nvm use --lts
+    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
+  environment: "$CI_COMMIT_BRANCH"
+  extends:
+    - .install-npm
   script:
-    - npm install -g wrangler --unsafe-perm=true
-    - wrangler pages publish ./dist --project-name=website --branch=main
+    # - *install-npm
+    - npm install -g wrangler
+    # - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
+    - wrangler pages deploy ./dist --project-name=website --branch=main
   artifacts:
     paths:
       - dist
-  # only:
-  #   - main
+  only:
+    - staging
 
-# deploy:
-#   stage: deploy
-#   script:
-#     - npm install
-#     - ./node_modules/.bin/gatsby build
-#     - npm install -g wrangler --unsafe-perm=true
-#     - wrangler pages publish ./public --project-name=your-website --branch=main
-#   artifacts:
-#     paths:
-#       - public
-#   only:
-#     - main
+cloudflare-production:
+  stage: deploy
+  variables:
+    CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID_PRODUCTION
+    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN_PRODUCTION
+  environment: production
+  extends:
+    - .install-npm
+  script:
+    # - *install-npm
+    - npm install -g wrangler
+    - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
+  artifacts:
+    paths:
+      - dist
+  only:
+    - main
