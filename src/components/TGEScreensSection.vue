@@ -2,6 +2,7 @@
     <TGESection
         :anchor="anchor"
         :paddingTop="110"
+		:padding-bottom="110"
         :zIndex="20"
         relative
     >

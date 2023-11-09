@@ -1,6 +1,7 @@
 <template>
+	<!-- TODO: Imagen del footer actual -->
     <footer>
-        <div class="bg-[#F8FAFB] pt-[95px] pb-[46px] dark:bg-[#15182A]">
+        <div class="mt-[3rem] bg-[#F8FAFB] pt-[95px] pb-[46px] dark:bg-[#15182A]">
             <div class="container max-w-[1390px]">
                 <div class="-mx-4 flex flex-wrap">
                     <div class="w-full px-4 lg:w-4/12 xl:w-5/12">

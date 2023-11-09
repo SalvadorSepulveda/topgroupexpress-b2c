@@ -1,4 +1,5 @@
 <template>
+	<!-- // TODO - imagen al backend -->
     <TGESection
         :anchor="anchor"
         :paddingBottom="60"
@@ -93,7 +94,7 @@ export default {
                 subtitle: 'Director',
                 text: 'Enganchadísimo, mientras más rápido cotizo, más vendo!',
                 rate: 5,
-                src: '// TODO - imagen al backend',
+                src: '',
             },
             {
                 title: 'Juan Graciliano - Barceló Hoteles',
@@ -118,33 +119,26 @@ export default {
                 rate: 5,
                 src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/KAYTRIP.jpg',
             },
-            {
-                title: 'Chilli Sauce UK',
-                subtitle: 'Groups Department',
-                text: 'Aumentamos nuestras ventas en un 40% gracias a Top Group Express',
-                rate: 5,
-                src: 'https://www.topgroupexpress.com/wp-content/uploads/2019/02/CHILLIsauce.jpg',
-            },
 						{
 							title: 'El Corte Inglés León',
 							subtitle: 'María del Mar',
 							text: 'Esto es una maravilla...',
 							rate: 5,
-							src: '// TODO - imagen al backend',
+							src: '',
 						},
 						{
 							title: 'Destinarium Viajes',
 							subtitle: 'Ángel',
 							text: 'Siempre con Top, a cualquier destino. Reservas garantizadas.',
 							rate: 5,
-							src: '// TODO - imagen al backend',
+							src: '',
 						},
 						{
 							title: 'TBO',
 							subtitle: 'Catherine',
 							text: 'A new world of product with Top Group Express',
 							rate: 5,
-							src: '// TODO - imagen al backend',
+							src: '',
 						},
         ]
     }),

@@ -66,10 +66,10 @@
         <TGEAboutSection anchor="about" />
         <TGEWorkProcessSection anchor="work-process" />
         <TGEScreensSection anchor="screens" />
+		<TGEClientsSection anchor="clients" />
         <TGETestimonialsSection anchor="testimonials" />
         <TGEFrequentAnswersSection anchor="faq" />
-        <TGEBlogSection anchor="blog" />
-        <TGEClientsSection anchor="clients" />
+<!--        <TGEBlogSection anchor="blog" />-->
         <TGEContactSection anchor="contact" />
     </main>
 </template>
@@ -167,7 +167,6 @@ export default {
         TGEScreensSection,
         TGETestimonialsSection,
         TGEFrequentAnswersSection,
-        TGEBlogSection,
         TGEClientsSection,
         TGEContactSection,
     },

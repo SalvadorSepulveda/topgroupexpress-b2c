@@ -1,7 +1,6 @@
 <template>
     <TGESection
         :anchor="anchor"
-        :paddingBottom="110"
         :paddingTop="100"
     >
         <TGESectionTitle :title="$t('formTitle')">

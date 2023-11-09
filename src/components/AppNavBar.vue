@@ -123,10 +123,10 @@ export default {
                 label: 'downloads',
                 route: '/downloads',
             },
-            {
+/*            {
                 label: 'blog',
                 route: '/blog',
-            },
+            },*/
             {
                 label: 'contact',
                 route: {

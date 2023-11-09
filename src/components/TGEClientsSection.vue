@@ -2,7 +2,7 @@
     <TGESection
         :anchor="anchor"
         :paddingBottom="50"
-        :paddingTop="70"
+        :paddingTop="50"
         :zIndex="10"
         backgroundColor="#F8FAFB"
         darkBackgroundColor="#15182B"
@@ -21,8 +21,8 @@
                         >
                             <img
                                 alt="client"
-                                class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                src="@/assets/images/clients/client-01.svg"
+                                class="mx-auto max-h-[150px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
+                                src="@/assets/images/clients/trave_compositor.png"
                             />
                         </a>
                     </div>
@@ -36,8 +36,8 @@
                         >
                             <img
                                 alt="client"
-                                class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                src="@/assets/images/clients/client-02.svg"
+                                class="mx-auto max-h-[150px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
+                                src="@/assets/images/clients/zafiro_tours.png"
                             />
                         </a>
                     </div>
@@ -51,8 +51,8 @@
                         >
                             <img
                                 alt="client"
-                                class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                src="@/assets/images/clients/client-03.svg"
+                                class="mx-auto max-h-[110px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
+                                src="@/assets/images/clients/airmet.png"
                             />
                         </a>
                     </div>
@@ -66,8 +66,8 @@
                         >
                             <img
                                 alt="client"
-                                class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                src="@/assets/images/clients/client-04.svg"
+                                class="mx-auto max-w-[150px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
+                                src="@/assets/images/clients/elcorteingles.png"
                             />
                         </a>
                     </div>
@@ -81,27 +81,57 @@
                         >
                             <img
                                 alt="client"
-                                class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                src="@/assets/images/clients/client-05.svg"
+                                class="mx-auto max-w-[150px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
+                                src="@/assets/images/clients/kaytrip.png"
                             />
                         </a>
                     </div>
                 </div>
 
-                <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                    <div class="mb-5 text-center">
-                        <a
-                            class="block"
-                            href="javascript:void(0)"
-                        >
-                            <img
-                                alt="client"
-                                class="mx-auto max-w-full opacity-[65%] hover:opacity-100"
-                                src="@/assets/images/clients/client-06.svg"
-                            />
-                        </a>
-                    </div>
-                </div>
+				<div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
+					<div class="mb-5 text-center">
+						<a
+							class="block"
+							href="javascript:void(0)"
+						>
+							<img
+								alt="client"
+								class="mx-auto max-w-[150px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
+								src="@/assets/images/clients/tbo.png"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
+					<div class="mb-5 text-center">
+						<a
+							class="block"
+							href="javascript:void(0)"
+						>
+							<img
+								alt="client"
+								class="mx-auto max-h-[100px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
+								src="@/assets/images/clients/didatravel.png"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
+					<div class="mb-5 text-center">
+						<a
+							class="block"
+							href="javascript:void(0)"
+						>
+							<img
+								alt="client"
+								class="mx-auto max-h-[100px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
+								src="@/assets/images/clients/envol_espace.png"
+							/>
+						</a>
+					</div>
+				</div>
             </div>
         </div>
     </TGESection>

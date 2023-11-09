@@ -15,7 +15,7 @@
                 <div class="-mx-4 flex flex-wrap justify-center">
                     <div class="w-full px-4 md:w-1/2 lg:w-1/3">
                         <div
-                            class="wow fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center"
+                            class="wow fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center cursor-pointer"
                             data-wow-delay=".2s"
                         >
                             <div
@@ -58,7 +58,7 @@
 
                     <div class="w-full px-4 md:w-1/2 lg:w-1/3">
                         <div
-                            class="wow fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center"
+                            class="wow fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center cursor-pointer"
                             data-wow-delay=".3s"
                         >
                             <div
@@ -101,7 +101,7 @@
 
                     <div class="w-full px-4 md:w-1/2 lg:w-1/3">
                         <div
-                            class="wow fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center"
+                            class="wow fadeInUp group mx-auto mb-[60px] max-w-[310px] text-center cursor-pointer"
                             data-wow-delay=".4s"
                         >
                             <div

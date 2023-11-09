@@ -4,8 +4,6 @@
         <TGEWorkProcessSection anchor="work-process"/>
         <TGEScreensSection anchor="screens"/>
         <TGEDownloadsSection anchor="downloads"/>
-        <TGETestimonialsSection anchor="testimonials"/>
-        <TGEFrequentAnswersSection anchor="faq"/>
     </main>
 </template>
 
@@ -24,8 +22,12 @@ export default {
         TGEWorkProcessSection,
         TGEScreensSection,
         TGEDownloadsSection,
-        TGETestimonialsSection,
-        TGEFrequentAnswersSection,
     },
+		props: {
+			type: {
+				type: String,
+				required: false
+			}
+		}
 }
 </script>
