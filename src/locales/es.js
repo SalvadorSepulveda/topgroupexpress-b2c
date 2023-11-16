@@ -19,13 +19,13 @@ export default {
 
 // Features
     featureTitle: "¿Qué ofrecemos?",
-    featureDescription: "Motor de reserva de grupos con disponibilidad real y procesos completamente automatizados.",
+    featureDescription: "Reservas de grupos en hoteles 7+habitaciones",
     featureApps: "Apps móviles y web",
     appsDescription: "Reserve grupos desde su PC, teléfono o tablet",
     featurePrices: "Precios competitivos",
     pricesDescription: "Cotizaciones negociadas directamente con el hotel",
     featureDashboard: "Dashboard Único",
-    dashboardDescription: "Todos los grupos en el mismo panel",
+    dashboardDescription: "Todos los destinos en el mismo panel",
     featureAgility: "Agilidad",
     agilityDescription: "Cotizaciones en menos de 12 horas",
     featureReservations: "Reservas a Medida",
@@ -39,10 +39,10 @@ export default {
     bigTitleAgencies: "Siga sus reservas en tiempo real.",
     descriptionAgencies: "Una interfaz fácil de usar con pocos botones para acciones y gestiones rápidas. Simplemente complete su cotización, envíela y reciba notificaciones en cada paso del proceso.",
     // List agencies
-    oneListAgencies: "Rellene la información del grupo.",
-    twoListAgencies: "Envíe su consulta a los hoteles con un solo clic.",
-    threeListAgencies: "Obtenga una cotización con excelentes tarifas para grupos.",
-    fourListAgencies: "Negocie, modifique y reserve su hotel en unos pocos clics.",
+    oneListAgencies: "Introduzca su petición",
+    twoListAgencies: "El sistema trabajará en consultar a los hoteles que pueden estar interesados en ella.",
+    threeListAgencies: "Obtenga una cotización con excelentes tarifas de grupos.",
+    fourListAgencies: "Confirme, modifique, realice pagos, todas las gestiones, en unos pocos clics.",
     // Hoteliers
     smallTitleHoteliers: "Aplicación de hoteleros.",
     bigTitleHoteliers: "Envíe cotizaciones en cuestión de segundos.",

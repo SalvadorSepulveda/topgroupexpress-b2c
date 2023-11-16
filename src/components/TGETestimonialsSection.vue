@@ -140,6 +140,13 @@ export default {
 				rate: 5,
 				src: 'https://cdn.topgroups.travel/websites/assets/clients/tbo.png',
 			},
+			{
+				title: 'Mogu',
+				subtitle: 'Sara',
+				text: 'step one, eficaces, el complemento perfecto totalmente adaptado',
+				rate: 5,
+				src: 'https://cdn.topgroups.travel/websites/assets/clients/mogu.png',
+			}
         ]
     }),
     props: {

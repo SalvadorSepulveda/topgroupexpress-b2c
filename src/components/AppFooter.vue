@@ -15,13 +15,8 @@
                             >
                                 <img
                                     alt="logo"
-                                    class="block max-w-full dark:hidden"
+                                    class="max-w-full"
                                     src="@/assets/images/logo/logo.svg"
-                                />
-                                <img
-                                    alt="logo"
-                                    class="hidden max-w-full dark:block"
-                                    src="@/assets/images/logo/logo-white.svg"
                                 />
                             </a>
                             <p class="text-base text-body">
@@ -236,6 +231,9 @@
                     </div>
                 </div>
             </div>
+			<div class="flex justify-center p-[1rem]">
+				<img class="2xl:w-[50%] xl:w-[60%] lg:w-[70%] md:w-[70%] sm:w-[70%]" src="https://cdn.topgroups.travel/websites/assets/images/footer.jpg" alt="footer-img">
+			</div>
         </div>
 
         <div
