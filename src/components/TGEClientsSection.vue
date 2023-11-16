@@ -13,121 +13,16 @@
             data-wow-delay=".2s"
         >
             <div class="-mx-4 flex flex-wrap items-center justify-center">
-                <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                    <div class="mb-5 text-center">
-                        <a
-                            class="block"
-                            href="javascript:void(0)"
-                        >
-                            <img
-                                alt="client"
-                                class="mx-auto max-h-[150px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
-                                src="@/assets/images/clients/trave_compositor.png"
-                            />
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                    <div class="mb-5 text-center">
-                        <a
-                            class="block"
-                            href="javascript:void(0)"
-                        >
-                            <img
-                                alt="client"
-                                class="mx-auto max-h-[150px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
-                                src="@/assets/images/clients/zafiro_tours.png"
-                            />
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                    <div class="mb-5 text-center">
-                        <a
-                            class="block"
-                            href="javascript:void(0)"
-                        >
-                            <img
-                                alt="client"
-                                class="mx-auto max-h-[110px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
-                                src="@/assets/images/clients/airmet.png"
-                            />
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                    <div class="mb-5 text-center">
-                        <a
-                            class="block"
-                            href="javascript:void(0)"
-                        >
-                            <img
-                                alt="client"
-                                class="mx-auto max-w-[150px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
-                                src="@/assets/images/clients/elcorteingles.png"
-                            />
-                        </a>
-                    </div>
-                </div>
-
-                <div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-                    <div class="mb-5 text-center">
-                        <a
-                            class="block"
-                            href="javascript:void(0)"
-                        >
-                            <img
-                                alt="client"
-                                class="mx-auto max-w-[150px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
-                                src="@/assets/images/clients/kaytrip.png"
-                            />
-                        </a>
-                    </div>
-                </div>
-
-				<div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
+				<div v-for="(client, index) in clients" :key="index" class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
 					<div class="mb-5 text-center">
 						<a
 							class="block"
 							href="javascript:void(0)"
 						>
 							<img
-								alt="client"
-								class="mx-auto max-w-[150px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
-								src="@/assets/images/clients/tbo.png"
-							/>
-						</a>
-					</div>
-				</div>
-
-				<div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-					<div class="mb-5 text-center">
-						<a
-							class="block"
-							href="javascript:void(0)"
-						>
-							<img
-								alt="client"
-								class="mx-auto max-h-[100px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
-								src="@/assets/images/clients/didatravel.png"
-							/>
-						</a>
-					</div>
-				</div>
-
-				<div class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
-					<div class="mb-5 text-center">
-						<a
-							class="block"
-							href="javascript:void(0)"
-						>
-							<img
-								alt="client"
-								class="mx-auto max-h-[100px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0"
-								src="@/assets/images/clients/envol_espace.png"
+								:alt="client.name"
+								class="mx-auto max-w-[130px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+								:src="client.image"
 							/>
 						</a>
 					</div>
@@ -145,6 +40,46 @@ export default {
     components: {
         TGESection,
     },
+	data: () => ({
+		clients : [
+			{
+				"name": "Airmet",
+				"image": "https://cdn.topgroups.travel/websites/assets/clients/airmet.png",
+			},
+			{
+				"name": "Didatravel",
+				"image": "https://cdn.topgroups.travel/websites/assets/clients/didatravel.png",
+			},
+			{
+				"name": "Viajes El Corte Inglés",
+				"image": "https://cdn.topgroups.travel/websites/assets/clients/elcorteingles.png",
+			},
+			{
+				"name": "Envol Espace",
+				"image": "https://cdn.topgroups.travel/websites/assets/clients/envol_espace.png",
+			},
+			{
+				"name": "Exa Travel",
+				"image": "https://cdn.topgroups.travel/websites/assets/clients/exatravel.png",
+			},
+			{
+				"name": "Kaytrip",
+				"image": "https://cdn.topgroups.travel/websites/assets/clients/kaytrip.png",
+			},
+			{
+				"name": "TBO",
+				"image": "https://cdn.topgroups.travel/websites/assets/clients/tbo.png",
+			},
+			{
+				"name": "Travel Compositor",
+				"image": "https://cdn.topgroups.travel/websites/assets/clients/travel_compositor.png",
+			},
+			{
+				"name": "Zafiro Tours",
+				"image": "https://cdn.topgroups.travel/websites/assets/clients/zafiro_tours.png",
+			}
+		]
+	}),
     props: {
         anchor: {
             type: String,
