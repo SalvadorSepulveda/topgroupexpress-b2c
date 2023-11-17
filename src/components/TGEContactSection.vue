@@ -121,15 +121,24 @@ export default {
             required: true,
         },
     },
+	/* TODO: Cambiar URL cuando el dominio cambie a topgroupexpress.com*/
 	methods: {
-		onSubmitFormClicked() {
-			console.log({
+		async onSubmitFormClicked(){
+			this.axios.post('https://backend.topgroups.travel/api/ext/website/contact/send', {
 				name: this.name,
 				company: this.company,
 				email: this.email,
 				phone_number: this.phone_number,
 				message: this.message,
-			});
+				domain: 'website.topgroups.travel',
+				url: 'https://website.topgroups.travel/',
+				source: 'home',
+			}).then((response) => {
+				console.log(response)
+			})
+			.catch((error) => {
+				console.log(error)
+			})
 		},
 	}
 }

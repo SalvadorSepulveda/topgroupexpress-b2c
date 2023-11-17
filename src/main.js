@@ -5,6 +5,8 @@ import router from './router';
 import { createI18n } from 'vue-i18n';
 import setupIcons from './components/icons';
 import setupFlag from './components/flags';
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 async function createAppWithI18n() {
     const i18n = createI18n({
@@ -19,11 +21,27 @@ async function createAppWithI18n() {
     });
 
     const app = createApp(App);
+
+    // Usa Pinia para la gestión del estado
     app.use(pinia);
+
+    // Configura Axios con VueAxios
+    app.use(VueAxios, axios);
+    app.config.globalProperties.$axios = axios;
+
+    // Usa Vue Router
     app.use(router);
+
+    // Usa Vue I18n
     app.use(i18n);
+
+    // Configura los iconos
     setupIcons(app);
+
+    // Configura las banderas
     setupFlag(app);
+
+    // Monta la aplicación en el elemento con id 'app'
     app.mount('#app');
 }
 
