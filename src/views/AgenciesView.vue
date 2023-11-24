@@ -1,27 +1,25 @@
 <template>
     <main>
-        <TGEAboutSection anchor="about"/>
-        <TGEWorkProcessSection anchor="work-process"/>
-        <TGEScreensSection anchor="screens"/>
-        <TGEDownloadsSection anchor="downloads"/>
+        <TGEAboutSectionAgencies anchor="about"/>
+        <TGEWorkProcessSectionAgencies anchor="work-process"/>
+        <TGEScreensSectionAgencies anchor="screens"/>
+        <TGEDownloadsSectionAgencies anchor="downloads"/>
     </main>
 </template>
 
 <script>
-import TGEAboutSection from '@/components/TGEAboutSection.vue'
-import TGEWorkProcessSection from '@/components/TGEWorkProcessSection.vue'
-import TGEScreensSection from '@/components/TGEScreensSection.vue'
-import TGEDownloadsSection from '@/components/TGEDownloadsSection.vue'
-import TGETestimonialsSection from '@/components/TGETestimonialsSection.vue'
-import TGEFrequentAnswersSection from '@/components/TGEFrequentAnswersSection.vue'
+import TGEAboutSectionAgencies from '@/components/TGEAboutSectionAgencies.vue'
+import TGEWorkProcessSectionAgencies from '@/components/TGEWorkProcessSectionAgencies.vue'
+import TGEScreensSectionAgencies from '@/components/TGEScreensSectionAgencies.vue'
+import TGEDownloadsSectionAgencies from '@/components/TGEDownloadsSectionAgencies.vue'
 
 export default {
     name: 'AgenciesView',
     components: {
-        TGEAboutSection,
-        TGEWorkProcessSection,
-        TGEScreensSection,
-        TGEDownloadsSection,
+		TGEAboutSectionAgencies,
+		TGEWorkProcessSectionAgencies,
+        TGEScreensSectionAgencies,
+        TGEDownloadsSectionAgencies,
     },
 		props: {
 			type: {

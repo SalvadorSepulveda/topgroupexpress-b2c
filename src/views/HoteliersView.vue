@@ -1,27 +1,25 @@
 <template>
     <main>
-        <TGEAboutSection anchor="about"/>
-        <TGEWorkProcessSection anchor="work-process"/>
-        <TGEScreensSection anchor="screens"/>
-        <TGEDownloadsSection anchor="downloads"/>
+        <TGEAboutSectionHoteliers anchor="about"/>
+        <TGEWorkProcessSectionHoteliers anchor="work-process"/>
+        <TGEScreensSectionHoteliers anchor="screens"/>
+        <TGEDownloadsSectionHoteliers anchor="downloads"/>
     </main>
 </template>
 
 <script>
-import TGEAboutSection from '@/components/TGEAboutSection.vue'
-import TGEWorkProcessSection from '@/components/TGEWorkProcessSection.vue'
-import TGEScreensSection from '@/components/TGEScreensSection.vue'
-import TGEDownloadsSection from '@/components/TGEDownloadsSection.vue'
-import TGETestimonialsSection from '@/components/TGETestimonialsSection.vue'
-import TGEFrequentAnswersSection from '@/components/TGEFrequentAnswersSection.vue'
+import TGEAboutSectionHoteliers from '@/components/TGEAboutSectionHoteliers.vue'
+import TGEWorkProcessSectionHoteliers from '@/components/TGEWorkProcessSectionHoteliers.vue'
+import TGEScreensSectionHoteliers from '@/components/TGEScreensSectionHoteliers.vue'
+import TGEDownloadsSectionHoteliers from '@/components/TGEDownloadsSectionHoteliers.vue'
 
 export default {
     name: 'HoteliersView',
     components: {
-        TGEAboutSection,
-        TGEWorkProcessSection,
-        TGEScreensSection,
-        TGEDownloadsSection,
+        TGEAboutSectionHoteliers,
+        TGEWorkProcessSectionHoteliers,
+        TGEScreensSectionHoteliers,
+        TGEDownloadsSectionHoteliers,
     },
 }
 </script>
