@@ -1,54 +1,41 @@
-import {createRouter, createWebHistory} from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+// router.js
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
-            path: '/',
+            path: '/:lang?',
             name: 'home',
             component: HomeView,
         },
         {
-            path: '/agencies',
+            path: '/:lang?/agencies',
             name: 'agencies',
             component: () => import('../views/AgenciesView.vue'),
         },
         {
-            path: '/hoteliers',
+            path: '/:lang?/hoteliers',
             name: 'hoteliers',
             component: () => import('../views/HoteliersView.vue'),
         },
+        // Resto de las rutas...
         {
-            path: '/downloads',
-            name: 'downloads',
-            component: () => import('../views/DownloadsView.vue'),
-        },
-        {
-            path: '/blog',
-            name: 'blog',
-            component: () => import('../views/BlogView.vue'),
-        },
-        {
-            path: '/blog/:entry',
-            name: 'blog-entry',
-            component: () => import('../views/BlogEntryView.vue'),
-        },
-        {
-            path: '/:pathMatch(.*)*',
+            path: '/:lang?/:pathMatch(.*)*',
             name: 'page-not-found',
             component: () => import('../views/PageNotFoundView.vue'),
         },
     ],
     scrollBehavior(to, from, savedPosition) {
         if (savedPosition) {
-            return savedPosition
+            return savedPosition;
         }
         if (to.hash) {
-            return {el: to.hash}
+            return { el: to.hash };
         }
-        return {x: 0, y: 0}
+        return { x: 0, y: 0 };
     },
-})
+});
 
-export default router
+export default router;

@@ -29,36 +29,38 @@
 
 <script>
 import TGEFlag from "@/components/flags/TGEFlag.vue";
-import { useI18n } from 'vue-i18n';
 
 export default {
-    components: {TGEFlag},
-    data() {
-        return {
-            languages: [
-                {flag: "es"},
-                {flag: "en"},
-                {flag: "fr"},
-                {flag: "cn"},
-            ],
-            selectedLanguage: {flag: "es"},
-            dropdownOpen: false,
-        };
-    },
-    computed: {
-        filteredLanguages() {
-            return this.languages.filter(language => language.flag !== this.selectedLanguage.flag);
-        }
-    },
-    methods: {
-        toggleDropdown() {
-            this.dropdownOpen = !this.dropdownOpen;
-        },
-        selectLanguage(language) {
-            this.$i18n.locale = language.flag;
-            this.selectedLanguage = language;
-            this.dropdownOpen = false;
-        },
-    },
+	components: { TGEFlag },
+	data() {
+		return {
+			languages: [
+				{ flag: "es" },
+				{ flag: "en" },
+				{ flag: "fr" },
+				{ flag: "cn" },
+			],
+			selectedLanguage: { flag: "es" },
+			dropdownOpen: false,
+		};
+	},
+	computed: {
+		filteredLanguages() {
+			return this.languages.filter(language => language.flag !== this.selectedLanguage.flag);
+		}
+	},
+	methods: {
+		toggleDropdown() {
+			this.dropdownOpen = !this.dropdownOpen;
+		},
+		selectLanguage(language) {
+			this.$i18n.locale = language.flag;
+			this.selectedLanguage = language;
+			this.dropdownOpen = false;
+			const currentRoute = this.$route;
+			const params = { ...currentRoute.params, lang: language.flag };
+			this.$router.push({ name: currentRoute.name, params });
+		},
+	},
 };
 </script>
