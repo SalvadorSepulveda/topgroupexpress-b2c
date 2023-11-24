@@ -1,30 +1,30 @@
 <template>
-    <div class="relative ml-[30px] flex items-center dark:text-white cursor-pointer">
-        <div class="flex z-10" @click="toggleDropdown">
-            <div class="mt-[4px]">
-                <TGEFlag
-                    :name="selectedLanguage.flag"
-                    class="w-8 h-8 inline-block rounded-full"
-                />
-            </div>
-        </div>
-        <div
-            v-if="dropdownOpen"
-            class="absolute left-[-8px] top-[-18px] pt-[52px] mt-2 bg-white shadow-md rounded-md py-1 px-2 bg-red-500 bg-opacity-20 z-0"
-        >
-            <div
-                v-for="language in filteredLanguages"
-                :key="language.flag"
-                class="flex items-center cursor-pointer mt-[4px] mb-[9px]"
-                @click="selectLanguage(language)"
-            >
-                <TGEFlag
-                    :name="language.flag"
-                    class="w-8 h-8 inline-block rounded-full mt-1.5"
-                />
-            </div>
-        </div>
-    </div>
+	<div class="relative ml-[30px] flex items-center dark:text-white cursor-pointer">
+		<div class="flex z-10" @click="toggleDropdown">
+			<div class="mt-[4px]">
+				<TGEFlag
+					:name="selectedLanguage.flag"
+					class="w-8 h-8 inline-block rounded-full"
+				/>
+			</div>
+		</div>
+		<div
+			v-if="dropdownOpen"
+			class="absolute left-[-8px] top-[-18px] pt-[52px] mt-2 bg-white shadow-md rounded-md py-1 px-2 bg-red-500 bg-opacity-20 z-0"
+		>
+			<div
+				v-for="language in filteredLanguages"
+				:key="language.flag"
+				class="flex items-center cursor-pointer mt-[4px] mb-[9px]"
+				@click="selectLanguage(language)"
+			>
+				<TGEFlag
+					:name="language.flag"
+					class="w-8 h-8 inline-block rounded-full mt-1.5"
+				/>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -46,8 +46,10 @@ export default {
 	},
 	computed: {
 		filteredLanguages() {
-			return this.languages.filter(language => language.flag !== this.selectedLanguage.flag);
-		}
+			return this.languages.filter(
+				(language) => language.flag !== this.selectedLanguage.flag
+			);
+		},
 	},
 	methods: {
 		toggleDropdown() {
@@ -60,7 +62,23 @@ export default {
 			const currentRoute = this.$route;
 			const params = { ...currentRoute.params, lang: language.flag };
 			this.$router.push({ name: currentRoute.name, params });
+			localStorage.setItem("selectedLanguage", language.flag);
 		},
+		initializeLanguage() {
+			const storedLanguage = localStorage.getItem("selectedLanguage");
+			if (storedLanguage) {
+				const language = this.languages.find(
+					(item) => item.flag === storedLanguage
+				);
+				if (language) {
+					this.selectedLanguage = language;
+					this.$i18n.locale = storedLanguage;
+				}
+			}
+		},
+	},
+	beforeMount() {
+		this.initializeLanguage();
 	},
 };
 </script>
