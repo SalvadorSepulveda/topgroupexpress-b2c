@@ -9,10 +9,10 @@ export default {
     signUp: "注册旅行社",
 
 // Hero
-    title1: "酒店",
+    title1: "团队酒店",
     title2: "预订",
     title3: "中心",
-    title4: "团队",
+    title4: "",
     subtitle: "专业人士专享服务",
     titleVideo: "了解它是如何工作的",
     descriptionVideo: "观看演示",
