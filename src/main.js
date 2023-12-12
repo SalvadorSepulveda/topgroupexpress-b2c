@@ -13,7 +13,7 @@ async function createAppWithI18n() {
     const browserLanguage = navigator.language.split('-')[0];
 
     // Idiomas compatibles con la pagina web
-    const supportedLanguages = ['en', 'es', 'fr', 'cn'];
+    const supportedLanguages = ['en', 'es'];
 
     // Establece el idioma por defecto si no hay idioma compatible
     const defaultLanguage = supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en';
@@ -25,8 +25,8 @@ async function createAppWithI18n() {
         messages: {
             en: (await import('./locales/en.js')).default,
             es: (await import('./locales/es.js')).default,
-            fr: (await import('./locales/fr.js')).default,
-            cn: (await import('./locales/cn.js')).default,
+            // fr: (await import('./locales/fr.js')).default,
+            // cn: (await import('./locales/cn.js')).default,
         },
     });
 

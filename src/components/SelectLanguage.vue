@@ -37,10 +37,10 @@ export default {
 			languages: [
 				{ flag: "es" },
 				{ flag: "en" },
-				{ flag: "fr" },
-				{ flag: "cn" },
+				// { flag: "fr" },
+				// { flag: "cn" },
 			],
-			selectedLanguage: { flag: "es" },
+			selectedLanguage: { flag: "en" },
 			dropdownOpen: false,
 		};
 	},
