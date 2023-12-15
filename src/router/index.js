@@ -20,6 +20,11 @@ const router = createRouter({
             name: 'hoteliers',
             component: () => import('../views/HoteliersView.vue'),
         },
+        {
+            path: '/:lang?/privacy-policy',
+            name: 'privacy-policy',
+            component: () => import('../views/PrivacyPolicyView.vue'),
+        },
         // Resto de las rutas...
         {
             path: '/:lang?/:pathMatch(.*)*',
