@@ -1,5 +1,5 @@
 export default {
-// Navbar
+    // Navbar
     offer: "¿Que ofrecemos?",
     agency: "Agencias",
     hotelier: "Hoteleros",
@@ -8,7 +8,7 @@ export default {
     contact: "Contacto",
     signUp: "App Hoteleros",
 
-// Hero
+    // Hero
     title1: "Central de",
     title2: "reservas de hoteles",
     title3: "para",
@@ -17,7 +17,7 @@ export default {
     titleVideo: "Vea como funciona",
     descriptionVideo: "Ver demostración",
 
-// Features
+    // Features
     featureTitle: "¿Qué ofrecemos?",
     featureDescription: "Reservas de grupos en hoteles 7+habitaciones",
     featureApps: "Apps móviles y web",
@@ -33,7 +33,7 @@ export default {
     featureUpdates: "Actualizaciones",
     updatesDescription: "Notificaciones y alertas en tiempo real a través de mails y intranet / APP",
 
-// Apps
+    // Apps
     // Agencies
     smallTitleAgencies: "Aplicación de agencia.",
     bigTitleAgencies: "Siga sus reservas en tiempo real.",
@@ -53,7 +53,7 @@ export default {
     threeListHoteliers: "Edite y añada extras de manera sencilla.",
     fourListHoteliers: "Reciba pagos rápidamente en una interfaz centralizada e intuitiva.",
 
-// Work Section
+    // Work Section
     titleWorkSection: "¿Cómo se usa?",
     descriptionWorkSection: "Nuestras aplicaciones son gratuitas y puedes usarlas completamente sin costo alguno. Nosotros aplicamos un pequeño fee de intermediación en el precio cotizado, no notará el mismo. ¡Muy sencillo! Para registrarte:",
 
@@ -67,15 +67,15 @@ export default {
     accessCodeTitle: "Recibe tus códigos de acceso",
     accessCodeDescription: "Te enviaremos tus códigos de acceso y podrás disfrutar de la plataforma como desees.",
 
-// Screens Scetion
+    // Screens Scetion
     titleScreens: "¿Cómo es la aplicación?",
     descriptionScreens: "¡Descubre ahora la interfaz de nuestra aplicación!",
 
-// Clients
+    // Clients
     titleClients: "Lo que dicen los clientes",
     descriptionClients: "¡Lee lo que dicen nuestros clientes sobre nosotros!",
 
-// Respuestas Frecuentes
+    // Respuestas Frecuentes
     frequentAnswerTitle: "Preguntas Frecuentes",
     frequentAnswerDescription: "Encuentra tu respuesta aquí y haznos tus preguntas aquí.",
     // First
@@ -111,11 +111,11 @@ export default {
     answer5TextLink: "Haga clic aquí",
     answer5_1: "o en el botón naranja en la parte superior derecha y luego seleccione el botón de registro.",
 
-// Blog
+    // Blog
     titleBlog: "Noticias y Blogs",
     descriptionBlog: "Encuentra contenido informativo y educativo aquí sobre nuestro software y nuestra industria.",
 
-// Form
+    // Form
     formTitle: "¿Una pregunta? ¿Una sugerencia? ¿Un comentario?",
     formDescription: "No dudes en escribirnos para cualquier cosa. Estamos aquí para ayudarte.",
 
@@ -164,4 +164,5 @@ export default {
 
     title9Privacy: "9.- LEGISLACIÓN APLICABLE Y JURISDICCIÓN COMPETENTE",
     text9Privacy: "El presente Aviso Legal se interpretará y regirá de conformidad con la legislación española. Top Group Express y los usuarios, con renuncia expresa a cualquier otro fuero que pudiera corresponderles, se someten al de los juzgados y tribunales del domicilio del usuario para cualquier controversia que pudiera derivarse del acceso o uso de la web. En el caso de que el usuario tenga su domicilio fuera de España, Top Group Express y el usuario, se someten, con renuncia expresa a cualquier otro fuero, a los juzgados y tribunales del domicilio de Top Group Express."
+
 };
