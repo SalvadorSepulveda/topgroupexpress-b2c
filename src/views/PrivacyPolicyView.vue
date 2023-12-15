@@ -5,14 +5,14 @@
 				{{ $t('titlePrivacy') }}
 			</h1>
 			<br>
-			<p>
+			<p class="dark:text-white">
 				{{ $t('privacyP1') }}
 			</p>
 			<br>
 			<h2>
 				{{ $t('title1Privacy')}}
 			</h2>
-			<p>
+			<p class="dark:text-white">
 				{{ $t('SocialReasonPrivacy')}}<br>
 				{{ $t('NamePrivacy')}}<br>
 				{{ $t('AddresPrivacy')}}<br>
@@ -27,7 +27,7 @@
 			<h2>
 				{{ $t('title2Privacy')}}
 			</h2>
-			<p>
+			<p class="dark:text-white">
 				{{ $t('text2Privacy')}}
 			</p>
 			<h2>
@@ -36,25 +36,25 @@
 			<h3 class="pl-4">
 				{{ $t('title3_1Privacy')}}
 			</h3>
-			<p class="pl-4">
+			<p class="pl-4 dark:text-white">
 				{{ $t('text3_1Privacy')}}
-		</p>
+			</p>
 			<h3 class="pl-4">
 				{{ $t('title3_2Privacy')}}
 			</h3>
-			<p class="pl-4">
+			<p class="pl-4 dark:text-white">
 				{{ $t('text3_2Privacy')}}
 			</p>
 			<h2>
 				{{ $t('title4Privacy')}}
 			</h2>
-			<p>
+			<p class="dark:text-white">
 				{{ $t('text4Privacy')}}
 			</p>
 			<h2>
 				{{ $t('title5Privacy')}}
 			</h2>
-			<p>
+			<p class="dark:text-white">
 				{{ $t('text5Privacy')}}
 				<br>
 				{{ $t('text5list1Privacy')}}
@@ -66,25 +66,25 @@
 			<h2>
 				{{ $t('title6Privacy')}}
 			</h2>
-			<p>
+			<p class="dark:text-white">
 				{{ $t('text6Privacy')}}
 			</p>
 			<h2>
 				{{ $t('title7Privacy')}}
 			</h2>
-			<p>
+			<p class="dark:text-white">
 				{{ $t('text7Privacy')}}
 			</p>
 			<h2>
 				{{ $t('title8Privacy')}}
 			</h2>
-			<p>
+			<p class="dark:text-white">
 				{{ $t('text8Privacy')}}
 			</p>
 			<h2>
 				{{ $t('title9Privacy')}}
 			</h2>
-			<p>
+			<p class="dark:text-white">
 				{{ $t('text9Privacy')}}
 			</p>
 		</div>
