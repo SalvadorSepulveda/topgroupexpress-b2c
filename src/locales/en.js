@@ -129,10 +129,10 @@ export default {
     AddresPrivacy: "Registered Address: C/ Bartolomé Abelenda, Picasso Passage Building, Block 3 Local C",
     locatePrivacy: "Town: Coin",
     ProvincePrivacy: "Province: Málaga",
-    PostalCodePrivacy: "Postal Code: 29001",
+    PostalCodePrivacy: "Postal Code: 29100",
     CIFPrivacy: "Tax ID (C.I.F./D.N.I.): B93535862",
     PhonePrivacy: "Contact Phone: +34 951 43 27 57",
-    EmailPrivacy: "Email: product@topgroupexpress.com",
+    MailPrivacy: "Email: product@topgroupexpress.com",
     datePrivacy: "Registry Information: Top Group Express Turismo SL is registered in the Mercantile Register of Malaga.",
 
     title2Privacy: "2.- OBJECT",

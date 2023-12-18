@@ -21,7 +21,7 @@
 				{{ $t('PostalCodePrivacy')}}<br>
 				{{ $t('CIFPrivacy')}}<br>
 				{{ $t('PhonePrivacy')}}<br>
-				{{ $t('EmailPrivacy')}}<br>
+				{{ $t('MailPrivacy')}} product@topgroupexpress.com<br>
 				{{ $t('datePrivacy')}}<br>
 			</p>
 			<h2>
@@ -79,7 +79,7 @@
 				{{ $t('title8Privacy')}}
 			</h2>
 			<p class="dark:text-white">
-				{{ $t('text8Privacy')}}
+				{{ $t('text8Privacy')}} product@topgroupexpress.com.
 			</p>
 			<h2>
 				{{ $t('title9Privacy')}}
