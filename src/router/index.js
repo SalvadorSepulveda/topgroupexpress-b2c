@@ -11,6 +11,11 @@ const router = createRouter({
             component: HomeView,
         },
         {
+          path: '/:lang?/downloads',
+          name: 'downloads',
+          component: () => import('../views/DownloadsView.vue'),
+        },
+        {
             path: '/:lang?/agencies',
             name: 'agencies',
             component: () => import('../views/AgenciesView.vue'),

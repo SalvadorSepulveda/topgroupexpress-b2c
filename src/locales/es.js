@@ -6,7 +6,8 @@ export default {
     downloads: "Descargas",
     blog: "Blog",
     contact: "Contacto",
-    signUp: "App Hoteleros",
+    appHoteliers: "App Hoteleros",
+    appAgencies: "App Agencias",
 
     // Hero
     title1: "Central de",
@@ -119,6 +120,10 @@ export default {
     formTitle: "¿Una pregunta? ¿Una sugerencia? ¿Un comentario?",
     formDescription: "No dudes en escribirnos para cualquier cosa. Estamos aquí para ayudarte.",
 
+    // Footer
+    textCopy: "© 2023 Top Group Express. Todos los derechos reservados.",
+    textButtonPrivacy: "Términos y Políticas",
+
     // Privacy
     titlePrivacy: "AVISO LEGAL",
     privacyP1: "El presente Aviso Legal regula las condiciones generales de acceso y utilización del sitio web accesible en la dirección URL www.topgroupexpress.com (en adelante, el sitio web), que Top Group Express Turismo pone a disposición de los usuarios de Internet. La utilización del sitio web implica la aceptación plena y sin reservas de todas y cada una de las disposiciones incluidas en este Aviso Legal. En consecuencia, el usuario del sitio web debe leer atentamente el presente Aviso Legal en cada una de las ocasiones en que se proponga utilizar la web, ya que el texto podría sufrir modificaciones a criterio del titular de la web, o a causa de un cambio legislativo, jurisprudencial o en la práctica empresarial.",
@@ -164,5 +169,4 @@ export default {
 
     title9Privacy: "9.- LEGISLACIÓN APLICABLE Y JURISDICCIÓN COMPETENTE",
     text9Privacy: "El presente Aviso Legal se interpretará y regirá de conformidad con la legislación española. Top Group Express y los usuarios, con renuncia expresa a cualquier otro fuero que pudiera corresponderles, se someten al de los juzgados y tribunales del domicilio del usuario para cualquier controversia que pudiera derivarse del acceso o uso de la web. En el caso de que el usuario tenga su domicilio fuera de España, Top Group Express y el usuario, se someten, con renuncia expresa a cualquier otro fuero, a los juzgados y tribunales del domicilio de Top Group Express."
-
 };

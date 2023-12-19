@@ -26,7 +26,6 @@
 		</div>
 	</div>
 </template>
-
 <script>
 import TGEFlag from "@/components/flags/TGEFlag.vue";
 
@@ -37,10 +36,9 @@ export default {
 			languages: [
 				{ flag: "es" },
 				{ flag: "en" },
-				// { flag: "fr" },
-				// { flag: "cn" },
+				// Otros idiomas...
 			],
-			selectedLanguage: { flag: "en" },
+			selectedLanguage: { flag: "en" }, // Valor por defecto
 			dropdownOpen: false,
 		};
 	},
@@ -56,24 +54,23 @@ export default {
 			this.dropdownOpen = !this.dropdownOpen;
 		},
 		selectLanguage(language) {
-			this.$i18n.locale = language.flag;
-			this.selectedLanguage = language;
+			this.updateLanguageAndRoute(language.flag);
+		},
+		updateLanguageAndRoute(langCode) {
+			this.$i18n.locale = langCode;
+			this.selectedLanguage = { flag: langCode };
 			this.dropdownOpen = false;
 			const currentRoute = this.$route;
-			const params = { ...currentRoute.params, lang: language.flag };
+			const params = { ...currentRoute.params, lang: langCode };
 			this.$router.push({ name: currentRoute.name, params });
-			localStorage.setItem("selectedLanguage", language.flag);
 		},
 		initializeLanguage() {
-			const storedLanguage = localStorage.getItem("selectedLanguage");
-			if (storedLanguage) {
-				const language = this.languages.find(
-					(item) => item.flag === storedLanguage
-				);
-				if (language) {
-					this.selectedLanguage = language;
-					this.$i18n.locale = storedLanguage;
-				}
+			const browserLang = navigator.language.split('-')[0]; // Obtener el código de idioma del navegador
+			const language = this.languages.find(
+				(item) => item.flag === browserLang
+			);
+			if (language) {
+				this.updateLanguageAndRoute(browserLang);
 			}
 		},
 	},

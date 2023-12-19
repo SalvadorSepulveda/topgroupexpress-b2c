@@ -6,7 +6,9 @@ export default {
     downloads: "App",
     blog: "Blog",
     contact: "Contact",
-    signUp: "Inscription agences",
+    appHoteliers: "App Hôteliers",
+    appAgencies: "App Agences",
+
 
 // Hero
     title1: "Centre de",

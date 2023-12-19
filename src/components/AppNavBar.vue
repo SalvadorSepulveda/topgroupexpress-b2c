@@ -3,7 +3,7 @@
         :class="navbarClasses"
         class="navbar absolute top-0 left-0 z-50 w-full border-stroke bg-white duration-300 dark:border-stroke-dark dark:bg-black"
     >
-        <div class="container relative max-w-[1400px]">
+        <div class="container relative max-w-[1600px]">
             <div class="flex items-center justify-between">
                 <div class="block py-4 lg:py-0">
                     <MainLogo />
@@ -23,9 +23,6 @@
                         class="block h-[2px] w-7 bg-black dark:bg-white"
                     ></span>
                 </button>
-
-                <!-- TODO: Al hacer click en un enlace que se cierre el navbar, esta echo con tailwind. -->
-
                 <div
                     class="menu-wrapper relative hidden justify-between lg:flex"
                 >
@@ -52,6 +49,7 @@
                                 v-for="item in items"
                                 :key="item.label"
                                 class="menu-item"
+								@click="closeNavbar"
                             >
                                 <router-link
                                     :to="item.route"
@@ -66,18 +64,18 @@
 
                 <div class="mr-[60px] flex items-center justify-end lg:mr-0">
                     <ColorModeSwitcher />
-                    <a
-                        class="hidden py-[10px] px-6 text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary sm:inline-block"
-                        href="https://hoteliers.topgroupexpress.com/"
-                    >
-                        {{ $t('signUp') }}
-                    </a>
+						<a
+							class="hidden py-[10px] px-6 text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary sm:inline-block"
+							href="https://hoteliers.topgroupexpress.com/"
+						>
+							<span>{{ $t('appHoteliers') }}</span>
+						</a>
 
                     <a
                         class="hidden rounded-md bg-primary py-[10px] px-[30px] text-base font-medium text-white hover:bg-opacity-90 sm:inline-block"
                         href="https://agencies.topgroupexpress.com/"
                     >
-                        <span>Login</span>
+                        <span>{{ $t('appAgencies') }}</span>
                     </a>
                     <SelectLanguage
                         class="menu-wrapper relative justify-center lg:flex"
@@ -123,10 +121,14 @@ export default {
                 label: 'downloads',
                 route: '/downloads',
             },
-/*            {
+            /*{
                 label: 'blog',
                 route: '/blog',
-            },*/
+            },
+			{
+				label: 'webinars',
+				route: '/webinars',
+			},*/
             {
                 label: 'contact',
                 route: {
@@ -147,5 +149,10 @@ export default {
             return undefined
         },
     },
+	methods: {
+		closeNavbar() {
+			document.querySelector('.navbarClose').click()
+		}
+	}
 }
 </script>

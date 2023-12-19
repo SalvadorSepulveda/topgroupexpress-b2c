@@ -2,7 +2,7 @@
     <main>
         <TGEHeroSection
             anchor="home"
-            videoURL="https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM"
+            :videoURL="$i18n.locale === 'es' ? 'https://www.youtube.com/watch?v=iv0BfTlx9uU' : 'https://www.youtube.com/watch?v=kLI3v6quZqU'"
         >
             <template v-slot:title>
                 <template v-if="$i18n.locale !== 'cn'">

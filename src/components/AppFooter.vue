@@ -1,8 +1,8 @@
 <template>
     <footer>
         <div class="mt-[3rem] bg-[#F8FAFB] pt-[1rem] pb-[1rem] dark:bg-[#15182A]">
-            <div class="container max-w-[1390px]">
-                <div class="grid gap-[1rem] items-center 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+            <div class="container max-w-[1450px]">
+                <div class="grid gap-[1rem] justify-items-center items-center 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
 					<a
 						href="index.html"
 						class="max-w-[200px]"
@@ -22,13 +22,13 @@
             class="wow fadeInUp bg-primary py-7 dark:bg-black"
             data-wow-delay=".2s"
         >
-            <div class="container max-w-[1390px]">
+            <div class="container max-w-[1450px]">
                 <div class="-mx-3 flex flex-wrap">
                     <div class="order-last w-full px-3 lg:order-first lg:w-1/3">
                         <p
                             class="mt-4 text-center text-base text-white lg:mt-0 lg:text-left"
                         >
-                            &copy; 2023 Top Group Express. All rights reserved
+							{{ $t('textCopy')}}
                         </p>
                     </div>
 
@@ -55,7 +55,7 @@
                             class="flex items-center justify-center space-x-4 sm:space-x-8 md:justify-end lg:justify-end"
                         >
                             <router-link class="text-base text-white" to="/privacy-policy">
-								Privacy Policy
+								{{ $t('textButtonPrivacy')}}
 							</router-link>
                         </div>
                     </div>

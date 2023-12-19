@@ -6,7 +6,8 @@ export default {
     downloads: "Downloads",
     blog: "Blog",
     contact: "Contact",
-    signUp: "App Hoteliers",
+    appHoteliers: "App Hoteliers",
+    appAgencies: "App Agencies",
 
 // Hero
     title1: "Hotel",
@@ -118,6 +119,10 @@ export default {
 // Form
     formTitle: "A question ? A Suggestion ? A Feedback?",
     formDescription: "Don’t hesitate to write to us for anything. We are here for you.",
+
+    // Footer
+    textCopy: "© 2023 Top Group Express. All rights reserved",
+    textButtonPrivacy: "Terms & Policies",
 
     // Privacy
     titlePrivacy: "LEGAL NOTICE",

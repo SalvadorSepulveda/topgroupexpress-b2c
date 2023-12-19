@@ -6,7 +6,8 @@ export default {
     downloads: "下载",
     blog: "博客",
     contact: "联系我们",
-    signUp: "酒店应用",
+    appHoteliers: "酒店应用",
+    appAgencies: "旅行社应用",
 
 // Hero
     title1: "酒店",
