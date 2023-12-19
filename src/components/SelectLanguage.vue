@@ -36,9 +36,8 @@ export default {
 			languages: [
 				{ flag: "es" },
 				{ flag: "en" },
-				// Otros idiomas...
 			],
-			selectedLanguage: { flag: "en" }, // Valor por defecto
+			selectedLanguage: { flag: "en" },
 			dropdownOpen: false,
 		};
 	},
@@ -65,7 +64,7 @@ export default {
 			this.$router.push({ name: currentRoute.name, params });
 		},
 		initializeLanguage() {
-			const browserLang = navigator.language.split('-')[0]; // Obtener el código de idioma del navegador
+			const browserLang = navigator.language.split('-')[0];
 			const language = this.languages.find(
 				(item) => item.flag === browserLang
 			);
