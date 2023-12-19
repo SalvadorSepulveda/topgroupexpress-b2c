@@ -1,5 +1,5 @@
 export default {
-// Navbar
+    // Navbar
     offer: "What do we offer?",
     agency: "Agencies",
     hotelier: "Hoteliers",
@@ -9,7 +9,7 @@ export default {
     appHoteliers: "App Hoteliers",
     appAgencies: "App Agencies",
 
-// Hero
+    // Hero
     title1: "Hotel",
     title2: "booking Central",
     title3: "for",
@@ -18,7 +18,7 @@ export default {
     titleVideo: "See how it works",
     descriptionVideo: "Watch demonstration",
 
-// Features
+    // Features
     featureTitle: "What do we offer?",
     featureDescription: "Group booking engine with real availability and fully automated processes.",
     featureApps: "Mobile and Web Apps",
@@ -34,7 +34,7 @@ export default {
     featureUpdates: "Updates",
     updatesDescription: "Real-time notifications and alerts",
 
-// Apps
+    // Apps
     // Agencies
     smallTitleAgencies: "Agency App.",
     bigTitleAgencies: "Follow your reservations in real time.",
@@ -54,7 +54,7 @@ export default {
     threeListHoteliers: "Edit and add extras simply.",
     fourListHoteliers: "Get paid quickly in a centralized and intuitive interface.",
 
-// Work section
+    // Work section
     titleWorkSection: "How to Use?",
     descriptionWorkSection: "Our applications are free, and you can use them completely at no cost. We receive a small commission at the time of payment. Very simple! To register:",
 
@@ -68,15 +68,15 @@ export default {
     accessCodeTitle: "Receive Your Access Codes",
     accessCodeDescription: "We will send you your access codes, and you can enjoy the platform as you wish.",
 
-// Screens Scetion
+    // Screens Scetion
     titleScreens: "How is the app?",
     descriptionScreens: "Discover the interface of our app now!",
 
-// Clients
+    // Clients
     titleClients: "What Client’s Say",
     descriptionClients: "Read what our customers say about us!",
 
-// Frequent Answers
+    // Frequent Answers
     frequentAnswerTitle: "Frequently Asked Questions",
     frequentAnswerDescription: "Find your answer here and ask us your questions here.",
     // First
@@ -112,11 +112,11 @@ export default {
     answer5TextLink: "Click here",
     answer5_1: "or the orange button at the top right, then select the registration button.",
 
-// Blog
+    // Blog
     titleBlog: "News & Blogs",
     descriptionBlog: " Find informative and educational content here about our software and our industry.",
 
-// Form
+    // Form
     formTitle: "A question ? A Suggestion ? A Feedback?",
     formDescription: "Don’t hesitate to write to us for anything. We are here for you.",
 
@@ -137,7 +137,7 @@ export default {
     PostalCodePrivacy: "Postal Code: 29100",
     CIFPrivacy: "Tax ID (C.I.F./D.N.I.): B93535862",
     PhonePrivacy: "Contact Phone: +34 951 43 27 57",
-    MailPrivacy: "Email: product@topgroupexpress.com",
+    MailPrivacy: "Email: ",
     datePrivacy: "Registry Information: Top Group Express Turismo SL is registered in the Mercantile Register of Malaga.",
 
     title2Privacy: "2.- OBJECT",
@@ -165,7 +165,7 @@ export default {
     text7Privacy: "All industrial and intellectual property rights of the website, as well as the contents it hosts, are owned by Top Group Express. Any use of the website or its contents must be exclusively private. It is exclusively reserved for ………., any other use involving copying, reproduction, distribution, transformation, public communication, or any other similar action, in whole or in part, of the contents of the website, so no user may carry out these actions without the prior written authorization of Top Group Express Turismo.",
 
     title8Privacy: "8.- PRIVACY POLICY AND DATA PROTECTION",
-    text8Privacy: "Top Group Express Turismo guarantees the protection and confidentiality of personal data of any kind provided by our client companies in accordance with the provisions of Organic Law 15/1999, of December 13, on the Protection of Personal Data. All data provided by our client companies to Top Group Express Turismo or its personnel will be included in an automated personal data file created and maintained under the responsibility of Top Group Express, essential to provide the services requested by users. The data provided will be processed according to the Security Measures Regulation (Royal Decree 1720/2007 of December 21). In this sense, Top Group Express Turismo has adopted the protection levels legally required and has installed all the technical measures at its disposal to prevent loss, misuse, alteration, unauthorized access by third parties. However, the user must be aware that security measures on the Internet are not impregnable. In the event that the user deems it appropriate for their personal data to be transferred to other entities, the user will be informed of the data transferred, the purpose of the file, and the name and address of the transferee, so that they can give their unequivocal consent in this regard. In compliance with the provisions of the GDPR, the user may exercise their rights of access, rectification, cancellation, and opposition. To do this, they must contact us at product@topgroupexpress.com.",
+    text8Privacy: "Top Group Express Turismo guarantees the protection and confidentiality of personal data of any kind provided by our client companies in accordance with the provisions of Organic Law 15/1999, of December 13, on the Protection of Personal Data. All data provided by our client companies to Top Group Express Turismo or its personnel will be included in an automated personal data file created and maintained under the responsibility of Top Group Express, essential to provide the services requested by users. The data provided will be processed according to the Security Measures Regulation (Royal Decree 1720/2007 of December 21). In this sense, Top Group Express Turismo has adopted the protection levels legally required and has installed all the technical measures at its disposal to prevent loss, misuse, alteration, unauthorized access by third parties. However, the user must be aware that security measures on the Internet are not impregnable. In the event that the user deems it appropriate for their personal data to be transferred to other entities, the user will be informed of the data transferred, the purpose of the file, and the name and address of the transferee, so that they can give their unequivocal consent in this regard. In compliance with the provisions of the GDPR, the user may exercise their rights of access, rectification, cancellation, and opposition. To do this, they must contact us at ",
 
     title9Privacy: "9.- APPLICABLE LEGISLATION AND COMPETENT JURISDICTION",
     text9Privacy: "This Legal Notice will be interpreted and governed in accordance with Spanish legislation. Top Group Express and users, with express waiver of any other jurisdiction that may correspond to them, submit to the courts and tribunals of the user's domicile for any dispute that may arise from access or use of the website. In the event that the user has their domicile outside of Spain, Top Group Express and the user, expressly waiving any other jurisdiction, submit to the courts and tribunals of the domicile of Top Group Express."
