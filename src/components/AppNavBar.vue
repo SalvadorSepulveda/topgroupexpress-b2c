@@ -109,22 +109,22 @@ export default {
                     hash: '#features',
                 },
             },
-            {
-                label: 'agency',
-                route: '/agencies',
-            },
-            {
-                label: 'hotelier',
-                route: '/hoteliers',
-            },
-            {
-                label: 'downloads',
-                route: '/downloads',
-            },
-            /*{
-                label: 'blog',
-                route: '/blog',
-            },
+			/*{
+				label: 'agency',
+				route: '/agencies',
+			},
+			{
+				label: 'hotelier',
+				route: '/hoteliers',
+			},
+			{
+				label: 'downloads',
+				route: '/downloads',
+			},
+			{
+				label: 'blog',
+				route: '/blog',
+			},
 			{
 				label: 'webinars',
 				route: '/webinars',
