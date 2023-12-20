@@ -46,7 +46,6 @@ cloudflare-staging:
   script:
     # - *install-npm
     - npm install -g wrangler
-    # - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
     - wrangler pages deploy ./dist --project-name=website-staging --branch=main
   artifacts:
     paths:
