@@ -9,17 +9,35 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 
 async function createAppWithI18n() {
+    // Obtén el idioma del navegador
+    const browserLanguage = navigator.language.split('-')[0];
+
+    // Idiomas compatibles con la pagina web
+    const supportedLanguages = ['en', 'es'];
+
+    // Establece el idioma por defecto si no hay idioma compatible
+    const defaultLanguage = supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en';
+
+    // Configura Vue I18n
     const i18n = createI18n({
         legacy: false,
-        locale: 'es',
+        locale: defaultLanguage,
         messages: {
             en: (await import('./locales/en.js')).default,
             es: (await import('./locales/es.js')).default,
-            fr: (await import('./locales/fr.js')).default,
-            cn: (await import('./locales/cn.js')).default,
+            // fr: (await import('./locales/fr.js')).default,
+            // cn: (await import('./locales/cn.js')).default,
         },
     });
 
+    // Redirige a la ruta correspondiente al idioma del navegador
+    if (defaultLanguage !== browserLanguage) {
+        const newPath = `/${defaultLanguage}`;
+        window.location.href = newPath;
+        return;  // Evita que la aplicación se inicie si hay una redirección
+    }
+
+    // Crea la aplicación Vue
     const app = createApp(App);
 
     // Usa Pinia para la gestión del estado

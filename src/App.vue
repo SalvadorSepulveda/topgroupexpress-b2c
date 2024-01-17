@@ -52,6 +52,14 @@ export default {
     created() {
         this.initializeTheme()
         this.initializeScroll()
+		this.$router.beforeEach((to, from, next) => {
+			const lang = to.params.lang;
+			if (lang && this.$i18n.availableLocales.includes(lang)) {
+				this.$i18n.locale = lang;
+				return next();
+			}
+			return next({ name: to.name, params: { lang: this.$i18n.locale } });
+		});
     },
 }
 </script>
