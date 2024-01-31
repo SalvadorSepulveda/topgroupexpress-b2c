@@ -1,6 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-    content: ['./index.html', './src/**/*.{js,vue}'],
+export default {
+    content: [
+        "./components/**/*.vue",
+        "./components/*.vue",
+        "./layouts/**/*.vue",
+        "./layouts/*.vue",
+        "./pages/**/*.vue",
+        "./pages/*.vue",
+        "./app.vue",
+        "./error.vue",
+    ],
     darkMode: 'class',
     theme: {
         fontFamily: {
@@ -24,6 +33,9 @@ module.exports = {
             'stroke-dark': '#34374A',
         },
         screens: {
+            xs: '450px',
+            // => @media (min-width: 450px) { ... }
+
             sm: '575px',
             // => @media (min-width: 576px) { ... }
 
@@ -42,12 +54,12 @@ module.exports = {
         extend: {
             backgroundImage: {
                 'gradient-1':
-                    'linear-gradient(55.15deg, #EA621F -7.09%, #F39A20 51.72%, #FABD2F 101.48%)',
+                    'linear-gradient(55.15deg, #EA621F -7.09%, #F39A20 51.72%, #ea5200 101.48%)',
                 'gradient-2':
-                    'linear-gradient(120.12deg, #EA621F 0%, #F39A20 100%)',
+                    'linear-gradient(120.12deg, #EA621F 0%, #ffca71 100%)',
                 'gradient-3':
                     'linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%)',
-                texture: "url('src/assets/images/graphics/texture.svg')",
+                texture: "url('graphics/texture.svg')",
             },
             screens: {
                 xs: '450px',

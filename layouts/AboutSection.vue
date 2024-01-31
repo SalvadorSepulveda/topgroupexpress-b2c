@@ -1,0 +1,31 @@
+<template>
+	<section id="about" class="relative pt-[150px]">
+		<div class="container lg:max-w-[1120px]">
+			<AboutCard
+				:smalltitle="$t('smallTitleAgencies')"
+				:bigtitle="$t('bigTitleAgencies')"
+				:description="$t('descriptionAgencies')"
+				:list="[$t('oneListAgencies'), $t('twoListAgencies'), $t('threeListAgencies'), $t('fourListAgencies')]"
+				left
+			>
+				<NuxtImg format="webp,avif,jpeg" src="images/mok.png" class="mx-auto w-[300px] h-[600px]" />
+			</AboutCard>
+			<AboutCard
+				class="pt-32"
+				:smalltitle="$t('smallTitleHoteliers')"
+				:bigtitle="$t('bigTitleHoteliers')"
+				:description="$t('descriptionHoteliers')"
+				:list="[$t('oneListHoteliers'), $t('twoListHoteliers'), $t('threeListHoteliers'), $t('fourListHoteliers')]"
+				right
+			>
+				<NuxtImg format="webp,avif,jpeg" src="images/mok.png" class="mx-auto w-[300px] h-[600px]" />
+			</AboutCard>
+		</div>
+		<div class="absolute right-0 top-36 -z-10">
+			<NuxtImg format="webp,avif,jpeg" src="graphics/circle-gradient-right.svg" class="w-[95px] h-[190px]" />
+		</div>
+	</section>
+</template>
+<script setup lang="ts">
+import AboutCard from "~/components/AboutCard.vue";
+</script>
