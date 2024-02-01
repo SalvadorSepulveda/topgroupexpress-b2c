@@ -16,15 +16,15 @@
 			v-if="theme === 'dark'"
 			class="block img-hover"
 		>
-			<NuxtImg format="webp,avif,png" src="/icons/moon-white.svg" class="w-5 h-5 img-block" />
-			<NuxtImg format="webp,avif,png" src="/icons/moon-primary.svg" class="w-5 h-5 img-hidden" />
+			<NuxtImg format="webp,avif,png" src="/icons/moon-white.svg" class="min-w-5 min-h-5 img-block" />
+			<NuxtImg format="webp,avif,png" src="/icons/moon-primary.svg" class="min-w-5 min-h-5 img-hidden" />
         </span>
 		<span
 			v-else
 			class="block img-hover"
 		>
-			<NuxtImg format="webp,avif,png" src="/icons/sun-dark.svg" class="w-5 h-5 img-block" />
-			<NuxtImg format="webp,avif,png" src="/icons/sun-primary.svg" class="w-5 h-5 img-hidden" />
+			<NuxtImg format="webp,avif,png" src="/icons/sun-dark.svg" class="min-w-5 min-h-5 img-block" />
+			<NuxtImg format="webp,avif,png" src="/icons/sun-primary.svg" class="min-w-5 min-h-5 img-hidden" />
 
         </span>
 	</label>
