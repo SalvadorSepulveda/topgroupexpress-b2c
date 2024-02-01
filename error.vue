@@ -29,7 +29,7 @@
 
 						<NuxtLink
 							class="inline-flex justify-center rounded-md bg-primary py-3 px-8 text-base font-medium text-white hover:bg-opacity-90"
-							to="/"
+							:to="'/' + $i18n.locale"
 						>
 							{{ $t('errorButton') }}
 						</NuxtLink>

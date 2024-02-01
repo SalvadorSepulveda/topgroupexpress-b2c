@@ -41,12 +41,14 @@
 				<div class="mr-[60px] flex items-center justify-end lg:mr-0">
 					<ColorModeSwitcher />
 					<NuxtLink
+						target="_blank"
 						to="https://hoteliers.topgroupexpress.com/"
 						class="hidden py-[10px] px-6 text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary sm:inline-block whitespace-nowrap"
 					>
 						{{  $t('appHoteliers') }}
 					</NuxtLink>
 					<NuxtLink
+						target="_blank"
 						to="https://agencies.topgroupexpress.com/"
 						class="hidden rounded-md bg-primary py-[10px] px-[30px] text-base font-medium text-white hover:bg-opacity-90 sm:inline-block whitespace-nowrap"
 					>
