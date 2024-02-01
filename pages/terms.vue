@@ -353,6 +353,11 @@
 					{{ $t('textCambio') }}
 				</p>
 			</div>
+			<div class="flex flex-col gap-2">
+				<p>
+					{{ $t('lastUpdateTerms') }}
+				</p>
+			</div>
 		</div>
 		<!-- Graphics -->
 		<div class="absolute top-0 right-0 -z-10">
@@ -369,3 +374,5 @@
 		</div>
 	</div>
 </template>
+<script setup lang="ts">
+</script>

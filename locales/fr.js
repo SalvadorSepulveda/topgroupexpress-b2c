@@ -261,5 +261,71 @@ export default {
     textCambio: "These policies will be effective until they are modified by others duly published.",
 
     // Last update
-    lastUpdateTerms: "Last update: January 30, 2024"
+    lastUpdateTerms: "Last update: February 1, 2024",
+
+    // Privacy Policy
+    titlePrivacy: "Privacy Policy",
+    descriptionPrivacy: "At Top Group Express Turismo SL, we are committed to the protection and privacy of the personal data of our users and customers. This Privacy Policy sets out the basis on which any personal data you provide us will be processed by us.",
+
+    // Regulatory Compliance
+    titleNormativo: "Regulatory Compliance",
+    descriptionNormativo: "We adhere to the Organic Law 3/2018, on Personal Data Protection and Guarantee of Digital Rights (LOPD GDD) and to the Regulation (EU) 2016/679 of the European Parliament and of the Council (GDPR).",
+
+    // Data Controller Information
+    titleResponsable: "Data Controller Information",
+
+    // Data Protection Principles
+    titleProteccion: "Data Protection Principles",
+    descriptionProteccion: "Our commitment to your data includes:",
+    list1Proteccion: "Lawfulness, loyalty, and transparency",
+    list2Proteccion: "Data minimization",
+    list3Proteccion: "Limitation of the retention period",
+    list4Proteccion: "Integrity and confidentiality",
+
+    // Collection and Use of Personal Data
+    titleObtencion: "Collection and Use of Personal Data",
+    descriptionObtencion: "Your personal data may be collected when:",
+    list1Obtencion: "Using our contact forms",
+    list2Obtencion: "Sending emails",
+    list3Obtencion: "Subscribing to services or newsletters",
+
+    // User Rights
+    titleDerechosUsuario: "User Rights",
+    descriptionDerechosUsuario1_1: "You can exercise your rights of access, rectification, cancellation, portability, and opposition by sending an email to ",
+    descriptionDerechosUsuario1_2: " along with valid proof in law, such as a photocopy of your ID or equivalent.",
+
+    // Purpose of Data Processing
+    titleFinalidad: "Purpose of Data Processing",
+    descriptionFinalidad: "We use your data for:",
+    list1Finalidad: "Processing your inquiries and transactions",
+    list2Finalidad: "Improving our services and website",
+    list3Finalidad: "Complying with our legal obligations",
+    list4Finalidad: "Managing our presence on social media",
+
+    // Personal Data Security
+    titleSeguridadPersonales: "Personal Data Security",
+    descriptionSeguridadPersonales: "We take all necessary precautions to protect your personal data against unauthorized access, alteration, and destruction.",
+
+    // Third-Party Content and Cookies
+    titleContenidoTerceros: "Third-Party Content and Cookies",
+    descriptionContenidoTerceros: "Our website may include content from third parties and use cookies. Please see our Cookie Policy for more information.",
+
+    // Legitimation for Data Processing
+    titleLegitimacionDatos: "Legitimation for Data Processing",
+    descriptionLegitimacionDatos: "The processing of your data is based on your explicit consent upon accepting our Privacy Policy.",
+
+    // Conservation of Personal Data
+    titleConservacionDatos: "Conservation of Personal Data",
+    descriptionConservacionDatos: "We will retain your personal data only for the time necessary for the purposes established.",
+
+    // Accuracy of Data
+    titleExactitudDatos: "Accuracy of Data",
+    descriptionExactitudDatos: "It is your responsibility to ensure that the data you provide us is accurate and up to date.",
+
+    // Changes in Privacy Policy
+    titleCambioPrivacidad: "Changes in Privacy Policy",
+    descriptionCambioPrivacidad: "We reserve the right to modify this policy. Modifications will be available on our website.",
+
+    // Last Update
+    lastUpdatePrivacy: "Last update: February 1, 2024",
 };

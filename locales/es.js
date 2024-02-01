@@ -261,5 +261,71 @@ export default {
         textCambio: "Estas políticas estarán vigentes hasta que sean modificadas por otras debidamente publicadas.",
 
         // Ultima actualización
-        lastUpdateTerms: "Última actualización: 30 de enero de 2024"
+        lastUpdateTerms: "Última actualización: 1 de Febrero de 2024",
+
+    // Privacy Policy
+    titlePrivacy: "Política de privacidad",
+    descriptionPrivacy: "En Top Group Express Turismo SL, estamos comprometidos con la protección y la privacidad de los datos personales de nuestros usuarios y clientes. Esta Política de Privacidad establece las bases sobre las cuales cualquier dato personal que nos proporciones será procesado por nosotros.",
+
+        // Cumplimiento normativo
+        titleNormativo: "Cumplimiento normativo",
+        descriptionNormativo: "Nos adherimos a la Ley Orgánica 3/2018, de Protección de Datos Personales y de Garantía de Derechos Digitales (LOPD GDD) y al Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD).",
+
+        // Datos del Responsable
+        titleResponsable: "Datos del Responsable",
+
+        // Principios de Protección de Datos
+        titleProteccion: "Principios de protección de datos",
+        descriptionProteccion: "Nuestro compromiso con tus datos incluye:",
+        list1Proteccion: "Licitud, lealtad y transparencia",
+        list2Proteccion: "Minimización de datos",
+        list3Proteccion: "Limitación del plazo de conservación",
+        list4Proteccion: "Integridad y confidencialidad",
+
+        // Obtención y uso de datos personales
+        titleObtencion: "Obtención y Uso de Datos Personales",
+        descriptionObtencion: "Tus datos personales se pueden recopilar al:",
+        list1Obtencion: "Utilizar nuestros formularios de contacto",
+        list2Obtencion: "Enviar correos electrónicos",
+        list3Obtencion: "Suscribirte a servicios o boletines",
+
+        // Derechos del usuario
+        titleDerechosUsuario: "Derechos del usuario",
+        descriptionDerechosUsuario1_1: "Puedes ejercer tus derechos de acceso, rectificación, cancelación, portabilidad y oposición enviando un correo electrónico a ",
+        descriptionDerechosUsuario1_2: " con una prueba válida en derecho.",
+
+        // Finalidad del tratamiento
+        titleFinalidad: "Finalidad del Tratamiento",
+        descriptionFinalidad: "Usamos tus datos para: ",
+        list1Finalidad: "Procesar tus consultas y transacciones",
+        list2Finalidad: "Mejorar nuestros servicios y sitio web",
+        list3Finalidad: "Cumplir con nuestras obligaciones legales",
+        list4Finalidad: "Gestionar nuestra presencia en redes sociales",
+
+        // Seguridad de Datos Personales
+        titleSeguridadPersonales: "Seguridad de Datos Personales",
+        descriptionSeguridadPersonales: "Tomamos todas las medidas necesarias para proteger tus datos personales contra el acceso no autorizado, alteración y destrucción.",
+
+        // Contenido de Terceros y Cookies
+        titleContenidoTerceros: "Contenido de Terceros y Cookies",
+        descriptionContenidoTerceros: "Nuestro sitio web puede incluir contenido de terceros y utilizar cookies. Consulta nuestra Política de Cookies para más información.",
+
+        // Legitimación para el Tratamiento de Datos
+        titleLegitimacionDatos: "Legitimación para el Tratamiento de Datos",
+        descriptionLegitimacionDatos: "El tratamiento de tus datos se basa en tu consentimiento explícito al aceptar nuestra Política de Privacidad.",
+
+        // Conservacion de Datos Personales
+        titleConservacionDatos: "Conservación de Datos Personales",
+        descriptionConservacionDatos: "Conservaremos tus datos personales solo por el tiempo necesario para los fines establecidos.",
+
+        // Exactitud de los Datos
+        titleExactitudDatos: "Exactitud de los Datos",
+        descriptionExactitudDatos: "Es tu responsabilidad asegurar que los datos que nos proporcionas sean exactos y estén actualizados.",
+
+        // Cambios en la Politica de Privacidad
+        titleCambioPrivacidad: "Cambios en la Politica de Privacidad",
+        descriptionCambioPrivacidad: "Nos reservamos el derecho de modificar esta política. Las modificaciones estarán disponibles en nuestro sitio web.",
+
+        // Ultima actualizacion
+        lastUpdatePrivacy: "Última actualización: 1 de Febrero de 2024",
 };
