@@ -59,7 +59,7 @@ export default {
                     'linear-gradient(120.12deg, #EA621F 0%, #ffca71 100%)',
                 'gradient-3':
                     'linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%)',
-                texture: "url('graphics/texture.svg')",
+                texture: "url('https://cdn.topgroups.travel/websites/assets/images/texture.png')",
             },
             screens: {
                 xs: '450px',

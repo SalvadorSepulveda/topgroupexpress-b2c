@@ -10,9 +10,9 @@
 						<NuxtImg
 							alt="logo"
 							class="w-[200px]"
-							src="/logo.svg"
+							src="https://cdn.topgroups.travel/websites/assets/images/logo.png"
 							loading="lazy"
-							format="webp,avif,jpeg"
+							format="webp,avif,png"
 						/>
 					</NuxtLink>
 					<img class="w-full" src="https://cdn.topgroups.travel/websites/assets/images/footer.jpg" alt="footer-img">
@@ -46,7 +46,7 @@
 								name="social icon"
 								target="_blank"
 							>
-								<NuxtImg loading="lazy" :src="`icons/${link.icon}.svg`" class="h-[24px]"/>
+								<NuxtImg loading="lazy" :src="`https://cdn.topgroups.travel/websites/assets/images/${link.icon}.png`" class="h-[24px]"/>
 							</a>
 						</div>
 					</div>
@@ -55,10 +55,10 @@
 						<div
 							class="flex items-center justify-center space-x-4 sm:space-x-8 md:justify-end lg:justify-end"
 						>
-							<router-link class="text-base text-white hover:text-primary duration-100" :to="'/' + $i18n.locale + '/privacy'">
+							<router-link class="text-base text-white hover:text-[#ccc] dark:hover:text-primary duration-100" :to="'/' + $i18n.locale + '/privacy'">
 								{{ $t('textButtonPrivacy')}}
 							</router-link>
-							<router-link class="text-base text-white hover:text-primary duration-100" :to="'/' + $i18n.locale + '/terms'">
+							<router-link class="text-base text-white hover:text-[#ccc] dark:hover:text-primary duration-100" :to="'/' + $i18n.locale + '/terms'">
 								{{ $t('textButtonTerms')}}
 							</router-link>
 						</div>

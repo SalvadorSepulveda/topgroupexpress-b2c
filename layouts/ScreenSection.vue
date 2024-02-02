@@ -8,37 +8,37 @@
 				<!-- Swiper -->
 				<div class="swiper mySwiper relative z-20">
 					<div class="absolute top-0 left-0 right-0 z-50 mx-auto w-full md:w-1/3 h-[520px] xs:h-[550px] md:h-[450px] lg:h-[550px]" >
-						<NuxtImg loading="lazy" format="webp,avif,jpeg" src="images/mobile-frame.png" class="mx-auto max-w-full h-full" />
+						<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/mobile-frame.png" class="mx-auto max-w-full h-full" />
 					</div>
 					<div class="swiper-wrapper py-2">
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="images/screen-1-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-1-light.png" class="mx-auto max-w-full w-full" />
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="images/screen-2-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-2-light.png" class="mx-auto max-w-full w-full" />
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="images/screen-3-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-3-light.png" class="mx-auto max-w-full w-full" />
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="images/screen-2-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-2-light.png" class="mx-auto max-w-full w-full" />
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="images/screen-1-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-1-light.png" class="mx-auto max-w-full w-full" />
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="images/screen-3-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-3-light.png" class="mx-auto max-w-full w-full" />
 							</div>
 						</div>
 					</div>
@@ -106,7 +106,7 @@
 		</div>
 		<!-- Graphics -->
 		<div class="absolute left-0 top-40 -z-10">
-			<NuxtImg loading="lazy" format="webp,avif,jpeg" src="graphics/circle-gradient-left.svg" class="w-[95px] h-[190px]" />
+			<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/circle-gradient-left.png" class="w-[95px] h-[190px]" />
 		</div>
 	</section>
 </template>

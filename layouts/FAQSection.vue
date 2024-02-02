@@ -57,10 +57,10 @@
 
 		<!-- Graphics -->
 		<div class="absolute right-0 -top-24 -z-10">
-			<NuxtImg format="webp,avif,jpeg" src="graphics/circle-gradient-right.svg" class="w-[95px] h-[190px]" />
+			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/circle-gradient-right.png" class="w-[95px] h-[190px]" />
 		</div>
 		<div class="absolute left-0 -bottom-24 -z-10">
-			<NuxtImg format="webp,avif,jpeg" src="graphics/circle-gradient-left.svg" class="w-[95px] h-[190px]" />
+			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/circle-gradient-left.png" class="w-[95px] h-[190px]" />
 		</div>
 	</section>
 </template>

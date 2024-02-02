@@ -5,7 +5,10 @@
 .nitro
 .cache
 .vscode
+.wrangler
 dist
+
+*-lock.json
 
 # Node dependencies
 node_modules

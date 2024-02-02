@@ -4,11 +4,11 @@
 			<div class="relative z-10 mx-auto mb-14 w-full max-w-[470px] pb-6 lg:mx-0 lg:mb-0">
 				<slot />
 				<div class="absolute top-0 right-5 -z-10">
-					<NuxtImg loading="lazy" format="webp,avif,jpeg" src="icons/stars.svg" class="w-14" />
+					<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/stars.png" class="w-14" />
 				</div>
 				<div class="absolute bottom-0 left-0 -z-10 h-1/2 w-full rounded-[20px] bg-gradient-1">
 					<div class="absolute left-5 -top-12 -z-10">
-						<NuxtImg loading="lazy" format="webp,avif,jpeg" src="icons/waves.svg" class="w-14" />
+						<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/waves.png" class="w-14" />
 					</div>
 					<div
 						class="absolute top-0 left-0 h-full w-full bg-texture"
@@ -44,11 +44,11 @@
 			<div class="relative z-10 mx-auto mb-14 w-full max-w-[470px] pb-6 lg:mr-0 lg:mb-0" >
 				<slot />
 				<div class="absolute top-0 left-0 -z-10">
-					<NuxtImg loading="lazy" format="webp,avif,jpeg" src="icons/stars.svg" class="w-14" />
+					<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/stars.png" class="w-14" />
 				</div>
 				<div class="absolute bottom-0 right-0 -z-10 h-1/2 w-full rounded-[20px] bg-gradient-2">
 					<div class="absolute right-5 -top-12 -z-10">
-						<NuxtImg loading="lazy" format="webp,avif,jpeg" src="icons/waves.svg" class="w-14" />
+						<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/waves.png" class="w-14" />
 					</div>
 					<div class="absolute top-0 left-0 h-full w-full bg-texture"></div>
 				</div>

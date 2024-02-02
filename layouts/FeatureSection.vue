@@ -13,11 +13,11 @@
 		</div>
 
 		<!-- Graphics -->
-		<div class="absolute top-0 right-0 -z-10">
-			<NuxtImg loading="lazy" src="graphics/purple-shadow-right.svg" class="w-[622px] h-[1236px]" />
+		<div class="absolute top-0 -right-24 -z-10">
+			<NuxtImg loading="lazy" src="https://cdn.topgroups.travel/websites/assets/images/purple-shadow-right.png" class="min-w-[622px] min-h-[1236px]" />
 		</div>
-		<div class="absolute left-0 -bottom-1/2 -z-10 hidden md:block">
-			<NuxtImg loading="lazy" src="graphics/orange-shadow-left.svg" class="w-[622px] h-[1236px]" />
+		<div class="absolute -left-24 -bottom-1/2 -z-10 hidden md:block">
+			<NuxtImg loading="lazy" src="https://cdn.topgroups.travel/websites/assets/images/orange-shadow-left.png" class="min-w-[622px] min-h-[1236px]" />
 		</div>
 	</section>
 </template>

@@ -30,7 +30,7 @@
 				</div>
 				<div class="w-full px-4 lg:w-5/12">
 					<div class="relative z-10 mx-auto w-full max-w-[530px] pt-8 lg:mr-0">
-						<NuxtImg src="/images/hero-screen.png" class="mx-auto max-w-[360px] max-h-[550px] w-full" />
+						<NuxtImg src="https://cdn.topgroups.travel/websites/assets/images/hero-screen.png" class="mx-auto max-w-[360px] max-h-[550px] w-full" />
 					</div>
 				</div>
 			</div>

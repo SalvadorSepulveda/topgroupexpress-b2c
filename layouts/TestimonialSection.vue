@@ -48,11 +48,11 @@
 			</div>
 		</div>
 		<!-- Graphics -->
-		<div class="absolute top-8 left-0 -z-10 hidden md:block" >
-			<NuxtImg  loading="lazy" src="graphics/orange-shadow-left.svg" class="w-[622px] h-[1236px]" />
+		<div class="absolute top-8 -left-24 -z-10 hidden md:block" >
+			<NuxtImg  loading="lazy" src="https://cdn.topgroups.travel/websites/assets/images/orange-shadow-left.png" class="w-[622px] h-[1236px]" />
 		</div>
-		<div class="absolute right-0 bottom-3 -z-10">
-			<NuxtImg loading="lazy" src="graphics/purple-shadow-right.svg" class="w-[622px] h-[1236px]" />
+		<div class="absolute -right-24 bottom-3 -z-10">
+			<NuxtImg loading="lazy" src="https://cdn.topgroups.travel/websites/assets/images/purple-shadow-right.png" class="w-[622px] h-[1236px]" />
 		</div>
 	</section>
 </template>

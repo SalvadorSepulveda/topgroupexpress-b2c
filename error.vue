@@ -9,7 +9,7 @@
 						<NuxtImg
 							alt="404"
 							class="mx-auto max-w-full w-full"
-							src="icons/404.svg"
+							src="https://cdn.topgroups.travel/websites/assets/images/404.png"
 						/>
 					</div>
 

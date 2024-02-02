@@ -26,7 +26,7 @@
 					</p>
 					<div class="flex items-center space-x-[6px]">
 						<div v-for="i in rate" :key="i">
-							<NuxtImg loading="lazy" format="webp,avif,jpeg" src="icons/star.svg" class="h-[20px]" />
+							<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/star.png" class="h-[20px]" />
 						</div>
 					</div>
 				</div>

@@ -26,7 +26,7 @@
 		title: 'Top Group Express',
 		htmlAttrs: { lang: 'en-US' },
 		link: [
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+			{ rel: 'icon', type: 'image/x-icon', href: 'https://cdn.topgroups.travel/websites/assets/images/favicon.png' },
 		],
 		meta: [
 			{
@@ -59,7 +59,7 @@
 			},
 			{
 				name: 'twitter:image',
-				content: '/og-img.png'
+				content: 'https://cdn.topgroups.travel/websites/assets/images/og-img.png'
 			},
 			{
 				name: 'twitter:card',

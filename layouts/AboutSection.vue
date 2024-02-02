@@ -8,7 +8,7 @@
 				:list="[$t('oneListAgencies'), $t('twoListAgencies'), $t('threeListAgencies'), $t('fourListAgencies')]"
 				left
 			>
-				<NuxtImg format="webp,avif,jpeg" src="images/mok.png" class="mx-auto w-[300px] h-[600px]" />
+				<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/mok.png" class="mx-auto w-[300px] h-[600px]" />
 			</AboutCard>
 			<AboutCard
 				class="pt-32"
@@ -18,11 +18,11 @@
 				:list="[$t('oneListHoteliers'), $t('twoListHoteliers'), $t('threeListHoteliers'), $t('fourListHoteliers')]"
 				right
 			>
-				<NuxtImg format="webp,avif,jpeg" src="images/mok.png" class="mx-auto w-[300px] h-[600px]" />
+				<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/mok.png" class="mx-auto w-[300px] h-[600px]" />
 			</AboutCard>
 		</div>
 		<div class="absolute right-0 top-36 -z-10">
-			<NuxtImg format="webp,avif,jpeg" src="graphics/circle-gradient-right.svg" class="w-[95px] h-[190px]" />
+			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/circle-gradient-right.png" class="w-[95px] h-[190px]" />
 		</div>
 	</section>
 </template>
