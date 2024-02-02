@@ -5,6 +5,7 @@
 .nitro
 .cache
 .vscode
+.wrangler
 dist
 
 *-lock.json
