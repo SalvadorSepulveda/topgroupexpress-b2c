@@ -7,6 +7,8 @@
 .vscode
 dist
 
+*-lock.json
+
 # Node dependencies
 node_modules
 
