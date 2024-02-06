@@ -245,7 +245,7 @@
 				</defs>
 			</svg>
 		</div>
-		<div class="absolute left-0 bottom-1/2 -z-10">
+		<div class="absolute left-0 bottom-1/2 -z-10 hidden md:block">
 			<svg
 				width="632"
 				height="1179"
@@ -298,7 +298,7 @@
 				</defs>
 			</svg>
 		</div>
-		<div class="absolute left-0 bottom-20 -z-10">
+		<div class="absolute left-0 bottom-20 -z-10 hidden md:block">
 			<svg
 				width="622"
 				height="1236"
