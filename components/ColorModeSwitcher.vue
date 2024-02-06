@@ -25,7 +25,6 @@
 		>
 			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/sun-dark.png" class="min-w-5 min-h-5 img-block" />
 			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/sun-primary.png" class="min-w-5 min-h-5 img-hidden" />
-
         </span>
 	</label>
 </template>

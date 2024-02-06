@@ -106,7 +106,34 @@
 		</div>
 		<!-- Graphics -->
 		<div class="absolute left-0 top-40 -z-10">
-			<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/circle-gradient-left.png" class="w-[95px] h-[190px]" />
+			<svg
+				width="95"
+				height="190"
+				viewBox="0 0 95 190"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<circle
+					cy="95"
+					r="77"
+					stroke="url(#paint0_linear_47_26)"
+					stroke-width="36"
+				/>
+				<defs>
+					<linearGradient
+						id="paint0_linear_47_26"
+						x1="-117.84"
+						y1="190"
+						x2="117.828"
+						y2="25.9199"
+						gradientUnits="userSpaceOnUse"
+					>
+						<stop stop-color="#EA621F" />
+						<stop offset="0.541667" stop-color="#EA621F" />
+						<stop offset="1" stop-color="#FF765D" />
+					</linearGradient>
+				</defs>
+			</svg>
 		</div>
 	</section>
 </template>
