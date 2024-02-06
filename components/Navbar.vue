@@ -42,14 +42,14 @@
 					<ColorModeSwitcher />
 					<NuxtLink
 						target="_blank"
-						to="https://hoteliers.topgroupexpress.com/"
+						:to="`https://hoteliers.${domainSuffix}`"
 						class="hidden py-[10px] px-6 text-base font-medium text-black hover:text-primary dark:text-white dark:hover:text-primary sm:inline-block whitespace-nowrap"
 					>
 						{{  $t('appHoteliers') }}
 					</NuxtLink>
 					<NuxtLink
 						target="_blank"
-						to="https://agencies.topgroupexpress.com/"
+						:to="`https://agencies.${domainSuffix}`"
 						class="hidden rounded-md bg-primary py-[10px] px-[30px] text-base font-medium text-white hover:bg-opacity-90 sm:inline-block whitespace-nowrap"
 					>
 						{{  $t('appAgencies') }}
@@ -88,6 +88,15 @@ export default {
 				return 'sticky-navbar'
 			}
 			return undefined
+		},
+		domainSuffix() {
+			const hostname = window.location.hostname;
+			if (hostname.includes('topgroupexpress.com')) {
+				return 'topgroupexpress.com';
+			} else if (hostname.includes('topgroups.travel')) {
+				return 'topgroups.travel';
+			}
+			return 'topgroupexpress.com';
 		},
 	},
 	methods: {
