@@ -10,14 +10,12 @@
 								{{ $t('title2')}}
 								<FancyText>{{ $t('title3')}}</FancyText>
 								{{ $t('title4')}}
-								.
 							</span>
 							<span v-else>
 								{{ $t('title1')}}
 								<FancyText>{{ $t('title2')}}</FancyText>
 								{{ $t('title3')}}
 								<FancyText>{{ $t('title4')}}</FancyText>
-								.
 							</span>
 						</h1>
 						<p class="mb-10 max-w-[475px] text-base leading-relaxed text-body">
