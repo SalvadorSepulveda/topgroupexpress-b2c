@@ -22,7 +22,7 @@
 							{{ $t('subtitle') }}
 						</p>
 						<div class="flex flex-wrap items-center">
-							<VideoButton :title="$t('titleVideo')" :description="$t('descriptionVideo')" url="https://www.youtube.com/watch?v=iv0BfTlx9uU" />
+							<VideoButton :title="$t('titleVideo')" :description="$t('descriptionVideo')" :url="urlByLocale" />
 						</div>
 					</div>
 				</div>
@@ -35,5 +35,21 @@
 		</div>
 	</section>
 </template>
-<script setup lang="ts">
+<script>
+export default {
+	computed: {
+		urlByLocale() {
+			switch (this.$i18n.locale) {
+				case 'cn':
+					return 'https://www.youtube.com/watch?v=00xfTKjnLFw'
+				case 'en':
+					return 'https://www.youtube.com/watch?v=kLI3v6quZqU'
+				case 'es':
+					return 'https://www.youtube.com/watch?v=iv0BfTlx9uU'
+				default:
+					return 'https://www.youtube.com/watch?v=kLI3v6quZqU'
+			}
+		}
+	}
+}
 </script>
