@@ -43,7 +43,7 @@
 			},
 			{
 				property: 'og:image',
-				content: '/og-img.png'
+				content: 'https://cdn.topgroups.travel/websites/assets/images/og-img.png'
 			},
 			{
 				property: 'og:url',
