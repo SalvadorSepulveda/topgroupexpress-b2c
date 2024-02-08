@@ -135,6 +135,10 @@ export default {
     textButtonPrivacy: "隐私政策",
     textButtonTerms: "条款和条件",
 
+    // send text
+    sendSuccessfully: "消息已成功发送。",
+    sendError: "发送消息时出错。",
+
     // 404
     errorTitle: "对不起，该页面不存在",
     errorText: "您正在寻找的页面似乎已被移动、删除或不存在。",

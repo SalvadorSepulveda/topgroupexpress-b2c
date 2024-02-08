@@ -135,6 +135,10 @@ export default {
     textButtonPrivacy: "Politique de confidentialité",
     textButtonTerms: "Conditions d’utilisation",
 
+    // send text
+    sendSuccessfully: "Le message a été envoyé avec succès.",
+    sendError: "Une erreur s'est produite lors de l'envoi du message.",
+
     // 404
     errorTitle: "Désolé, la page n'existe pas",
     errorText: "La page que vous recherchez semble avoir été déplacée, supprimée ou n'existe pas.",

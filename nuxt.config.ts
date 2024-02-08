@@ -7,7 +7,7 @@ export default defineNuxtConfig({
             viewport: 'width=device-width, initial-scale=1',
             title: 'Top Group Express',
             link: [
-                { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
+                { rel: 'icon', type: 'image/x-icon', href: 'https://cdn.topgroups.travel/websites/assets/images/favicon.png' }
             ],
             meta: [
                 {

@@ -134,6 +134,9 @@ export default {
     textButtonPrivacy: "Políticas de Privacidad",
     textButtonTerms: "Términos y Condiciones",
 
+    // send text
+    sendSuccessfully: "El mensaje se ha enviado correctamente.",
+    sendError: "Hubo un error al enviar el mensaje.",
 
     // 404
     errorTitle: "Lo siento, la página no existe",
