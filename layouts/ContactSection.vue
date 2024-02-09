@@ -1,10 +1,10 @@
 <template>
 	<section id="contact" class="relative z-10 py-20"	>
-		<SectionTitle :title="$t('formTitle')">
+		<SectionTitle :title="$t('formTitle')" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 			{{ $t('formDescription') }}
 		</SectionTitle>
 
-		<div class="container">
+		<div class="container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 			<div class="mx-auto w-full max-w-[925px] rounded-lg bg-[#F8FAFB] px-8 py-10 shadow-card dark:bg-[#15182B] dark:shadow-card-dark sm:px-10 duration-300" >
 				<div class="-mx-[22px] flex flex-wrap">
 					<div class="w-full px-[22px] md:w-1/2">

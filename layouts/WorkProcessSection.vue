@@ -1,13 +1,13 @@
 <template>
 	<section id="work-process wow fadeIn" class="relative z-10 pt-[110px]">
-		<SectionTitle :title="$t('titleWorkSection')">
+		<SectionTitle :title="$t('titleWorkSection')" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 			{{ $t('descriptionWorkSection') }}
 		</SectionTitle>
 
 		<div class="container max-w-[1390px]">
-			<div class="rounded-2xl bg-white px-5 pt-14 pb-14 shadow-card dark:bg-dark dark:shadow-card-dark md:pb-1 lg:pt-20 lg:pb-5 xl:px-10 duration-300">
+			<div class="rounded-2xl bg-white px-5 pt-14 pb-14 shadow-card dark:bg-dark dark:shadow-card-dark md:pb-1 lg:pt-20 lg:pb-5 xl:px-10 duration-300" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 				<div class="-mx-4 flex flex-wrap justify-center">
-					<WorkProcessItem v-for="item in items" :key="item.title" :title="$t(item.title)" :description="$t(item.description)" :icon="item.icon" />
+					<WorkProcessItem v-for="item in items" :key="item.title" :title="$t(item.title)" :description="$t(item.description)" :icon="item.icon" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300"/>
 				</div>
 			</div>
 		</div>

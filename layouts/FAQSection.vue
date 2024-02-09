@@ -1,10 +1,10 @@
 <template>
 	<section id="faq" class="relative z-10 bg-[#F8FAFB] py-[110px] dark:bg-[#15182B] duration-300"	>
-		<SectionTitle :title="$t('frequentAnswerTitle')">
+		<SectionTitle :title="$t('frequentAnswerTitle')" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 			{{ $t('frequentAnswerDescription')}}
 		</SectionTitle>
 
-		<div class="container">
+		<div class="container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 			<div class="faqs mx-auto w-full max-w-[785px] rounded-lg bg-white px-6 py-[6px] shadow-card dark:bg-black dark:shadow-card-dark duration-300" >
 
 				<FAQCard :title="$t('question1')">

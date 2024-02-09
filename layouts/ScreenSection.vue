@@ -1,16 +1,16 @@
 <template>
 	<section id="screens" class="relative z-20 pt-[210px] pb-[100px]">
-		<SectionTitle :title="$t('titleScreens')">
+		<SectionTitle :title="$t('titleScreens')" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 			{{ $t('descriptionScreens') }}
 		</SectionTitle>
 		<div class="container">
 			<div class="mx-auto max-w-[1000px]">
 				<!-- Swiper -->
 				<div class="swiper mySwiper relative z-20">
-					<div class="absolute top-0 left-0 right-0 z-50 mx-auto w-full md:w-1/3 h-[520px] xs:h-[550px] md:h-[450px] lg:h-[550px]" >
+					<div class="absolute top-0 left-0 right-0 z-50 mx-auto w-full md:w-1/3 h-[520px] xs:h-[550px] md:h-[450px] lg:h-[550px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 						<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/mobile-frame.png" class="mx-auto max-w-full h-full" />
 					</div>
-					<div class="swiper-wrapper py-2">
+					<div class="swiper-wrapper py-2" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
 								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-1-light.png" class="mx-auto max-w-full w-full" />
@@ -42,7 +42,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex items-center justify-center space-x-4 pt-20" >
+					<div class="flex items-center justify-center space-x-4 pt-20" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 						<button
 							class="swiper-button-style"
 							@click="previousSlide"

@@ -1,5 +1,5 @@
 <template>
-	<section id="clients" class="py-5 bg-[#F8FAFB] dark:bg-[#15182B] duration-300">
+	<section id="clients" class="py-5 bg-[#F8FAFB] dark:bg-[#15182B] duration-300" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 		<div class="container overflow-hidden lg:max-w-[1200px]" >
 			<div class="-mx-4 flex flex-wrap items-center justify-center">
 				<div v-for="(client, index) in clients" :key="index" class="w-1/2 px-4 sm:w-1/3 md:w-1/4 lg:w-1/6">
@@ -10,6 +10,7 @@
 							:alt="client.name"
 							class="mx-auto max-w-[130px] opacity-[65%] grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
 							:src="client.image"
+							data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300"
 						/>
 					</div>
 				</div>

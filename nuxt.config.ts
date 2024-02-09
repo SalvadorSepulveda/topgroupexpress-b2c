@@ -20,13 +20,16 @@ export default defineNuxtConfig({
     css: [
         '~/assets/css/main.css',
     ],
+    plugins: [
+        '~/plugins/aos.client.js',
+    ],
     postcss: {
         plugins: {
             tailwindcss: {},
             autoprefixer: {},
         },
     },
-    modules: ['@pinia/nuxt', '@nuxtjs/i18n', "@nuxt/image", 'nuxt-swiper', '@nuxtjs/seo', 'nuxt-og-image', 'nuxt-calendly'],
+    modules: ['@pinia/nuxt', '@nuxtjs/i18n', "@nuxt/image", 'nuxt-swiper', '@nuxtjs/seo', 'nuxt-og-image', 'nuxt-calendly', 'nuxt-aos'],
     pinia: {
         storesDirs: ['./stores/**']
     },
