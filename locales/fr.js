@@ -101,7 +101,7 @@ export default {
     question3_2: "II - Virement Bancaire",
     answer3_2: "Vous pouvez également nous payer par virement bancaire en utilisant ces informations :",
     information1: "Top Group Express Tourism SL",
-    information2: "Virement bancaire : BBVA et Caixa\n",
+    information2: "Virement bancaire : BBVA et Caixa",
     information3: "Adresse : Plaza Escamilla S/N 29100 Coin - Málaga.",
     answer3_3: "Vos réservations mettront plus de temps à être marquées comme 'payées' par rapport aux paiements par carte de crédit. Cela prend généralement entre 2 et 3 jours d'attente par rapport à quelques heures avec une carte de crédit.",
 
