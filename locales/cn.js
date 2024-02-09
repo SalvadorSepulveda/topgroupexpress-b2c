@@ -98,10 +98,10 @@ export default {
     answer3: "我们为您提供两种支付方式：银行转账或信用卡。",
     question3_1: "I - 信用卡",
     answer3_1: "在待付款部分，您将找到所有未付款或部分付款的预订。点击“支付”按钮，即会跳转到安全的支付平台。",
-    question3_2: "II - 银行转账",
+    question3_2: "II - 银行转账: BBVA & Caixa",
     answer3_2: "您也可以通过银行转账向我们付款，使用以下信息：",
     information1: "Top Group Express Tourism SL",
-    information2: "IBAN：ES9200491379532110056930 BIC/SWIFT：BSCHESMM",
+    information2: "银行转账",
     information3: "地址：Plaza Escamilla S/N 29100 Coin - Málaga.",
     answer3_3: "与信用卡付款相比，您的订单将需要更长时间才会被标记为“已付”。通常情况下，银行转账需要等待2到3天左右，而信用卡则只需几个小时。",
 

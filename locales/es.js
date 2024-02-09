@@ -100,7 +100,7 @@ export default {
     question3_2: "II - Transferencia Bancaria",
     answer3_2: "También puedes pagarnos por transferencia bancaria utilizando esta información:",
     information1: "Top Group Express Turismo SL",
-    information2: "IBAN: ES9200491379532110056930 BIC/SWIFT: BSCHESMM",
+    information2: "Transferencia bancaria: BBVA y Caixa",
     information3: "Dirección: Plaza Escamilla S/N 29100 Coin - Málaga.",
     answer3_3: "Tus reservas tardarán más en marcarse como 'pagadas' que los pagos con tarjeta. Por lo general, lleva entre 2 y 3 días de espera en comparación con unas pocas horas con tarjeta de crédito.",
 
