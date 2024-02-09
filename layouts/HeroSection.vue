@@ -8,7 +8,7 @@
 						data-aos="fade-up"
 						data-aos-easing="ease-in-out"
 					>
-						<h1 class="mb-6 text-3xl font-bold leading-tight text-black dark:text-white duration-300 sm:text-[40px] md:text-[50px] lg:text-[42px] xl:text-[50px]">
+						<h1 class="mb-6 text-5xl font-bold leading-tight text-black dark:text-white duration-300 sm:text-[40px] md:text-[50px] lg:text-[42px] xl:text-[50px]">
 							<span v-if="$i18n.locale === 'cn'">
 								<FancyText>{{ $t('title1')}}</FancyText>
 								{{ $t('title2')}}
