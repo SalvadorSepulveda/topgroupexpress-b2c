@@ -130,6 +130,10 @@ export default {
     textAccept: "点击“联系”按钮即表示您接受我们的条款和政策",
     buttonContact: "联系",
 
+    // Webinars
+    webinarsAgency: "机构网络研讨会",
+    webinarsHoteliers: "面向酒店业者的网络研讨会",
+
     // Footer
     textCopy: "© 2023 Top Group Express。版权所有",
     textButtonPrivacy: "隐私政策",

@@ -26,7 +26,7 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
-    modules: ['@pinia/nuxt', '@nuxtjs/i18n', "@nuxt/image", 'nuxt-swiper', '@nuxtjs/seo', 'nuxt-og-image'],
+    modules: ['@pinia/nuxt', '@nuxtjs/i18n', "@nuxt/image", 'nuxt-swiper', '@nuxtjs/seo', 'nuxt-og-image', 'nuxt-calendly'],
     pinia: {
         storesDirs: ['./stores/**']
     },

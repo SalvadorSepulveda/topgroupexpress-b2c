@@ -39,14 +39,23 @@ export default {
             sm: '575px',
             // => @media (min-width: 576px) { ... }
 
+            m: '667px',
+            // => @media (min-width: 667px) { ... }
+
             md: '768px',
             // => @media (min-width: 768px) { ... }
 
             lg: '992px',
             // => @media (min-width: 992px) { ... }
 
+            l: '1016px',
+            // => @media (min-width: 1016px) { ... }
+
             xl: '1200px',
             // => @media (min-width: 1200px) { ... }
+
+            xxl: '1250px',
+            // => @media (min-width: 1250px) { ... }
 
             '2xl': '1400px',
             // => @media (min-width: 1400px) { ... }

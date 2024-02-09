@@ -5,32 +5,32 @@
 	>
 		<div class="container relative max-w-[1400px]">
 			<div class="flex items-center justify-between">
-				<div class="block py-4 lg:py-0">
+				<div class="block py-4 xxl:py-0">
 					<NuxtLink :to="'/' + $i18n.locale" class="block max-w-[145px] sm:max-w-[180px]">
 						<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/logo.png"  />
 					</NuxtLink>
 				</div>
 				<button
-					class="absolute right-4 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 flex-col items-center justify-center space-y-[6px] font-bold lg:hidden"
+					class="absolute right-4 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 flex-col items-center justify-center space-y-[6px] font-bold xxl:hidden"
 					@click="toggleMenu()"
 				>
             		<span class="block h-[2px] w-7 bg-black dark:bg-white"></span>
 					<span class="block h-[2px] w-7 bg-black dark:bg-white"></span>
 					<span class="block h-[2px] w-7 bg-black dark:bg-white"></span>
 				</button>
-				<div class="menu-wrapper relative justify-between lg:flex" :class="openMenu ? 'block' : 'hidden'">
+				<div class="menu-wrapper relative justify-between xxl:flex" :class="openMenu ? 'block' : 'hidden'">
 					<button
-						class="fixed top-10 right-10 z-[9999] flex h-10 w-10 flex-col items-center justify-center font-bold lg:hidden"
+						class="fixed top-10 right-10 z-[9999] flex h-10 w-10 flex-col items-center justify-center font-bold xxl:hidden"
 						@click="toggleMenu()"
 					>
               			<span class="block h-[2px] w-7 rotate-45 bg-black dark:bg-white"></span>
 						<span class="-mt-[2px] block h-[2px] w-7 -rotate-45 bg-black dark:bg-white"></span>
 					</button>
-					<nav class="fixed top-0 left-0 z-[999] flex h-screen w-full items-center justify-center bg-white bg-opacity-95 text-center backdrop-blur-sm dark:bg-black dark:bg-opacity-95 lg:static lg:h-auto lg:w-max lg:bg-transparent lg:backdrop-blur-none lg:dark:bg-transparent" >
-						<ul class="items-center space-y-3 lg:flex lg:space-x-8 lg:space-y-0 xl:space-x-10">
+					<nav class="fixed top-0 left-0 z-[999] flex h-screen w-full items-center justify-center bg-white bg-opacity-95 text-center backdrop-blur-sm dark:bg-black dark:bg-opacity-95 xxl:static xxl:h-auto xxl:w-max xxl:bg-transparent xxl:backdrop-blur-none xxl:dark:bg-transparent" >
+						<ul class="items-center space-y-3 xxl:flex xxl:space-x-8 xxl:space-y-0 xl:space-x-10">
 							<li class="menu-item" v-for="item in items" :key="item.label" @click="toggleMenu()">
 								<NuxtLink :to="'/' + $i18n.locale + item.route"
-									class="menu-scroll inline-flex items-center text-3xl py-2 font-medium text-black hover:text-primary duration-300 dark:text-white dark:hover:text-primary lg:py-7 lg:text-base"
+									class="menu-scroll inline-flex items-center text-3xl py-2 font-medium text-black hover:text-primary duration-300 dark:text-white dark:hover:text-primary xxl:py-7 xxl:text-base"
 								>
 									{{ $t(item.label) }}
 								</NuxtLink>
@@ -38,7 +38,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="mr-[60px] flex items-center justify-end lg:mr-0">
+				<div class="mr-[60px] flex items-center justify-end xxl:mr-0">
 					<ColorModeSwitcher />
 					<NuxtLink
 						target="_blank"
@@ -70,11 +70,11 @@ export default {
 			{ label: 'feature', route: '#features' },
 			{ label: 'faq', route: '#faq' },
 			{ label: 'contact', route: '#contact' },
+			{ label: 'webinars', route: '/webinars' },
 			/*
 			{ label: 'downloads', route: '/downloads' },
 			{ label: 'agency', route: '/agencie' },
 			{ label: 'hotelier', route: '/hotelier' },
-			{ label: 'webinars', route: '/webinars' },
 			{ label: 'blog', route: '/blog' }
 			*/
 		],

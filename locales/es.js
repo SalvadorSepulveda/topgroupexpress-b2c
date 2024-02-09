@@ -129,6 +129,10 @@ export default {
     textAccept: "Al hacer clic en el botón \"Contactar\", acepta nuestras condiciones y política",
     buttonContact: "Contactar",
 
+    // Webinars
+    webinarsAgency: "Webinars para Agencias",
+    webinarsHoteliers: "Webinars para Hoteleros",
+
     // Footer
     textCopy: "© 2023 Top Group Express. Todos los derechos reservados.",
     textButtonPrivacy: "Políticas de Privacidad",
