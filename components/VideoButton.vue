@@ -1,5 +1,5 @@
 <template>
-	<a
+	<div
 		class="glightbox mb-6 inline-flex items-center py-4 text-black hover:text-primary dark:text-white duration-300 dark:hover:text-primary cursor-pointer"
 		@click="showVideo"
 	>
@@ -24,7 +24,7 @@
             <span class="block text-sm">{{ title }}</span>
             {{ description }}
         </span>
-	</a>
+	</div>
 </template>
 
 <script>
