@@ -94,9 +94,9 @@
 					<div class="mr-[22px] flex min-h-[60px] min-w-[60px] items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black dark:border-stroke-dark dark:bg-dark dark:text-white duration-300">
 						{{ index + 1 }}
 					</div>
-					<h5 class="text-xl font-medium text-black dark:text-white duration-300">
+					<span class="text-xl font-medium text-black dark:text-white duration-300">
 						{{ item }}
-					</h5>
+					</span>
 				</div>
 			</div>
 		</div>
