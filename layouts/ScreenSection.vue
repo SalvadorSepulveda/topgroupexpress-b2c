@@ -46,6 +46,7 @@
 						<button
 							class="swiper-button-style"
 							@click="previousSlide"
+							aria-label="previuos image"
 						>
 							<svg
 								fill="none"
@@ -75,6 +76,7 @@
 						<button
 							class="swiper-button-style"
 							@click="nextSlide"
+							aria-label="next image"
 						>
 							<svg
 								fill="none"

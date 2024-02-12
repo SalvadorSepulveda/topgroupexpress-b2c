@@ -13,6 +13,7 @@
 				<button
 					class="absolute right-4 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 flex-col items-center justify-center space-y-[6px] font-bold xxl:hidden"
 					@click="toggleMenu()"
+					aria-label="open menu"
 				>
             		<span class="block h-[2px] w-7 bg-black dark:bg-white"></span>
 					<span class="block h-[2px] w-7 bg-black dark:bg-white"></span>
