@@ -110,8 +110,8 @@ export default {
 
     // Fifth
     question5: "How to register as an agency?",
-    answer5: "It couldn't be simpler!",
-    answer5TextLink: "Click here",
+    answer5: "It couldn't be simpler! Log in to our",
+    answer5TextLink: "agency application ",
     answer5_1: "or the orange button at the top right, then select the registration button.",
 
     // Blog

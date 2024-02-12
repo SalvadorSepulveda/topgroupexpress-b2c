@@ -7,7 +7,7 @@
 			<div class="flex items-center justify-between">
 				<div class="block py-4 xxl:py-0">
 					<NuxtLink :to="'/' + $i18n.locale" class="block max-w-[145px] sm:max-w-[180px]">
-						<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/logo.png"  />
+						<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/logo.png" alt="logo" />
 					</NuxtLink>
 				</div>
 				<button

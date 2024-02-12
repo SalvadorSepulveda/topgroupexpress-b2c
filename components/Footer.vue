@@ -7,8 +7,7 @@
 						class="max-w-[200px]"
 						:to="'/' + $i18n.locale"
 					>
-						<NuxtImg
-							alt="logo"
+						<NuxtImg							alt="logo"
 							class="w-[200px]"
 							src="https://cdn.topgroups.travel/websites/assets/images/logo.png"
 							loading="lazy"
@@ -46,7 +45,7 @@
 								name="social icon"
 								target="_blank"
 							>
-								<NuxtImg loading="lazy" :src="`https://cdn.topgroups.travel/websites/assets/images/${link.icon}.png`" class="h-[24px]"/>
+								<NuxtImg loading="lazy" :src="`https://cdn.topgroups.travel/websites/assets/images/${link.icon}.png`" class="h-[24px]" :alt="link.icon"/>
 							</a>
 						</div>
 					</div>

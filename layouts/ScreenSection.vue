@@ -8,37 +8,37 @@
 				<!-- Swiper -->
 				<div class="swiper mySwiper relative z-20">
 					<div class="absolute top-0 left-0 right-0 z-50 mx-auto w-full md:w-1/3 h-[520px] xs:h-[550px] md:h-[450px] lg:h-[550px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
-						<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/mobile-frame.png" class="mx-auto max-w-full h-full" />
+						<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/mobile-frame.png" class="mx-auto max-w-full h-full" alt="mobile-frame" />
 					</div>
 					<div class="swiper-wrapper py-2" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-1-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-1-light.png" class="mx-auto max-w-full w-full" alt="screen-1-light" />
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-2-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-2-light.png" class="mx-auto max-w-full w-full" alt="screen-2-light" />
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-3-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-3-light.png" class="mx-auto max-w-full w-full" alt="screen-3-light" />
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-2-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-2-light.png" class="mx-auto max-w-full w-full" alt="screen-2-light" />
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-1-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-1-light.png" class="mx-auto max-w-full w-full" alt="screen-1-light" />
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="mx-auto w-full max-w-[252px] xs:max-w-[265px]" >
-								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-3-light.png" class="mx-auto max-w-full w-full" />
+								<NuxtImg loading="lazy" format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/screen-3-light.png" class="mx-auto max-w-full w-full" alt="screen-2-light" />
 							</div>
 						</div>
 					</div>

@@ -16,15 +16,15 @@
 			v-if="theme === 'dark'"
 			class="block img-hover"
 		>
-			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/moon-white.png" class="min-w-5 min-h-5 img-block" />
-			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/moon-primary.png" class="min-w-5 min-h-5 img-hidden" />
+			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/moon-white.png" class="min-w-5 min-h-5 img-block" alt="moon-white" />
+			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/moon-primary.png" class="min-w-5 min-h-5 img-hidden" alt="moon-primary" />
         </span>
 		<span
 			v-else
 			class="block img-hover"
 		>
-			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/sun-dark.png" class="min-w-5 min-h-5 img-block" />
-			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/sun-primary.png" class="min-w-5 min-h-5 img-hidden" />
+			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/sun-dark.png" class="min-w-5 min-h-5 img-block" alt="sun-dark" />
+			<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/sun-primary.png" class="min-w-5 min-h-5 img-hidden" alt="sun-primary" />
         </span>
 	</label>
 </template>

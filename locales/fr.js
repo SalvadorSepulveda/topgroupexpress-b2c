@@ -111,8 +111,8 @@ export default {
 
     // Fifth
     question5: "Comment s'inscrire en tant qu'agence ?",
-    answer5: "Rien de plus simple !",
-    answer5TextLink: "Cliquez ici",
+    answer5: "Rien de plus simple ! Connectez-vous à notre",
+    answer5TextLink: "application d'agence",
     answer5_1: "ou sur le bouton orange en haut à droite, puis sélectionnez le bouton d'inscription.",
 
     // Blog

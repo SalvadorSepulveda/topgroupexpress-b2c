@@ -111,9 +111,9 @@ export default {
 
     // Fifth
     question5: "如何注册成为代理商？",
-    answer5: "简单的几步即可",
-    answer5TextLink: "点击此处",
-    answer5_1: "或者在右上角点击橙色按钮，选择注册。",
+    answer5: "再简单不过了！进入我们的",
+    answer5TextLink: "旅行社",
+    answer5_1: "或点击右上角的橙色按钮，选择注册按钮。",
 
     // Blog
     titleBlog: "新闻与博客",
