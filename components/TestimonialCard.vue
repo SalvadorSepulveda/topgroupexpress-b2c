@@ -2,7 +2,7 @@
 	<div class="w-full px-6 lg:w-1/2 h-full">
 		<div class="my-[25px] rounded-lg bg-white py-9 px-7 shadow-card dark:bg-dark dark:shadow-card-dark sm:px-9 lg:px-7 xl:px-9 min-h-[16rem] flex flex-col justify-between duration-300">
 			<div class="mb-5 border-b border-stroke dark:border-stroke-dark duration-300">
-				<p class="pb-9 text-base text-body">
+				<p class="pb-9 text-base text-bodywhite dark:text-body duration-300">
 					<i>"{{ text }}"</i>
 				</p>
 			</div>
@@ -15,7 +15,7 @@
 						<h5 class="text-base font-medium text-black dark:text-white duration-300">
 							{{ title }}
 						</h5>
-						<p class="text-sm text-body">
+						<p class="text-sm text-bodywhite dark:text-body duration-300">
 							{{ subtitle }}
 						</p>
 					</div>

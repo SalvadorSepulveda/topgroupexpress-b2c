@@ -1,6 +1,6 @@
 <template>
 	<div class="relative">
-		<div class="z-10 max-w-[1100px] mx-auto text-body p-5 dark:text-white flex flex-col gap-8" >
+		<div class="z-10 max-w-[1100px] mx-auto text-bodywhite dark:text-body duration-300 p-5 dark:text-white flex flex-col gap-8" >
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex justify-center pb-8">
 					<FancyText class="text-primary text-6xl font-bold">{{ $t('titlePrivacy') }}</FancyText>

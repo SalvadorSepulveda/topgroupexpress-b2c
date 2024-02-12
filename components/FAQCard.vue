@@ -4,7 +4,7 @@
 			{{ title }}
 		</button>
 		<div class="faq-content h-auto overflow-hidden border-t border-stroke px-[18px] dark:border-stroke-dark sm:px-[26px] duration-300" >
-			<p class="text-base text-body">
+			<p class="text-base text-bodywhite dark:text-body duration-300">
 				<slot />
 			</p>
 		</div>

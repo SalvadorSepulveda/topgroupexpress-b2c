@@ -8,7 +8,7 @@
 			>
 				{{ title }}
 			</h2>
-			<p class="text-base text-body">
+			<p class="text-base text-bodywhite dark:text-body duration-300">
 				<slot></slot>
 			</p>
 		</div>

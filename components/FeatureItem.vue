@@ -7,7 +7,7 @@
 			<h3 class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px] duration-300" >
 				{{ title }}
 			</h3>
-			<p class="text-base text-body duration-300">
+			<p class="text-base text-bodywhite dark:text-body duration-300 duration-300">
 				{{ description }}
 			</p>
 		</div>

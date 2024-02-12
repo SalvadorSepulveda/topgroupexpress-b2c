@@ -82,7 +82,7 @@
 				<h2 class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight duration-300" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 					{{ bigtitle }}
 				</h2>
-				<p class="mb-[30px] text-base leading-relaxed text-body" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+				<p class="mb-[30px] text-base leading-relaxed text-bodywhite dark:text-body duration-300" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
 					{{ description }}
 				</p>
 				<div

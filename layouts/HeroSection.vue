@@ -22,7 +22,7 @@
 								<FancyText>{{ $t('title4')}}</FancyText>
 							</span>
 						</h1>
-						<p class="mb-10 max-w-[475px] text-base leading-relaxed text-body" data-aos="fade-up" data-aos-easing="ease-in-out">
+						<p class="mb-10 max-w-[475px] text-base leading-relaxed text-bodywhite dark:text-body duration-300" data-aos="fade-up" data-aos-easing="ease-in-out">
 							{{ $t('subtitle') }}
 						</p>
 						<div class="flex flex-wrap items-center" data-aos="fade-up" data-aos-easing="ease-in-out">

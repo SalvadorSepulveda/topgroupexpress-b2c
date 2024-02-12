@@ -29,6 +29,7 @@ export default {
             stroke: '#EBEFF4',
             dark: '#1F233A',
             body: '#79808A',
+            bodywhite: '#40454d',
             gray: '#F8F9FF',
             'stroke-dark': '#34374A',
         },
