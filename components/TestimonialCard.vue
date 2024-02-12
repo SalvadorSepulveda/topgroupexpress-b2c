@@ -12,9 +12,9 @@
 						<slot></slot>
 					</div>
 					<div>
-						<h5 class="text-base font-medium text-black dark:text-white duration-300">
+						<span class="text-base font-medium text-black dark:text-white duration-300">
 							{{ title }}
-						</h5>
+						</span>
 						<p class="text-sm text-bodywhite dark:text-body duration-300">
 							{{ subtitle }}
 						</p>
