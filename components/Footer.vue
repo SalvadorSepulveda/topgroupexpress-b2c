@@ -7,7 +7,8 @@
 						class="max-w-[200px]"
 						:to="'/' + $i18n.locale"
 					>
-						<NuxtImg							alt="logo"
+						<NuxtImg
+							alt="logo"
 							class="w-[200px]"
 							src="https://cdn.topgroups.travel/websites/assets/images/logo.png"
 							loading="lazy"
@@ -26,7 +27,7 @@
 				<div class="-mx-3 flex flex-wrap">
 					<div class="order-last w-full px-3 lg:order-first lg:w-1/3">
 						<p
-							class="mt-4 text-center text-base text-white lg:mt-0 lg:text-left"
+							class="mt-4 text-center text-base text-white lg:mt-0 lg:text-left font-[500]"
 						>
 							{{ $t('textCopy')}}
 						</p>
@@ -52,7 +53,7 @@
 
 					<div class="w-full px-3 md:w-1/2 lg:w-1/3">
 						<div
-							class="flex items-center justify-center space-x-4 sm:space-x-8 md:justify-end lg:justify-end"
+							class="flex items-center justify-center space-x-4 sm:space-x-8 md:justify-end lg:justify-end font-[500]"
 						>
 							<router-link class="text-base text-white hover:text-[#ccc] dark:hover:text-primary duration-100" :to="'/' + $i18n.locale + '/privacy'">
 								{{ $t('textButtonPrivacy')}}
