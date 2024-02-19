@@ -54,7 +54,7 @@
 								name="phone"
 								:placeholder="$t('insertPhone')"
 								type="text"
-								v-model="phone_number"
+								v-model="phoneNumber"
 							/>
 						</div>
 					</div>
