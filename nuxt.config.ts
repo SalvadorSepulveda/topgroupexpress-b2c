@@ -50,12 +50,15 @@ export default defineNuxtConfig({
             alwaysRedirect: true
         }
     },
-    site: {
-        url: process.env.NUXT_PUBLIC_SITE_URL,
-    },
     nitro: {
         prerender: {
           autoSubfolderIndex: false
         }
-      }
+    },
+    runtimeConfig: {
+        public: {
+            siteUrl: process.env.SITE_URL,
+            backendUrl: process.env.BACKEND_URL
+        }
+    }
 })

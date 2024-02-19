@@ -78,7 +78,7 @@
 								{{ $t('textAccept') }}
 							</p>
 							<p class="py-2 text-center text-base text-body" v-if="submitStatus">
-								{{ submitStatus }}
+								{{  $t(submitStatus) }}
 							</p>
 							<button
 								class="inline-block rounded-md bg-primary py-[14px] px-11 text-base font-medium text-white hover:bg-opacity-90"
@@ -94,58 +94,55 @@
 	</section>
 </template>
 
-<script>
-export default {
-	data: () => ({
-		name: '',
-		company: '',
-		email: '',
-		phone_number: '',
-		message: '',
-		submitStatus: '',
-	}),
-	methods: {
-		async onSubmitFormClicked() {
-			if (!this.name || !this.email || !this.phone_number || !this.message) {
-				this.submitStatus = this.$t('sendWarning');
-				return;
-			}
+<script setup>
+const config = useRuntimeConfig();
 
-			try {
-				const response = await fetch('https://backend.topgroups.travel/api/ext/website/contact/send', {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-					},
-					body: JSON.stringify({
-						name: this.name,
-						company: this.company,
-						email: this.email,
-						phone_number: this.phone_number,
-						message: this.message,
-						domain: 'website.topgroups.travel',
-						url: 'https://website.topgroups.travel/',
-						source: 'home',
-					}),
-				});
+const name = ref('');
+const company = ref('');
+const email = ref('');
+const phoneNumber = ref('');
+const message = ref('');
+const submitStatus = ref('');
 
-				if (!response.ok) {
-					throw new Error(`HTTP error! status: ${response.status}`);
-				}
-
-				const data = await response.json();
-				this.submitStatus = this.$t('sendSuccessfully');
-
-				this.name = '';
-				this.company = '';
-				this.email = '';
-				this.phone_number = '';
-				this.message = '';
-			} catch (error) {
-				console.error('Hubo un problema con la petición Fetch:', error);
-				this.submitStatus = this.$t('sendError');
-			}
-		},
+const onSubmitFormClicked = async () => {
+	console.log(config.public.backendUrl)
+	if (!name.value || !email.value || !phoneNumber.value || !message.value) {
+		submitStatus.value = 'sendWarning'
+		return;
 	}
-}
+
+	try {
+		const response = await fetch(  config.public.backendUrl+'/ext/website/contact/send', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				name: name.value,
+				company: company.value,
+				email: email.value,
+				phone_number: phoneNumber.value,
+				message: message.value,
+				domain: config.public.siteUrl,
+				url: config.public.siteUrl,
+				source: 'home',
+			}),
+		});
+
+		if (!response.ok) {
+			throw new Error(`HTTP error! status: ${response.status}`);
+		}
+
+		const data = await response.json();
+		submitStatus.value = 'sendSuccessfully'
+		name.value = '';
+		company.value = '';
+		email.value = '';
+		phoneNumber.value = '';
+		message.value = '';
+	} catch (error) {
+		console.error('Hubo un problema con la petición Fetch:', error);
+		submitStatus.value = 'sendError'
+	}
+};
 </script>
