@@ -55,6 +55,9 @@ export default defineNuxtConfig({
           autoSubfolderIndex: false
         }
     },
+    site: {
+        url: process.env.SITE_URL
+    },
     runtimeConfig: {
         public: {
             siteUrl: process.env.SITE_URL,
