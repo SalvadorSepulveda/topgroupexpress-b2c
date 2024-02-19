@@ -141,6 +141,7 @@ export default {
     // send text
     sendSuccessfully: "El mensaje se ha enviado correctamente.",
     sendError: "Hubo un error al enviar el mensaje.",
+    sendWarning: "Algunos campos son obligatorios.",
 
     // 404
     errorTitle: "Lo siento, la página no existe",

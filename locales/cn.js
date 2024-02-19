@@ -131,8 +131,8 @@ export default {
     buttonContact: "联系",
 
     // Webinars
-    webinarsAgency: "机构网络研讨会",
-    webinarsHoteliers: "面向酒店业者的网络研讨会",
+    webinarsAgency: "旅行社系统培训",
+    webinarsHoteliers: "酒店管理者系统培训",
 
     // Footer
     textCopy: "© 2023 Top Group Express。版权所有",
@@ -142,6 +142,7 @@ export default {
     // send text
     sendSuccessfully: "消息已成功发送。",
     sendError: "发送消息时出错。",
+    sendWarning: "某些字段为必填字段。",
 
     // 404
     errorTitle: "对不起，该页面不存在",

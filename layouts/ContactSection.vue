@@ -77,6 +77,9 @@
 							<p class="mb-5 text-center text-base text-body">
 								{{ $t('textAccept') }}
 							</p>
+							<p class="py-2 text-center text-base text-body" v-if="submitStatus">
+								{{ submitStatus }}
+							</p>
 							<button
 								class="inline-block rounded-md bg-primary py-[14px] px-11 text-base font-medium text-white hover:bg-opacity-90"
 								@click="onSubmitFormClicked"
@@ -99,9 +102,15 @@ export default {
 		email: '',
 		phone_number: '',
 		message: '',
+		submitStatus: '',
 	}),
 	methods: {
 		async onSubmitFormClicked() {
+			if (!this.name || !this.email || !this.phone_number || !this.message) {
+				this.submitStatus = this.$t('sendWarning');
+				return;
+			}
+
 			try {
 				const response = await fetch('https://backend.topgroups.travel/api/ext/website/contact/send', {
 					method: 'POST',
@@ -125,9 +134,16 @@ export default {
 				}
 
 				const data = await response.json();
-				console.log(data);
+				this.submitStatus = this.$t('sendSuccessfully');
+
+				this.name = '';
+				this.company = '';
+				this.email = '';
+				this.phone_number = '';
+				this.message = '';
 			} catch (error) {
 				console.error('Hubo un problema con la petición Fetch:', error);
+				this.submitStatus = this.$t('sendError');
 			}
 		},
 	}
