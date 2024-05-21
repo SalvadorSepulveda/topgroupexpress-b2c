@@ -1,0 +1,36 @@
+<template>
+	<div class="w-full h-full">
+		<div class="w-full flex justify-center pb-8 mt-10 text-center" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+			<FancyText class="text-primary text-6xl font-bold">{{$t('webinarsAgency')}}</FancyText>
+		</div>
+		<div class="h-[1250px] l:h-[700px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+			<CalendlyInlineWidget v-bind="optionsAgencies" style="height: 100%" />
+		</div>
+		<div class="w-full flex justify-center pb-8 mt-10 text-center" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+			<FancyText class="text-primary text-6xl font-bold">{{$t('webinarsHoteliers')}}</FancyText>
+		</div>
+		<div class="h-[1250px] l:h-[700px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+			<CalendlyInlineWidget v-bind="optionsHoteliers" style="height: 100%" />
+		</div>
+	</div>
+</template>
+
+<script lang="ts" setup>
+const { locale } = useI18n();
+
+const optionsAgencies = computed(() => {
+	const baseUrls = {
+		en: 'https://calendly.com/top-group-express/group-bookings-online',
+		fr: 'https://calendly.com/top-group-express/group-bookings-online',
+		cn: 'https://calendly.com/top-group-express/group-bookings-online',
+		es: 'https://calendly.com/top-group-express/agencias-agiles',
+	};
+	return {
+		url: baseUrls[locale.value] || baseUrls.en,
+	};
+});
+
+const optionsHoteliers = {
+	url: 'https://calendly.com/top-group-express/30min',
+}
+</script>
