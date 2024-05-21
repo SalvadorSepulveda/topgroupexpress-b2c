@@ -1,6 +1,6 @@
 <template>
 	<footer>
-		<div class="mt-[3rem] bg-[#F8FAFB] pt-[1rem] pb-[1rem] dark:bg-[#15182A]">
+		<div class="mt-[3rem] duration-300 bg-[#F8FAFB] pt-[1rem] pb-[1rem] dark:bg-[#15182A]">
 			<div class="container max-w-[1450px]">
 				<div class="grid gap-[1rem] justify-items-center items-center 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
 					<NuxtLink
@@ -21,7 +21,7 @@
 		</div>
 
 		<div
-			class="bg-primary py-7 dark:bg-black"
+			class="bg-primary duration-300 py-7 dark:bg-black"
 		>
 			<div class="container max-w-[1450px]">
 				<div class="-mx-3 flex flex-wrap">
@@ -33,7 +33,7 @@
 						</p>
 					</div>
 
-					<div class="w-full px-3 md:w-1/2 lg:w-1/3">
+					<div class="w-full px-3 md:w-1/2 lg:w-1/3 flex justify-center">
 						<div
 							class="mb-4 flex items-center justify-center space-x-5 md:mb-0 md:justify-start lg:justify-center"
 						>
@@ -51,7 +51,7 @@
 						</div>
 					</div>
 
-					<div class="w-full px-3 md:w-1/2 lg:w-1/3">
+					<div class="w-full px-3 md:w-1/2 lg:w-1/3 flex justify-center">
 						<div
 							class="flex items-center justify-center space-x-4 sm:space-x-8 md:justify-end lg:justify-end font-[500]"
 						>
