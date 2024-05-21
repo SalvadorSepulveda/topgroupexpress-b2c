@@ -69,11 +69,11 @@ export default {
 		openMenu : false,
 		items : [
 			{ label: 'feature', route: '#features' },
-			{ label: 'faq', route: '#faq' },
+			// { label: 'faq', route: '#faq' },
 			{ label: 'contact', route: '#contact' },
 			{ label: 'webinars', route: '/webinars' },
-			/*
 			{ label: 'downloads', route: '/downloads' },
+			/*
 			{ label: 'agency', route: '/agencie' },
 			{ label: 'hotelier', route: '/hotelier' },
 			{ label: 'blog', route: '/blog' }
