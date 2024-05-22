@@ -4,4 +4,5 @@
 		<slot />
 	</div>
 	<Footer />
+	<back-to-top-button/>
 </template>
