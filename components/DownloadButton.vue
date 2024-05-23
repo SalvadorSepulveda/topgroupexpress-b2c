@@ -2,7 +2,7 @@
 	<NuxtLink
 		target="_blank"
 		to="#"
-		class="rounded-md bg-primary py-2 px-4 text-base font-medium text-white hover:bg-opacity-90 flex items-center gap-3 w-fit h-full whitespace-nowrap"
+		class="rounded-md bg-primary py-2 px-4 text-base font-medium text-white hover:bg-opacity-90 flex items-center gap-3 w-fit max-h-[48px] whitespace-nowrap"
 	>
 		<NuxtImg v-if="icon" format="webp,avif,jpeg" :src="icon" class="w-[40px] border-r border-white pr-3" :alt="icon" />
 		<div class="flex flex-col">
@@ -22,15 +22,15 @@ export default {
 	props: {
 		smallText: {
 			type: String,
-			required: true
+			required: false
 		},
 		text: {
 			type: String,
-			required: true
+			required: false
 		},
 		icon: {
 			type: String,
-			required: true
+			required: false
 		}
 
 	}
