@@ -1,42 +1,34 @@
 <template>
 	<button
-		:class="buttonClasses"
-		class="back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md duration-300 ease-in-out hover:bg-opacity-80"
-		style="display: flex"
-		@click="backToTop"
-		aria-label="back to top"
+		:style="buttonStyle"
+		class="fixed bottom-10 right-10 z-50 w-10 h-10 bg-primary rounded-lg p-2 shadow hover:scale-95 duration-300 transition"
+		@click="scrollToTop"
+		aria-label="Ir arriba"
+		v-show="visible"
 	>
-        <span class="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white" ></span>
+		<svg fill="#fff" viewBox="-1 1 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
+			<path d="M15.3 15.32a1.026 1.026 0 0 1-.727-.302L8.5 8.946l-6.073 6.072a1.03 1.03 0 0 1-1.456-1.455l6.801-6.8a1.03 1.03 0 0 1 1.456 0l6.8 6.8a1.03 1.03 0 0 1-.727 1.757z"/>
+		</svg>
 	</button>
 </template>
 
 <script>
-import {mapActions, mapState} from "pinia";
-import {useScrollStore} from "~/stores/index.js";
+import {useScroll} from "~/composables/scroll.js";
 
 export default {
-	computed: {
-		...mapState(useScrollStore, {
-			scrollY: 'position',
-		}),
-		buttonClasses() {
-			if (this.scrollY < 80) {
-				return 'opacity-0 cursor-default'
-			}
-			return 'opacity-100'
-		}
-	},
-	methods: {
-		backToTop() {
-			if (this.scrollY > 80) {
-				window.scrollTo({
-					top: 0,
-				})
-			}
-		},
-		...mapActions(useScrollStore, {
-			initializeScroll: 'initialize',
-		}),
-	},
+	name: "ButtonScroll",
+	setup() {
+		const {position, initialize, scrollToTop} = useScroll();
+
+		onMounted(initialize);
+
+		const buttonStyle = computed(() => ({
+			cursor: position.value > 65 ? 'pointer' : 'default'
+		}));
+
+		const visible = computed(() => position.value > 65);
+
+		return {buttonStyle, scrollToTop, visible};
+	}
 }
 </script>

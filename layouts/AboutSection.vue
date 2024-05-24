@@ -1,5 +1,5 @@
 <template>
-	<section id="about" class="relative pt-[150px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+	<section id="about" class="relative pt-[150px]" >
 		<div class="container lg:max-w-[1120px]">
 			<AboutCard
 				:smalltitle="$t('smallTitleAgencies')"
@@ -8,7 +8,7 @@
 				:list="[$t('oneListAgencies'), $t('twoListAgencies'), $t('threeListAgencies'), $t('fourListAgencies')]"
 				left
 			>
-				<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/mok.png" class="mx-auto w-[300px] h-[600px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300" alt="screenagency"/>
+				<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/mok.png" class="mx-auto w-[300px] h-[600px]" alt="screenagency"/>
 			</AboutCard>
 			<AboutCard
 				class="pt-32"
@@ -18,10 +18,10 @@
 				:list="[$t('oneListHoteliers'), $t('twoListHoteliers'), $t('threeListHoteliers'), $t('fourListHoteliers')]"
 				right
 			>
-				<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/mok.png" class="mx-auto w-[300px] h-[600px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300" alt="screen-hotelier"/>
+				<NuxtImg format="webp,avif,jpeg" src="https://cdn.topgroups.travel/websites/assets/images/mok.png" class="mx-auto w-[300px] h-[600px]"  alt="screen-hotelier"/>
 			</AboutCard>
 		</div>
-		<div class="absolute right-0 top-36 -z-10" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+		<div class="absolute right-0 top-36 -z-10">
 			<svg
 				width="95"
 				height="190"

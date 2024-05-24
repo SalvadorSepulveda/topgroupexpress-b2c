@@ -1,14 +1,14 @@
 <template>
 	<section id="testimonials" class="py-20 relative z-10" >
-		<SectionTitle :title="$t('titleClients')" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+		<SectionTitle :title="$t('titleClients')" >
 			{{ $t('descriptionClients') }}
 		</SectionTitle>
-		<div class="flex justify-center align-middle my-6" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+		<div class="flex justify-center align-middle my-6" >
 			<h3 class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]" >
 				{{ $t('hotelier')}}
 			</h3>
 		</div>
-		<div class="container overflow-hidden lg:max-w-[1160px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+		<div class="container overflow-hidden lg:max-w-[1160px]" >
 			<div class=" flex flex-wrap">
 				<template
 					v-for="item in testimonialsHotels"
@@ -19,7 +19,6 @@
 						:subtitle="item.subtitle"
 						:text="item.text"
 						:rate="5"
-						data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300"
 					>
 						<img alt="author" class="h-full w-full object-cover object-center rounded-full bg-white" :src="item.src" />
 					</TestimonialCard>
@@ -27,11 +26,11 @@
 			</div>
 		</div>
 		<div class="flex justify-center align-middle my-6">
-			<h3 class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+			<h3 class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]">
 				{{ $t('agency') }}
 			</h3>
 		</div>
-		<div class="container overflow-hidden lg:max-w-[1160px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+		<div class="container overflow-hidden lg:max-w-[1160px]">
 			<div class=" flex flex-wrap">
 				<template
 					v-for="item in testimonialsAgencies"
@@ -42,7 +41,6 @@
 						:subtitle="item.subtitle"
 						:text="item.text"
 						:rate="5"
-						data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300"
 					>
 						<img alt="author" class="h-full w-full object-cover object-center rounded-full bg-white" :src="item.src" />
 					</TestimonialCard>

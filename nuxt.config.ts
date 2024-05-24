@@ -29,10 +29,7 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
-    modules: ['@pinia/nuxt', '@nuxtjs/i18n', "@nuxt/image", 'nuxt-swiper', '@nuxtjs/seo', 'nuxt-og-image', 'nuxt-calendly', 'nuxt-aos'],
-    pinia: {
-        storesDirs: ['./stores/**']
-    },
+    modules: ['@nuxtjs/i18n', "@nuxt/image", 'nuxt-swiper', '@nuxtjs/seo', 'nuxt-og-image', 'nuxt-calendly', 'nuxt-aos'],
     i18n: {
         locales: [
             { code: 'en', iso: 'en-US', file: 'en.js' },

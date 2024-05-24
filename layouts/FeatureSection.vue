@@ -1,13 +1,13 @@
 <template>
 	<section id="features" class="relative z-10 pt-[110px]">
-		<SectionTitle :title="$t('featureTitle')" data-aos="fade-up" data-aos-easing="ease-in-out">
+		<SectionTitle :title="$t('featureTitle')" >
 			{{ $t('featureDescription') }}
 		</SectionTitle>
 
-		<div class="container max-w-[1390px]" data-aos="fade-up" data-aos-easing="ease-in-out">
+		<div class="container max-w-[1390px]" >
 			<div class="rounded-2xl bg-white px-5 pt-14 pb-14 shadow-card dark:bg-dark dark:shadow-card-dark md:pb-1 lg:pt-20 lg:pb-5 xl:px-10 duration-300" >
 				<div class="-mx-4 flex flex-wrap">
-					<FeatureItem v-for="feature in features" :key="feature.title" :title="$t(feature.title)" :description="$t(feature.description)" :icon="feature.icon" data-aos="fade-up" data-aos-easing="ease-in-out" />
+					<FeatureItem v-for="feature in features" :key="feature.title" :title="$t(feature.title)" :description="$t(feature.description)" :icon="feature.icon" />
 				</div>
 			</div>
 		</div>

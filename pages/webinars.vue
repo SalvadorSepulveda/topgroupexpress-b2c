@@ -1,15 +1,15 @@
 <template>
 	<div class="w-full h-full">
-		<div class="w-full flex justify-center pb-8 mt-10 text-center" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+		<div class="w-full flex justify-center pb-8 mt-10 text-center" >
 			<FancyText class="text-primary text-6xl font-bold">{{$t('webinarsAgency')}}</FancyText>
 		</div>
-		<div class="h-[1250px] l:h-[700px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+		<div class="h-[1250px] l:h-[700px]" >
 			<CalendlyInlineWidget v-bind="optionsAgencies" style="height: 100%" />
 		</div>
-		<div class="w-full flex justify-center pb-8 mt-10 text-center" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+		<div class="w-full flex justify-center pb-8 mt-10 text-center" >
 			<FancyText class="text-primary text-6xl font-bold">{{$t('webinarsHoteliers')}}</FancyText>
 		</div>
-		<div class="h-[1250px] l:h-[700px]" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="300">
+		<div class="h-[1250px] l:h-[700px]" >
 			<CalendlyInlineWidget v-bind="optionsHoteliers" style="height: 100%" />
 		</div>
 	</div>
@@ -17,7 +17,6 @@
 
 <script lang="ts" setup>
 const { locale } = useI18n();
-
 const optionsAgencies = computed(() => {
 	const baseUrls = {
 		en: 'https://calendly.com/top-group-express/group-bookings-online',
