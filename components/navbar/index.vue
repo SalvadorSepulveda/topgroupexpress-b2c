@@ -1,18 +1,20 @@
 <template>
-	<nav class="w-full fixed top-0 border-stroke dark:border-stroke-dark duration-300 z-50" :class="navbarStyles">
+	<header class="w-full fixed top-0 border-stroke dark:border-stroke-dark duration-300 z-50" :class="navbarStyles">
 		<div class="container max-w-[1400px] py-3 flex items-center justify-between">
-			<!-- Navbar logo -->
+			<!-- Header logo -->
 			<navbar-logo :href="'/' + $i18n.locale" src="https://cdn.topgroups.travel/websites/assets/images/logo.png" alt="logo" :width="150" />
 
 			<!-- Regular navigation links visible on xl and larger screens -->
-			<ul class="gap-8 hidden xl:flex">
-				<navbar-link
-					v-for="link in links"
-					:key="link.label"
-					:label="$t(link.label)"
-					:route="'/' + $i18n.locale + link.route"
-				/>
-			</ul>
+			<nav>
+				<ul class="gap-8 hidden xl:flex">
+					<navbar-link
+						v-for="link in links"
+						:key="link.label"
+						:label="$t(link.label)"
+						:route="'/' + $i18n.locale + link.route"
+					/>
+				</ul>
+			</nav>
 
 			<!-- Right section for color switcher, external links, language switcher, and burger button -->
 			<div class="flex items-center gap-4">
@@ -36,8 +38,8 @@
 			</div>
 
 			<!-- Full-screen mobile menu that appears when burger button is clicked -->
-			<div class="absolute w-screen h-screen overflow-hidden xl:hidden inset-0 bg-white dark:bg-black bg-opacity-90 backdrop-blur-sm dark:bg-opacity-90 z-40 flex flex-col items-center justify-center " v-if="menuOpen">
-				<generic-icon name="cross" width="45" @click="closeMenu" class="absolute top-3 right-3 text-[#181C31] hover:text-primary dark:text-white dark:hover:text-primary cursor-pointer"/>
+			<nav class="absolute w-screen h-screen overflow-hidden xl:hidden inset-0 bg-white dark:bg-black bg-opacity-90 backdrop-blur-sm dark:bg-opacity-90 z-40 flex flex-col items-center justify-center " v-if="menuOpen">
+				<generic-icon name="cross" width="45" @click="closeMenu" class="absolute top-5 right-5 text-[#181C31] hover:text-primary dark:text-white dark:hover:text-primary cursor-pointer"/>
 				<ul class="flex flex-col gap-4 items-center">
 					<NuxtLink
 						target="_blank"
@@ -59,9 +61,9 @@
 						</NuxtLink>
 					</li>
 				</ul>
-			</div>
+			</nav>
 		</div>
-	</nav>
+	</header>
 </template>
 
 <script>
