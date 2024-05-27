@@ -8,7 +8,7 @@
 			<generic-icon v-if="!open" width="20" name="chevronDown" alt="chevronDown"/>
 			<generic-icon v-else width="20" name="chevronUp" alt="chevronUp"/>
 		</button>
-		<div v-if="open" class="z-50 bg-white dark:bg-black duration-300 absolute flex flex-col top-12 shadow rounded-lg w-full border border-stroke dark:border-stroke-dark overflow-hidden">
+		<div v-if="open" class="z-20 bg-white dark:bg-black duration-300 absolute flex flex-col top-12 shadow rounded-lg w-full border border-stroke dark:border-stroke-dark overflow-hidden">
 			<button
 				class="cursor-pointer flex p-2 items-center w-full justify-center xs:justify-start gap-2 hover:bg-[#F8F9FF] dark:hover:bg-dark"
 				v-for="locale in availableLocales" :key="locale.code" @click="setLanguage(locale)"
