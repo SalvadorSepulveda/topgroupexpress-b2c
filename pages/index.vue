@@ -1,6 +1,6 @@
 <template>
 	<HeroSection />
-	<OfferSection />
+	<FeatureSection />
 	<AboutSection />
 	<WorkProcessSection />
 	<ScreenSection />
@@ -12,16 +12,6 @@
 </template>
 
 <script setup>
-	import HeroSection from "~/layouts/HeroSection.vue";
-	import OfferSection from "~/layouts/FeatureSection.vue";
-	import AboutSection from "~/layouts/AboutSection.vue";
-	import WorkProcessSection from "~/layouts/WorkProcessSection.vue";
-	import ScreenSection from "~/layouts/ScreenSection.vue";
-	import ClientsSection from "~/layouts/ClientsSection.vue";
-	import TestimonialSection from "~/layouts/TestimonialSection.vue";
-	import ContactSection from "~/layouts/ContactSection.vue";
-	import FAQSection from "~/layouts/FAQSection.vue";
-
 	useHead({
 		title: 'Top Group Express',
 		htmlAttrs: { lang: 'en-US' },

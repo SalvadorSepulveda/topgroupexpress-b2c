@@ -2,7 +2,7 @@
 	<nav class="w-full fixed top-0 border-stroke dark:border-stroke-dark z-50" :class="navbarStyles">
 		<div class="container max-w-[1400px] py-3 flex items-center justify-between">
 			<!-- Navbar logo -->
-			<navbar-logo href="/" src="https://cdn.topgroups.travel/websites/assets/images/logo.png" alt="logo" :width="150" />
+			<navbar-logo :href="'/' + $i18n.locale" src="https://cdn.topgroups.travel/websites/assets/images/logo.png" alt="logo" :width="150" />
 
 			<!-- Regular navigation links visible on xl and larger screens -->
 			<ul class="gap-8 hidden xl:flex">
@@ -10,7 +10,7 @@
 					v-for="link in links"
 					:key="link.label"
 					:label="$t(link.label)"
-					:route="link.route"
+					:route="'/' + $i18n.locale + link.route"
 				/>
 			</ul>
 
