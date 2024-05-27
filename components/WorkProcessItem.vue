@@ -16,9 +16,9 @@
 
 <script>
 
-import IconDownload from '@/components/Icon/Download.vue'
-import IconUser from '@/components/Icon/User.vue'
-import IconHeartHands from '@/components/Icon/HeartHands.vue'
+import IconDownload from '~/components/icon/Download.vue'
+import IconUser from '~/components/icon/User.vue'
+import IconHeartHands from '~/components/icon/HeartHands.vue'
 
 export default {
 	components: {

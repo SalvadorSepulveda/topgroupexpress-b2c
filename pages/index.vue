@@ -1,5 +1,5 @@
 <template>
-	<HeroSection />
+	<hero />
 	<FeatureSection />
 	<AboutSection />
 	<WorkProcessSection />

@@ -15,12 +15,12 @@
 </template>
 
 <script>
-import IconApp from '@/components/Icon/App.vue'
-import IconLayers from '@/components/Icon/Layers.vue'
-import IconLayout from '@/components/Icon/Layout.vue'
-import IconSpeed from '@/components/Icon/Speed.vue'
-import IconSliders from '@/components/Icon/Sliders.vue'
-import IconReload from '@/components/Icon/Reload.vue'
+import IconApp from '~/components/icon/App.vue'
+import IconLayers from '~/components/icon/Layers.vue'
+import IconLayout from '~/components/icon/Layout.vue'
+import IconSpeed from '~/components/icon/Speed.vue'
+import IconSliders from '~/components/icon/Sliders.vue'
+import IconReload from '~/components/icon/Reload.vue'
 
 export default {
 	components: {
