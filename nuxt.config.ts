@@ -32,10 +32,10 @@ export default defineNuxtConfig({
     modules: ['@nuxtjs/i18n', "@nuxt/image", 'nuxt-swiper', '@nuxtjs/seo', 'nuxt-og-image', 'nuxt-calendly', 'nuxt-aos'],
     i18n: {
         locales: [
-            { code: 'en', iso: 'en-US', file: 'en.js' },
-            { code: 'es', iso: 'es-ES', file: 'es.js' },
-            { code: 'cn', iso: 'zh-CN', file: 'cn.js' },
-            { code: 'fr', iso: 'fr-FR', file: 'fr.js' },
+            { code: 'en', iso: 'en-US', file: 'en.js', name: 'English (UK)' },
+            { code: 'es', iso: 'es-ES', file: 'es.js', name: 'Español' },
+            { code: 'cn', iso: 'zh-CN', file: 'cn.js', name: '简体中文' },
+            { code: 'fr', iso: 'fr-FR', file: 'fr.js', name: 'Français' },
         ],
         langDir: 'locales/',
         defaultLocale: 'en',
