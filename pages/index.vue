@@ -1,7 +1,7 @@
 <template>
 	<hero />
 	<feature />
-	<AboutSection />
+	<about />
 	<WorkProcessSection />
 	<ScreenSection />
 	<ClientsSection />
