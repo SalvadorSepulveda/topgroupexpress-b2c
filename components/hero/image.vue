@@ -8,7 +8,7 @@
 		  	alt="hero image"
 		/>
 		<div
-			class="max-auto absolute top-0 left-0 right-0 -z-10 aspect-square w-full rounded-full bg-gradient-1"
+			class="max-auto absolute top-0 left-0 right-0 -z-10 aspect-square w-full rounded-full bg-gradient-1 hidden xs:block"
 		>
 			<div class="absolute top-5 right-0">
 				<generic-icon name="stars" width="65" />
