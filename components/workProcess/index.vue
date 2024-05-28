@@ -1,16 +1,17 @@
 <template>
-	<section id="workProcessSection"  class="relative z-10 pt-[110px] p-4">
-		<generic-title :title="$t('titleWorkSection')" :subtitle="$t('descriptionWorkSection')" />
+	<section id="workProcessSection" class="relative z-10 pt-[110px] p-4">
+		<generic-title :title="$t('titleWorkSection')" :subtitle="$t('descriptionWorkSection')"/>
 		<div class="container max-w-[1390px] rounded-2xl bg-white px-5 pt-14 pb-14 shadow-card dark:bg-dark dark:shadow-card-dark md:pb-1 lg:pt-20 lg:pb-5 xl:px-10 duration-300 flex flex-wrap justify-center">
 			<work-process-item v-for="item in items" :key="item.title" :title="$t(item.title)" :description="$t(item.description)" :icon="item.icon"/>
 		</div>
-		<generic-icon name="shadowRight" class="absolute right-0 top-20 -z-10" />
-		<generic-icon name="shadowLeft" class="absolute -top-28 left-0 -z-10 hidden md:block" />
+		<generic-icon name="shadowRight" class="absolute right-0 top-20 -z-10"/>
+		<generic-icon name="shadowLeft" class="absolute -top-28 left-0 -z-10 hidden md:block"/>
 	</section>
 </template>
 
 <script>
 export default {
+	name: 'WorkProcess',
 	data: () => ({
 		items: [
 			{
