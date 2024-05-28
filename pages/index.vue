@@ -5,7 +5,7 @@
 	<work-process />
 	<screens />
 	<clients />
-	<TestimonialSection />
+	<testimonial />
 	<FAQSection />
 	<ContactSection />
 	<BackToTopButton />

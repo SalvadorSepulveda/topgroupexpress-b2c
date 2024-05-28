@@ -60,6 +60,7 @@
 
 <script>
 export default {
+	name: "testimonialCard",
 	props: {
 		title: {
 			type: String,

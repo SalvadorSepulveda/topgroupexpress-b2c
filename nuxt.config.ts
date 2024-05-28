@@ -20,16 +20,13 @@ export default defineNuxtConfig({
     css: [
         '~/assets/css/main.css',
     ],
-    plugins: [
-        '~/plugins/aos.client.js',
-    ],
     postcss: {
         plugins: {
             tailwindcss: {},
             autoprefixer: {},
         },
     },
-    modules: ['@nuxtjs/i18n', "@nuxt/image", 'nuxt-swiper', '@nuxtjs/seo', 'nuxt-og-image', 'nuxt-calendly', 'nuxt-aos'],
+    modules: ['@nuxtjs/i18n', "@nuxt/image", 'nuxt-swiper', '@nuxtjs/seo', 'nuxt-og-image', 'nuxt-calendly'],
     i18n: {
         locales: [
             { code: 'en', iso: 'en-UK', file: 'en.js', name: 'English (UK)' },
