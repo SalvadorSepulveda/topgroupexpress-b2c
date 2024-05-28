@@ -470,5 +470,41 @@ export const Icons = {
             </linearGradient>
         </defs>
     </svg>
-    `
+    `,
+    circleLeft : `
+    <svg width="95" height="190" viewBox="0 0 95 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cy="95" r="77" stroke="url(#paint0_linear_47_26)" stroke-width="36" />
+        <defs>
+            <linearGradient id="paint0_linear_47_26" x1="-117.84" y1="190" x2="117.828" y2="25.9199" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#EA621F" />
+                <stop offset="0.541667" stop-color="#EA621F" />
+                <stop offset="1" stop-color="#FF765D" />
+            </linearGradient>
+        </defs>
+    </svg>
+    `,
+    arrowRight : `
+    <svg fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_46_337)">
+            <path d="M13.4767 9.16664L9.00667 4.69664L10.185 3.51831L16.6667 9.99998L10.185 16.4816L9.00667 15.3033L13.4767 10.8333H3.33334V9.16664H13.4767Z" fill="currentColor" />
+        </g>
+        <defs>
+            <clipPath id="clip0_46_337">
+                <rect fill="white" height="20" width="20" />
+            </clipPath>
+        </defs>
+    </svg>
+    `,
+    arrowLeft : `
+    <svg fill="none" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_46_342)">
+            <path d="M6.52334 10.8334L10.9933 15.3034L9.81501 16.4817L3.33334 10L9.815 3.51836L10.9933 4.69669L6.52334 9.16669L16.6667 9.16669L16.6667 10.8334L6.52334 10.8334Z" fill="currentColor" />
+        </g>
+        <defs>
+            <clipPath id="clip0_46_342">
+                <rect fill="white" height="20" transform="translate(20 20) rotate(180)" width="20" />
+            </clipPath>
+        </defs>
+    </svg>
+    `,
 }

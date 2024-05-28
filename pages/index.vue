@@ -3,7 +3,7 @@
 	<feature />
 	<about />
 	<work-process />
-	<ScreenSection />
+	<screens />
 	<ClientsSection />
 	<TestimonialSection />
 	<FAQSection />
