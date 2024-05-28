@@ -32,7 +32,7 @@ export const Icons = {
             </g>
         </svg>
     `,
-    "cross" : `
+    cross : `
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -237,7 +237,7 @@ export const Icons = {
         </defs>
     </svg>
     `,
-    weaves: `
+    waves: `
     <svg width="65" height="36" viewBox="0 0 65 36" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
             fill-rule="evenodd"
@@ -443,21 +443,32 @@ export const Icons = {
     `,
     shadowLeft: `
     <svg width="622" height="1236" viewBox="0 0 622 1236" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g opacity="0.2" filter="url(#filter0_f_26_85)">
-        <circle cx="4" cy="618" r="368" fill="url(#paint0_linear_26_85)" />
-    </g>
-    <defs>
-        <filter id="filter0_f_26_85" x="-614" y="0" width="1236" height="1236" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-            <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_26_85" />
-        </filter>
-        <linearGradient id="paint0_linear_26_85" x1="-364" y1="250" x2="506.12" y2="754.835" gradientUnits="userSpaceOnUse">
-            <stop stop-color="currentColor" />
-            <stop offset="1" stop-color="currentColor" />
-        </linearGradient>
-    </defs>
-</svg>
-
+        <g opacity="0.2" filter="url(#filter0_f_26_85)">
+            <circle cx="4" cy="618" r="368" fill="url(#paint0_linear_26_85)" />
+        </g>
+        <defs>
+            <filter id="filter0_f_26_85" x="-614" y="0" width="1236" height="1236" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_26_85" />
+            </filter>
+            <linearGradient id="paint0_linear_26_85" x1="-364" y1="250" x2="506.12" y2="754.835" gradientUnits="userSpaceOnUse">
+                <stop stop-color="currentColor" />
+                <stop offset="1" stop-color="currentColor" />
+            </linearGradient>
+        </defs>
+    </svg>
+    `,
+    // circles
+    circleRight : `
+    <svg width="95" height="190" viewBox="0 0 95 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="95" cy="95" r="77" stroke="url(#paint0_linear_47_27)" stroke-width="36" />
+        <defs>
+            <linearGradient id="paint0_linear_47_27" x1="0" y1="0" x2="224.623" y2="130.324" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#EA621F" />
+                <stop offset="1" stop-color="#ffddb4" />
+            </linearGradient>
+        </defs>
+    </svg>
     `
 }

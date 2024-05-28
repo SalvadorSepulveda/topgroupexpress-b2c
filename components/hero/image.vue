@@ -14,7 +14,7 @@
 				<generic-icon name="stars" width="65" />
 			</div>
 			<div class="absolute bottom-10 left-0">
-				<generic-icon name="weaves" width="65" />
+				<generic-icon name="waves" width="65" />
 			</div>
 		</div>
 	</div>
