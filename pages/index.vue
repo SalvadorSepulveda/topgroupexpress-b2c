@@ -1,6 +1,6 @@
 <template>
 	<hero />
-	<FeatureSection />
+	<feature />
 	<AboutSection />
 	<WorkProcessSection />
 	<ScreenSection />

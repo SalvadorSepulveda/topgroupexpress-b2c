@@ -1,8 +1,6 @@
 <template>
 	<section id="testimonials" class="py-20 relative z-10" >
-		<SectionTitle :title="$t('titleClients')" >
-			{{ $t('descriptionClients') }}
-		</SectionTitle>
+		<generic-title :title="$t('titleClients')" :subtitle="$t('descriptionClients')" />
 		<div class="flex justify-center align-middle my-6" >
 			<h3 class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]" >
 				{{ $t('hotelier')}}

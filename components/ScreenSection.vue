@@ -1,8 +1,6 @@
 <template>
 	<section id="screens" class="relative z-20 pt-[210px] pb-[100px]">
-		<SectionTitle :title="$t('titleScreens')">
-			{{ $t('descriptionScreens') }}
-		</SectionTitle>
+		<generic-title :title="$t('titleScreens')" :subtitle="$t('descriptionScreens')" />
 		<div class="container">
 			<div class="mx-auto max-w-[1000px]">
 				<!-- Swiper -->

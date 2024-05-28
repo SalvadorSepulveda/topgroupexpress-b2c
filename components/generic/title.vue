@@ -8,8 +8,8 @@
 			>
 				{{ title }}
 			</h2>
-			<p class="text-base text-bodywhite dark:text-body duration-300">
-				<slot></slot>
+			<p v-if="subtitle" class="text-base text-bodywhite dark:text-body duration-300">
+				{{ subtitle }}
 			</p>
 		</div>
 	</div>
@@ -17,11 +17,16 @@
 
 <script>
 export default {
+	name: "genericTitle",
 	props: {
 		title: {
 			type: String,
 			required: true,
 		},
+		subtitle: {
+			type: String,
+			default: null,
+		}
 	},
 }
 </script>

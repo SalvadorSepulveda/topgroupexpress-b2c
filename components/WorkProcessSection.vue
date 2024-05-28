@@ -1,9 +1,6 @@
 <template>
 	<section id="work-process wow fadeIn" class="relative z-10 pt-[110px]">
-		<SectionTitle :title="$t('titleWorkSection')">
-			{{ $t('descriptionWorkSection') }}
-		</SectionTitle>
-
+		<generic-title :title="$t('titleWorkSection')" :subtitle="$t('descriptionWorkSection')" />
 		<div class="container max-w-[1390px]">
 			<div class="rounded-2xl bg-white px-5 pt-14 pb-14 shadow-card dark:bg-dark dark:shadow-card-dark md:pb-1 lg:pt-20 lg:pb-5 xl:px-10 duration-300" >
 				<div class="-mx-4 flex flex-wrap justify-center">
