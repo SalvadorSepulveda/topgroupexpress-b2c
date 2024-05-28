@@ -2,7 +2,7 @@
 	<hero />
 	<feature />
 	<about />
-	<WorkProcessSection />
+	<work-process />
 	<ScreenSection />
 	<ClientsSection />
 	<TestimonialSection />
