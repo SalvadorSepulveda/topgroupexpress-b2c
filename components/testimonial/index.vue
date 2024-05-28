@@ -1,9 +1,11 @@
 <template>
 	<section id="testimonials" class="py-20 relative z-10" >
 		<generic-title :title="$t('titleClients')" :subtitle="$t('descriptionClients')" />
-		<testimonial-title :text="$t('hotelier')" />
+		<h3 class="mb-4 text-xl text-center font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]" >
+			{{ $t('hotelier') }}
+		</h3>
 		<div class="container overflow-hidden lg:max-w-[1160px] flex flex-wrap" >
-			<TestimonialCard
+			<testimonial-card
 				v-for="item in testimonialsHotels"
 				:key="item"
 				:title="item.title"
@@ -13,9 +15,11 @@
 				:rate="5"
 			/>
 		</div>
-		<testimonial-title :text="$t('agency')" />
+		<h3 class="mb-4 text-xl text-center font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]" >
+			{{ $t('agency') }}
+		</h3>
 		<div class="container overflow-hidden lg:max-w-[1160px] flex flex-wrap">
-			<TestimonialCard
+			<testimonial-card
 				v-for="item in testimonialsAgencies"
 				:key="item"
 				:title="item.title"
@@ -57,7 +61,7 @@ export default {
 				src: 'https://cdn.topgroups.travel/websites/assets/clients/catalonia.png',
 			},
 			{
-				title: 'Juan Graciliano - Barceló Hoteles',
+				title: 'Jesus Graciliano - Barceló Hoteles',
 				subtitle: 'Cluster zona sur',
 				text: 'En constante desarrollo, adapntándose a nuestras necesidades.',
 				rate: 5,
