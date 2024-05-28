@@ -13,6 +13,7 @@
 
 <script>
 export default {
+	name: "faqCard",
 	props: {
 		title: {
 			type: String,
@@ -28,5 +29,4 @@ export default {
 		}
 	}
 }
-
 </script>

@@ -6,7 +6,7 @@
 	<screens />
 	<clients />
 	<testimonial />
-	<FAQSection />
+	<faq />
 	<ContactSection />
 	<BackToTopButton />
 </template>
