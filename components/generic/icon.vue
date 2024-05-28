@@ -22,7 +22,6 @@ export default {
 			return Icons[this.name] || null;
 		},
 		iconStyle() {
-
 			if (!this.width) return {};
 			return {
 				width: this.width + 'px',
