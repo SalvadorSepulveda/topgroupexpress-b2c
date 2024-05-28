@@ -1,43 +1,33 @@
 <template>
-	<section id="home" class="pt-[165px]">
-		<div class="container lg:max-w-[1305px] lg:px-10">
-			<div class="-mx-4 flex items-center">
-				<div class="w-full px-4 lg:w-7/12">
-					<div
-						class="mb-12 lg:mb-0 lg:max-w-[570px]"
-					>
-						<h1 class="mb-6 text-5xl font-bold leading-tight text-black dark:text-white duration-300 sm:text-[40px] md:text-[50px] lg:text-[42px] xl:text-[50px]">
-							<span v-if="$i18n.locale === 'cn'">
-								<FancyText>{{ $t('title1')}}</FancyText>
-								{{ $t('title2')}}
-								<FancyText>{{ $t('title3')}}</FancyText>
-								{{ $t('title4')}}
-							</span>
-							<span v-else>
-								{{ $t('title1')}}
-								<FancyText>{{ $t('title2')}}</FancyText>
-								{{ $t('title3')}}
-								<FancyText>{{ $t('title4')}}</FancyText>
-							</span>
-						</h1>
-						<p class="mb-10 max-w-[475px] text-base leading-relaxed text-bodywhite dark:text-body duration-300">
-							{{ $t('subtitle') }}
-						</p>
-						<div class="flex flex-wrap items-center">
-							<VideoButton :title="$t('titleVideo')" :description="$t('descriptionVideo')" :url="urlByLocale" />
-						</div>
-					</div>
-				</div>
-				<hero-image src="https://cdn.topgroups.travel/websites/assets/images/hero-screen.png" />
+	<section id="hero" class="pt-[100px] lg:pt-[165px]">
+		<div class="container lg:max-w-[1300px] flex items-center gap-20 px-10 flex-col lg:flex-row">
+			<div class="flex flex-col gap-8">
+				<h1 class=" text-4xl xs:text-6xl lg:text-5xl max-w-[600px] font-bold text-black dark:text-white duration-300">
+					<span v-if="$i18n.locale === 'cn'">
+						<FancyText>{{ $t('title1')}}</FancyText>
+						{{ $t('title2')}}
+						<FancyText>{{ $t('title3')}}</FancyText>
+						{{ $t('title4')}}
+					</span>
+					<span v-else>
+						{{ $t('title1')}}
+						<FancyText>{{ $t('title2')}}</FancyText>
+						{{ $t('title3')}}
+						<FancyText>{{ $t('title4')}}</FancyText>
+					</span>
+				</h1>
+				<p class="text-base text-bodywhite dark:text-body duration-300">
+					{{ $t('subtitle') }}
+				</p>
+				<hero-video-button :title="$t('titleVideo')" :description="$t('descriptionVideo')" :url="urlByLocale" />
 			</div>
+			<hero-image src="https://cdn.topgroups.travel/websites/assets/images/hero-screen.png" />
 		</div>
 	</section>
 </template>
 <script>
-import HeroImage from "~/components/hero/image.vue";
-
 export default {
-	components: {HeroImage},
+	name: 'Hero',
 	computed: {
 		urlByLocale() {
 			switch (this.$i18n.locale) {

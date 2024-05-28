@@ -1,8 +1,6 @@
 <template>
 	<Navbar />
-	<div class="pt-[80px]">
-		<slot />
-	</div>
+	<slot />
 	<Footer />
 	<back-to-top-button/>
 </template>
