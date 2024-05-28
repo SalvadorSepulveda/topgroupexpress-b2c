@@ -1,5 +1,5 @@
 <template>
-	<div class="container max-w-[1390px] flex flex-col gap-20">
+	<div class="container max-w-[1390px] pt-14 flex flex-col gap-20">
 		<div class="w-full flex justify-center mt-10 text-center">
 			<FancyText class="text-primary text-6xl font-bold">Instale nuestras apps</FancyText>
 		</div>
