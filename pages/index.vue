@@ -4,7 +4,7 @@
 	<about />
 	<work-process />
 	<screens />
-	<ClientsSection />
+	<clients />
 	<TestimonialSection />
 	<FAQSection />
 	<ContactSection />
