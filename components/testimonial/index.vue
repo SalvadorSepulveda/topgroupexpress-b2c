@@ -1,49 +1,29 @@
 <template>
 	<section id="testimonials" class="py-20 relative z-10" >
 		<generic-title :title="$t('titleClients')" :subtitle="$t('descriptionClients')" />
-		<div class="flex justify-center align-middle my-6" >
-			<h3 class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]" >
-				{{ $t('hotelier')}}
-			</h3>
+		<testimonial-title :text="$t('hotelier')" />
+		<div class="container overflow-hidden lg:max-w-[1160px] flex flex-wrap" >
+			<TestimonialCard
+				v-for="item in testimonialsHotels"
+				:key="item"
+				:title="item.title"
+				:subtitle="item.subtitle"
+				:text="item.text"
+				:image="item.src"
+				:rate="5"
+			/>
 		</div>
-		<div class="container overflow-hidden lg:max-w-[1160px]" >
-			<div class=" flex flex-wrap">
-				<template
-					v-for="item in testimonialsHotels"
-					:key="item"
-				>
-					<TestimonialCard
-						:title="item.title"
-						:subtitle="item.subtitle"
-						:text="item.text"
-						:rate="5"
-					>
-						<img alt="author" class="h-full w-full object-cover object-center rounded-full bg-white" :src="item.src" />
-					</TestimonialCard>
-				</template>
-			</div>
-		</div>
-		<div class="flex justify-center align-middle my-6">
-			<h3 class="mb-4 text-xl font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]">
-				{{ $t('agency') }}
-			</h3>
-		</div>
-		<div class="container overflow-hidden lg:max-w-[1160px]">
-			<div class=" flex flex-wrap">
-				<template
-					v-for="item in testimonialsAgencies"
-					:key="item"
-				>
-					<TestimonialCard
-						:title="item.title"
-						:subtitle="item.subtitle"
-						:text="item.text"
-						:rate="5"
-					>
-						<img alt="author" class="h-full w-full object-cover object-center rounded-full bg-white" :src="item.src" />
-					</TestimonialCard>
-				</template>
-			</div>
+		<testimonial-title :text="$t('agency')" />
+		<div class="container overflow-hidden lg:max-w-[1160px] flex flex-wrap">
+			<TestimonialCard
+				v-for="item in testimonialsAgencies"
+				:key="item"
+				:title="item.title"
+				:subtitle="item.subtitle"
+				:text="item.text"
+				:image="item.src"
+				:rate="5"
+			/>
 		</div>
 		<generic-icon name="shadowLeft" class="absolute top-8 left-0 -z-10 hidden md:block" />
 		<generic-icon name="shadowRight" class="absolute bottom-3 right-0 -z-10" />
