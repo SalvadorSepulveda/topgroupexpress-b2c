@@ -4,7 +4,7 @@
 	>
 		<NuxtImg
 			width="350"
-		  	src="screen-hero-nobg.png"
+		  	:src="src"
 		  	alt="hero image"
 		/>
 		<div
