@@ -2,5 +2,5 @@
 	<Navbar />
 	<slot />
 	<Footer />
-	<back-to-top-button/>
+	<generic-to-top />
 </template>

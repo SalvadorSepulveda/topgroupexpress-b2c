@@ -4,16 +4,16 @@
 			<div class="flex flex-col gap-8">
 				<h1 class=" text-4xl xs:text-6xl lg:text-5xl max-w-[600px] font-bold text-black dark:text-white duration-300">
 					<span v-if="$i18n.locale === 'cn'">
-						<fancy-text>{{ $t('title1')}}</fancy-text>
+						<generic-fancy-text>{{ $t('title1')}}</generic-fancy-text>
 						{{ $t('title2')}}
-						<fancy-text>{{ $t('title3')}}</fancy-text>
+						<generic-fancy-text>{{ $t('title3')}}</generic-fancy-text>
 						{{ $t('title4')}}
 					</span>
 					<span v-else>
 						{{ $t('title1')}}
-						<fancy-text>{{ $t('title2')}}</fancy-text>
+						<generic-fancy-text>{{ $t('title2')}}</generic-fancy-text>
 						{{ $t('title3')}}
-						<fancy-text>{{ $t('title4')}}</fancy-text>
+						<generic-fancy-text>{{ $t('title4')}}</generic-fancy-text>
 					</span>
 				</h1>
 				<p class="text-base text-bodywhite dark:text-body duration-300">

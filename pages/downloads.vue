@@ -1,7 +1,7 @@
 <template>
 	<div class="container max-w-[1390px] pt-14 flex flex-col gap-20">
 		<div class="w-full flex justify-center mt-10 text-center">
-			<FancyText class="text-primary text-6xl font-bold">Instale nuestras apps</FancyText>
+			<generic-fancy-text class="text-primary text-6xl font-bold">Instale nuestras apps</generic-fancy-text>
 		</div>
 		<div class="rounded-2xl bg-white flex flex-col xl:flex-row-reverse p-10 shadow-card dark:bg-dark dark:shadow-card-dark duration-300">
 			<div class="flex items-center justify-center xl:w-1/2">

@@ -16,7 +16,7 @@
 import {useScroll} from "~/composables/scroll.js";
 
 export default {
-	name: "ButtonScroll",
+	name: "genericToTop",
 	setup() {
 		const {position, initialize, scrollToTop} = useScroll();
 

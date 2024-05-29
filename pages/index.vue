@@ -7,8 +7,7 @@
 	<clients />
 	<testimonial />
 	<faq />
-	<ContactSection />
-	<BackToTopButton />
+	<contact />
 </template>
 
 <script setup>

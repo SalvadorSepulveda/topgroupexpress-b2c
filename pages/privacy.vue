@@ -3,7 +3,7 @@
 		<div class="z-10 max-w-[1100px] mx-auto text-bodywhite dark:text-body duration-300 p-5 dark:text-white flex flex-col gap-8" >
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex justify-center pb-8">
-					<FancyText class="text-primary text-6xl font-bold">{{ $t('titlePrivacy') }}</FancyText>
+					<generic-fancy-text class="text-primary text-6xl font-bold pt-14 leading-[5rem]">{{ $t('titlePrivacy') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionPrivacy') }}
@@ -11,7 +11,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleResponsable') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleResponsable') }}</generic-fancy-text>
 				</div>
 				<ul>
 					<li>
@@ -48,7 +48,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleNormativo') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleNormativo') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionNormativo') }}
@@ -56,7 +56,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleProteccion') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleProteccion') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionProteccion') }}
@@ -81,7 +81,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleObtencion') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleObtencion') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionObtencion') }}
@@ -106,7 +106,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleDerechosUsuario') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleDerechosUsuario') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionDerechosUsuario1_1') }} product@topgroupexpress.com {{ $t('descriptionDerechosUsuario1_2') }}
@@ -114,7 +114,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleFinalidad') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleFinalidad') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionFinalidad') }}
@@ -139,7 +139,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleSeguridadPersonales') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleSeguridadPersonales') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionSeguridadPersonales') }}
@@ -147,7 +147,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleContenidoTerceros') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleContenidoTerceros') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionContenidoTerceros') }}
@@ -155,7 +155,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleLegitimacionDatos') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleLegitimacionDatos') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionLegitimacionDatos') }}
@@ -163,7 +163,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleConservacionDatos') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleConservacionDatos') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionConservacionDatos') }}
@@ -171,7 +171,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleExactitudDatos') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleExactitudDatos') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionExactitudDatos') }}
@@ -179,7 +179,7 @@
 			</div>
 			<div class="flex flex-col gap-2">
 				<div class="w-full flex pt-8">
-					<FancyText class="text-primary text-3xl font-bold">{{ $t('titleCambioPrivacidad') }}</FancyText>
+					<generic-fancy-text class="text-primary text-3xl font-bold">{{ $t('titleCambioPrivacidad') }}</generic-fancy-text>
 				</div>
 				<p>
 					{{ $t('descriptionCambioPrivacidad') }}
