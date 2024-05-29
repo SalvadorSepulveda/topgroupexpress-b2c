@@ -2,88 +2,21 @@
 	<section id="contact" class="relative z-10 py-20"	>
 		<generic-title :title="$t('formTitle')" :subtitle="$t('formDescription')" />
 		<div class="container">
-			<div class="mx-auto w-full max-w-[925px] rounded-lg bg-[#F8FAFB] px-8 py-10 shadow-card dark:bg-[#15182B] dark:shadow-card-dark sm:px-10 duration-300" >
-				<div class="-mx-[22px] flex flex-wrap">
-					<div class="w-full px-[22px] md:w-1/2">
-						<div class="mb-8">
-							<input
-								id="name"
-								class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-bodywhite dark:text-body duration-300 outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary duration-300"
-								name="name"
-								:placeholder="$t('insertName')"
-								type="text"
-								v-model="name"
-							/>
-						</div>
-					</div>
-
-					<div class="w-full px-[22px] md:w-1/2">
-						<div class="mb-8">
-							<input
-								id="company"
-								class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-bodywhite dark:text-body duration-300 outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary duration-300"
-								name="company"
-								:placeholder="$t('insertCompany')"
-								type="text"
-								v-model="company"
-							/>
-						</div>
-					</div>
-
-					<div class="w-full px-[22px] md:w-1/2">
-						<div class="mb-8">
-							<input
-								id="email"
-								class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary duration-300"
-								name="email"
-								:placeholder="$t('insertEmail')"
-								type="email"
-								v-model="email"
-							/>
-						</div>
-					</div>
-
-					<div class="w-full px-[22px] md:w-1/2">
-						<div class="mb-8">
-							<input
-								id="phone"
-								class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary duration-300"
-								name="phone"
-								:placeholder="$t('insertPhone')"
-								type="text"
-								v-model="phoneNumber"
-							/>
-						</div>
-					</div>
-
-					<div class="w-full px-[22px]">
-						<div class="mb-8">
-							<textarea
-								id="message"
-								class="w-full rounded border border-stroke bg-white py-4 px-[30px] text-base text-body outline-none focus:border-primary dark:border-[#34374A] dark:bg-[#2A2E44] dark:focus:border-primary duration-300"
-								name="message"
-								:placeholder="$t('insertMessage')"
-								rows="6"
-								v-model="message"
-							></textarea>
-						</div>
-					</div>
-
-					<div class="w-full px-[22px]">
-						<div class="text-center">
-							<p class="mb-5 text-center text-base text-body">
-								{{ $t('textAccept') }}
-							</p>
-							<p class="py-2 text-center text-base text-body" v-if="submitStatus">
-								{{  $t(submitStatus) }}
-							</p>
-							<button
-								class="inline-block rounded-md bg-primary py-[14px] px-11 text-base font-medium text-white hover:bg-opacity-90"
-								@click="onSubmitFormClicked"
-							>
-								{{ $t('buttonContact') }}
-							</button>
-						</div>
+			<div class="mx-auto w-full max-w-[925px] rounded-lg bg-[#F8FAFB] px-8 py-10 shadow-card dark:bg-[#15182B] dark:shadow-card-dark sm:px-10 flex flex-wrap duration-300" >
+				<contact-input :placeholder="$t('insertName')" name="name" type="text" v-model="name" />
+				<contact-input :placeholder="$t('insertCompany')" name="company" type="text" v-model="company" />
+				<contact-input :placeholder="$t('insertEmail')" name="email" type="email" v-model="email" />
+				<contact-input :placeholder="$t('insertPhone')" name="phone" type="tel" v-model="phoneNumber" />
+				<contact-textarea :placeholder="$t('insertMessage')" name="message" v-model="message" />
+				<div class="w-full px-[22px]">
+					<div class="text-center">
+						<p class="mb-5 text-center text-base text-body">
+							{{ $t('textAccept') }}
+						</p>
+						<p class="py-2 text-center text-base text-body" v-if="submitStatus">
+							{{  $t(submitStatus) }}
+						</p>
+						<generic-button :text="$t('buttonContact')" @click="onSubmitFormClicked" />
 					</div>
 				</div>
 			</div>
@@ -102,7 +35,6 @@ const message = ref('');
 const submitStatus = ref('');
 
 const onSubmitFormClicked = async () => {
-	console.log(config.public.backendUrl)
 	if (!name.value || !email.value || !phoneNumber.value || !message.value) {
 		submitStatus.value = 'sendWarning'
 		return;

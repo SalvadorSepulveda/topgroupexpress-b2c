@@ -1,13 +1,13 @@
 <template>
-	<hero />
-	<feature />
-	<about />
-	<work-process />
-	<screens />
-	<clients />
-	<testimonial />
-	<faq />
-	<contact />
+	<Hero />
+	<Feature />
+	<About />
+	<Work-process />
+	<Screens />
+	<Clients />
+	<Testimonial />
+	<Faq />
+	<Contact />
 </template>
 
 <script setup>

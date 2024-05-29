@@ -6,12 +6,12 @@
 					<i>"{{ text }}"</i>
 				</p>
 			</div>
-			<div class="items-center justify-between sm:flex lg:block xl:flex">
-				<div class="mb-4 flex items-center sm:mb-0 lg:mb-4 xl:mb-0">
+			<div class="items-center justify-between sm:flex gap-1 lg:block xl:flex">
+				<div class="mb-4 flex items-center gap-1 sm:mb-0 lg:mb-4 xl:mb-0">
 					<div class="mr-4 h-[56px] w-full max-w-[56px] rounded-full">
 						<NuxtImg alt="author" class="h-full w-full object-cover object-center rounded-full bg-white" :src="image" />
 					</div>
-					<div>
+					<div class="flex flex-col gap-1">
 						<span class="text-base font-medium text-black dark:text-white duration-300">
 							{{ title }}
 						</span>

@@ -71,6 +71,7 @@
 
 <script>
 export default {
+	name: 'fot',
 	data: () => ({
 		social: [
 			{

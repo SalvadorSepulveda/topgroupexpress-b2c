@@ -20,9 +20,9 @@
 					</p>
 				</div>
 				<div class="flex gap-2 justify-center flex-wrap pt-5">
-					<DownloadButton small-text="Get in on" text="Google Play" icon="https://cdn.topgroups.travel/websites/assets/images/playstore.png" />
-					<DownloadButton small-text="Download on the" text="App Store" icon="https://cdn.topgroups.travel/websites/assets/images/appstore.png" />
-					<DownloadButton text="Direct Download" icon="https://cdn.topgroups.travel/websites/assets/images/download.png"/>
+					<generic-link-button small-text="Get in on" text="Google Play" icon="https://cdn.topgroups.travel/websites/assets/images/playstore.png" />
+					<generic-link-button small-text="Download on the" text="App Store" icon="https://cdn.topgroups.travel/websites/assets/images/appstore.png" />
+					<generic-link-button text="Direct Download" icon="https://cdn.topgroups.travel/websites/assets/images/download.png"/>
 				</div>
 			</div>
 		</div>
@@ -43,16 +43,19 @@
 					</p>
 				</div>
 				<div class="flex gap-2 justify-center flex-wrap pt-5">
-					<DownloadButton small-text="Get in on" text="Google Play" icon="https://cdn.topgroups.travel/websites/assets/images/playstore.png" />
-					<DownloadButton small-text="Download on the" text="App Store" icon="https://cdn.topgroups.travel/websites/assets/images/appstore.png" />
-					<DownloadButton text="Direct Download" icon="https://cdn.topgroups.travel/websites/assets/images/download.png"/>
+					<generic-link-button small-text="Get in on" text="Google Play" icon="https://cdn.topgroups.travel/websites/assets/images/playstore.png" />
+					<generic-link-button small-text="Download on the" text="App Store" icon="https://cdn.topgroups.travel/websites/assets/images/appstore.png" />
+					<generic-link-button text="Direct Download" icon="https://cdn.topgroups.travel/websites/assets/images/download.png"/>
 				</div>
 			</div>
 		</div>
 	</div>
 </template>
 <script>
+import GenericLinkButton from "~/components/generic/linkButton.vue";
+
 export default{
-	name: 'download'
+	name: 'download',
+	components: {GenericLinkButton}
 }
 </script>

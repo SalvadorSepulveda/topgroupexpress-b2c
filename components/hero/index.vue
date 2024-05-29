@@ -21,7 +21,7 @@
 				</p>
 				<hero-video-button :title="$t('titleVideo')" :description="$t('descriptionVideo')" :url="urlByLocale" />
 			</div>
-			<hero-image src="screen-hero-nobg.png" />
+			<hero-image src="https://cdn.t3s.es/website/screen-hero.webp" />
 		</div>
 	</section>
 </template>

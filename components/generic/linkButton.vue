@@ -18,7 +18,7 @@
 
 <script>
 export default {
-	name: "DownloadButton",
+	name: "genericLinkButton",
 	props: {
 		smallText: {
 			type: String,

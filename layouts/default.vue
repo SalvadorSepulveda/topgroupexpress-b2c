@@ -1,5 +1,5 @@
 <template>
-	<Navbar />
+	<navbar />
 	<slot />
 	<Footer />
 	<generic-to-top />
