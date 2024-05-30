@@ -2,7 +2,7 @@
 	<header class="w-full fixed top-0 border-stroke dark:border-stroke-dark duration-300 z-50" :class="navbarStyles">
 		<div class="container max-w-[1400px] py-3 flex items-center justify-between">
 			<!-- Header logo -->
-			<navbar-logo :href="'/' + $i18n.locale" src="https://cdn.topgroups.travel/websites/assets/images/logo.png" alt="logo" :width="150" />
+			<navbar-logo :href="'/' + $i18n.locale" src="https://cdn.t3s.es/website/logo-tge-large.webp" alt="logo" :width="150" />
 
 			<!-- Regular navigation links visible on xl and larger screens -->
 			<nav>
