@@ -2,8 +2,8 @@
 	<section id="screens" class="relative z-20 pt-[210px] pb-[100px]">
 		<generic-title :title="$t('titleScreens')" :subtitle="$t('descriptionScreens')" />
 		<div class="container mx-auto max-w-[1000px] swiper mySwiper relative z-20">
-			<div class="absolute top-0 left-0 right-0 z-50 mx-auto w-full md:w-1/3 h-[520px] xs:h-[550px] md:h-[450px] lg:h-[550px]">
-				<NuxtImg loading="lazy" format="png" src="https://cdn.topgroups.travel/websites/assets/images/mobile-frame.png" class="mx-auto max-w-full h-full" alt="mobile-frame" />
+			<div class="absolute top-0 left-0 right-0 z-50 mx-auto w-full md:w-1/3">
+				<NuxtImg loading="lazy" format="png" src="https://cdn.t3s.es/website/screens/frame.webp" width="295" class="mx-auto" alt="mobile-frame" />
 			</div>
 			<div class="swiper-wrapper py-2">
 				<screens-item v-for="(screen, index) in screens" :key="index" :src="screen"/>
@@ -31,12 +31,14 @@ export default {
 	data: () => ({
 		swiper: null,
 		screens: [
-			'https://cdn.topgroups.travel/websites/assets/images/screen-1-light.png',
-			'https://cdn.topgroups.travel/websites/assets/images/screen-2-light.png',
-			'https://cdn.topgroups.travel/websites/assets/images/screen-3-light.png',
-			'https://cdn.topgroups.travel/websites/assets/images/screen-1-light.png',
-			'https://cdn.topgroups.travel/websites/assets/images/screen-2-light.png',
-			'https://cdn.topgroups.travel/websites/assets/images/screen-3-light.png',
+			'https://cdn.t3s.es/website/screens/hotelier1.webp',
+			'https://cdn.t3s.es/website/screens/hotelier2.webp',
+			'https://cdn.t3s.es/website/screens/hotelier3.webp',
+			'https://cdn.t3s.es/website/screens/hotelier4.webp',
+			'https://cdn.t3s.es/website/screens/hotelier1.webp',
+			'https://cdn.t3s.es/website/screens/hotelier2.webp',
+			'https://cdn.t3s.es/website/screens/hotelier3.webp',
+			'https://cdn.t3s.es/website/screens/hotelier4.webp',
 		]
 	}),
 	methods: {
