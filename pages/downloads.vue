@@ -26,7 +26,6 @@
 					<generic-link-button small-text="Download on the" text="App Store" icon="apple" />
 					<generic-link-button small-text="For android" text="Direct Download" icon="downloadCloud" />
 				</div>
-
 			</div>
 		</div>
 		<div class="rounded-2xl bg-white flex flex-col xl:flex-row p-10 shadow-card dark:bg-dark dark:shadow-card-dark duration-300">
@@ -55,10 +54,8 @@
 	</div>
 </template>
 <script>
-import GenericLinkButton from "~/components/generic/linkButton.vue";
-
 export default{
-	name: 'download',
-	components: {GenericLinkButton}
+	name: 'download'
+
 }
 </script>
