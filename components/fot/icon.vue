@@ -16,7 +16,7 @@ export default {
 			required: true
 		},
 		width: {
-			type: Number,
+			type: String,
 			required: false
 		},
 		alt: {

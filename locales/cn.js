@@ -149,14 +149,14 @@ export default {
     downloadTitle: "下载我们的应用程序",
 
     // Agency
-    miniTitleAgencyApp: "代理商应用",
-    titleAgencyApp: "首个团体酒店在线预订引擎",
-    textAgencyApp: "如果您是旅行代理，请不要忘记下载我们的应用程序，您可以通过它优化控制您的请求、新的报价、状态等多个功能",
+    miniTitleAgencyApp: "下载我们的应用程序",
+    titleAgencyApp: "独家团队酒店预定系统",
+    textAgencyApp: "如果您是旅行社同行，别忘了下载我们的旅行社端应用程序，为您的日常团队酒店管理提供便捷高效的服务。",
 
     // Hoteliers
-    miniTitleHoteliersApp: "酒店业者应用",
-    titleHoteliersApp: "更快更简单地报价团体",
-    textHoteliersApp: "如果您是酒店业者，请不要忘记下载我们的应用程序，这样您可以更容易地控制请求，更快地上传价格，并随时了解它们的状态",
+    miniTitleHoteliersApp: "酒店端小程序",
+    titleHoteliersApp: "让团队报价实时高效",
+    textHoteliersApp: "如果您是酒店同行，别忘了下载我们的酒店端小程序，更快速地上传团队价格，更高效地管理团队询价，实时掌握团队动态。",
 
 
     // 404

@@ -1,7 +1,7 @@
 <template>
 	<navbar />
 	<slot />
-	<Footer />
+	<fot />
 	<generic-to-top />
 	<notify />
 </template>
