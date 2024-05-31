@@ -7,7 +7,8 @@
 				:name="name"
 				:placeholder="placeholder"
 				:rows="rows"
-				@input="$emit('update:modelValue', $event.target.value)"
+				:value="modelValue"
+				@input="updateValue"
 			></textarea>
 		</div>
 	</div>
@@ -16,21 +17,26 @@
 <script>
 export default {
 	props: {
-		name : {
+		name: {
 			type: String,
 			required: true
 		},
-		placeholder : {
+		placeholder: {
 			type: String,
-			default: "",
+			default: ""
 		},
-		rows : {
+		rows: {
 			type: Number,
 			default: 6
 		},
-		modelValue : {
+		modelValue: {
 			type: String,
 			default: ""
+		}
+	},
+	methods: {
+		updateValue($event) {
+			this.$emit('update:modelValue', $event.target.value);
 		}
 	}
 }

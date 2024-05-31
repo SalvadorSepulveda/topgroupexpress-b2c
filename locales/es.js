@@ -141,7 +141,21 @@ export default {
     // send text
     sendSuccessfully: "El mensaje se ha enviado correctamente.",
     sendError: "Hubo un error al enviar el mensaje.",
+    sendWarningEmail: "Por favor, introduce un correo valido.",
     sendWarning: "Algunos campos son obligatorios.",
+
+    // Download
+    downloadTitle: "Descargue nuestras apps",
+
+        // Agency
+        miniTitleAgencyApp: "Aplicación para Agencias",
+        titleAgencyApp: "El primer motor de reservas online de Hoteles para grupos",
+        textAgencyApp: "Si eres agente de viajes, no olvides descargar nuestra app, con ella podrás tener un control óptimo de tus peticiones, nuevas cotizaciones, estados de las mismas entre muchas otras funciones",
+
+        // Hoteliers
+        miniTitleHoteliersApp: "Aplicación para Hoteleros",
+        titleHoteliersApp: "Cotiza grupos de una manera más rápida y fácil",
+        textHoteliersApp: "Si eres hoteleros no olvides descargar nuestra app, así podrás controlar con mayor facilidad las peticiones, podrás cargar las tarifas con mayor rapidez y saber en todo momento el estado en el que se encuentran",
 
     // 404
     errorTitle: "Lo siento, la página no existe",

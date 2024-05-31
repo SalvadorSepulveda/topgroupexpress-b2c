@@ -141,6 +141,7 @@ export default {
     // send text
     sendSuccessfully: "The message has been sent successfully.",
     sendError: "There was an error sending the message.",
+    sendWarningEmail: "Please enter a valid email.",
     sendWarning: "Some fields are required.",
 
     // 404

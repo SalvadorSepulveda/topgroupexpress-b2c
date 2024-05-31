@@ -1,8 +1,8 @@
 <template>
-	<section id="contact" class="relative z-10 py-20"	>
+	<section id="contact" class="relative z-10 py-20">
 		<generic-title :title="$t('formTitle')" :subtitle="$t('formDescription')" />
 		<div class="container">
-			<div class="mx-auto w-full max-w-[925px] rounded-lg bg-[#F8FAFB] px-8 py-10 shadow-card dark:bg-[#15182B] dark:shadow-card-dark sm:px-10 flex flex-wrap duration-300" >
+			<div class="mx-auto w-full max-w-[925px] rounded-lg bg-[#F8FAFB] px-8 py-10 shadow-card dark:bg-[#15182B] dark:shadow-card-dark sm:px-10 flex flex-wrap duration-300">
 				<contact-input :placeholder="$t('insertName')" name="name" type="text" v-model="name" />
 				<contact-input :placeholder="$t('insertCompany')" name="company" type="text" v-model="company" />
 				<contact-input :placeholder="$t('insertEmail')" name="email" type="email" v-model="email" />
@@ -13,9 +13,6 @@
 						<p class="mb-5 text-center text-base text-body">
 							{{ $t('textAccept') }}
 						</p>
-						<p class="py-2 text-center text-base text-body" v-if="submitStatus">
-							{{  $t(submitStatus) }}
-						</p>
 						<generic-button :text="$t('buttonContact')" @click="onSubmitFormClicked" />
 					</div>
 				</div>
@@ -25,23 +22,36 @@
 </template>
 
 <script setup>
+import useNotify from "~/composables/notify.js";
+import { ref } from 'vue';
+
 const config = useRuntimeConfig();
+const { setMessage } = useNotify();
 
 const name = ref('');
 const company = ref('');
 const email = ref('');
 const phoneNumber = ref('');
 const message = ref('');
-const submitStatus = ref('');
+
+function isValidEmail(inputEmail) {
+	const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+	return regex.test(inputEmail);
+}
 
 const onSubmitFormClicked = async () => {
 	if (!name.value || !email.value || !phoneNumber.value || !message.value) {
-		submitStatus.value = 'sendWarning'
+		setMessage('sendWarning', 'warning');
+		return;
+	}
+
+	if (!isValidEmail(email.value)) {
+		setMessage('sendWarningEmail', 'warning');
 		return;
 	}
 
 	try {
-		const response = await fetch(  config.public.backendUrl+'/ext/website/contact/send', {
+		const response = await fetch(`${config.public.backendUrl}/ext/website/contact/send`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -62,8 +72,8 @@ const onSubmitFormClicked = async () => {
 			throw new Error(`HTTP error! status: ${response.status}`);
 		}
 
-		const data = await response.json();
-		submitStatus.value = 'sendSuccessfully'
+		await response.json();
+		setMessage('sendSuccessfully', 'success');
 		name.value = '';
 		company.value = '';
 		email.value = '';
@@ -71,7 +81,7 @@ const onSubmitFormClicked = async () => {
 		message.value = '';
 	} catch (error) {
 		console.error('Hubo un problema con la petición Fetch:', error);
-		submitStatus.value = 'sendError'
+		setMessage('sendError', 'error');
 	}
 };
 </script>

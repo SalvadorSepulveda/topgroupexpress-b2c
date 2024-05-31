@@ -142,6 +142,7 @@ export default {
     // send text
     sendSuccessfully: "消息已成功发送。",
     sendError: "发送消息时出错。",
+    sendWarningEmail: "请输入有效的邮箱地址。",
     sendWarning: "某些字段为必填字段。",
 
     // 404
