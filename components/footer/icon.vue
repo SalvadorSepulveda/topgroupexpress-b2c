@@ -1,0 +1,32 @@
+<template>
+	<NuxtLink
+		target="_blank"
+		:to="href"
+	>
+		<generic-icon :name="icon" :width="width" :alt="alt" />
+	</NuxtLink>
+</template>
+
+<script>
+export default {
+	name: "footerIcon",
+	props: {
+		icon: {
+			type: String,
+			required: true
+		},
+		width: {
+			type: Number,
+			required: false
+		},
+		alt: {
+			type: String,
+			required: true
+		},
+		href: {
+			type: String,
+			required: true
+		}
+	}
+}
+</script>

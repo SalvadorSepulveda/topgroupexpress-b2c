@@ -3,65 +3,29 @@
 		<div class="mt-[3rem] duration-300 bg-[#F8FAFB] pt-[1rem] pb-[1rem] dark:bg-[#15182A]">
 			<div class="container max-w-[1450px]">
 				<div class="grid gap-[1rem] justify-items-center items-center 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
-					<NuxtLink
-						class="max-w-[200px]"
-						:to="'/' + $i18n.locale"
-					>
-						<NuxtImg
-							alt="logo"
-							class="w-[200px]"
-							src="https://cdn.topgroups.travel/websites/assets/images/logo.png"
-							loading="lazy"
-							format="webp,avif,png"
-						/>
-					</NuxtLink>
-					<img class="w-full" src="https://cdn.topgroups.travel/websites/assets/images/footer.jpg" alt="footer-img">
+					<generic-logo :href="'/' + $i18n.locale" src="https://cdn.t3s.es/website/logo-tge-large.webp" alt="logo" :width="200" />
+					<NuxtImg format="webp" loading="lazy" class="w-full" src="https://cdn.t3s.es/website/image-footer.webp" alt="image-footer" />
 				</div>
 			</div>
 		</div>
-
-		<div
-			class="bg-primary duration-300 py-7 dark:bg-black"
-		>
+		<div class="bg-primary duration-300 py-7 dark:bg-black">
 			<div class="container max-w-[1450px]">
 				<div class="-mx-3 flex flex-wrap">
 					<div class="order-last w-full px-3 lg:order-first lg:w-1/3">
-						<p
-							class="mt-4 text-center text-base text-white lg:mt-0 lg:text-left font-[500]"
-						>
+						<p class="mt-4 text-center text-base text-white lg:mt-0 lg:text-left font-[500]">
 							{{ $t('textCopy')}}
 						</p>
 					</div>
-
-					<div class="w-full px-3 md:w-1/2 lg:w-1/3 flex justify-center">
-						<div
-							class="mb-4 flex items-center justify-center space-x-5 md:mb-0 md:justify-start lg:justify-center"
-						>
-							<a
-								v-for="link in social"
-								:key="link.icon"
-								:href="link.url"
-								aria-label="social icon"
-								class="text-white opacity-70 hover:opacity-100"
-								name="social icon"
-								target="_blank"
-							>
-								<NuxtImg loading="lazy" :src="`https://cdn.topgroups.travel/websites/assets/images/${link.icon}.png`" class="h-[24px]" :alt="link.icon"/>
-							</a>
-						</div>
+					<div class="w-full px-3 md:w-1/2 lg:w-1/3 flex justify-center mb-4 items-center space-x-5 md:mb-0 md:justify-start lg:justify-center">
+						<footer-icon v-for="item in social" :key="item.icon" :href="item.url" :icon="item.icon" width="20" class="text-white opacity-80 hover:opacity-100" />
 					</div>
-
-					<div class="w-full px-3 md:w-1/2 lg:w-1/3 flex justify-center">
-						<div
-							class="flex items-center justify-center space-x-4 sm:space-x-8 md:justify-end lg:justify-end font-[500]"
-						>
-							<router-link class="text-base text-white hover:text-[#ccc] dark:hover:text-primary duration-100" :to="'/' + $i18n.locale + '/privacy'">
-								{{ $t('textButtonPrivacy')}}
-							</router-link>
-							<router-link class="text-base text-white hover:text-[#ccc] dark:hover:text-primary duration-100" :to="'/' + $i18n.locale + '/terms'">
-								{{ $t('textButtonTerms')}}
-							</router-link>
-						</div>
+					<div class="w-full px-3 md:w-1/2 lg:w-1/3  flex items-center justify-center space-x-4 sm:space-x-8 md:justify-end lg:justify-end font-[500]">
+						<router-link class="text-base text-white hover:text-[#ccc] dark:hover:text-primary duration-100" :to="'/' + $i18n.locale + '/privacy'">
+							{{ $t('textButtonPrivacy')}}
+						</router-link>
+						<router-link class="text-base text-white hover:text-[#ccc] dark:hover:text-primary duration-100" :to="'/' + $i18n.locale + '/terms'">
+							{{ $t('textButtonTerms')}}
+						</router-link>
 					</div>
 				</div>
 			</div>
@@ -71,7 +35,7 @@
 
 <script>
 export default {
-	name: 'fot',
+	name: 'footer',
 	data: () => ({
 		social: [
 			{
@@ -87,7 +51,7 @@ export default {
 				url: 'https://www.youtube.com/@topgroupexpress',
 			},
 			{
-				icon: 'x-twitter',
+				icon: 'x',
 				url: 'https://twitter.com/topgroupexpress',
 			},
 			{
