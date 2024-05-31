@@ -145,6 +145,20 @@ export default {
     sendWarningEmail: "请输入有效的邮箱地址。",
     sendWarning: "某些字段为必填字段。",
 
+    // Downloads
+    downloadTitle: "下载我们的应用程序",
+
+    // Agency
+    miniTitleAgencyApp: "代理商应用",
+    titleAgencyApp: "首个团体酒店在线预订引擎",
+    textAgencyApp: "如果您是旅行代理，请不要忘记下载我们的应用程序，您可以通过它优化控制您的请求、新的报价、状态等多个功能",
+
+    // Hoteliers
+    miniTitleHoteliersApp: "酒店业者应用",
+    titleHoteliersApp: "更快更简单地报价团体",
+    textHoteliersApp: "如果您是酒店业者，请不要忘记下载我们的应用程序，这样您可以更容易地控制请求，更快地上传价格，并随时了解它们的状态",
+
+
     // 404
     errorTitle: "对不起，该页面不存在",
     errorText: "您正在寻找的页面似乎已被移动、删除或不存在。",

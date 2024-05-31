@@ -144,6 +144,19 @@ export default {
     sendWarningEmail: "Veuillez entrer un email valide.",
     sendWarning: "Certains champs sont obligatoires.",
 
+    // Download
+    downloadTitle: "Téléchargez nos applications",
+
+        // Agency
+        miniTitleAgencyApp: "Application pour Agences",
+        titleAgencyApp: "Le premier moteur de réservation en ligne d'Hôtels pour groupes",
+        textAgencyApp: "Si vous êtes agent de voyages, n'oubliez pas de télécharger notre application, avec elle vous pouvez avoir un contrôle optimal de vos demandes, nouvelles cotations, états des mêmes parmi de nombreuses autres fonctions",
+
+        // Hoteliers
+        miniTitleHoteliersApp: "Application pour Hôteliers",
+        titleHoteliersApp: "Cotez les groupes de manière plus rapide et facile",
+        textHoteliersApp: "Si vous êtes hôtelier n'oubliez pas de télécharger notre application, ainsi vous pourrez contrôler plus facilement les demandes, vous pourrez charger les tarifs plus rapidement et savoir à tout moment l'état dans lequel ils se trouvent",
+
     // 404
     errorTitle: "Désolé, la page n'existe pas",
     errorText: "La page que vous recherchez semble avoir été déplacée, supprimée ou n'existe pas.",
