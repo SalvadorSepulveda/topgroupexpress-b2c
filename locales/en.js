@@ -119,7 +119,7 @@ export default {
     descriptionBlog: " Find informative and educational content here about our software and our industry.",
 
     // Form
-    formTitle: "A question ? A Suggestion ? A Feedback?",
+    formTitle: "A question? A Suggestion? A Feedback?",
     formDescription: "Don’t hesitate to write to us for anything. We are here for you.",
     insertName: "Enter your name",
     insertEmail: "Enter your email",

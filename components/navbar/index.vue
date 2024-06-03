@@ -55,11 +55,14 @@
 					>
 						{{ $t('appHoteliers') }}
 					</NuxtLink>
-					<li v-for="link in links" :key="link.label">
-						<NuxtLink :to="link.route" class="text-2xl font-medium dark:text-white text-gray-800" @click="closeMenu">
-							{{ $t(link.label) }}
-						</NuxtLink>
-					</li>
+					<navbar-link
+						class="text-2xl font-medium dark:text-white text-gray-800"
+						@click="closeMenu"
+						v-for="link in links"
+						:key="link.label"
+						:label="$t(link.label)"
+						:route="'/' + $i18n.locale + link.route"
+					/>
 				</ul>
 			</nav>
 		</div>
