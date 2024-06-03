@@ -1,5 +1,5 @@
 <template>
-	<li class="font-medium dark:text-white">
+	<li class="font-medium dark:text-white hover:text-primary dark:hover:text-primary duration-300">
 		<NuxtLink :to="route">
 			{{ label }}
 		</NuxtLink>

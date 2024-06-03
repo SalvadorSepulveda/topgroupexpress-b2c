@@ -1,7 +1,7 @@
 <template>
 	<button
 		@click="toggleTheme"
-		class="flex justify-center items-center ml-5 text-[#181C31] hover:text-primary dark:text-white dark:hover:text-primary cursor-pointer"
+		class="flex justify-center items-center ml-5 text-[#181C31] hover:text-primary dark:text-white dark:hover:text-primary duration-300 cursor-pointer"
 	>
 		<generic-icon v-if="theme === 'light'" name="sun" width="23"/>
 		<generic-icon v-else name="moon" width="23"/>

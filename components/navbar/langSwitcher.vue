@@ -1,6 +1,6 @@
 <template>
 	<div class="relative font-medium dark:text-white h-[44px] text-sm w-fit xs:w-[170px]">
-		<button class="cursor-pointer flex justify-between h-full rounded-lg items-center border border-transparent gap-2 w-full hover:bg-[#F8F9FF] dark:hover:bg-dark px-2" @click="toggle">
+		<button class="cursor-pointer flex justify-between h-full rounded-lg items-center border border-transparent gap-2 w-full hover:bg-[#F8F9FF] dark:hover:bg-dark px-2 duration-300" @click="toggle">
 			<span class="flex items-center gap-2">
 				<generic-icon width="28" :name="$i18n.locale" alt="'flag-' + $i18n.locale" />
 				<span class="hidden xs:inline-block">{{ currentLanguageName }}</span>

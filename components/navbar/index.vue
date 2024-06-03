@@ -22,14 +22,14 @@
 				<NuxtLink
 					target="_blank"
 					to="https://hoteliers.topgroupexpress.com/"
-					class="hidden py-[10px] px-6 text-base font-medium hover:text-primary dark:text-white dark:hover:text-primary xl:inline-block whitespace-nowrap"
+					class="hidden py-[10px] px-6 text-base font-medium hover:text-primary dark:text-white dark:hover:text-primary xl:inline-block whitespace-nowrap duration-300"
 				>
 					{{ $t('appHoteliers') }}
 				</NuxtLink>
 				<NuxtLink
 					target="_blank"
 					:to="urlAgencies"
-					class="hidden rounded-md bg-primary py-[10px] px-[30px] text-base font-medium text-white hover:bg-opacity-90 xl:inline-block whitespace-nowrap"
+					class="hidden rounded-md bg-primary py-[10px] px-[30px] text-base font-medium text-white hover:bg-opacity-90 xl:inline-block whitespace-nowrap duration-300"
 				>
 					{{ $t('appAgencies') }}
 				</NuxtLink>
@@ -51,7 +51,7 @@
 					<NuxtLink
 						target="_blank"
 						to="https://hoteliers.topgroupexpress.com/"
-						class="pb-10 text-2xl font-medium dark:text-white text-gray-800 text-nowrap"
+						class="pb-10 text-2xl font-medium dark:text-white text-gray-800 text-nowrap duration-300"
 					>
 						{{ $t('appHoteliers') }}
 					</NuxtLink>
