@@ -2,7 +2,7 @@
 	<footer>
 		<div class="mt-[3rem] duration-300 bg-[#F8FAFB] pt-[1rem] pb-[1rem] dark:bg-[#15182A]">
 			<div class="container max-w-[1450px]">
-				<div class="grid gap-[1rem] justify-items-center items-center 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1">
+				<div class="grid gap-[1rem] justify-items-center items-center 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1" >
 					<generic-logo :href="'/' + $i18n.locale" src="https://cdn.t3s.es/website/logo-tge-large.webp" alt="logo" :width="200" />
 					<NuxtImg format="webp,png,jpg" loading="lazy" class="w-full" src="https://cdn.t3s.es/website/image-footer.webp" alt="image-footer" />
 				</div>

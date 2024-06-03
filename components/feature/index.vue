@@ -1,6 +1,6 @@
 <template>
 	<section id="feature" class="relative px-4 pt-[110px]">
-		<generic-title :title="$t('featureTitle')" :subtitle="$t('featureDescription')" data-aos="fade-up" data-aos-delay="100"/>
+		<generic-title :title="$t('featureTitle')" :subtitle="$t('featureDescription')" />
 		<div class="container max-w-[1390px] flex flex-wrap rounded-2xl bg-white pt-14 pb-14 shadow-card dark:bg-dark dark:shadow-card-dark md:pb-1 lg:pt-20 lg:pb-5 xl:px-10 duration-300" data-aos="fade-up" data-aos-delay="200" >
 			<feature-item v-for="feature in features" :key="feature.title" :title="$t(feature.title)" :description="$t(feature.description)" :icon="feature.icon" :data-aos="feature.animation" :data-aos-delay="feature.delay" />
 		</div>

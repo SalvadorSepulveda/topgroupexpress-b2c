@@ -1,14 +1,10 @@
 <template>
 	<div class="container">
-		<div
-			class="mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]"
-		>
-			<h2
-				class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight"
-			>
+		<div class="mx-auto mb-14 max-w-[690px] text-center lg:mb-[70px]" >
+			<h2 class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight" data-aos="fade-up" data-aos-delay="100" >
 				{{ title }}
 			</h2>
-			<p v-if="subtitle" class="text-base text-bodywhite dark:text-body duration-300">
+			<p v-if="subtitle" class="text-base text-bodywhite dark:text-body duration-300" data-aos="fade-up" data-aos-delay="200">
 				{{ subtitle }}
 			</p>
 		</div>

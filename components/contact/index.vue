@@ -2,7 +2,7 @@
 	<section id="contact" class="relative z-10 py-20">
 		<generic-title :title="$t('formTitle')" :subtitle="$t('formDescription')" />
 		<div class="container">
-			<div class="mx-auto w-full max-w-[925px] rounded-lg bg-[#F8FAFB] px-8 py-10 shadow-card dark:bg-[#15182B] dark:shadow-card-dark sm:px-10 flex flex-wrap duration-300">
+			<div class="mx-auto w-full max-w-[925px] rounded-lg bg-[#F8FAFB] px-8 py-10 shadow-card dark:bg-[#15182B] dark:shadow-card-dark sm:px-10 flex flex-wrap duration-300" data-aos="fade-up" data-aos-delay="200">
 				<contact-input :placeholder="$t('insertName')" name="name" type="text" v-model="name" />
 				<contact-input :placeholder="$t('insertCompany')" name="company" type="text" v-model="company" />
 				<contact-input :placeholder="$t('insertEmail')" name="email" type="email" v-model="email" />

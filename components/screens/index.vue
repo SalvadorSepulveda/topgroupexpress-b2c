@@ -1,18 +1,18 @@
 <template>
 	<section id="screens" class="relative z-20 pt-[210px] pb-[100px]">
-		<generic-title :title="$t('titleScreens')" :subtitle="$t('descriptionScreens')" />
+		<generic-title :title="$t('titleScreens')" :subtitle="$t('descriptionScreens')"  />
 		<div class="container mx-auto max-w-[1000px] swiper mySwiper relative z-20">
 			<div class="absolute top-0 left-0 right-0 z-50 mx-auto w-full md:w-1/3 max-w-[295px] md:max-w-[240px] lg:max-w-[295px]">
-				<NuxtImg loading="lazy" format="webp,png,jpg" src="https://cdn.t3s.es/website/screens/frame.webp" class="mx-auto w-full" alt="mobile-frame" />
+				<NuxtImg loading="lazy" format="webp,png,jpg" src="https://cdn.t3s.es/website/screens/frame.webp" class="mx-auto w-full" alt="mobile-frame" data-aos="fade-up" data-aos-delay="400" />
 			</div>
 			<div class="swiper-wrapper py-2">
-				<screens-item v-for="(screen, index) in screens" :key="index" :src="screen"/>
+				<screens-item v-for="(screen, index) in screens" :key="index" :src="screen.src" :data-aos="screen.animation" :data-aos-delay="screen.delay"/>
 			</div>
 			<div class="flex items-center justify-center space-x-4 pt-20">
-				<button class="swiper-button-style" @click="previousSlide" aria-label="previuos image">
+				<button class="swiper-button-style" @click="previousSlide" aria-label="previuos image" data-aos="fade-up" data-aos-delay="100">
 					<generic-icon name="arrowLeft" width="20"/>
 				</button>
-				<button class="swiper-button-style" @click="nextSlide" aria-label="next image">
+				<button class="swiper-button-style" @click="nextSlide" aria-label="next image" data-aos="fade-up" data-aos-delay="200">
 					<generic-icon name="arrowRight" width="20"/>
 				</button>
 			</div>
@@ -31,14 +31,46 @@ export default {
 	data: () => ({
 		swiper: null,
 		screens: [
-			'https://cdn.t3s.es/website/screens/hotelier1.webp',
-			'https://cdn.t3s.es/website/screens/hotelier2.webp',
-			'https://cdn.t3s.es/website/screens/hotelier3.webp',
-			'https://cdn.t3s.es/website/screens/hotelier4.webp',
-			'https://cdn.t3s.es/website/screens/hotelier1.webp',
-			'https://cdn.t3s.es/website/screens/hotelier2.webp',
-			'https://cdn.t3s.es/website/screens/hotelier3.webp',
-			'https://cdn.t3s.es/website/screens/hotelier4.webp',
+			{
+				src: 'https://cdn.t3s.es/website/screens/hotelier1.webp',
+				animation: 'fade-up',
+				delay: 200,
+			},
+			{
+				src: 'https://cdn.t3s.es/website/screens/hotelier2.webp',
+				animation: 'fade-up',
+				delay: 400,
+			},
+			{
+				src: 'https://cdn.t3s.es/website/screens/hotelier3.webp',
+				animation: 'fade-up',
+				delay: 600,
+			},
+			{
+				src: 'https://cdn.t3s.es/website/screens/hotelier4.webp',
+				animation: 'fade-up',
+				delay: 800,
+			},
+			{
+				src: 'https://cdn.t3s.es/website/screens/hotelier1.webp',
+				animation: 'fade-up',
+				delay: 200,
+			},
+			{
+				src: 'https://cdn.t3s.es/website/screens/hotelier2.webp',
+				animation: 'fade-up',
+				delay: 400,
+			},
+			{
+				src: 'https://cdn.t3s.es/website/screens/hotelier3.webp',
+				animation: 'fade-up',
+				delay: 600,
+			},
+			{
+				src: 'https://cdn.t3s.es/website/screens/hotelier4.webp',
+				animation: 'fade-up',
+				delay: 800,
+			}
 		]
 	}),
 	methods: {

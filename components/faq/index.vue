@@ -2,7 +2,7 @@
 	<section id="faq" class="relative z-10 bg-[#F8FAFB] py-[110px] dark:bg-[#15182B] duration-300"	>
 		<generic-title :title="$t('frequentAnswerTitle')" :subtitle="$t('frequentAnswerDescription')" />
 		<div class="container">
-			<div class="faqs mx-auto w-full max-w-[785px] rounded-lg bg-white px-6 py-[6px] shadow-card dark:bg-black dark:shadow-card-dark duration-300" >
+			<div class="faqs mx-auto w-full max-w-[785px] rounded-lg bg-white px-6 py-[6px] shadow-card dark:bg-black dark:shadow-card-dark duration-300" data-aos="fade-up" data-aos-delay="200">
 				<faq-card :title="$t('question1')">
 					{{ $t('answer1') }}
 				</faq-card>
