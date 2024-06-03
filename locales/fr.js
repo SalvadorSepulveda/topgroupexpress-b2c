@@ -120,7 +120,7 @@ export default {
     descriptionBlog: "Trouvez ici des contenus informatifs et éducatifs sur notre logiciel et notre secteur.",
 
     // Form
-    formTitle: "Une question ? Une suggestion ? Un retour d'information ?",
+    formTitle: "Une question? Une suggestion? Un retour d'information?",
     formDescription: "N'hésitez pas à nous écrire pour quoi que ce soit. Nous sommes là pour vous.",
     insertName: "Entrez votre nom",
     insertEmail: "Entrez votre courriel",
