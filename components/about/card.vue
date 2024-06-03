@@ -1,6 +1,6 @@
 <template>
 	<div :style="{ 'flex-direction': left ? 'row-reverse' : 'row' }" class="-mx-4 flex flex-wrap items-center justify-between">
-		<div class="w-full px-4 lg:w-1/2">
+		<div class="w-full px-4 lg:w-1/2" data-aos="fade-up" data-aos-delay="200">
 			<div class="relative z-10 mx-auto mb-14 w-full max-w-[470px] pb-6 lg:mx-0 lg:mb-0">
 				<NuxtImg format="webp,png,jpg" :src="image" class="mx-auto w-[300px] h-[600px]" :alt="alt"/>
 				<generic-icon name="stars" class="absolute top-0 right-5 -z-10" />
@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="w-full px-4 lg:w-1/2">
-			<div class="lg:ml-auto lg:max-w-[510px] flex flex-col gap-4" >
+			<div class="lg:ml-auto lg:max-w-[510px] flex flex-col gap-4" data-aos="fade-up" data-aos-delay="400">
 				<span class="mb-4 block text-lg font-medium text-primary md:text-[22px]">
 					{{ smalltitle }}
 				</span>
