@@ -26,7 +26,7 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
-    modules: ['@nuxtjs/i18n', "@nuxt/image", 'nuxt-swiper', '@nuxtjs/seo', 'nuxt-og-image', 'nuxt-calendly'],
+    modules: ['@nuxtjs/i18n', "@nuxt/image", 'nuxt-swiper', '@nuxtjs/seo', 'nuxt-og-image', 'nuxt-calendly', 'nuxt-aos'],
     i18n: {
         locales: [
             { code: 'en', iso: 'en-UK', file: 'en.js', name: 'English (UK)' },
@@ -57,5 +57,10 @@ export default defineNuxtConfig({
             siteUrl: process.env.SITE_URL,
             backendUrl: process.env.BACKEND_URL
         }
+    },
+    aos: {
+        once: true,
+        duration: 1200,
+        anchorPlacement: 'top-bottom'
     }
 })

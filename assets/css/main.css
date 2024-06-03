@@ -4,6 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+[data-aos="fade-in-up"] {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
 @layer base {
     html {
         @apply font-inter scroll-smooth overflow-x-hidden;
