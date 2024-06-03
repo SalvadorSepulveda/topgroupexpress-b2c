@@ -60,7 +60,7 @@ export default defineNuxtConfig({
     },
     aos: {
         once: true,
-        duration: 1200,
+        duration: 1000,
         anchorPlacement: 'top-bottom'
     }
 })
