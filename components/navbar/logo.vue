@@ -1,6 +1,6 @@
 <template>
 	<NuxtLink :to="href">
-		<NuxtImg :width="width" :src="src" :alt="alt" />
+		<NuxtImg format="webp,png,jpg" :width="width" :src="src" :alt="alt" />
 	</NuxtLink>
 </template>
 

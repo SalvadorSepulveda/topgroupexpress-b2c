@@ -3,7 +3,7 @@
 		<generic-title :title="$t('titleScreens')" :subtitle="$t('descriptionScreens')" />
 		<div class="container mx-auto max-w-[1000px] swiper mySwiper relative z-20">
 			<div class="absolute top-0 left-0 right-0 z-50 mx-auto w-full md:w-1/3 max-w-[295px] md:max-w-[240px] lg:max-w-[295px]">
-				<NuxtImg loading="lazy" format="png" src="https://cdn.t3s.es/website/screens/frame.webp" class="mx-auto w-full" alt="mobile-frame" />
+				<NuxtImg loading="lazy" format="webp,png,jpg" src="https://cdn.t3s.es/website/screens/frame.webp" class="mx-auto w-full" alt="mobile-frame" />
 			</div>
 			<div class="swiper-wrapper py-2">
 				<screens-item v-for="(screen, index) in screens" :key="index" :src="screen"/>

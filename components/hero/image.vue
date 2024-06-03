@@ -6,7 +6,7 @@
 			width="350"
 		  	:src="src"
 		  	alt="hero-image"
-			format="webp"
+			format="webp,png,jpg"
 		/>
 		<div
 			class="max-auto absolute top-0 left-0 right-0 -z-10 aspect-square w-full rounded-full bg-gradient-1 hidden xs:block"
@@ -32,5 +32,3 @@ export default {
 	}
 }
 </script>
-
-<!--  -->

@@ -7,7 +7,7 @@
 		</div>
 		<div class="rounded-2xl bg-white flex flex-col xl:flex-row-reverse p-10 shadow-card dark:bg-dark dark:shadow-card-dark duration-300">
 			<div class="flex items-center justify-center xl:w-1/2">
-				<NuxtImg width="500" src="https://cdn.topgroups.travel/websites/assets/images/agencies.png" />
+				<NuxtImg width="500" src="https://cdn.topgroups.travel/websites/assets/images/agencies.png" format="webp,png,jpg" alt="agencies" />
 			</div>
 			<div class="flex flex-col justify-around xl:w-1/2">
 				<div>
@@ -30,7 +30,7 @@
 		</div>
 		<div class="rounded-2xl bg-white flex flex-col xl:flex-row p-10 shadow-card dark:bg-dark dark:shadow-card-dark duration-300">
 			<div class="flex items-center justify-center xl:w-1/2">
-				<NuxtImg width="500" src="https://cdn.topgroups.travel/websites/assets/images/hoteliers.png" />
+				<NuxtImg width="500" src="https://cdn.topgroups.travel/websites/assets/images/hoteliers.png" format="webp,png,jpg" alt="hoteliers" />
 			</div>
 			<div class="flex flex-col justify-around xl:w-1/2">
 				<div>
