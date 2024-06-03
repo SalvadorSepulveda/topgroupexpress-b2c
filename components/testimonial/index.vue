@@ -33,8 +33,8 @@
 				:data-aos-delay="item.delay"
 			/>
 		</div>
-		<generic-icon name="shadowLeft" class="absolute top-8 left-0 -z-10 hidden md:block" />
-		<generic-icon name="shadowRight" class="absolute bottom-3 right-0 -z-10" />
+		<generic-icon name="shadowLeft" class="absolute top-8 left-0 -z-10 hidden md:block" data-aos="fade-right" data-aos-delay="100" />
+		<generic-icon name="shadowRight" class="absolute bottom-3 right-0 -z-10" data-aos="fade-left" data-aos-delay="100" />
 	</section>
 </template>
 

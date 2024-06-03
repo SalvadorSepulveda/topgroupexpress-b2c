@@ -4,8 +4,8 @@
 		<div class="container max-w-[1390px] flex flex-wrap rounded-2xl bg-white pt-14 pb-14 shadow-card dark:bg-dark dark:shadow-card-dark md:pb-1 lg:pt-20 lg:pb-5 xl:px-10 duration-300" data-aos="fade-up" data-aos-delay="200" >
 			<feature-item v-for="feature in features" :key="feature.title" :title="$t(feature.title)" :description="$t(feature.description)" :icon="feature.icon" :data-aos="feature.animation" :data-aos-delay="feature.delay" />
 		</div>
-		<generic-icon name="shadowRight" class="absolute top-0 right-0 -z-10 text-[#BEB3FD]" />
-		<generic-icon name="shadowLeft" class="absolute left-0 -bottom-1/2 -z-10 hidden md:block text-[#FFC960]" />
+		<generic-icon name="shadowRight" class="absolute top-0 right-0 -z-10 text-[#BEB3FD]" data-aos="fade-left" data-aos-delay="100" />
+		<generic-icon name="shadowLeft" class="absolute left-0 -bottom-1/2 -z-10 hidden md:block text-[#FFC960]" data-aos="fade-right" data-aos-delay="100" />
 	</section>
 </template>
 
