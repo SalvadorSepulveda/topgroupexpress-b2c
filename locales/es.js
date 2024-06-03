@@ -42,7 +42,7 @@ export default {
     bigTitleAgencies: "Siga sus reservas en tiempo real.",
     descriptionAgencies: "Una interfaz fácil de usar con pocos botones para acciones y gestiones rápidas. Simplemente complete su cotización, envíela y reciba notificaciones en cada paso del proceso.",
     // List agencies
-    oneListAgencies: "Introduzca su petición",
+    oneListAgencies: "Introduzca su petición.",
     twoListAgencies: "El sistema trabajará en consultar a los hoteles que pueden estar interesados en ella.",
     threeListAgencies: "Obtenga una cotización con excelentes tarifas de grupos.",
     fourListAgencies: "Confirme, modifique, realice pagos, todas las gestiones, en unos pocos clics.",
