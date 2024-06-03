@@ -21,8 +21,8 @@
 				right
 			/>
 		</div>
-		<div class="absolute right-0 top-36 -z-10">
-			<generic-icon name="circleRight" />
-		</div>
+		<generic-icon name="circleRight" class="absolute right-0 top-36 -z-10" data-aos="fade-left" data-aos-duartion="100" />
 	</section>
 </template>
+<script setup lang="ts">
+</script>

@@ -46,7 +46,7 @@
 				</faq-card>
 			</div>
 		</div>
-		<generic-icon name="circleRight" class="absolute right-0 -top-24 -z-10"/>
-		<generic-icon name="circleLeft" class="absolute left-0 -bottom-24 -z-10"/>
+		<generic-icon name="circleRight" class="absolute right-0 -top-24 -z-10" data-aos="fade-left" data-aos-duartion="100"/>
+		<generic-icon name="circleLeft" class="absolute left-0 -bottom-24 -z-10" data-aos="fade-right" data-aos-duartion="100"/>
 	</section>
 </template>

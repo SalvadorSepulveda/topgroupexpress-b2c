@@ -17,7 +17,7 @@
 				</button>
 			</div>
 		</div>
-		<generic-icon name="circleLeft" class="absolute left-0 top-40 -z-10" />
+		<generic-icon name="circleLeft" class="absolute left-0 top-40 -z-10" data-aos="fade-right" data-aos-duartion="100" />
 	</section>
 </template>
 
