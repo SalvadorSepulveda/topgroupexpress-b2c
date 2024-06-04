@@ -2,7 +2,7 @@
 	<section id="screens" class="relative z-20 pt-[210px] pb-[100px]">
 		<generic-title :title="$t('titleScreens')" :subtitle="$t('descriptionScreens')"  />
 		<div class="container mx-auto max-w-[1000px] swiper mySwiper relative z-20">
-			<div class="absolute top-0 left-0 right-0 z-50 mx-auto w-full md:w-1/3 max-w-[295px] md:max-w-[240px] lg:max-w-[295px]">
+			<div class="absolute top-0 left-0 right-0 z-50 mx-auto w-full md:w-1/3 max-w-[280px] xs:max-w-[295px] md:max-w-[240px] lg:max-w-[295px]">
 				<NuxtImg loading="lazy" format="webp,png,jpg" src="https://cdn.t3s.es/website/screens/frame.webp" class="mx-auto w-full" alt="mobile-frame" data-aos="fade-up" data-aos-delay="400" />
 			</div>
 			<div class="swiper-wrapper py-2">
