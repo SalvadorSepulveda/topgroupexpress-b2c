@@ -1,5 +1,5 @@
 <template>
-	<section id="hero" class="pt-[100px] lg:pt-[165px] px-4">
+	<section id="hero" class="pt-[100px] lg:pt-[200px] px-4">
 		<div class="container lg:max-w-[1300px] flex items-center gap-20 flex-col lg:flex-row">
 			<div class="flex flex-col gap-8" data-aos="fade-up" data-aos-delay="200">
 				<h1 class=" text-4xl xs:text-6xl lg:text-5xl max-w-[600px] font-bold text-black dark:text-white duration-300">
