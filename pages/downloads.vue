@@ -22,9 +22,9 @@
 					</p>
 				</div>
 				<div class="flex gap-2 justify-center flex-wrap pt-5">
-					<generic-link-button small-text="Get in on" text="Google Play" icon="playStore" @click="openLink('https://play.google.com/store/apps/details?id=com.tge.t3agencies')" />
-					<generic-link-button small-text="Download on the" text="App Store" icon="apple" @click="openLink('https://apps.apple.com/bg/app/agencies-top-group-express/id1669486980')" />
-					<generic-link-button small-text="For android" text="Direct Download" icon="downloadCloud" @click="openLink('https://agencies.topgroupexpress.com/download')" />
+					<generic-link-button small-text="Get in on" text="Google Play" icon="playStore" src="https://play.google.com/store/apps/details?id=com.tge.t3agencies" />
+					<generic-link-button small-text="Download on the" text="App Store" icon="apple" src="https://apps.apple.com/bg/app/agencies-top-group-express/id1669486980" />
+					<generic-link-button small-text="For android" text="Direct Download" icon="downloadCloud" src="https://agencies.topgroupexpress.com/download" />
 				</div>
 			</div>
 		</div>
@@ -45,9 +45,9 @@
 					</p>
 				</div>
 				<div class="flex gap-2 justify-center flex-wrap pt-5">
-					<generic-link-button small-text="Get in on" text="Google Play" icon="playStore" @click="openLink('https://play.google.com/store/apps/details?id=com.tge.t3hotelier')" />
-					<generic-link-button small-text="Download on the" text="App Store" icon="apple" @click="openLink('https://apps.apple.com/bg/app/hoteliers-top-group-express/id1661978182')" />
-					<generic-link-button small-text="For android" text="Direct Download" icon="downloadCloud" @click="openLink('https://hoteliers.topgroupexpress.com/download')" />
+					<generic-link-button small-text="Get in on" text="Google Play" icon="playStore" src="https://play.google.com/store/apps/details?id=com.tge.t3hotelier" />
+					<generic-link-button small-text="Download on the" text="App Store" icon="apple" src="https://apps.apple.com/bg/app/hoteliers-top-group-express/id1661978182" />
+					<generic-link-button small-text="For android" text="Direct Download" icon="downloadCloud" src="https://hoteliers.topgroupexpress.com/download" />
 				</div>
 			</div>
 		</div>

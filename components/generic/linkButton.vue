@@ -1,9 +1,10 @@
 <template>
 	<NuxtLink
 		target="_blank"
-		to="#"
+		:to="src"
 		class="rounded-md bg-[#111] py-2 px-4 text-base font-medium text-white hover:bg-opacity-90 flex items-center gap-3 w-fit max-h-[48px] whitespace-nowrap"
 	>
+		<span class="sr-only">{{ text }}</span>
 		<generic-icon :name="icon" width="40" class="border-r border-white pr-3" />
 		<div class="flex flex-col">
 			<span v-if="smallText" class="uppercase text-[10px] leading-tight">
@@ -35,6 +36,10 @@ export default {
 		width: {
 			type: String,
 			required: false
+		},
+		src: {
+			type: String,
+			required: true
 		}
 	}
 }
