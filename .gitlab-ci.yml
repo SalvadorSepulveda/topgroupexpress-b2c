@@ -29,11 +29,9 @@ nuxt-build:
   extends:
     - .install-npm
   script:
-    # - *install-npm
     - npm install
     - npm audit fix
     - npm run build
-
 
 cloudflare-staging:
   stage: deploy
@@ -43,8 +41,9 @@ cloudflare-staging:
   environment: "$CI_COMMIT_BRANCH"
   extends:
     - .install-npm
+  needs:
+    - nuxt-build
   script:
-    # - *install-npm
     - npm install -g wrangler
     - wrangler pages deploy ./dist --project-name=website-staging --branch=main
   artifacts:
@@ -61,8 +60,9 @@ cloudflare-production:
   environment: production
   extends:
     - .install-npm
+  needs:
+    - nuxt-build
   script:
-    # - *install-npm
     - npm install -g wrangler
     - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
   artifacts:
