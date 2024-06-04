@@ -1,6 +1,6 @@
 <template>
 	<div class="container max-w-[1390px] pt-14 flex flex-col gap-20">
-		<div class="w-full flex justify-center mt-10 text-center">
+		<div class="w-full flex justify-center mt-14 text-center">
 			<generic-fancy-text class="text-primary text-6xl font-bold leading-[5rem]">
 				{{ $t('downloadTitle') }}
 			</generic-fancy-text>
