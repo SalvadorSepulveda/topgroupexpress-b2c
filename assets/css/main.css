@@ -4,27 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 20px, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-[data-aos="fade-in-up"] {
-    animation-name: fadeInUp;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
 @layer base {
     html {
         @apply font-inter scroll-smooth overflow-x-hidden;
     }
+
     body {
         @apply bg-white dark:bg-black duration-300;
     }
@@ -51,7 +35,7 @@
     }
 
     .faq.active .faq-content {
-        @apply max-h-fit py-[30px]  opacity-100;
+        @apply max-h-fit pb-6 opacity-100;
     }
 
     .swiper-button-style,
