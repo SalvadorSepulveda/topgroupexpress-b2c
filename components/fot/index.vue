@@ -19,7 +19,7 @@
 					<div class="w-full px-3 md:w-1/2 lg:w-1/3 flex justify-center mb-4 items-center space-x-5 md:mb-0 md:justify-start lg:justify-center">
 						<fot-icon v-for="item in social" :key="item.icon" :href="item.url" :alt="item.icon" :icon="item.icon" width="20" class="text-white opacity-80 hover:opacity-100" />
 					</div>
-					<div class="w-full px-3 md:w-1/2 lg:w-1/3  flex items-center justify-center space-x-4 sm:space-x-8 md:justify-end lg:justify-end font-[500]">
+					<div class="w-full px-3 md:w-1/2 lg:w-1/3  flex items-center justify-center space-x-4 sm:space-x-8 md:justify-end lg:justify-end font-[500] text-center">
 						<router-link class="text-base text-white hover:text-[#ccc] dark:hover:text-primary duration-100" :to="'/' + $i18n.locale + '/privacy'">
 							{{ $t('textButtonPrivacy')}}
 						</router-link>
