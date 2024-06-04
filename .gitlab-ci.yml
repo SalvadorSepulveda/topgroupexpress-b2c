@@ -35,12 +35,14 @@ nuxt-build:
 
 cloudflare-staging:
   stage: deploy
+  extends:
+    - .install-npm
+  needs:
+    - nuxt-build
   variables:
     CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
     CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
   environment: "$CI_COMMIT_BRANCH"
-  extends:
-    - .install-npm
   script:
     - echo "$CLOUDFLARE_ACCOUNT_ID"
     - echo "$CLOUDFLARE_API_TOKEN"
@@ -53,13 +55,15 @@ cloudflare-staging:
     - staging
 
 cloudflare-production:
+  extends:
+    - .install-npm
+  needs:
+    - nuxt-build
   stage: deploy
   variables:
     CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
     CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
   environment: production
-  extends:
-    - .install-npm
   script:
     - npm install -g wrangler
     - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
