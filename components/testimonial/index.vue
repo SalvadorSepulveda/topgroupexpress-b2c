@@ -2,7 +2,7 @@
 	<section id="testimonials" class="py-20 relative z-10" >
 		<generic-title :title="$t('titleClients')" :subtitle="$t('descriptionClients')" />
 		<h3 class="mb-4 text-xl text-center font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]" data-aos="fade-up" data-aos-delay="100" >
-			{{ $t('hotelier') }}
+			<span class="duration-300">{{ $t('hotelier') }}</span>
 		</h3>
 		<div class="container overflow-hidden lg:max-w-[1160px] flex flex-wrap" >
 			<testimonial-card
@@ -17,8 +17,8 @@
 				:data-aos-delay="item.delay"
 			/>
 		</div>
-		<h3 class="mb-4 text-xl text-center font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]" >
-			{{ $t('agency') }}
+		<h3 class="mb-4 text-xl text-center font-semibold text-black dark:text-white sm:text-[22px] xl:text-[26px]" data-aos="fade-up" data-aos-delay="100" >
+			<span class="duration-300">{{ $t('agency') }}</span>
 		</h3>
 		<div class="container overflow-hidden lg:max-w-[1160px] flex flex-wrap">
 			<testimonial-card
