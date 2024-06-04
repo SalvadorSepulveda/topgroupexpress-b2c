@@ -16,7 +16,7 @@
 						<generic-fancy-text>{{ $t('title4')}}</generic-fancy-text>
 					</span>
 				</h1>
-				<p class="text-base text-bodywhite dark:text-body duration-300">
+				<p class="text-bodywhite dark:text-body duration-300">
 					{{ $t('subtitle') }}
 				</p>
 				<hero-video-button :title="$t('titleVideo')" :description="$t('descriptionVideo')" :url="urlByLocale" />
