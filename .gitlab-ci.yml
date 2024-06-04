@@ -2,6 +2,7 @@ cache:
   paths:
     - node_modules/
     - dist/
+    - .output/public
 
 stages:
   - build
@@ -31,7 +32,8 @@ nuxt-build:
   script:
     - npm install
     - npm audit fix
-    - npm run build
+    # - npm run build
+    - npm run generate
 
 cloudflare-staging:
   stage: deploy
@@ -47,10 +49,12 @@ cloudflare-staging:
     - echo "$CLOUDFLARE_ACCOUNT_ID"
     - echo "$CLOUDFLARE_API_TOKEN"
     - npm install -g wrangler
-    - wrangler pages deploy ./dist --project-name=website-staging --branch=main
+    - wrangler pages deploy .output/public --project-name=website-staging --branch=main
+    # - wrangler pages deploy ./dist --project-name=website-staging --branch=main
   artifacts:
     paths:
-      - dist
+      # - dist
+      - .output/public
   only:
     - staging
 
