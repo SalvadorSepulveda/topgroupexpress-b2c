@@ -18,15 +18,15 @@
 				<h2 class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight duration-300">
 					{{ bigtitle }}
 				</h2>
-				<p class="text-base leading-relaxed text-bodywhite dark:text-body duration-300" >
+				<p class="leading-relaxed text-bodywhite dark:text-body duration-300" >
 					{{ description }}
 				</p>
 				<div
-					class="flex items-center"
+					class="flex items-center gap-3"
 					v-for="(item, index) in list"
 					:key="index"
 				>
-					<div class="mr-[22px] flex min-h-[60px] min-w-[60px] items-center justify-center rounded-full border border-stroke text-xl font-semibold text-black dark:border-stroke-dark dark:bg-dark dark:text-white duration-300">
+					<div class="min-w-[60px] min-h-[60px] max-w-[60px] max-h-[60px] rounded-full flex items-center justify-center border border-stroke dark:border-stroke-dark text-xl font-semibold text-black dark:text-white bg-white dark:bg-dark duration-300">
 						{{ index + 1 }}
 					</div>
 					<span class="text-xl font-medium text-black dark:text-white duration-300">
