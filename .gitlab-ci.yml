@@ -41,9 +41,9 @@ cloudflare-staging:
   environment: "$CI_COMMIT_BRANCH"
   extends:
     - .install-npm
-  needs:
-    - nuxt-build
   script:
+    - echo "$CLOUDFLARE_ACCOUNT_ID"
+    - echo "$CLOUDFLARE_API_TOKEN"
     - npm install -g wrangler
     - wrangler pages deploy ./dist --project-name=website-staging --branch=main
   artifacts:
@@ -55,13 +55,11 @@ cloudflare-staging:
 cloudflare-production:
   stage: deploy
   variables:
-    CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID_PRODUCTION
-    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN_PRODUCTION
+    CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
+    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
   environment: production
   extends:
     - .install-npm
-  needs:
-    - nuxt-build
   script:
     - npm install -g wrangler
     - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
