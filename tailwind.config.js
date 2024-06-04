@@ -24,7 +24,7 @@ export default {
             transparent: 'transparent',
             white: '#FFFFFF',
             black: '#181C31',
-            primary: '#EA621F',
+            primary: '#ff6720',
             secondary: '',
             stroke: '#EBEFF4',
             dark: '#1F233A',

@@ -12,7 +12,7 @@
 		</div>
 		<div class="w-full px-4 lg:w-1/2">
 			<div class="lg:ml-auto lg:max-w-[510px] flex flex-col gap-4" data-aos="fade-up" data-aos-delay="400">
-				<span class="mb-4 block text-lg font-medium text-primary md:text-[22px]">
+				<span class="mb-4 block text-lg font-medium text-primary md:text-[25px]">
 					{{ smalltitle }}
 				</span>
 				<h2 class="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl md:text-[44px] md:leading-tight duration-300">

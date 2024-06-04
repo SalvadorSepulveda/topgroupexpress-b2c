@@ -3,6 +3,7 @@
 		target="_blank"
 		:to="href"
 	>
+		<span class="sr-only">{{ alt }}</span>
 		<generic-icon :name="icon" :width="width" :alt="alt" />
 	</NuxtLink>
 </template>
