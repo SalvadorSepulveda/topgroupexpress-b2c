@@ -150,12 +150,12 @@ export default {
         // Agency
         miniTitleAgencyApp: "App for Agencies",
         titleAgencyApp: "The first online booking engine for group Hotels",
-        textAgencyApp: "If you are a travel agent, do not forget to download our app, with it you can have optimal control of your requests, new quotations, statuses among many other functions",
+        textAgencyApp: "If you are a travel agent, do not forget to download our app, with it you can have optimal control of your requests, new quotations, statuses among many other functions.",
 
         // Hotelier
         miniTitleHoteliersApp: "App for Hoteliers",
         titleHoteliersApp: "Quote groups in a faster and easier way",
-        textHoteliersApp: "If your are a hotelier, do not forget to download our app! You can easily control the requests. You can upload rates faster and know at all times its status they are in",
+        textHoteliersApp: "If your are a hotelier, do not forget to download our app! You can easily control the requests. You can upload rates faster and know at all times its status they are in.",
 
     // 404
     errorTitle: "Sorry, the page does not exist",

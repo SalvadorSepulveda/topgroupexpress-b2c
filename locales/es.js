@@ -150,12 +150,12 @@ export default {
         // Agency
         miniTitleAgencyApp: "Aplicación para Agencias",
         titleAgencyApp: "El primer motor de reservas online de Hoteles para grupos",
-        textAgencyApp: "Si eres agente de viajes, no olvides descargar nuestra app, con ella podrás tener un control óptimo de tus peticiones, nuevas cotizaciones, estados de las mismas entre muchas otras funciones",
+        textAgencyApp: "Si eres agente de viajes, no olvides descargar nuestra app, con ella podrás tener un control óptimo de tus peticiones, nuevas cotizaciones, estados de las mismas entre muchas otras funciones.",
 
         // Hoteliers
         miniTitleHoteliersApp: "Aplicación para Hoteleros",
         titleHoteliersApp: "Cotiza grupos de una manera más rápida y fácil",
-        textHoteliersApp: "Si eres hoteleros no olvides descargar nuestra app, así podrás controlar con mayor facilidad las peticiones, podrás cargar las tarifas con mayor rapidez y saber en todo momento el estado en el que se encuentran",
+        textHoteliersApp: "Si eres hoteleros no olvides descargar nuestra app, así podrás controlar con mayor facilidad las peticiones, podrás cargar las tarifas con mayor rapidez y saber en todo momento el estado en el que se encuentran.",
 
     // 404
     errorTitle: "Lo siento, la página no existe",
@@ -164,7 +164,7 @@ export default {
 
     // Terms
     titleTerms: "Términos y Condiciones",
-    descriptionTerms1: "Top Group Express Turismo SL te informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios y clientes que puedan ser recabados por la navegación o contratación de servicios a través del sitio Web",
+    descriptionTerms1: "Top Group Express Turismo SL te informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios y clientes que puedan ser recabados por la navegación o contratación de servicios a través del sitio Web.",
     descriptionTerms2: "En este sentido, el Titular garantiza el cumplimiento de la normativa vigente en materia de protección de datos personales, reflejada en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y de Garantía de Derechos Digitales (LOPD GDD). Cumple también con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD).",
     descriptionTerms3: "El uso de sitio Web implica la aceptación de esta Política de Privacidad así como las condiciones incluidas en el Aviso Legal.",
 
@@ -264,7 +264,7 @@ export default {
 
         // Exactitud y veracidad de los datos personales
         titleExactitud: "Exactitud y veracidad de los datos personales",
-        descriptionExactitud: "Te comprometes a que los datos facilitados al Titular sean correctos, completos, exactos y vigentes, así como a mantenerlos debidamente actualizados",
+        descriptionExactitud: "Te comprometes a que los datos facilitados al Titular sean correctos, completos, exactos y vigentes, así como a mantenerlos debidamente actualizados.",
         textExactitud: "Como Usuario del sitio Web eres el único responsable de la veracidad y corrección de los datos que remitas al sitio exonerando a el Titular de cualquier responsabilidad al respecto.",
 
         // Aceptación y consentimiento
