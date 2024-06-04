@@ -1,8 +1,8 @@
 cache:
   paths:
-    - node_modules/
-    - dist/
-    - .output/public
+    # - node_modules/
+    # - dist/
+    - .output/public/
 
 stages:
   - build
@@ -70,9 +70,11 @@ cloudflare-production:
   environment: production
   script:
     - npm install -g wrangler
-    - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
+    - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
+    # - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
   artifacts:
     paths:
-      - dist
+      # - dist
+      - .output/public
   only:
     - main
