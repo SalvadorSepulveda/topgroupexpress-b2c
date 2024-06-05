@@ -41,34 +41,31 @@ nuxt-build:
     paths:
       - .output/public
 
-deploy-staging:
+.deployment-setup: &deployment-setup
   stage: deploy
-  # extends:
-  #   - .default-setup
   image: node:latest
   needs:
     - nuxt-build
-  script:
-    - bun add -g wrangler # Install Wrangler globally with Bun
-    - wrangler pages deploy .output/public --project-name=website-staging --branch=${CI_COMMIT_BRANCH}
-  rules:
-    - if: '$CI_COMMIT_BRANCH == "staging"'
+  before_script:
+    - npm install -g wrangler
   artifacts:
     paths:
       - .output/public
 
-deploy-production:
-  stage: deploy
-  image: node:latest
-  # extends:
-  #   - .default-setup
-  needs:
-    - nuxt-build
+deploy-staging:
+  extends:
+    - .deployment-setup
   script:
-    - bun add -g wrangler # Install Wrangler globally with Bun
+    # - bun add -g wrangler # Install Wrangler globally with Bun
+    - wrangler pages deploy .output/public --project-name=website-staging --branch=${CI_COMMIT_BRANCH}
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "staging"'
+
+deploy-production:
+  extends:
+    - .deployment-setup
+  script:
+    # - bun add -g wrangler # Install Wrangler globally with Bun
     - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
   rules:
     - if: '$CI_COMMIT_BRANCH == "main"'
-  artifacts:
-    paths:
-      - .output/public
