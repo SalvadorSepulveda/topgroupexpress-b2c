@@ -26,8 +26,8 @@ stages:
         BACKEND_URL: "$BACKEND_URL"
   before_script:
     - echo "BACKEND_URL=$BACKEND_URL" > .env
-    - echo "CI_ENVIRONMENT_URL=$CI_ENVIRONMENT_URL" > .env
-    - echo "NUXT_PUBLIC_SITE_URL=$CI_ENVIRONMENT_URL" > .env # for Nuxt SEO
+    - echo "CI_ENVIRONMENT_URL=$CI_ENVIRONMENT_URL" >> .env
+    - echo "NUXT_PUBLIC_SITE_URL=$CI_ENVIRONMENT_URL" >> .env # for Nuxt SEO
     - cat .env
     - bun install
 
