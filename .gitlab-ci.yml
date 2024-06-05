@@ -51,6 +51,8 @@ deploy-staging:
   script:
     - bun add -g wrangler # Install Wrangler globally with Bun
     - wrangler pages deploy .output/public --project-name=website-staging --branch=${CI_COMMIT_BRANCH}
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "staging"'
   # only:
   #   - staging
 
@@ -63,5 +65,7 @@ deploy-production:
   script:
     - bun add -g wrangler # Install Wrangler globally with Bun
     - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
   # only:
   #   - main
