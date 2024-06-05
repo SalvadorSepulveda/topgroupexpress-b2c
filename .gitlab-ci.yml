@@ -43,9 +43,8 @@ nuxt-build:
     - echo "CI_ENVIRONMENT_URL=$CI_ENVIRONMENT_URL"
     - echo "NUXT_PUBLIC_SITE_URL=$NUXT_PUBLIC_SITE_URL"
     - cat .env
-    - npx nuxi build --preset=cloudflare_pages
     # - npx nuxi build --preset=cloudflare_pages
-    # - bun run build
+    - bun run build --preset=cloudflare_pages
     # - bun run generate
     # - npm run generate
   artifacts:
@@ -72,8 +71,8 @@ deploy-staging:
     - .deployment-setup
   environment: staging
   script:
-    - npx wrangler pages deploy .output/public --project-name=website-staging --branch=main
-    # - wrangler pages deploy .output/public --project-name=website-staging --branch=main
+    # - npx wrangler pages deploy .output/public --project-name=website-staging --branch=main
+    - wrangler pages deploy .output/public --project-name=website-staging --branch=main
   rules:
     - if: '$CI_COMMIT_BRANCH == "staging"'
 
@@ -82,7 +81,7 @@ deploy-production:
     - .deployment-setup
   environment: production
   script:
-    - npx wrangler pages deploy .output/public --project-name=website-staging --branch=main
-    # - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
+    # - npx wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
+    - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
   rules:
     - if: '$CI_COMMIT_BRANCH == "main"'
