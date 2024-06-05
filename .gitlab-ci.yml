@@ -6,8 +6,9 @@ stages:
   - build
   - deploy
 
-.default-setup: &default-setup # image: oven/bun:latest
-  image: node:latest
+.default-setup: &default-setup
+  image: oven/bun:latest
+  # image: node:latest
   tags:
     - docker # Use the "docker" executor
   rules:
