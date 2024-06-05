@@ -14,17 +14,20 @@ stages:
     - if: '$CI_COMMIT_BRANCH == "staging"'
       variables:
         CI_ENVIRONMENT_NAME: "staging"
-        CI_ENVIRONMENT_URL: "https://www.t3s.es/"
-        BACKEND_URL: "https://backend.t3s.es/api"
+        CI_ENVIRONMENT_URL: "$CI_ENVIRONMENT_URL"
+        BACKEND_URL: "$BACKEND_URL"
+        NUXT_PUBLIC_SITE_URL: "$CI_ENVIRONMENT_URL" # for Nuxt SEO
 
     - if: '$CI_COMMIT_BRANCH == "main"'
       variables:
         CI_ENVIRONMENT_NAME: "production"
-        CI_ENVIRONMENT_URL: "https://www.topgroups.travel/"
-        BACKEND_URL: "https://backend.topgroups.travel/api"
+        CI_ENVIRONMENT_URL: "$CI_ENVIRONMENT_URL"
+        NUXT_PUBLIC_SITE_URL: "$CI_ENVIRONMENT_URL" # for Nuxt SEO
+        BACKEND_URL: "$BACKEND_URL"
   before_script:
     - echo "BACKEND_URL=$BACKEND_URL" > .env
     - echo "CI_ENVIRONMENT_URL=$CI_ENVIRONMENT_URL" > .env
+    - echo "NUXT_PUBLIC_SITE_URL=$CI_ENVIRONMENT_URL" > .env # for Nuxt SEO
     - cat .env
     - bun install
 
