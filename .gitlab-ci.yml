@@ -11,11 +11,21 @@ stages:
 .default-setup: &default-setup
   tags:
     - docker
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "staging"'
+      variables:
+        CI_ENVIRONMENT_NAME: "staging"
+        CI_ENVIRONMENT_URL: "https://www.t3s.es/"
+
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      variables:
+        CI_ENVIRONMENT_NAME: "production"
+        CI_ENVIRONMENT_URL: "https://www.topgroups.travel/"
   before_script:
-    - bun install
     - echo "CI_ENVIRONMENT_URL=$CI_ENVIRONMENT_URL"
-    - echo "NUXT_PUBLIC_SITE_URL=$NUXT_PUBLIC_SITE_URL"
     - echo "NUXT_PUBLIC_SITE_URL=$CI_ENVIRONMENT_URL" > .env
+    - cat .env
+    - bun install
 
 nuxt-build:
   extends:
@@ -23,15 +33,6 @@ nuxt-build:
   stage: build
   tags:
     - docker
-  rules:
-    - if: '$CI_COMMIT_BRANCH == "staging"'
-      variables:
-        CI_ENVIRONMENT_NAME: "staging"
-        CI_ENVIRONMENT_URL: "https://www.t3s.es/"
-    - if: '$CI_COMMIT_BRANCH == "main"'
-      variables:
-        CI_ENVIRONMENT_NAME: "production"
-        CI_ENVIRONMENT_URL: "https://www.topgroups.travel/"
   script:
     - echo "CI_ENVIRONMENT_URL=$CI_ENVIRONMENT_URL"
     - echo "NUXT_PUBLIC_SITE_URL=$NUXT_PUBLIC_SITE_URL"
@@ -40,7 +41,6 @@ nuxt-build:
   artifacts:
     paths:
       - .output/public
-      # - .env
 
 deploy-staging:
   stage: deploy
@@ -48,9 +48,6 @@ deploy-staging:
     - .default-setup
   needs:
     - nuxt-build
-  environment:
-    name: staging
-    url: https://www.t3s.es/
   script:
     - bun add -g wrangler # Install Wrangler globally with Bun
     - wrangler pages deploy .output/public --project-name=website-staging --branch=${CI_COMMIT_BRANCH}
@@ -63,9 +60,6 @@ deploy-production:
     - .default-setup
   needs:
     - nuxt-build
-  environment:
-    name: production
-    url: https://www.topgroups.travel/
   script:
     - bun add -g wrangler # Install Wrangler globally with Bun
     - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
