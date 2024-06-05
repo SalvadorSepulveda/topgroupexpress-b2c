@@ -59,6 +59,7 @@ nuxt-build:
 deploy-staging:
   extends:
     - .deployment-setup
+  environment: staging
   script:
     - wrangler pages deploy .output/public --project-name=website-staging --branch=main
   rules:
@@ -67,6 +68,7 @@ deploy-staging:
 deploy-production:
   extends:
     - .deployment-setup
+  environment: production
   script:
     - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
   rules:
