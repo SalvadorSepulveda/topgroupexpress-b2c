@@ -1,6 +1,5 @@
 cache:
   paths:
-    - .dist
     - .output/public
 
 stages:
@@ -51,7 +50,6 @@ nuxt-build:
     # - npm run generate
   artifacts:
     paths:
-      - .dist
       - .output/public
 
 .deployment-setup: &deployment-setup
@@ -67,7 +65,6 @@ nuxt-build:
     - npm install -g wrangler
   artifacts:
     paths:
-      - .dist
       - .output/public
 
 deploy-staging:
@@ -75,8 +72,7 @@ deploy-staging:
     - .deployment-setup
   environment: staging
   script:
-    - npx wrangler pages deploy .dist/ --project-name=website-staging --branch=main
-    # - npx wrangler pages deploy .output/public --project-name=website-staging --branch=main
+    - npx wrangler pages deploy .output/public --project-name=website-staging --branch=main
     # - wrangler pages deploy .output/public --project-name=website-staging --branch=main
   rules:
     - if: '$CI_COMMIT_BRANCH == "staging"'
@@ -86,6 +82,7 @@ deploy-production:
     - .deployment-setup
   environment: production
   script:
-    - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
+    - npx wrangler pages deploy .output/public --project-name=website-staging --branch=main
+    # - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
   rules:
     - if: '$CI_COMMIT_BRANCH == "main"'
