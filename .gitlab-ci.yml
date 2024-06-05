@@ -44,6 +44,8 @@ nuxt-build:
 .deployment-setup: &deployment-setup
   stage: deploy
   image: node:latest
+  tags:
+    - docker
   needs:
     - nuxt-build
   before_script:
