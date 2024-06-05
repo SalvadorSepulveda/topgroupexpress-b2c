@@ -18,21 +18,29 @@ stages:
     - echo "NUXT_PUBLIC_SITE_URL=$CI_ENVIRONMENT_URL" > .env
 
 nuxt-build:
+  extends:
+    - .default-setup
   stage: build
   tags:
     - docker
   rules:
-    - if: $CI_COMMIT_BRANCH == "staging"
-    - if: $CI_COMMIT_BRANCH == "main"
-  extends:
-    - .default-setup
+    - if: '$CI_COMMIT_BRANCH == "staging"'
+      variables:
+        CI_ENVIRONMENT_NAME: "staging"
+        CI_ENVIRONMENT_URL: "https://www.t3s.es/"
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      variables:
+        CI_ENVIRONMENT_NAME: "production"
+        CI_ENVIRONMENT_URL: "https://www.topgroups.travel/"
   script:
     - echo "CI_ENVIRONMENT_URL=$CI_ENVIRONMENT_URL"
     - echo "NUXT_PUBLIC_SITE_URL=$NUXT_PUBLIC_SITE_URL"
+    - cat .env
     - bun run generate
   artifacts:
     paths:
       - .output/public
+      # - .env
 
 deploy-staging:
   stage: deploy
