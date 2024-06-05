@@ -12,6 +12,7 @@ stages:
   tags:
     - docker
   before_script:
+    - echo "NUXT_PUBLIC_SITE_URL=$CI_ENVIRONMENT_URL" > .env
     - bun install
 
 nuxt-build:
