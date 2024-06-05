@@ -1,4 +1,5 @@
 image: oven/bun:latest
+# image: node:18
 
 cache:
   paths:
@@ -9,11 +10,15 @@ stages:
   - deploy
 
 .default-setup: &default-setup
+  image: oven/bun:latest
+  tags:
+    - docker
   before_script:
     - bun install
     - bun bunfig audit # Audit using bun
 
 nuxt-build:
+  image: oven/bun:latest
   stage: build
   tags:
     - docker
