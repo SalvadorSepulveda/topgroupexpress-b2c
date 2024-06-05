@@ -9,7 +9,7 @@ stages:
 .default-setup: &default-setup
   image: oven/bun:latest
   tags:
-    - docker
+    - docker # Use the "docker" executor
   rules:
     - if: '$CI_COMMIT_BRANCH == "staging"'
       variables:
@@ -45,10 +45,12 @@ nuxt-build:
   stage: deploy
   image: node:latest
   tags:
-    - docker
+    - docker # Use the "docker" executor
   needs:
     - nuxt-build
   before_script:
+    - echo "CLOUDFLARE_ACCOUNT_ID=$CLOUDFLARE_ACCOUNT_ID"
+    - echo "CLOUDFLARE_API_TOKEN=$CLOUDFLARE_API_TOKEN"
     - npm install -g wrangler
   artifacts:
     paths:
@@ -58,8 +60,7 @@ deploy-staging:
   extends:
     - .deployment-setup
   script:
-    # - bun add -g wrangler # Install Wrangler globally with Bun
-    - wrangler pages deploy .output/public --project-name=website-staging --branch=${CI_COMMIT_BRANCH}
+    - wrangler pages deploy .output/public --project-name=website-staging --branch=main
   rules:
     - if: '$CI_COMMIT_BRANCH == "staging"'
 
@@ -67,7 +68,6 @@ deploy-production:
   extends:
     - .deployment-setup
   script:
-    # - bun add -g wrangler # Install Wrangler globally with Bun
     - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
   rules:
     - if: '$CI_COMMIT_BRANCH == "main"'
