@@ -7,8 +7,8 @@ stages:
   - deploy
 
 .default-setup: &default-setup
-  image: oven/bun:latest
-  # image: node:latest
+  image: node:latest
+  # image: oven/bun:latest
   tags:
     - docker # Use the "docker" executor
   rules:
@@ -30,8 +30,8 @@ stages:
     - echo "SITE_URL=$CI_ENVIRONMENT_URL" >> .env
     - echo "NUXT_PUBLIC_SITE_URL=$CI_ENVIRONMENT_URL" >> .env # for Nuxt SEO
     - cat .env
-    - bun install
-    # - npm install
+    - npm install
+    # - bun install
 
 nuxt-build:
   extends:
@@ -43,7 +43,9 @@ nuxt-build:
     - echo "CI_ENVIRONMENT_URL=$CI_ENVIRONMENT_URL"
     - echo "NUXT_PUBLIC_SITE_URL=$NUXT_PUBLIC_SITE_URL"
     - cat .env
-    - bun run build
+    - npx nuxi build --preset=cloudflare_pages
+    # - npx nuxi build --preset=cloudflare_pages
+    # - bun run build
     # - bun run generate
     # - npm run generate
   artifacts:
