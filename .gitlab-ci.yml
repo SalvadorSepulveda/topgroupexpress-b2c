@@ -15,14 +15,16 @@ stages:
       variables:
         CI_ENVIRONMENT_NAME: "staging"
         CI_ENVIRONMENT_URL: "https://www.t3s.es/"
+        BACKEND_URL: "https://backend.t3s.es/api"
 
     - if: '$CI_COMMIT_BRANCH == "main"'
       variables:
         CI_ENVIRONMENT_NAME: "production"
         CI_ENVIRONMENT_URL: "https://www.topgroups.travel/"
+        BACKEND_URL: "https://backend.topgroups.travel/api"
   before_script:
-    - echo "CI_ENVIRONMENT_URL=$CI_ENVIRONMENT_URL"
-    - echo "NUXT_PUBLIC_SITE_URL=$CI_ENVIRONMENT_URL" > .env
+    - echo "BACKEND_URL=$BACKEND_URL" > .env
+    - echo "CI_ENVIRONMENT_URL=$CI_ENVIRONMENT_URL" > .env
     - cat .env
     - bun install
 
