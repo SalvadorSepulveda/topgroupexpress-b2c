@@ -1,80 +1,57 @@
+image: oven/bun:latest
+
 cache:
   paths:
-    # - node_modules/
-    # - dist/
     - .output/public/
 
 stages:
   - build
   - deploy
 
-# .install-npm: &install-npm
-.install-npm:
+.default-setup: &default-setup
   before_script:
-    - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
-    - export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-    - whoami
-    - chmod 755 /home/gitlab-runner/.nvm/nvm.sh
-    - ["$NVM_DIR/nvm.sh"]
-    - \. "$NVM_DIR/nvm.sh" # This loads nvm
-    - nvm install --lts
-    - nvm use --lts
-  when: always
+    - bun install
+    - bun bunfig audit # Audit using bun
 
 nuxt-build:
   stage: build
   rules:
     - if: $CI_COMMIT_BRANCH == "staging"
     - if: $CI_COMMIT_BRANCH == "main"
-  environment: "$CI_COMMIT_BRANCH"
   extends:
-    - .install-npm
+    - .default-setup
   script:
-    - npm install
-    - npm audit fix
-    # - npm run build
-    - npm run generate
-
-cloudflare-staging:
-  stage: deploy
-  extends:
-    - .install-npm
-  needs:
-    - nuxt-build
-  variables:
-    CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
-    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
-  environment: "$CI_COMMIT_BRANCH"
-  script:
-    - echo "$CLOUDFLARE_ACCOUNT_ID"
-    - echo "$CLOUDFLARE_API_TOKEN"
-    - npm install -g wrangler
-    - wrangler pages deploy .output/public --project-name=website-staging --branch=main
-    # - wrangler pages deploy ./dist --project-name=website-staging --branch=main
+    - bun run generate
   artifacts:
     paths:
-      # - dist
       - .output/public
+
+deploy-staging:
+  stage: deploy
+  extends:
+    - .default-setup
+  needs:
+    - nuxt-build
+  environment:
+    name: staging
+    url: https://www.t3s.es/
+  script:
+    - bun add -g wrangler # Install Wrangler globally with Bun
+    - wrangler pages deploy .output/public --project-name=website-staging --branch=${CI_COMMIT_BRANCH}
   only:
     - staging
 
-cloudflare-production:
+deploy-production:
+  stage: deploy
   extends:
-    - .install-npm
+    - .default-setup
   needs:
     - nuxt-build
-  stage: deploy
-  variables:
-    CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
-    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
-  environment: production
+  environment:
+    name: production
+    url: https://www.topgroups.travel/
   script:
-    - npm install -g wrangler
+    - bun add -g wrangler # Install Wrangler globally with Bun
     - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
-    # - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
-  artifacts:
-    paths:
-      # - dist
-      - .output/public
   only:
     - main

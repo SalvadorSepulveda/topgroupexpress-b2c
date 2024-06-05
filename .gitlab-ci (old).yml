@@ -1,0 +1,80 @@
+cache:
+  paths:
+    # - node_modules/
+    # - dist/
+    - .output/public/
+
+stages:
+  - build
+  - deploy
+
+# .install-npm: &install-npm
+.install-npm:
+  before_script:
+    - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+    - export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+    - whoami
+    - chmod 755 /home/gitlab-runner/.nvm/nvm.sh
+    - ["$NVM_DIR/nvm.sh"]
+    - \. "$NVM_DIR/nvm.sh" # This loads nvm
+    - nvm install --lts
+    - nvm use --lts
+  when: always
+
+nuxt-build:
+  stage: build
+  rules:
+    - if: $CI_COMMIT_BRANCH == "staging"
+    - if: $CI_COMMIT_BRANCH == "main"
+  environment: "$CI_COMMIT_BRANCH"
+  extends:
+    - .install-npm
+  script:
+    - npm install
+    - npm audit fix
+    # - npm run build
+    - npm run generate
+
+cloudflare-staging:
+  stage: deploy
+  extends:
+    - .install-npm
+  needs:
+    - nuxt-build
+  variables:
+    CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
+    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
+  environment: "$CI_COMMIT_BRANCH"
+  script:
+    - echo "$CLOUDFLARE_ACCOUNT_ID"
+    - echo "$CLOUDFLARE_API_TOKEN"
+    - npm install -g wrangler
+    - wrangler pages deploy .output/public --project-name=website-staging --branch=main
+    # - wrangler pages deploy ./dist --project-name=website-staging --branch=main
+  artifacts:
+    paths:
+      # - dist
+      - .output/public
+  only:
+    - staging
+
+cloudflare-production:
+  extends:
+    - .install-npm
+  needs:
+    - nuxt-build
+  stage: deploy
+  variables:
+    CLOUDFLARE_ACCOUNT_ID: $CLOUDFLARE_ACCOUNT_ID
+    CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
+  environment: production
+  script:
+    - npm install -g wrangler
+    - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
+    # - wrangler pages deploy ./dist --project-name=website --branch=${CI_COMMIT_BRANCH}
+  artifacts:
+    paths:
+      # - dist
+      - .output/public
+  only:
+    - main
