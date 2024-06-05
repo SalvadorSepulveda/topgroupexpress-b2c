@@ -1,5 +1,3 @@
-image: oven/bun:latest
-
 cache:
   paths:
     - .output/public/
@@ -9,6 +7,7 @@ stages:
   - deploy
 
 .default-setup: &default-setup
+  image: oven/bun:latest
   tags:
     - docker
   rules:
@@ -44,8 +43,9 @@ nuxt-build:
 
 deploy-staging:
   stage: deploy
-  extends:
-    - .default-setup
+  # extends:
+  #   - .default-setup
+  image: node:latest
   needs:
     - nuxt-build
   script:
@@ -53,13 +53,15 @@ deploy-staging:
     - wrangler pages deploy .output/public --project-name=website-staging --branch=${CI_COMMIT_BRANCH}
   rules:
     - if: '$CI_COMMIT_BRANCH == "staging"'
-  # only:
-  #   - staging
+  artifacts:
+    paths:
+      - .output/public
 
 deploy-production:
   stage: deploy
-  extends:
-    - .default-setup
+  image: node:latest
+  # extends:
+  #   - .default-setup
   needs:
     - nuxt-build
   script:
@@ -67,5 +69,6 @@ deploy-production:
     - wrangler pages deploy .output/public --project-name=website --branch=${CI_COMMIT_BRANCH}
   rules:
     - if: '$CI_COMMIT_BRANCH == "main"'
-  # only:
-  #   - main
+  artifacts:
+    paths:
+      - .output/public
